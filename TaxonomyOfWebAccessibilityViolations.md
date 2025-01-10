@@ -4,7 +4,7 @@ This document provides a comprehensive taxonomy of **semantic violations** in we
 
 ## Semantic Violations Table
 
-| **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    |  **Modality** 
+| **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    |  
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|
 | Semantic      | `image-alt-not`      | Inaccurate or misleading alternative text that fails to describe the purpose of the image.            | 1.1.1             |
 | Semantic      | `complex-image-desc` | Complex visual content lacks meaningful or sufficient descriptions.                                   | 1.1.1             |
