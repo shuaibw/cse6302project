@@ -2,7 +2,7 @@
 
 This document provides a comprehensive taxonomy of **semantic violations** in web accessibility. These violations require manual review and are not reliably detected by automated tools like Wave or Playwright. Each violation includes a **Rule ID**, **Description**, and the corresponding **WCAG Guidelines** it violates.
 
-## Semantic Violations Table
+## Semantic Violations Table (Add Modality)
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    |  
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|
