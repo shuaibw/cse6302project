@@ -20,7 +20,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Semantic Violations     | `ambiguous-heading`  | Headings are vague, repetitive, or fail to describe the content.                                      | 2.4.6, 2.4.10     |
 | Semantic      | `incorrect-semantic-tag`    | A non-semantic tag (e.g., `div` or `span`) is used instead of a proper semantic element (e.g., `header`, `nav`, `main`).                                      | 1.3.1             |
 | Semantic      | `landmark-structural-violation`    |  Landmarks or ARIA roles are misused, such as having multiple `main` elements, nesting landmarks, or failing to label multiple `nav` regions properly.                                         | 1.3.6           |
-| Semantic      | `landmark-purpose-mismatch` | Content purpose does not align with its intended function.                                            | 1.3.6             |
+| Semantic      | `landmark-purpose-mismatch` | A landmark or ARIA role does not match its actual purpose or placement, such as labeling a <nav> in the header as "Footer navigation."                                          | 1.3.6             |
 | Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |
 | Semantic      | `error-messages`     | Errors are not clearly described, leaving users unable to fix them.                                   | 3.3.1             |
 | Semantic      | `error-correction`   | No accessible suggestions for correcting input errors.                                                | 3.3.3             |
