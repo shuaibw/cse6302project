@@ -12,9 +12,7 @@ This document provides a comprehensive taxonomy of **semantic violations** in we
 | Semantic      | `missing-lang-tag`   | Sections in different languages lack appropriate `lang` attributes.                                   | 3.1.2             |
 | Semantic      | `unclear-link-text`  | Links fail to convey their purpose or are ambiguous.                                                  | 2.4.4, 2.4.9      |
 | Semantic      | `button-label-not-clear`       | Buttons with unclear labels fail to specify their purpose.                                            | 2.5.3             |
-| Semantic      | `form-label-not-meaningful`         | Forms have unclear or missing labels or instructions.                                                 | 3.3.2             |
-| Semantic      | `ambiguous-heading`  | Headings are vague, repetitive, or fail to describe the content.                                      | 2.4.6, 2.4.10     |
-| Semantic      | `semantic-markup`    | Incorrect use of semantic elements like headings or regions.                                          | 1.3.1             |
+| Semantic      | `form-label-not-meaningful`         | Forms have unclear or missing labels or instructions.                                                 | 3.3.2           | Semantic      | `semantic-markup`    | Incorrect use of semantic elements like headings or regions.                                          | 1.3.1             |
 | Semantic      | `sequence`           | Reading or navigation order is illogical or unintuitive.                                              | 1.3.2             |
 | Semantic      | `landmark-misuse`    | Incorrect or ineffective use of ARIA landmarks or regions.                                            | 1.3.6             |
 | Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |
