@@ -4,7 +4,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 - **Syntactic Violations:**
 - **Layout Violations:**
-- **Semantic Violations:** This document provides a comprehensive taxonomy of **semantic violations** in web accessibility. These violations require manual review and are not reliably detected by automated tools like Wave or Playwright. 
+- **Semantic Violations:** These violations require manual review and are not reliably detected by automated tools like Wave or Playwright. 
 
 ## Semantic Violations Table
 
