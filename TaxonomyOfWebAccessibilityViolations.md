@@ -14,10 +14,10 @@ This document provides a comprehensive taxonomy of **semantic violations** in we
 | Semantic      | `button-label-not-clear`       | Buttons with unclear labels fail to specify their purpose.                                            | 2.5.3             |
 | Semantic      | `form-label-not-meaningful`         | Forms have unclear or missing labels or instructions.                                                 | 3.3.2           
 | Semantic Violations     | `ambiguous-heading`  | Headings are vague, repetitive, or fail to describe the content.                                      | 2.4.6, 2.4.10     |
-| Semantic      | `semantic-markup`    | Incorrect use of semantic elements like headings or regions.                                          | 1.3.1             |
-| Semantic      | `landmark-misuse`    | Incorrect or ineffective use of ARIA landmarks or regions.                                            | 1.3.6             |
+| Semantic      | `incorrect-semantic-tag`    | Incorrect use of semantic elements like headings or regions.                                          | 1.3.1             |
+| Semantic      | `landmark-structural-violation`    | Incorrect or ineffective use of ARIA landmarks or regions.                                            | 1.3.6           |
+| Semantic      | `landmark-purpose-mismatch` | Content purpose does not align with its intended function.                                            | 1.3.6             |
 | Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |
-| Semantic      | `misaligned-purpose` | Content purpose does not align with its intended function.                                            | 1.3.6             |
 | Semantic      | `error-messages`     | Errors are not clearly described, leaving users unable to fix them.                                   | 3.3.1             |
 | Semantic      | `error-correction`   | No accessible suggestions for correcting input errors.                                                | 3.3.3             |
 | Semantic      | `error-consistency`  | Error messages lack consistency or clarity across interactions.                                       | 3.3.4             |
