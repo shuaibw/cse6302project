@@ -2,9 +2,9 @@
 
 Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG Guidelines** it violates, and **Impact**.
 
-- **Syntactic Violations:**
-- **Layout Violations:**
-- **Semantic Violations:** **We defined the violations that require manual review and are not reliably detected by automated tools like Wave or Playwright.**
+- **Syntactic Violations:** These occur when HTML code lacks proper structural elements or attributes required by accessibility standards. Examples include missing alt attributes for images or improperly structured tables, which hinder compliance with accessibility guidelines.
+- **Layout Violations:** These relate to visual design and organization that do not meet accessibility standards, such as insufficient color contrast between text and background. These issues affect readability and usability for users, especially those with visual impairments.
+- **Semantic Violations:** **We define semantic violations as the violations that involve the misuse or absence of meaningful content or attributes that provide contextual understanding. For instance, using nonsensical or placeholder text in alt attributes fails to convey the intended information to assistive technologies.**
 
 ## Semantic Violations Table
 
