@@ -1,0 +1,979 @@
+webURL,numViolations,violationnumberID,impact,description,affectedHTMLElement(s),testcase,Additional Context Needed,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/485f10faf222cd48fea2ab3ee79c2d354e51ea33.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+<img alt=""ERCIM logo"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png""/>
+</html>
+<img alt=""ERCIM logo"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png""/>",485f10faf222cd48fea2ab3ee79c2d354e51ea33,https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2f7d82593e287df64b7459695e355a840254255c.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+<svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">
+<path d=""M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6""></path>
+<path d=""M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"" fill=""#e44d26""></path>
+<path d=""M256 480.5V131H404.3L376 447"" fill=""#f16529""></path>
+<path d=""M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"" fill=""#ebebeb""></path>
+<path d=""M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"" fill=""#fff""></path>
+</svg>
+</html>
+<svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">
+<path d=""M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6""></path>
+<path d=""M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"" fill=""#e44d26""></path>
+<path d=""M256 480.5V131H404.3L376 447"" fill=""#f16529""></path>
+<path d=""M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"" fill=""#ebebeb""></path>
+<path d=""M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"" fill=""#fff""></path>
+</svg>
+<path d=""M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6""></path>
+<path d=""M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"" fill=""#e44d26""></path>
+<path d=""M256 480.5V131H404.3L376 447"" fill=""#f16529""></path>",2f7d82593e287df64b7459695e355a840254255c,https://i.ibb.co/mFYM2Ft/image.png,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/bac67a5a2ada971100bbec89961ad3e6c869f268.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+<canvas aria-label=""HTML 5 logo"" height=""48"" id=""logo"" width=""72""></canvas>
+<script>
+		const img = new Image()
+		img.src = '/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png'
+		img.onload = function() {
+			const ctx = document.querySelector('#logo').getContext('2d')
+			ctx.drawImage(img, 0, 0)
+		}
+	</script>
+</html>
+<canvas aria-label=""HTML 5 logo"" height=""48"" id=""logo"" width=""72""></canvas>
+<script>
+		const img = new Image()
+		img.src = '/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png'
+		img.onload = function() {
+			const ctx = document.querySelector('#logo').getContext('2d')
+			ctx.drawImage(img, 0, 0)
+		}
+	</script>",bac67a5a2ada971100bbec89961ad3e6c869f268,https://i.ibb.co/BPkxx7z/screenshot.png,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""da"">
+<head>
+<title>ACT Rules Format 1.0 - Abstract</title>
+</head>
+<body>
+<p>
+			The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test
+			rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It
+			provides a common format that allows any party involved in accessibility testing to document and share their
+			testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing
+			methods, including methods implemented by accessibility test tools.
+		</p>
+</body>
+</html>
+<head>
+<title>ACT Rules Format 1.0 - Abstract</title>
+</head>
+<title>ACT Rules Format 1.0 - Abstract</title>
+<body>
+<p>
+			The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test
+			rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It
+			provides a common format that allows any party involved in accessibility testing to document and share their
+			testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing
+			methods, including methods implemented by accessibility test tools.
+		</p>
+</body>
+<p>
+			The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test
+			rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It
+			provides a common format that allows any party involved in accessibility testing to document and share their
+			testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing
+			methods, including methods implemented by accessibility test tools.
+		</p>",b1a2ce0c3435765e96d31a3262f1ed8c1d92f817,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""nl"">
+<head>
+<title>Gelukkig</title>
+</head>
+<body>
+<p>The Dutch word ""gelukkig"" has no equivalent in English.</p>
+</body>
+</html>
+<head>
+<title>Gelukkig</title>
+</head>
+<title>Gelukkig</title>
+<body>
+<p>The Dutch word ""gelukkig"" has no equivalent in English.</p>
+</body>
+<p>The Dutch word ""gelukkig"" has no equivalent in English.</p>",6616b9ffd712e7789c50b01da8420fd665786677,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">
+<head>
+<title>Met de kippen op stok</title>
+</head>
+<body>
+<blockquote>
+<p>""Hij ging met de kippen op stok""</p>
+</blockquote>
+<p lang=""en"">
+			This Dutch phrase literally translates into ""He went to roost with the chickens"", but it means that he went to bed
+			early.
+		</p>
+</body>
+</html>
+<head>
+<title>Met de kippen op stok</title>
+</head>
+<title>Met de kippen op stok</title>
+<body>
+<blockquote>
+<p>""Hij ging met de kippen op stok""</p>
+</blockquote>
+<p lang=""en"">
+			This Dutch phrase literally translates into ""He went to roost with the chickens"", but it means that he went to bed
+			early.
+		</p>
+</body>
+<blockquote>
+<p>""Hij ging met de kippen op stok""</p>
+</blockquote>",61b97f487132c7aca3dd9787e9ff1454903d45fb,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""nl"">
+<head>
+<title>Fireworks over Paris</title>
+</head>
+<body>
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p lang=""nl"">
+			Gelukkig nieuwjaar!
+		</p>
+</body>
+</html>
+<head>
+<title>Fireworks over Paris</title>
+</head>
+<title>Fireworks over Paris</title>
+<body>
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p lang=""nl"">
+			Gelukkig nieuwjaar!
+		</p>
+</body>
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>",c4eaf50df4fa37f931374c74ac369a018b780ec6,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""nl"">
+<head>
+<title>Paris</title>
+</head>
+<body>
+<img aria-labelledby=""caption"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p hidden="""" id=""caption"" lang=""en"">
+			Fireworks over Paris!
+		</p>
+</body>
+</html>
+<head>
+<title>Paris</title>
+</head>
+<title>Paris</title>
+<body>
+<img aria-labelledby=""caption"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p hidden="""" id=""caption"" lang=""en"">
+			Fireworks over Paris!
+		</p>
+</body>
+<img aria-labelledby=""caption"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>",864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""es"">
+<body>
+<article lang=""dutch"">
+			Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.
+		</article>
+</body>
+</html>
+<body>
+<article lang=""dutch"">
+			Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.
+		</article>
+</body>
+<article lang=""dutch"">
+			Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.
+		</article>",b1765660b28464b5a73e502ef30b7370ba294ff5,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">
+<body>
+<article lang=""#!"">
+			They wandered into a strange Tiki bar on the edge of the small beach town.
+		</article>
+</body>
+</html>
+<body>
+<article lang=""#!"">
+			They wandered into a strange Tiki bar on the edge of the small beach town.
+		</article>
+</body>
+<article lang=""#!"">
+			They wandered into a strange Tiki bar on the edge of the small beach town.
+		</article>",49b66676ed867c75368e31c1e06b28255df8089e,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""fr"">
+<body>
+<article lang=""  "">
+			They wandered into a strange Tiki bar on the edge of the small beach town.
+		</article>
+</body>
+</html>
+<body>
+<article lang=""  "">
+			They wandered into a strange Tiki bar on the edge of the small beach town.
+		</article>
+</body>
+<article lang=""  "">
+			They wandered into a strange Tiki bar on the edge of the small beach town.
+		</article>",78de8b1ca470302aebb53065c32eddf08da008b5,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""es"">
+<body>
+<article lang=""english"">
+<p aria-hidden=""true"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</p>
+</article>
+</body>
+</html>
+<body>
+<article lang=""english"">
+<p aria-hidden=""true"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</p>
+</article>
+</body>
+<article lang=""english"">
+<p aria-hidden=""true"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</p>
+</article>
+<p aria-hidden=""true"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</p>",795698c08fc5d404b649d0c367bedc3e83462d43,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8ba52b5fa5e123def1f778821219aaec20ca0fe.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""fr"">
+<body>
+<article lang=""English"">
+<p style=""position: absolute; top: -9999px"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</p>
+</article>
+</body>
+</html>
+<body>
+<article lang=""English"">
+<p style=""position: absolute; top: -9999px"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</p>
+</article>
+</body>
+<article lang=""English"">
+<p style=""position: absolute; top: -9999px"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</p>
+</article>
+<p style=""position: absolute; top: -9999px"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</p>",d8ba52b5fa5e123def1f778821219aaec20ca0fe,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""es"">
+<body>
+<article lang=""en"">
+<div lang=""invalid"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</div>
+</article>
+</body>
+</html>
+<body>
+<article lang=""en"">
+<div lang=""invalid"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</div>
+</article>
+</body>
+<article lang=""en"">
+<div lang=""invalid"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</div>
+</article>
+<div lang=""invalid"">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</div>",61f81c57325a77a89481f036e4e2116399fb6714,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">
+<body>
+<div lang=""invalid"">
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+</div>
+</body>
+</html>
+<body>
+<div lang=""invalid"">
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+</div>
+</body>
+<div lang=""invalid"">
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+</div>
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>",5ba0306adadd581e4331b9415c2ef9f8ecccc0f2,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">
+<body>
+<p lang=""eng"">I love ACT rules!</p>
+</body>
+</html>
+<body>
+<p lang=""eng"">I love ACT rules!</p>
+</body>
+<p lang=""eng"">I love ACT rules!</p>",915cdae554a817caa4792101fde1adf14563227d,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html,1,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""lb"">
+<body>
+<p lang=""i-lux"">Lëtzebuerg ass e Land an Europa.</p>
+</body>
+</html>
+<body>
+<p lang=""i-lux"">Lëtzebuerg ass e Land an Europa.</p>
+</body>
+<p lang=""i-lux"">Lëtzebuerg ass e Land an Europa.</p>",50e733e0c505a556fc53e6265eb5b432823570f7,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac.html,1,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""en"">
+<head>
+<title>Dutch idioms</title>
+</head>
+<body>
+<p>
+			The Dutch phrase <span lang=""fr"">""Hij ging met de kippen op stok""</span> literally translates into ""He went to
+			roost with the chickens"", but it means that he went to bed early.
+		</p>
+</body>
+</html>
+<head>
+<title>Dutch idioms</title>
+</head>
+<title>Dutch idioms</title>
+<body>
+<p>
+			The Dutch phrase <span lang=""fr"">""Hij ging met de kippen op stok""</span> literally translates into ""He went to
+			roost with the chickens"", but it means that he went to bed early.
+		</p>
+</body>
+<p>
+			The Dutch phrase <span lang=""fr"">""Hij ging met de kippen op stok""</span> literally translates into ""He went to
+			roost with the chickens"", but it means that he went to bed early.
+		</p>",5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ffcbd35493c91b4d8ee42c3a7fba9c2356144257.html,1,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""nl"">
+<head>
+<title>Met de kippen op stok</title>
+</head>
+<body>
+<blockquote>
+<p>""Hij ging met de kippen op stok""</p>
+</blockquote>
+<p lang=""en"">
+<span lang=""fr"">The Dutch phrase</span> ""Hij ging met de kippen op stok""
+			<span lang=""fr"">literally translates into ""He went to roost with the chickens"", but it means that he went to bed early.</span>
+</p>
+</body>
+</html>
+<head>
+<title>Met de kippen op stok</title>
+</head>
+<title>Met de kippen op stok</title>
+<body>
+<blockquote>
+<p>""Hij ging met de kippen op stok""</p>
+</blockquote>
+<p lang=""en"">
+<span lang=""fr"">The Dutch phrase</span> ""Hij ging met de kippen op stok""
+			<span lang=""fr"">literally translates into ""He went to roost with the chickens"", but it means that he went to bed early.</span>
+</p>
+</body>
+<blockquote>
+<p>""Hij ging met de kippen op stok""</p>
+</blockquote>",ffcbd35493c91b4d8ee42c3a7fba9c2356144257,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/d00a83015b309b51bebfc2c85f62488daec3a5d1.html,1,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""fr"">
+<head>
+<title>Feu d'artifice du nouvel an</title>
+</head>
+<body>
+<div lang=""fr"">
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p lang=""nl"">
+				Bonne année !
+			</p>
+</div>
+</body>
+</html>
+<head>
+<title>Feu d'artifice du nouvel an</title>
+</head>
+<title>Feu d'artifice du nouvel an</title>
+<body>
+<div lang=""fr"">
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p lang=""nl"">
+				Bonne année !
+			</p>
+</div>
+</body>
+<div lang=""fr"">
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p lang=""nl"">
+				Bonne année !
+			</p>
+</div>",d00a83015b309b51bebfc2c85f62488daec3a5d1,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/895a754e85f4fbc8e11cea52295381f41eb384ca.html,1,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""fr"">
+<head>
+<title>Feu d'artifice du nouvel an</title>
+</head>
+<body>
+<div lang=""fr"">
+<img aria-labelledby=""caption"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p hidden="""" id=""caption"" lang=""en"">
+				Fireworks over Paris
+			</p>
+</div>
+</body>
+</html>
+<head>
+<title>Feu d'artifice du nouvel an</title>
+</head>
+<title>Feu d'artifice du nouvel an</title>
+<body>
+<div lang=""fr"">
+<img aria-labelledby=""caption"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p hidden="""" id=""caption"" lang=""en"">
+				Fireworks over Paris
+			</p>
+</div>
+</body>
+<div lang=""fr"">
+<img aria-labelledby=""caption"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p hidden="""" id=""caption"" lang=""en"">
+				Fireworks over Paris
+			</p>
+</div>",895a754e85f4fbc8e11cea52295381f41eb384ca,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b2a671d96ac510ccc6e34dd58a141d13bb196508.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 1</title>
+</head>
+<body>
+<a href=""#desc"">More</a>
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>
+<head>
+<title>Failed Example 1</title>
+</head>
+<title>Failed Example 1</title>
+<body>
+<a href=""#desc"">More</a>
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+<a href=""#desc"">More</a>",b2a671d96ac510ccc6e34dd58a141d13bb196508,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 2</title>
+</head>
+<body>
+<div onclick=""document.location+='#main'"" role=""link"" tabindex=""0"">More</div>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+</html>
+<head>
+<title>Failed Example 2</title>
+</head>
+<title>Failed Example 2</title>
+<body>
+<div onclick=""document.location+='#main'"" role=""link"" tabindex=""0"">More</div>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+<div onclick=""document.location+='#main'"" role=""link"" tabindex=""0"">More</div>",bf3ba787eb7a6819ea1a6adccdfd1f30842ed788,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 3</title>
+</head>
+<body>
+<svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+<a href=""#main"">
+<text x=""20"" y=""20"">
+				Go
+			</text>
+</a>
+</svg>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+</html>
+<head>
+<title>Failed Example 3</title>
+</head>
+<title>Failed Example 3</title>
+<body>
+<svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+<a href=""#main"">
+<text x=""20"" y=""20"">
+				Go
+			</text>
+</a>
+</svg>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+<svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+<a href=""#main"">
+<text x=""20"" y=""20"">
+				Go
+			</text>
+</a>
+</svg>",e6a7c924092d2351c3a5b4361ccde7917ad23c66,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/771c36b9967faec9926af86041d834b4a108a52e.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 4</title>
+</head>
+<body>
+<p>See the description of <a href=""#desc"">this product</a>.</p>
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>
+<head>
+<title>Failed Example 4</title>
+</head>
+<title>Failed Example 4</title>
+<body>
+<p>See the description of <a href=""#desc"">this product</a>.</p>
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+<p>See the description of <a href=""#desc"">this product</a>.</p>",771c36b9967faec9926af86041d834b4a108a52e,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b130285915a8ca42926a11553a5791f44b65d487.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 5</title>
+</head>
+<body>
+<ul>
+<li>
+			Ulysses
+			<ul>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm""> HTML </a></li>
+<li>
+<a href=""https://www.gutenberg.org/ebooks/4300.epub.images?session_id=04cd710372888de8d8d322215cdfe8ce5b0f8d73"">
+						EPUB
+					</a>
+</li>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt""> Plain text </a></li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
+<head>
+<title>Failed Example 5</title>
+</head>
+<title>Failed Example 5</title>
+<body>
+<ul>
+<li>
+			Ulysses
+			<ul>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm""> HTML </a></li>
+<li>
+<a href=""https://www.gutenberg.org/ebooks/4300.epub.images?session_id=04cd710372888de8d8d322215cdfe8ce5b0f8d73"">
+						EPUB
+					</a>
+</li>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt""> Plain text </a></li>
+</ul>
+</li>
+</ul>
+</body>
+<ul>
+<li>
+			Ulysses
+			<ul>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm""> HTML </a></li>
+<li>
+<a href=""https://www.gutenberg.org/ebooks/4300.epub.images?session_id=04cd710372888de8d8d322215cdfe8ce5b0f8d73"">
+						EPUB
+					</a>
+</li>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt""> Plain text </a></li>
+</ul>
+</li>
+</ul>",b130285915a8ca42926a11553a5791f44b65d487,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/b2a671d96ac510ccc6e34dd58a141d13bb196508.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 1</title>
+</head>
+<body>
+<a href=""#desc"">More</a>
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>
+<head>
+<title>Failed Example 1</title>
+</head>
+<title>Failed Example 1</title>
+<body>
+<a href=""#desc"">More</a>
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+<a href=""#desc"">More</a>",b2a671d96ac510ccc6e34dd58a141d13bb196508,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 2</title>
+</head>
+<body>
+<div onclick=""document.location+='#main'"" role=""link"" tabindex=""0"">More</div>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+</html>
+<head>
+<title>Failed Example 2</title>
+</head>
+<title>Failed Example 2</title>
+<body>
+<div onclick=""document.location+='#main'"" role=""link"" tabindex=""0"">More</div>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+<div onclick=""document.location+='#main'"" role=""link"" tabindex=""0"">More</div>",bf3ba787eb7a6819ea1a6adccdfd1f30842ed788,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 3</title>
+</head>
+<body>
+<svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+<a href=""#main"">
+<text x=""20"" y=""20"">
+				Go
+			</text>
+</a>
+</svg>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+</html>
+<head>
+<title>Failed Example 3</title>
+</head>
+<title>Failed Example 3</title>
+<body>
+<svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+<a href=""#main"">
+<text x=""20"" y=""20"">
+				Go
+			</text>
+</a>
+</svg>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+<svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+<a href=""#main"">
+<text x=""20"" y=""20"">
+				Go
+			</text>
+</a>
+</svg>",e6a7c924092d2351c3a5b4361ccde7917ad23c66,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/98f0638a038a244b0bde70ff316cde1be7ce9a3b.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 4</title>
+</head>
+<body>
+<p>
+		The W3C held a workshop on June 9-10, 2005 at DERI Innsbruck (Austria), to gather information about potential
+		standardization work on Semantics in Web Services.
+	</p>
+<p><a href=""https://www.w3.org/2005/04/FSWS/workshop-report.html"">Workshop</a></p>
+</body>
+</html>
+<head>
+<title>Failed Example 4</title>
+</head>
+<title>Failed Example 4</title>
+<body>
+<p>
+		The W3C held a workshop on June 9-10, 2005 at DERI Innsbruck (Austria), to gather information about potential
+		standardization work on Semantics in Web Services.
+	</p>
+<p><a href=""https://www.w3.org/2005/04/FSWS/workshop-report.html"">Workshop</a></p>
+</body>
+<p>
+		The W3C held a workshop on June 9-10, 2005 at DERI Innsbruck (Austria), to gather information about potential
+		standardization work on Semantics in Web Services.
+	</p>",98f0638a038a244b0bde70ff316cde1be7ce9a3b,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/43730455b69439980b95151be477ca594e0d7556.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 5</title>
+</head>
+<body>
+<p style=""font-weight: bold"">Ulysses</p>
+<ul>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm""> HTML </a></li>
+<li>
+<a href=""https://www.gutenberg.org/ebooks/4300.epub.images?session_id=04cd710372888de8d8d322215cdfe8ce5b0f8d73"">
+				EPUB
+			</a>
+</li>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt""> Plain text </a></li>
+</ul>
+</body>
+</html>
+<head>
+<title>Failed Example 5</title>
+</head>
+<title>Failed Example 5</title>
+<body>
+<p style=""font-weight: bold"">Ulysses</p>
+<ul>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm""> HTML </a></li>
+<li>
+<a href=""https://www.gutenberg.org/ebooks/4300.epub.images?session_id=04cd710372888de8d8d322215cdfe8ce5b0f8d73"">
+				EPUB
+			</a>
+</li>
+<li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt""> Plain text </a></li>
+</ul>
+</body>
+<p style=""font-weight: bold"">Ulysses</p>",43730455b69439980b95151be477ca594e0d7556,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/45d884e81c4ef8234cfbd85d259dd6a64685c9d2.html,1,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">
+<head>
+<title>Failed Example 6</title>
+</head>
+<body>
+<table>
+<tr>
+<th colspan=""3"">Books</th>
+</tr>
+<tr>
+<td>Ulysses</td>
+<td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm"">Download</a></td>
+<td>1.61MB</td>
+</tr>
+</table>
+</body>
+</html>
+<head>
+<title>Failed Example 6</title>
+</head>
+<title>Failed Example 6</title>
+<body>
+<table>
+<tr>
+<th colspan=""3"">Books</th>
+</tr>
+<tr>
+<td>Ulysses</td>
+<td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm"">Download</a></td>
+<td>1.61MB</td>
+</tr>
+</table>
+</body>
+<table>
+<tr>
+<th colspan=""3"">Books</th>
+</tr>
+<tr>
+<td>Ulysses</td>
+<td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm"">Download</a></td>
+<td>1.61MB</td>
+</tr>
+</table>",45d884e81c4ef8234cfbd85d259dd6a64685c9d2,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/9b967559ff2691dc30436766f53feea55447b348.html,1,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">
+<label>Menu<input id=""fname"" name=""fname"" type=""text""/></label>
+</html>
+<label>Menu<input id=""fname"" name=""fname"" type=""text""/></label>
+<input id=""fname"" name=""fname"" type=""text""/>",9b967559ff2691dc30436766f53feea55447b348,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/1e52060759a535934176a5a981446066aad6b31f.html,1,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">
+<label for=""fname"">Menu</label>
+<input id=""fname"" name=""fname"" type=""text""/>
+</html>
+<label for=""fname"">Menu</label>
+<input id=""fname"" name=""fname"" type=""text""/>",1e52060759a535934176a5a981446066aad6b31f,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/fa5104f9bd07fe52813d7e511c3cc87c4c1cf232.html,1,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">
+<p id=""label_fname"">Menu</p>
+<input aria-labelledby=""label_fname"" name=""fname"" type=""text""/>
+</html>
+<p id=""label_fname"">Menu</p>
+<input aria-labelledby=""label_fname"" name=""fname"" type=""text""/>",fa5104f9bd07fe52813d7e511c3cc87c4c1cf232,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/649946098faf6f36b8232ea74fc3bae3cf8997e7.html,1,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">
+<fieldset>
+<h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>
+<label>Name: <input name=""shipping-name"" type=""text""/></label>
+<label>Street: <input name=""shipping-street"" type=""text""/></label>
+</fieldset>
+<fieldset>
+<h2 style=""position: absolute; top: -9999px; left: -9999px;"">Billing address</h2>
+<label>Name: <input name=""billing-name"" type=""text""/></label>
+<label>Street: <input name=""billing-street"" type=""text""/></label>
+</fieldset>
+</html>
+<fieldset>
+<h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>
+<label>Name: <input name=""shipping-name"" type=""text""/></label>
+<label>Street: <input name=""shipping-street"" type=""text""/></label>
+</fieldset>
+<h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>
+<label>Name: <input name=""shipping-name"" type=""text""/></label>
+<input name=""shipping-name"" type=""text""/>",649946098faf6f36b8232ea74fc3bae3cf8997e7,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html,1,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">
+<span id=""search"" style=""display: none"">Search</span>
+<input aria-labelledby=""submit search"" name=""search"" type=""text""/>
+<button id=""submit"">Go</button>
+</html>
+<span id=""search"" style=""display: none"">Search</span>
+<input aria-labelledby=""submit search"" name=""search"" type=""text""/>
+<button id=""submit"">Go</button>",2f1d964151ff5269a6027371956ee3b4a4a23fe7,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/79cce8d89309bea03e122d2917d340a525db4de0.html,1,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">
+<h1>Weather</h1>
+<p>We are open Monday through Friday from 10 to 16</p>
+</html>
+<h1>Weather</h1>
+<p>We are open Monday through Friday from 10 to 16</p>",79cce8d89309bea03e122d2917d340a525db4de0,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/acae544ba63bf9c71988fb67d491c7d404164f52.html,1,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">
+<span aria-level=""1"" role=""heading"">Weather</span>
+<p>We are open Monday through Friday from 10 to 16</p>
+</html>
+<span aria-level=""1"" role=""heading"">Weather</span>
+<p>We are open Monday through Friday from 10 to 16</p>",acae544ba63bf9c71988fb67d491c7d404164f52,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html,1,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">
+<span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">Weather</span>
+<p>
+		We are open Monday through Friday from 10 to 16
+	</p>
+</html>
+<span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">Weather</span>
+<p>
+		We are open Monday through Friday from 10 to 16
+	</p>",6000a70ba2da9a828fa9c817ae6a0d2c092522fb,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/d76e8834b616356b2803586a8fbd0825a84e3fc8.html,1,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">
+<h1>Weather</h1>
+<p>We are open Monday through Friday from 10 to 16</p>
+<p>It is going to rain tomorrow</p>
+</html>
+<h1>Weather</h1>
+<p>We are open Monday through Friday from 10 to 16</p>
+<p>It is going to rain tomorrow</p>",d76e8834b616356b2803586a8fbd0825a84e3fc8,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/2c1397032aad720fe43dee2be0d326be56957320.html,1,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">
+<head>
+<title>Apple harvesting season</title>
+</head>
+<body>
+<p>
+			Clementines will be ready to harvest from late October through February.
+		</p>
+</body>
+</html>
+<head>
+<title>Apple harvesting season</title>
+</head>
+<title>Apple harvesting season</title>
+<body>
+<p>
+			Clementines will be ready to harvest from late October through February.
+		</p>
+</body>
+<p>
+			Clementines will be ready to harvest from late October through February.
+		</p>",2c1397032aad720fe43dee2be0d326be56957320,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/1844d7bce889d85a80b620468baa804eab3ff2c8.html,1,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">
+<head>
+<title>First title is incorrect</title>
+<title>Clementine harvesting season</title>
+</head>
+<body>
+<p>
+			Clementines will be ready to harvest from late October through February.
+		</p>
+</body>
+</html>
+<head>
+<title>First title is incorrect</title>
+<title>Clementine harvesting season</title>
+</head>
+<title>First title is incorrect</title>
+<title>Clementine harvesting season</title>
+<body>
+<p>
+			Clementines will be ready to harvest from late October through February.
+		</p>
+</body>",1844d7bce889d85a80b620468baa804eab3ff2c8,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html,1,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">
+<head>
+<title>University of Arkham</title>
+</head>
+<body>
+<h1>Search results for ""accessibility"" at the University of Arkham</h1>
+<p>None</p>
+</body>
+</html>
+<head>
+<title>University of Arkham</title>
+</head>
+<title>University of Arkham</title>
+<body>
+<h1>Search results for ""accessibility"" at the University of Arkham</h1>
+<p>None</p>
+</body>
+<h1>Search results for ""accessibility"" at the University of Arkham</h1>",4c72b3b9b06bf1edc3c959070731b65871ee0c8f,,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+<head>
+<title>Passed Example 1</title>
+</head>
+<body>
+<input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+</body>
+</html>
+<head>
+<title>Passed Example 1</title>
+</head>
+<title>Passed Example 1</title>
+<body>
+<input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+</body>
+<input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>",8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6,,https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/b413c09531b239e27bcf79cb57302b429ef59fe6.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+<head>
+<title>Passed Example 2</title>
+</head>
+<body>
+<input aria-label=""Search"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+</body>
+</html>
+<head>
+<title>Passed Example 2</title>
+</head>
+<title>Passed Example 2</title>
+<body>
+<input aria-label=""Next"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+</body>
+<input aria-label=""Next"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>",b413c09531b239e27bcf79cb57302b429ef59fe6,https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/cab9b2d06e5a44e2056ccbdbb7096f55ab42859c.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+<head>
+<title>Passed Example 3</title>
+</head>
+<body>
+<input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>
+</body>
+</html>
+<head>
+<title>Passed Example 3</title>
+</head>
+<title>Passed Example 3</title>
+<body>
+<input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>
+</body>
+<input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>",cab9b2d06e5a44e2056ccbdbb7096f55ab42859c,https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg,
+https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/7d97d6b2f3fa16760bf66026691281a8179f3260.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+<head>
+<title>Passed Example 4</title>
+</head>
+<body>
+<input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+<div id=""id1"">Upload</div>
+</body>
+</html>
+<head>
+<title>Passed Example 4</title>
+</head>
+<title>Passed Example 4</title>
+<body>
+<input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+<div id=""id1"">Upload</div>
+</body>
+<input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>",7d97d6b2f3fa16760bf66026691281a8179f3260,https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg,
+https://www.google.com/,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<button id=""voiceSearchButton"" class=""searchbox-icon-button"" title=""Upload Document"">
+</button>
+",,,
