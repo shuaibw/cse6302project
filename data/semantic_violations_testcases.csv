@@ -923,7 +923,7 @@ https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/8c29bcb24a
 <body>
 <input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
 </body>
-<input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>",8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6,,https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg
+<input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>",8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6,
 https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/b413c09531b239e27bcf79cb57302b429ef59fe6.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
 <head>
 <title>Passed Example 2</title>
