@@ -5,8 +5,8 @@ color-contrast,Layout
 avoid-inline-spacing,Layout
 target-size,Layout
 frame-title,Layout
-blink,Layout
 color-contrast-enhanced,Layout
+blink,Syntax
 scope-attr-valid,Syntax
 aria-allowed-attr,Syntax
 aria-allowed-role,Syntax
