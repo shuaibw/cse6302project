@@ -1,3 +1,15 @@
+Semantic,image-alt-not-descriptive	
+Semantic,video-captions-not-descriptive	
+Semantic,lang-mismatch	
+Semantic, missing-lang-tag	
+Semantic, link-text-mismatch	
+Semantic, button-label-mismatch	
+Semantic, form-label-mismatch	
+Semantic, ambiguous-heading	
+Semantic, incorrect-semantic-tag	
+Semantic, landmark-structural-violation		
+Semantic, landmark-purpose-mismatch	
+Semantic,page-title-not-descriptive
 violationnumberID,Category
 meta-viewport,Layout
 meta-viewport-large,Layout
