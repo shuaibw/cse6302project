@@ -1,3 +1,4 @@
+violationnumberID,Category
 Semantic,image-alt-not-descriptive	
 Semantic,video-captions-not-descriptive	
 Semantic,lang-mismatch	
@@ -10,7 +11,6 @@ Semantic, incorrect-semantic-tag
 Semantic, landmark-structural-violation		
 Semantic, landmark-purpose-mismatch	
 Semantic,page-title-not-descriptive
-violationnumberID,Category
 meta-viewport,Layout
 meta-viewport-large,Layout
 color-contrast,Layout
