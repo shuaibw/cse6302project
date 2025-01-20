@@ -29,14 +29,14 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|
-| Layout      | `meta-viewport	`      |             |             |   | 
-| Layout      | `meta-viewport-large	`      |             |             |   | 
+| Layout      | `meta-viewport`      |             |             |   | 
+| Layout      | `meta-viewport-large`      |             |             |   | 
 | Layout      | `color-contrast`      |             |             |   | 
-| Layout      | `avoid-inline-spacing	`      |             |             |   | 
+| Layout      | `avoid-inline-spacing`      |             |             |   | 
 | Layout      | `target-size`      |             |             |   | 
 | Layout      | `frame-title`      |             |             |   | 
 | Layout      | `blink`      |             |             |   | 
-| Layout      | `color-contrast-enhanced	`      |             |             |   | 
+| Layout      | `color-contrast-enhanced`      |             |             |   | 
 
 
 
