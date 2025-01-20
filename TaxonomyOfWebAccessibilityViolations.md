@@ -39,6 +39,91 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 
 
+| **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
+|-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|
+| Syntax      | `blink	Syntax`      |             |             |   |
+| Syntax      | `scope-attr-valid	Syntax`      |             |             |   |
+| Syntax      | `aria-allowed-attr	Syntax`      |             |             |   |
+| Syntax      | `aria-allowed-role	Syntax`      |             |             |   |
+| Syntax      | `aria-valid-attr	Syntax`      |             |             |   |
+| Syntax      | `aria-valid-attr-value	Syntax`      |             |             |   |
+| Syntax      | `autocomplete-valid	Syntax`      |             |             |   |
+| Syntax      | `role-img-alt	Syntax`      |             |             |   |
+| Syntax      | `td-headers-attr	Syntax`      |             |             |   |
+| Syntax      | `area-alt	Syntax`      |             |             |   |
+| Syntax      | `object-alt	Syntax`      |             |             |   |
+| Syntax      | `svg-img-alt	Syntax`      |             |             |   |
+| Syntax      | `input-image-alt	Syntax`      |             |             |   |
+| Syntax      | `image-alt	Syntax`      |             |             |   |
+| Syntax      | `html-lang-valid	Syntax`      |             |             |   |
+| Syntax      | `html-xml-lang-mismatch	Syntax`      |             |             |   |
+| Syntax      | `duplicate-id-aria	Syntax`      |             |             |   |
+| Syntax      | `tabindex	Syntax`      |             |             |   |
+| Syntax      | `valid-lang	Syntax`      |             |             |   |
+| Syntax      | `aria-required-attr	Syntax`      |             |             |   |
+| Syntax      | `aria-required-parent	Syntax`      |             |             |   |
+| Syntax      | `aria-required-children	Syntax`      |             |             |   |
+| Syntax      | `aria-deprecated-role	Syntax`      |             |             |   |
+| Syntax      | `presentation-role-conflict	Syntax`      |             |             |   |
+| Syntax      | `aria-prohibited-attr	Syntax`      |             |             |   |
+| Syntax      | `list	Syntax`      |             |             |   |
+| Syntax      | `frame-focusable-content	Syntax`      |             |             |   |
+| Syntax      | `meta-refresh	Syntax`      |             |             |   |
+| Syntax      | `marquee	Syntax`      |             |             |   |
+| Syntax      | `skip-link	Syntax`      |             |             |   |
+| Syntax      | `landmark-no-duplicate-contentinfo	Syntax`      |             |             |   |
+| Syntax      | `landmark-contentinfo-is-top-level	Syntax`      |             |             |   |
+| Syntax      | `landmark-one-main	Syntax`      |             |             |   |
+| Syntax      | `landmark-unique	Syntax`      |             |             |   |
+| Syntax      | `landmark-banner-is-top-level	Syntax`      |             |             |   |
+| Syntax      | `landmark-complementary-is-top-level	Syntax`      |             |             |   |
+| Syntax      | `landmark-main-is-top-level	Syntax`      |             |             |   |
+| Syntax      | `landmark-no-duplicate-main	Syntax`      |             |             |   |
+| Syntax      | `landmark-no-duplicate-banner	Syntax`      |             |             |   |
+| Syntax      | `document-title	Syntax`      |             |             |   |
+| Syntax      | `label	Syntax`      |             |             |   |
+| Syntax      | `label-title-only	Syntax`      |             |             |   |
+| Syntax      | `summary-name	Syntax`      |             |             |   |
+| Syntax      | `definition-list	Syntax`      |             |             |   |
+| Syntax      | `dlitem	Syntax`      |             |             |   |
+| Syntax      | `th-has-data-cells	Syntax`      |             |             |   |
+| Syntax      | `empty-table-header	Syntax`      |             |             |   |
+| Syntax      | `empty-heading	Syntax`      |             |             |   |
+| Syntax      | `listitem	Syntax`      |             |             |   |
+| Syntax      | `image-redundant-alt	Syntax`      |             |             |   |
+| Syntax      | `link-name	Syntax`      |             |             |   |
+| Syntax      | `link-in-text-block	Syntax`      |             |             |   |
+| Syntax      | `input-button-name	Syntax`      |             |             |   |
+| Syntax      | `aria-text	Syntax`      |             |             |   |
+| Syntax      | `aria-tooltip-name	Syntax`      |             |             |   |
+| Syntax      | `aria-command-name	Syntax`      |             |             |   |
+| Syntax      | `aria-input-field-name	Syntax`      |             |             |   |
+| Syntax      | `aria-meter-name	Syntax`      |             |             |   |
+| Syntax      | `aria-progressbar-name	Syntax`      |             |             |   |
+| Syntax      | `aria-dialog-name	Syntax`      |             |             |   |
+| Syntax      | `aria-toggle-field-name	Syntax`      |             |             |   |
+| Syntax      | `aria-hidden-body	Syntax`      |             |             |   |
+| Syntax      | `aria-hidden-focus	Syntax`      |             |             |   |
+| Syntax      | `nested-interactive	Syntax`      |             |             |   |
+| Syntax      | `scrollable-region-focusable	Syntax`      |             |             |   |
+| Syntax      | `no-autoplay-audio	Syntax`      |             |             |   |
+| Syntax      | `region	Syntax`      |             |             |   |
+| Syntax      | `frame-tested	Syntax`      |             |             |   |
+| Syntax      | `frame-title-unique	Syntax`      |             |             |   |
+| Syntax      | `video-caption	Syntax`      |             |             |   |
+| Syntax      | `heading-order	Syntax`      |             |             |   |
+| Syntax      | `accesskeys	Syntax`      |             |             |   |
+| Syntax      | `page-has-heading-one	Syntax`      |             |             |   |
+| Syntax      | `bypass	Syntax`      |             |             |   |
+| Syntax      | `server-side-image-map	Syntax`      |             |             |   |
+| Syntax      | `button-name	Syntax`      |             |             |   |
+| Syntax      | `aria-roledescription	Syntax`      |             |             |   |
+| Syntax      | `aria-roles	Syntax`      |             |             |   |
+| Syntax      | `duplicate-id	Syntax`      |             |             |   |
+| Syntax      | `duplicate-id-active	Syntax`      |             |             |   |
+| Syntax      | `html-has-lang	Syntax`      |             |             |   |
+| Syntax      | `select-name	Syntax`      |             |             |   |
+
 <!-- This is commented out.| Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |  Serious |   |
 | Semantic      | `error-messages`     | Errors are not clearly described, leaving users unable to fix them.                                   | 3.3.1             | Serious  |  Error context (e.g., input validation rules) |
 | Semantic      | `error-correction`   | No accessible suggestions for correcting input errors.                                                | 3.3.3             | Serious  |  Error context and input requirements  |
