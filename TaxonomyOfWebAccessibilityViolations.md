@@ -37,6 +37,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Layout      | `frame-title`      |             |             |   | 
 | Layout      | `color-contrast-enhanced`      |             |             |   | 
 
+---
 
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
