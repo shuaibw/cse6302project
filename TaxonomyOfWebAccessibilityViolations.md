@@ -35,7 +35,6 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Layout      | `avoid-inline-spacing`      |             |             |   | 
 | Layout      | `target-size`      |             |             |   | 
 | Layout      | `frame-title`      |             |             |   | 
-| Layout      | `blink`      |             |             |   | 
 | Layout      | `color-contrast-enhanced`      |             |             |   | 
 
 
