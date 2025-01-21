@@ -977,3 +977,51 @@ Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/7
 Semantic,https://www.google.com/,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<button id=""voiceSearchButton"" class=""searchbox-icon-button"" title=""Upload Document"">
 </button>
 ",,
+Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/0bbd55ba8e418361f99f717418206a37d57fd978.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+<head>
+<title>Failed Example 3</title>
+</head>
+<body>
+<input type=""image"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" aria-labelledby=""non-existing"" />
+</body>
+</html>",0bbd55ba8e418361f99f717418206a37d57fd978,
+Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/8006d1541dc71b93e6ec4d101a386e0043d1a521.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+<head>
+<title>Failed Example 1</title>
+</head>
+<body>
+<img src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png"" />
+</body>
+</html>",8006d1541dc71b93e6ec4d101a386e0043d1a521,
+Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/5c71cdabc04f9038e21d872e20a516cb429a7619.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+<head>
+<title>Failed Example 2</title>
+</head>
+<body>
+<input type=""image"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" alt="""" />
+</body>
+</html>",5c71cdabc04f9038e21d872e20a516cb429a7619,
+Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/1ec8deb0b18514b612774d3af39b5ad41f2a792b.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+<head>
+<title>Failed Example 1</title>
+</head>
+<body>
+<button></button>
+</body>
+</html>",1ec8deb0b18514b612774d3af39b5ad41f2a792b,
+Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/2c5b0625e21b3503d1cd4c4daf53b15ae41c562d.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+<head>
+<title>Failed Example 2</title>
+</head>
+<body>
+<button type=""button"" value=""read more""></button>
+</body>
+</html>",2c5b0625e21b3503d1cd4c4daf53b15ae41c562d,
+Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/ac9a749a026c47209c34677ca6ac0dc093d24888.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+<head>
+<title>Failed Example 5</title>
+</head>
+<body>
+<button role=""none""></button>
+</body>
+</html>",ac9a749a026c47209c34677ca6ac0dc093d24888,
