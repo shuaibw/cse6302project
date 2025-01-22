@@ -923,7 +923,7 @@ Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/8
 <body>
 <input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
 </body>
-<input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>",8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6,
+<input alt=""Submit"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>",8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6,https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg
 Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/b413c09531b239e27bcf79cb57302b429ef59fe6.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
 <head>
 <title>Passed Example 2</title>
@@ -977,51 +977,621 @@ Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/7
 Semantic,https://www.google.com/,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<button id=""voiceSearchButton"" class=""searchbox-icon-button"" title=""Upload Document"">
 </button>
 ",,
-Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/0bbd55ba8e418361f99f717418206a37d57fd978.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+Semantic,,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>
+<html lang=""en"">
 <head>
-<title>Failed Example 3</title>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">
+    <title>Climate Change Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #e0f7fa;
+            color: #004d40;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #00796b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-<input type=""image"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" aria-labelledby=""non-existing"" />
+    <header>
+        <h1>Understanding Climate Change</h1>
+        <p>This page highlights the impact of climate change through data visualization.</p>
+    </header>
+
+    <main>
+        <img src=""https://www.climaterealityproject.org/sites/default/files/graphblog-1.png"" alt=""A pie chart showing the percentage distribution of diabetes prevalence by age group."" />
+    </main>
+
+    <footer>
+        <p>Data sourced from Global Climate Watch | <a href=""#"" aria-label=""Learn more about climate change"">Learn more</a></p>
+    </footer>
 </body>
-</html>",0bbd55ba8e418361f99f717418206a37d57fd978,
-Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/8006d1541dc71b93e6ec4d101a386e0043d1a521.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+</html>",0bbd55ba8e418361f99f717418206a37d57fd978,https://www.climaterealityproject.org/sites/default/files/graphblog-1.png
+Semantic,,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>
+<html lang=""en"">
 <head>
-<title>Failed Example 1</title>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A simple webpage discussing renewable energy sources with a focus on solar power."">
+    <title>Renewable Energy Spotlight</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #2e7d32;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background: #81c784;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        main img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #2e7d32;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-<img src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png"" />
+    <header>
+        <h1>Renewable Energy Sources</h1>
+        <p>Exploring the future of clean and sustainable energy</p>
+    </header>
+
+    <nav>
+        <a href=""#solar"">Solar Power</a>
+        <a href=""#wind"">Wind Energy</a>
+        <a href=""#hydro"">Hydropower</a>
+    </nav>
+
+    <div class=""container"">
+        <main>
+            <h2 id=""solar"">Solar Power</h2>
+            <p>Solar energy is one of the most abundant and clean sources of renewable energy. It uses photovoltaic cells to convert sunlight directly into electricity.</p>
+            <img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Wind turbines at sunset."" />
+
+            <h2 id=""wind"">Wind Energy</h2>
+            <p>Wind turbines harness the kinetic energy of the wind and transform it into electricity. Wind energy is growing rapidly as a sustainable alternative to fossil fuels.</p>
+
+            <h2 id=""hydro"">Hydropower</h2>
+            <p>Hydropower generates electricity by capturing the energy of moving water, usually from rivers or dams. It is a reliable and proven source of renewable energy.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Renewable Insights | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
 </body>
-</html>",8006d1541dc71b93e6ec4d101a386e0043d1a521,
-Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/5c71cdabc04f9038e21d872e20a516cb429a7619.html,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">
+</html>",8006d1541dc71b93e6ec4d101a386e0043d1a521,https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg
+Semantic,,1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>
+<html lang=""en"">
 <head>
-<title>Failed Example 2</title>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A simple webpage promoting mental health awareness and well-being."">
+    <title>Mental Health Awareness</title>
+    <style>
+        body {
+            font-family: ""Georgia"", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #4a4a4a;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #5c6bc0;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background: #7986cb;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #5c6bc0;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-<input type=""image"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" alt="""" />
+    <header>
+        <h1>Mental Health Matters</h1>
+        <p>Promoting awareness, reducing stigma, and encouraging self-care</p>
+    </header>
+
+    <nav>
+        <a href=""#importance"">Importance</a>
+        <a href=""#tips"">Self-Care Tips</a>
+        <a href=""#resources"">Resources</a>
+    </nav>
+
+    <div class=""container"">
+        <main>
+            <h2 id=""importance"">The Importance of Mental Health</h2>
+            <p>Mental health is vital to overall well-being. It affects how we think, feel, and act in our daily lives. Recognizing its importance helps reduce stigma and promotes a supportive community.</p>
+            <img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" />
+
+            <h2 id=""tips"">Self-Care Tips</h2>
+            <p>Taking care of your mental health is essential. Here are a few tips:</p>
+            <ul>
+                <li>Practice mindfulness or meditation</li>
+                <li>Stay physically active</li>
+                <li>Maintain a balanced diet</li>
+                <li>Connect with loved ones</li>
+                <li>Seek professional help when needed</li>
+            </ul>
+
+            <h2 id=""resources"">Helpful Resources</h2>
+            <p>If you're struggling with your mental health, don't hesitate to reach out for help. Here are some trusted resources:</p>
+            <ul>
+                <li><a href=""#"">National Mental Health Hotline</a></li>
+                <li><a href=""#"">Mindfulness and Meditation Apps</a></li>
+                <li><a href=""#"">Support Groups in Your Area</a></li>
+            </ul>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mental Health Awareness | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
 </body>
-</html>",5c71cdabc04f9038e21d872e20a516cb429a7619,
-Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/1ec8deb0b18514b612774d3af39b5ad41f2a792b.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+</html>",5c71cdabc04f9038e21d872e20a516cb429a7619,https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg
+Semantic,,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>
+<html lang=""en"">
 <head>
-<title>Failed Example 1</title>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">
+    <title>Sustainable Living</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #4caf50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tips {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: none;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px 0;
+            background: #4caf50;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-<button></button>
+    <header>
+        <h1>Sustainable Living</h1>
+        <p>Small steps for a greener planet.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Eco-Friendly Tips</h2>
+            <p>Click the button below to reveal practical tips for sustainable living:</p>
+            <button id=""revealTips"" role=""button"" aria-label=""Submit Form"">Show Tips</button>
+
+            <div id=""tips"" class=""tips"">
+                <h3>Eco-Friendly Tips</h3>
+                <ul>
+                    <li>Reduce, reuse, and recycle wherever possible.</li>
+                    <li>Conserve water by fixing leaks and using water-efficient appliances.</li>
+                    <li>Opt for energy-efficient lighting and appliances.</li>
+                    <li>Support local and sustainable products.</li>
+                    <li>Plant trees or grow your own garden to offset your carbon footprint.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sustainable Living Initiative | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('revealTips');
+        const tips = document.getElementById('tips');
+
+        button.addEventListener('click', () => {
+            tips.style.display = tips.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>",1ec8deb0b18514b612774d3af39b5ad41f2a792b,
-Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/2c5b0625e21b3503d1cd4c4daf53b15ae41c562d.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+Semantic,,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>
+<html lang=""en"">
 <head>
-<title>Failed Example 2</title>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">
+    <title>Healthy Eating Habits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #ff7043;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: #ff7043;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tips {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: none;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px 0;
+            background: #ff7043;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-<button type=""button"" value=""read more""></button>
+    <header>
+        <h1>Healthy Eating</h1>
+        <p>Simple steps to build better eating habits.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Healthy Eating Tips</h2>
+            <p>Click the button below to learn more about maintaining a balanced diet:</p>
+            <button id=""revealTips"" aria-label=""Click to go back to the homepage"" title=""Click to go back to the homepage"">Show Tips</button>
+
+            <div id=""tips"" class=""tips"">
+                <h3>Tips for a Balanced Diet</h3>
+                <ul>
+                    <li>Incorporate more fruits and vegetables into your meals.</li>
+                    <li>Stay hydrated by drinking plenty of water.</li>
+                    <li>Choose whole grains over refined grains.</li>
+                    <li>Limit your intake of added sugars and saturated fats.</li>
+                    <li>Practice portion control to avoid overeating.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Healthy Eating Initiative | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('revealTips');
+        const tips = document.getElementById('tips');
+
+        button.addEventListener('click', () => {
+            tips.style.display = tips.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>",2c5b0625e21b3503d1cd4c4daf53b15ae41c562d,
-Semantic,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/ac9a749a026c47209c34677ca6ac0dc093d24888.html,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">
+Semantic,,1,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>
+<html lang=""en"">
 <head>
-<title>Failed Example 5</title>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">
+    <title>Climate Change Action</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #388e3c;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: #388e3c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px 0;
+            background: #388e3c;
+            color: #fff;
+        }
+
+        .form-container {
+            margin-top: 20px;
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-<button role=""none""></button>
+    <header>
+        <h1>Take Action on Climate Change</h1>
+        <p>Simple actions for a sustainable future.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Get Involved</h2>
+            <p>Click the button below to submit your pledge for climate action:</p>
+            <button id=""pledgeButton"" role=""link"" aria-labelledby=""Upload Document"">Learn More</button>
+            
+
+            <div id=""formContainer"" class=""form-container"">
+                <h3>Your Climate Pledge</h3>
+                <form>
+                    <label for=""name"">Your Name:</label>
+                    <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">
+
+                    <label for=""email"">Your Email:</label>
+                    <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">
+
+                    <button type=""submit"">Submit Pledge</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Climate Change Initiative | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('pledgeButton');
+        const formContainer = document.getElementById('formContainer');
+
+        button.addEventListener('click', () => {
+            formContainer.style.display = formContainer.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>",ac9a749a026c47209c34677ca6ac0dc093d24888,
