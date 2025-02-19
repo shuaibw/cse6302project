@@ -19665,9 +19665,6 @@ In this updated version, the buttons have been given a class of ""target"" and "
 <button class=""adjacent-target"" style=""margin-right: 10px"">Adjacent Target</button>
 
 ",
-2182179087,Syntax,https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=RuleDescription,1,empty-table-header,2,Ensure table headers have discernible text,,,,,,"
-    Given the following source code ""https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=RuleDescription"", can you fix the accessibility issue related to the success criteria: ( Ensure table headers have discernible text ) according to WCAG 2.1?
-    ",https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=RuleDescription,"The success criteria for ensuring table headers have discernible text according to WCAG 2.1 state that ""All header cells must have a unique id, name, or role attribute."" In the given source code for the ""empty-table-header"" rule, the table headers may not have unique ids or names. To fix this issue, one option would be to add unique ids or names to each table header cell using HTML's ""id"" and/or ""data-*"" attributes. This will allow screen readers to identify and describe each header cell to the user, making the table more accessible to those with disabilities.",,
 853326546,Syntax,https://dequeuniversity.com/rules/axe/4.10/aria-meter-name?application=RuleDescription,1,aria-meter-name,4,Ensure every ARIA meter node has an accessible name,,,,,,"
     Given the following source code ""<div role=""meter"" id=""empty""></div>
 
