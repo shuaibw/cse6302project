@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-token = "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"
+token = "TOKEN"
 username = "NadeenAhmad"
 repo_name = "CorrectWebAccessibilityViolations"
 
