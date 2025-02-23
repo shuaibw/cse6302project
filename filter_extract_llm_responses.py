@@ -47,7 +47,7 @@ def is_incomplete_response(original_html, response_html, threshold):
 
 def extract_html_with_mistral(response_text):
     api_url = "https://api.mistral.ai/v1/chat/completions"
-    headers = {"Authorization": "Bearer 82MIE3QwSLZ4ZhbDZEF0Pahjtu5Qgyjc", "Content-Type": "application/json"}
+    headers = {"Authorization": "Bearer Mistral API Key", "Content-Type": "application/json"}
     prompt = f"""
     Extract the last HTML code snippet from the following text:
 
