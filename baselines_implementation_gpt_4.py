@@ -163,7 +163,7 @@ p3
 !pip install openai
 from openai import OpenAI
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='api-key')
 def GPT_response(system, user):
         response = client.chat.completions.create(
             model='gpt-4-0125-preview',
