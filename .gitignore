@@ -1,7 +1,7 @@
 .DS_Store
 data/.DS_Store
 data/Our_Dataset_Mistral_7B/.DS_Store
-code/
+my_code/
 notebooks/
 data/raw_html/
 data/Our_Dataset_Mistral_7B_Jan/
