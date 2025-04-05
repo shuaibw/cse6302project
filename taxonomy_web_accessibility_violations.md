@@ -49,7 +49,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `aria-valid-attr-value`      |   Ensure all ARIA attributes have valid values          |             |  Critical |
 | Syntax      | `autocomplete-valid`      |   Ensure the autocomplete attribute is correct and suitable for the form field          |             |  Serious |
 | Syntax      | `role-img-alt`      |   Ensure [role="img"] elements have alternative text          |             | Serious  |
-| Syntax      | `td-headers-attr`      | Ensure that each cell in a table that uses the headers attribute refers only to other <th> elements in that table  |    |  Serious |
+| Syntax      | `td-headers-attr`      | Ensure that each cell in a table that uses the headers attribute refers only to other < th > elements in that table  |    |  Serious |
 | Syntax      | `area-alt`      |    Ensure <area> elements of image maps have alternative text         |             |  Critical |
 | Syntax      | `object-alt`      |      Ensure <object> elements have alternative text       |             |  Serious |
 | Syntax      | `svg-img-alt`      |   Ensure <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text          |             |  Serious |
