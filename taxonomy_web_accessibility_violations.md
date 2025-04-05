@@ -29,18 +29,9 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | **Supplementary Information**|
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|------------------|
-
 | Layout      | `meta-viewport`      | Ensure `<meta name="viewport">` does not disable text scaling and zooming            |             |  Critical | |
 
-| Layout      | `meta-viewport-large`      |  Ensure `<meta name="viewport">` can scale a significant amount           |             |  Minor | |
 
-| Layout      | `color-contrast`      |    Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds         |   |          |  Serious | Color Information (Background and Foreground)|
-
-| Layout      | `avoid-inline-spacing`      |    Ensure that text spacing set through style attributes can be adjusted with custom stylesheets         |             |  Serious | |
-
-| Layout      | `target-size`      |     Ensure touch targets have sufficient size and space        |             | Serious  | |
-
-| Layout      | `color-contrast-enhanced`      | Ensure the contrast between foreground and background colors meets WCAG 2 AAA enhanced contrast ratio thresholds      |             | Serious  | Color Information (Background and Foreground)|
 
 ---
 
