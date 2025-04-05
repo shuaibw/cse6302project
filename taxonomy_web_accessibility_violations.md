@@ -29,12 +29,12 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | **Supplementary Information**|
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|------------------|
-| Layout      | `meta-viewport`      | Ensure `<meta name="viewport">` does not disable text scaling and zooming            |             |  Critical | |
-| Layout      | `meta-viewport-large`      |  Ensure `<meta name="viewport">` can scale a significant amount           |             |  Minor | |
-| Layout      | `color-contrast`      |    Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds         |            |  Serious | Color Information (Background and Foreground)|
-| Layout      | `avoid-inline-spacing`      |    Ensure that text spacing set through style attributes can be adjusted with custom stylesheets         |             |  Serious | |
-| Layout      | `target-size`      |     Ensure touch targets have sufficient size and space        |             | Serious  | |
-| Layout      | `color-contrast-enhanced`      | Ensure the contrast between foreground and background colors meets WCAG 2 AAA enhanced contrast ratio thresholds      |             | Serious  | Color Information (Background and Foreground)|
+| Layout      | `meta-viewport`      | Ensure `<meta name="viewport">` does not disable text scaling and zooming            |    1.4.4         |  Critical | |
+| Layout      | `meta-viewport-large`      |  Ensure `<meta name="viewport">` can scale a significant amount           |          1.4.4   |  Minor | |
+| Layout      | `color-contrast`      |    Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds         |       1.4.3     |  Serious | Color Information (Background and Foreground)|
+| Layout      | `avoid-inline-spacing`      |    Ensure that text spacing set through style attributes can be adjusted with custom stylesheets         |     1.4.12        |  Serious | |
+| Layout      | `target-size`      |     Ensure touch targets have sufficient size and space        |        2.5.5     | Serious  | |
+| Layout      | `color-contrast-enhanced`      | Ensure the contrast between foreground and background colors meets WCAG 2 AAA enhanced contrast ratio thresholds      |       1.4.6      | Serious  | Color Information (Background and Foreground)|
 
 ---
 
