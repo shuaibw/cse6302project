@@ -71,19 +71,19 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `meta-refresh`      |       Ensure `<meta http-equiv="refresh">` is not used for delayed refresh      |      2.2.1       | Critical  |
 | Syntax      | `marquee`      |         Ensure `<marquee>` elements are not used    |      2.3.1       |  Serious |
 | Syntax      | `skip-link`      |     Ensure all skip links have a focusable target        |      2.4.1       |  Moderate |
-| Syntax      | `landmark-no-duplicate-contentinfo`      |      Ensure the document has at most one contentinfo landmark       |             | Moderate  |
-| Syntax      | `landmark-contentinfo-is-top-level`      |  Ensure the contentinfo landmark is at top level           |             | Moderate  |
-| Syntax      | `landmark-one-main`      |     Ensure the document has a main landmark        |             |  Moderate |
-| Syntax      | `landmark-unique`      |      Ensure landmarks are unique       |             |  Moderate |
-| Syntax      | `landmark-banner-is-top-level`      |    Ensure the banner landmark is at top level         |             |  Moderate |
-| Syntax      | `landmark-complementary-is-top-level`      |      Ensure the complementary landmark or aside is at top level       |             |  Moderate |
-| Syntax      | `landmark-main-is-top-level`      |    Ensure the main landmark is at top level         |             |  Moderate |
-| Syntax      | `landmark-no-duplicate-main`      |    Ensure the document has at most one main landmark         |             |  Moderate |
-| Syntax      | `landmark-no-duplicate-banner`      |    Ensure the document has at most one banner landmark         |             | Moderate  |
-| Syntax      | `document-title`      |     Ensure each HTML document contains a non-empty `<title>` element        |             | Serious  |
-| Syntax      | `label`      |         Ensure every form element has a label    |             | Critical  |
-| Syntax      | `label-title-only`      |   Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes          |             |  Serious |
-| Syntax      | `summary-name`      |    Ensure summary elements have discernible text         |             |  Serious |
+| Syntax      | `landmark-no-duplicate-contentinfo`      |      Ensure the document has at most one contentinfo landmark       |    1.3.1        | Moderate  |
+| Syntax      | `landmark-contentinfo-is-top-level`      |  Ensure the contentinfo landmark is at top level           |   1.3.1          | Moderate  |
+| Syntax      | `landmark-one-main`      |     Ensure the document has a main landmark        |   1.3.1          |  Moderate |
+| Syntax      | `landmark-unique`      |      Ensure landmarks are unique       |      1.3.1       |  Moderate |
+| Syntax      | `landmark-banner-is-top-level`      |    Ensure the banner landmark is at top level         |      1.3.1       |  Moderate |
+| Syntax      | `landmark-complementary-is-top-level`      |      Ensure the complementary landmark or aside is at top level       |     1.3.1        |  Moderate |
+| Syntax      | `landmark-main-is-top-level`      |    Ensure the main landmark is at top level         |        1.3.1     |  Moderate |
+| Syntax      | `landmark-no-duplicate-main`      |    Ensure the document has at most one main landmark         |     1.3.1        |  Moderate |
+| Syntax      | `landmark-no-duplicate-banner`      |    Ensure the document has at most one banner landmark         |   1.3.1          | Moderate  |
+| Syntax      | `document-title`      |     Ensure each HTML document contains a non-empty `<title>` element        |       2.4.2   | Serious  |
+| Syntax      | `label`      |         Ensure every form element has a label    |     4.1.2        | Critical  |
+| Syntax      | `label-title-only`      |   Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes          |      3.3.2       |  Serious |
+| Syntax      | `summary-name`      |    Ensure summary elements have discernible text         |    4.1.2         |  Serious |
 | Syntax      | `definition-list`      |   Ensure `<dl>` elements are structured correctly          |             | Serious  |
 | Syntax      | `dlitem`      |       Ensure `<dt>` and `<dd>` elements are contained by a `<dl>`     |             | Serious  |
 | Syntax      | `th-has-data-cells`      |     Ensure that `<th>` elements and elements with role=columnheader/rowheader have data cells they describe    |             |  Serious |
