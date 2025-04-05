@@ -20,7 +20,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Semantic      | `ambiguous-heading`  | Headings are vague, repetitive, or fail to describe the content.                                      | 2.4.6, 2.4.10     |  Moderate  |   |
 | Semantic      | `incorrect-semantic-tag`    | A non-semantic tag (e.g., `div` or `span`) is used instead of a proper semantic element (e.g., `header`, `nav`, `main`).                                      | 1.3.1             | Serious  |  Document structure (other headings, section context) |
 | Semantic      | `landmark-structural-violation`    |  Landmarks or ARIA roles are misused, such as having multiple `main` elements, nesting landmarks, or failing to label multiple `nav` regions properly.                                         | 1.3.6           | Serious  |  |
-| Semantic      | `landmark-purpose-mismatch` | A landmark or ARIA role does not match its actual purpose or placement, such as labeling a <nav> in the header as "Footer navigation."                                          | 1.3.6             | Serious  |  Document structure and context around the landmark  |
+| Semantic      | `landmark-purpose-mismatch` | A landmark or ARIA role does not match its actual purpose or placement, such as labeling a `<nav>` in the header as "Footer navigation."                                          | 1.3.6             | Serious  |  Document structure and context around the landmark  |
 | Semantic      | `page-title-not-descriptive`      | Page title fails to describe the content or purpose of the page, making navigation difficult.           | 2.4.2             |  Serious | Page content and purpose  |
 
 ---
@@ -29,8 +29,8 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|
-| Layout      | `meta-viewport`      | Ensure <meta name="viewport"> does not disable text scaling and zooming            |             |  Critical | 
-| Layout      | `meta-viewport-large`      |  Ensure <meta name="viewport"> can scale a significant amount           |             |  Minor | 
+| Layout      | `meta-viewport`      | Ensure `<meta name="viewport">` does not disable text scaling and zooming            |             |  Critical | 
+| Layout      | `meta-viewport-large`      |  Ensure `<meta name="viewport">` can scale a significant amount           |             |  Minor | 
 | Layout      | `color-contrast`      |    Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds         |             |  Serious | 
 | Layout      | `avoid-inline-spacing`      |    Ensure that text spacing set through style attributes can be adjusted with custom stylesheets         |             |  Serious | 
 | Layout      | `target-size`      |     Ensure touch targets have sufficient size and space        |             | Serious  | 
@@ -41,7 +41,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|
-| Syntax      | `blink`      |      	Ensure <blink> elements are not used       |             | Serious  |
+| Syntax      | `blink`      |      	Ensure `<blink>` elements are not used       |             | Serious  |
 | Syntax      | `scope-attr-valid`      |       Ensure the scope attribute is used correctly on tables      |             |  Moderate |
 | Syntax      | `aria-allowed-attr`      |    Ensure an element's role supports its ARIA attributes         |             | Critical  |
 | Syntax      | `aria-allowed-role`      |   Ensure role attribute has an appropriate value for the element          |             |  Minor |
@@ -49,13 +49,13 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `aria-valid-attr-value`      |   Ensure all ARIA attributes have valid values          |             |  Critical |
 | Syntax      | `autocomplete-valid`      |   Ensure the autocomplete attribute is correct and suitable for the form field          |             |  Serious |
 | Syntax      | `role-img-alt`      |   Ensure [role="img"] elements have alternative text          |             | Serious  |
-| Syntax      | `td-headers-attr`      | Ensure that each cell in a table that uses the headers attribute refers only to other < th > elements in that table  |    |  Serious |
-| Syntax      | `area-alt`      |    Ensure <area> elements of image maps have alternative text         |             |  Critical |
-| Syntax      | `object-alt`      |      Ensure <object> elements have alternative text       |             |  Serious |
-| Syntax      | `svg-img-alt`      |   Ensure <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text          |             |  Serious |
-| Syntax      | `input-image-alt`      |    Ensure <input type="image"> elements have alternative text         |             |  Critical |
-| Syntax      | `image-alt`      |    Ensure <img> elements have alternative text or a role of none or presentation         |             |  Critical |
-| Syntax      | `html-lang-valid`      |      Ensure the lang attribute of the <html> element has a valid value       |             |  Serious |
+| Syntax      | `td-headers-attr`      | Ensure that each cell in a table that uses the headers attribute refers only to other `<th>` elements in that table  |    |  Serious |
+| Syntax      | `area-alt`      |    Ensure `<area>` elements of image maps have alternative text         |             |  Critical |
+| Syntax      | `object-alt`      |      Ensure `<object>` elements have alternative text       |             |  Serious |
+| Syntax      | `svg-img-alt`      |   Ensure `<svg>` elements with an img, graphics-document or graphics-symbol role have an accessible text          |             |  Serious |
+| Syntax      | `input-image-alt`      |    Ensure `<input type="image">` elements have alternative text         |             |  Critical |
+| Syntax      | `image-alt`      |    Ensure `<img>` elements have alternative text or a role of none or presentation         |             |  Critical |
+| Syntax      | `html-lang-valid`      |      Ensure the lang attribute of the `<html>` element has a valid value       |             |  Serious |
 | Syntax      | `html-xml-lang-mismatch`      |      Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page       |             | Moderate  |
 | Syntax      | `duplicate-id-aria`      |       Ensure every id attribute value used in ARIA and in labels is unique      |             |  Critical |
 | Syntax      | `tabindex`      |       Ensure tabindex attribute values are not greater than 0      |             |  Serious |
@@ -67,9 +67,9 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `presentation-role-conflict`      |      Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them       |             | Minor  |
 | Syntax      | `aria-prohibited-attr`      |       Ensure ARIA attributes are not prohibited for an element's role      |             |  Serious |
 | Syntax      | `list`      |        Ensure that lists are structured correctly     |             |  Serious |
-| Syntax      | `frame-focusable-content`      |    Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1         |             |  Serious |
-| Syntax      | `meta-refresh`      |       Ensure <meta http-equiv="refresh"> is not used for delayed refresh      |             | Critical  |
-| Syntax      | `marquee`      |         Ensure <marquee> elements are not used    |             |  Serious |
+| Syntax      | `frame-focusable-content`      |    Ensure `<frame>` and `<iframe>` elements with focusable content do not have tabindex=-1         |             |  Serious |
+| Syntax      | `meta-refresh`      |       Ensure `<meta http-equiv="refresh">` is not used for delayed refresh      |             | Critical  |
+| Syntax      | `marquee`      |         Ensure `<marquee>` elements are not used    |             |  Serious |
 | Syntax      | `skip-link`      |     Ensure all skip links have a focusable target        |             |  Moderate |
 | Syntax      | `landmark-no-duplicate-contentinfo`      |      Ensure the document has at most one contentinfo landmark       |             | Moderate  |
 | Syntax      | `landmark-contentinfo-is-top-level`      |  Ensure the contentinfo landmark is at top level           |             | Moderate  |
@@ -80,16 +80,16 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `landmark-main-is-top-level`      |    Ensure the main landmark is at top level         |             |  Moderate |
 | Syntax      | `landmark-no-duplicate-main`      |    Ensure the document has at most one main landmark         |             |  Moderate |
 | Syntax      | `landmark-no-duplicate-banner`      |    Ensure the document has at most one banner landmark         |             | Moderate  |
-| Syntax      | `document-title`      |     Ensure each HTML document contains a non-empty <title> element        |             | Serious  |
+| Syntax      | `document-title`      |     Ensure each HTML document contains a non-empty `<title>` element        |             | Serious  |
 | Syntax      | `label`      |         Ensure every form element has a label    |             | Critical  |
 | Syntax      | `label-title-only`      |   Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes          |             |  Serious |
 | Syntax      | `summary-name`      |    Ensure summary elements have discernible text         |             |  Serious |
-| Syntax      | `definition-list`      |   Ensure <dl> elements are structured correctly          |             | Serious  |
-| Syntax      | `dlitem`      |       Ensure <dt> and <dd> elements are contained by a <dl>      |             | Serious  |
-| Syntax      | `th-has-data-cells`      |     Ensure that < th > elements and elements with role=columnheader/rowheader have data cells they describe    |             |  Serious |
+| Syntax      | `definition-list`      |   Ensure `<dl>` elements are structured correctly          |             | Serious  |
+| Syntax      | `dlitem`      |       Ensure `<dt>` and `<dd>` elements are contained by a `<dl>`     |             | Serious  |
+| Syntax      | `th-has-data-cells`      |     Ensure that `<th>` elements and elements with role=columnheader/rowheader have data cells they describe    |             |  Serious |
 | Syntax      | `empty-table-header`      | Ensure table headers have discernible text            |             |  Minor |
 | Syntax      | `empty-heading`      |  Ensure headings have discernible text           |             | Minor  |
-| Syntax      | `listitem`      |       Ensure <li> elements are used semantically      |             |  Serious |
+| Syntax      | `listitem`      |       Ensure `<li>` elements are used semantically      |             |  Serious |
 | Syntax      | `image-redundant-alt`      |    Ensure image alternative is not repeated as text         |             | Minor  |
 | Syntax      | `link-name`      |     Ensure links have discernible text        |             | Serious  |
 | Syntax      | `link-in-text-block`      |  Ensure links are distinguished from surrounding text in a way that does not rely on color           |             | Serious  |
@@ -106,12 +106,12 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `aria-hidden-focus`      |   Ensure aria-hidden elements are not focusable nor contain focusable elements          |             | Serious  |
 | Syntax      | `nested-interactive`      |     Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies        |             |  Serious |
 | Syntax      | `scrollable-region-focusable`      |    Ensure elements that have scrollable content are accessible by keyboard         |             |  Serious |
-| Syntax      | `no-autoplay-audio`      |   Ensure <video> or <audio> elements do not autoplay audio for more than 3 seconds without a control mechanism to stop or mute the audio          |             |  Moderate |
+| Syntax      | `no-autoplay-audio`      |   Ensure `<video>` or `<audio>` elements do not autoplay audio for more than 3 seconds without a control mechanism to stop or mute the audio          |             |  Moderate |
 | Syntax      | `region`      |             |             |   |
 | Syntax      | `frame-tested`      |             |             |   |
-| Syntax      | `frame-title`      |      Ensure <iframe> and <frame> elements have an accessible name       |             | Serious  | 
+| Syntax      | `frame-title`      |      Ensure `<iframe>` and `<frame>` elements have an accessible name       |             | Serious  | 
 | Syntax      | `frame-title-unique`      |    Ensure all page content is contained by landmarks         |             |  Moderate |
-| Syntax      | `video-caption`      |    Ensure <video> elements have captions         |             | Critical  |
+| Syntax      | `video-caption`      |    Ensure `<video>` elements have captions         |             | Critical  |
 | Syntax      | `heading-order`      |      Ensure the order of headings is semantically correct       |             | Moderate  |
 | Syntax      | `accesskeys`      |      Ensure every accesskey attribute value is unique       |             |  Serious |
 | Syntax      | `page-has-heading-one`      |   Ensure that the page, or at least one of its frames contains a level-one heading          |             |  Moderate |
