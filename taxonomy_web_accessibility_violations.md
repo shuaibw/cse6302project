@@ -86,7 +86,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `summary-name`      |    Ensure summary elements have discernible text         |             |  Serious |
 | Syntax      | `definition-list`      |   Ensure <dl> elements are structured correctly          |             | Serious  |
 | Syntax      | `dlitem`      |       Ensure <dt> and <dd> elements are contained by a <dl>      |             | Serious  |
-| Syntax      | `th-has-data-cells`      |     Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe    |             |  Serious |
+| Syntax      | `th-has-data-cells`      |     Ensure that < th > elements and elements with role=columnheader/rowheader have data cells they describe    |             |  Serious |
 | Syntax      | `empty-table-header`      | Ensure table headers have discernible text            |             |  Minor |
 | Syntax      | `empty-heading`      |  Ensure headings have discernible text           |             | Minor  |
 | Syntax      | `listitem`      |       Ensure <li> elements are used semantically      |             |  Serious |
