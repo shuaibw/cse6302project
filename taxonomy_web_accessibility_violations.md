@@ -8,7 +8,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 
 
-| **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | **Additional Context Needed**|
+| **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | **Supplementary Information**|
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|------------------|
 | Semantic      | `image-alt-not-descriptive`      | Inaccurate or misleading alternative text that fails to describe the purpose of the image.            | 1.1.1             |  Critical | Image  |
 | Semantic      | `video-captions-not-descriptive`    | Inaccurate video captions.                                 | 1.2.1, 1.2.3      | Critical  |  Video |
@@ -29,13 +29,13 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|
-| Layout      | `meta-viewport`      |             |             |   | 
-| Layout      | `meta-viewport-large`      |             |             |   | 
-| Layout      | `color-contrast`      |             |             |   | 
-| Layout      | `avoid-inline-spacing`      |             |             |   | 
-| Layout      | `target-size`      |             |             |   | 
-| Layout      | `frame-title`      |             |             |   | 
-| Layout      | `color-contrast-enhanced`      |             |             |   | 
+| Layout      | `meta-viewport`      | Ensure <meta name="viewport"> does not disable text scaling and zooming            |             |  Critical | 
+| Layout      | `meta-viewport-large`      |  Ensure <meta name="viewport"> can scale a significant amount           |             |  Minor | 
+| Layout      | `color-contrast`      |    Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds         |             |  Serious | 
+| Layout      | `avoid-inline-spacing`      |    Ensure that text spacing set through style attributes can be adjusted with custom stylesheets         |             |  Serious | 
+| Layout      | `target-size`      |     Ensure touch targets have sufficient size and space        |             | Serious  | 
+| Layout      | `frame-title`      |      Ensure <iframe> and <frame> elements have an accessible name       |             | Serious  | 
+| Layout      | `color-contrast-enhanced`      |       Ensure the contrast between foreground and background colors meets WCAG 2 AAA enhanced contrast ratio thresholds      |             | Serious  | 
 
 ---
 
