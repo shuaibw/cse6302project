@@ -31,6 +31,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|------------------|
 | Layout      | `meta-viewport`      | Ensure `<meta name="viewport">` does not disable text scaling and zooming            |             |  Critical | |
 
+| Layout      | `meta-viewport-large`      |  Ensure `<meta name="viewport">` can scale a significant amount           |             |  Minor | |
 
 
 ---
