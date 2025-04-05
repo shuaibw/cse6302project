@@ -56,7 +56,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `input-image-alt`      |    Ensure <input type="image"> elements have alternative text         |             |  Critical |
 | Syntax      | `image-alt`      |    Ensure <img> elements have alternative text or a role of none or presentation         |             |  Critical |
 | Syntax      | `html-lang-valid`      |      Ensure the lang attribute of the <html> element has a valid value       |             |  Serious |
-| Syntax      | `html-xml-lang-mismatch`      |      Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page       |             | MOderate  |
+| Syntax      | `html-xml-lang-mismatch`      |      Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page       |             | Moderate  |
 | Syntax      | `duplicate-id-aria`      |       Ensure every id attribute value used in ARIA and in labels is unique      |             |  Critical |
 | Syntax      | `tabindex`      |       Ensure tabindex attribute values are not greater than 0      |             |  Serious |
 | Syntax      | `valid-lang`      |       Ensure lang attributes have valid values      |             |  Serious |
