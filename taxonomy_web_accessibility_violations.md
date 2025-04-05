@@ -41,36 +41,36 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 | **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|
-| Syntax      | `blink`      |      	Ensure `<blink>` elements are not used       |             | Serious  |
-| Syntax      | `scope-attr-valid`      |       Ensure the scope attribute is used correctly on tables      |             |  Moderate |
-| Syntax      | `aria-allowed-attr`      |    Ensure an element's role supports its ARIA attributes         |             | Critical  |
-| Syntax      | `aria-allowed-role`      |   Ensure role attribute has an appropriate value for the element          |             |  Minor |
-| Syntax      | `aria-valid-attr`      |   Ensure attributes that begin with aria- are valid ARIA attributes          |             |  Critical |
-| Syntax      | `aria-valid-attr-value`      |   Ensure all ARIA attributes have valid values          |             |  Critical |
-| Syntax      | `autocomplete-valid`      |   Ensure the autocomplete attribute is correct and suitable for the form field          |             |  Serious |
-| Syntax      | `role-img-alt`      |   Ensure [role="img"] elements have alternative text          |             | Serious  |
-| Syntax      | `td-headers-attr`      | Ensure that each cell in a table that uses the headers attribute refers only to other `<th>` elements in that table  |    |  Serious |
-| Syntax      | `area-alt`      |    Ensure `<area>` elements of image maps have alternative text         |             |  Critical |
-| Syntax      | `object-alt`      |      Ensure `<object>` elements have alternative text       |             |  Serious |
-| Syntax      | `svg-img-alt`      |   Ensure `<svg>` elements with an img, graphics-document or graphics-symbol role have an accessible text          |             |  Serious |
-| Syntax      | `input-image-alt`      |    Ensure `<input type="image">` elements have alternative text         |             |  Critical |
-| Syntax      | `image-alt`      |    Ensure `<img>` elements have alternative text or a role of none or presentation         |             |  Critical |
-| Syntax      | `html-lang-valid`      |      Ensure the lang attribute of the `<html>` element has a valid value       |             |  Serious |
-| Syntax      | `html-xml-lang-mismatch`      |      Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page       |             | Moderate  |
-| Syntax      | `duplicate-id-aria`      |       Ensure every id attribute value used in ARIA and in labels is unique      |             |  Critical |
-| Syntax      | `tabindex`      |       Ensure tabindex attribute values are not greater than 0      |             |  Serious |
-| Syntax      | `valid-lang`      |       Ensure lang attributes have valid values      |             |  Serious |
-| Syntax      | `aria-required-attr`      |      Ensure elements with ARIA roles have all required ARIA attributes       |             |  Critical |
-| Syntax      | `aria-required-parent`      |     Ensure elements with an ARIA role that require parent roles are contained by them        |             | Critical  |
-| Syntax      | `aria-required-children`      |      Ensure elements with an ARIA role that require child roles contain them       |             |  Critical |
-| Syntax      | `aria-deprecated-role`      |       Ensure elements do not use deprecated roles      |             |  Minor |
-| Syntax      | `presentation-role-conflict`      |      Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them       |             | Minor  |
-| Syntax      | `aria-prohibited-attr`      |       Ensure ARIA attributes are not prohibited for an element's role      |             |  Serious |
-| Syntax      | `list`      |        Ensure that lists are structured correctly     |             |  Serious |
-| Syntax      | `frame-focusable-content`      |    Ensure `<frame>` and `<iframe>` elements with focusable content do not have tabindex=-1         |             |  Serious |
-| Syntax      | `meta-refresh`      |       Ensure `<meta http-equiv="refresh">` is not used for delayed refresh      |             | Critical  |
-| Syntax      | `marquee`      |         Ensure `<marquee>` elements are not used    |             |  Serious |
-| Syntax      | `skip-link`      |     Ensure all skip links have a focusable target        |             |  Moderate |
+| Syntax      | `blink`      |      	Ensure `<blink>` elements are not used       |     2.3.1        | Serious  |
+| Syntax      | `scope-attr-valid`      |       Ensure the scope attribute is used correctly on tables      |      1.3.1       |  Moderate |
+| Syntax      | `aria-allowed-attr`      |    Ensure an element's role supports its ARIA attributes         |   4.1.2          | Critical  |
+| Syntax      | `aria-allowed-role`      |   Ensure role attribute has an appropriate value for the element          |        4.1.2       |  Minor |
+| Syntax      | `aria-valid-attr`      |   Ensure attributes that begin with aria- are valid ARIA attributes          |     4.1.2        |  Critical |
+| Syntax      | `aria-valid-attr-value`      |   Ensure all ARIA attributes have valid values          |          4.1.2   |  Critical |
+| Syntax      | `autocomplete-valid`      |   Ensure the autocomplete attribute is correct and suitable for the form field          |     1.3.5        |  Serious |
+| Syntax      | `role-img-alt`      |   Ensure [role="img"] elements have alternative text          |      1.1.1       | Serious  |
+| Syntax      | `td-headers-attr`      | Ensure that each cell in a table that uses the headers attribute refers only to other `<th>` elements in that table  | 1.3.1   |  Serious |
+| Syntax      | `area-alt`      |    Ensure `<area>` elements of image maps have alternative text         |   2.4.4, 4.1.2          |  Critical |
+| Syntax      | `object-alt`      |      Ensure `<object>` elements have alternative text       |     1.1.1        |  Serious |
+| Syntax      | `svg-img-alt`      |   Ensure `<svg>` elements with an img, graphics-document or graphics-symbol role have an accessible text          |      1.1.1       |  Serious |
+| Syntax      | `input-image-alt`      |    Ensure `<input type="image">` elements have alternative text         |       1.1.1      |  Critical |
+| Syntax      | `image-alt`      |    Ensure `<img>` elements have alternative text or a role of none or presentation         |     1.1.1        |  Critical |
+| Syntax      | `html-lang-valid`      |      Ensure the lang attribute of the `<html>` element has a valid value       |    3.1.2         |  Serious |
+| Syntax      | `html-xml-lang-mismatch`      |      Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page       |        3.1.2     | Moderate  |
+| Syntax      | `duplicate-id-aria`      |       Ensure every id attribute value used in ARIA and in labels is unique      |       4.1.2      |  Critical |
+| Syntax      | `tabindex`      |       Ensure tabindex attribute values are not greater than 0      |          2.1.1     |  Serious |
+| Syntax      | `valid-lang`      |       Ensure lang attributes have valid values      |    3.1.2       |  Serious |
+| Syntax      | `aria-required-attr`      |      Ensure elements with ARIA roles have all required ARIA attributes       |      4.1.2       |  Critical |
+| Syntax      | `aria-required-parent`      |     Ensure elements with an ARIA role that require parent roles are contained by them        |  1.3.1           | Critical  |
+| Syntax      | `aria-required-children`      |      Ensure elements with an ARIA role that require child roles contain them       |           1.3.1  |  Critical |
+| Syntax      | `aria-deprecated-role`      |       Ensure elements do not use deprecated roles      |        4.1.2     |  Minor |
+| Syntax      | `presentation-role-conflict`      |      Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them       |       1.3.1, 4.1.2      | Minor  |
+| Syntax      | `aria-prohibited-attr`      |       Ensure ARIA attributes are not prohibited for an element's role      |    4.1.2         |  Serious |
+| Syntax      | `list`      |        Ensure that lists are structured correctly     |      1.3.1       |  Serious |
+| Syntax      | `frame-focusable-content`      |    Ensure `<frame>` and `<iframe>` elements with focusable content do not have tabindex=-1         |    2.1.1         |  Serious |
+| Syntax      | `meta-refresh`      |       Ensure `<meta http-equiv="refresh">` is not used for delayed refresh      |      2.2.1       | Critical  |
+| Syntax      | `marquee`      |         Ensure `<marquee>` elements are not used    |      2.3.1       |  Serious |
+| Syntax      | `skip-link`      |     Ensure all skip links have a focusable target        |      2.4.1       |  Moderate |
 | Syntax      | `landmark-no-duplicate-contentinfo`      |      Ensure the document has at most one contentinfo landmark       |             | Moderate  |
 | Syntax      | `landmark-contentinfo-is-top-level`      |  Ensure the contentinfo landmark is at top level           |             | Moderate  |
 | Syntax      | `landmark-one-main`      |     Ensure the document has a main landmark        |             |  Moderate |
