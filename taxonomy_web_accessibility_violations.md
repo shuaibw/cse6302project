@@ -22,6 +22,12 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Semantic      | `landmark-structural-violation`    |  Landmarks or ARIA roles are misused, such as having multiple `main` elements, nesting landmarks, or failing to label multiple `nav` regions properly.                                         | 1.3.6           | Serious  |  |
 | Semantic      | `landmark-purpose-mismatch` | A landmark or ARIA role does not match its actual purpose or placement, such as labeling a `<nav>` in the header as "Footer navigation."                                          | 1.3.6             | Serious  |  Document structure and context around the landmark  |
 | Semantic      | `page-title-not-descriptive`      | Page title fails to describe the content or purpose of the page, making navigation difficult.           | 2.4.2             |  Serious | Page content and purpose  |
+| Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |  Serious |   |
+| Semantic      | `error-messages`     | Errors are not clearly described, leaving users unable to fix them.                                   | 3.3.1             | Serious  |  Error context (e.g., input validation rules) |
+| Semantic      | `error-correction`   | No accessible suggestions for correcting input errors.                                                | 3.3.3             | Serious  |  Error context and input requirements  |
+| Semantic      | `error-consistency`  | Error messages lack consistency or clarity across interactions.                                       | 3.3.4             | Serious  |  All error messages on the page |
+| Semantic      | `status-updates`     | Status changes are not announced to assistive technologies.                                           | 4.1.3             | Serious  |   |
+| Semantic      | `hover-focus`        | Content triggered by hover or focus is inaccessible or non-dismissible.                               | 1.4.13            | Serious |   |
 
 ---
 
@@ -84,48 +90,49 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `label`      |         Ensure every form element has a label    |     4.1.2        | Critical  |
 | Syntax      | `label-title-only`      |   Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes          |      3.3.2       |  Serious |
 | Syntax      | `summary-name`      |    Ensure summary elements have discernible text         |    4.1.2         |  Serious |
-| Syntax      | `definition-list`      |   Ensure `<dl>` elements are structured correctly          |             | Serious  |
-| Syntax      | `dlitem`      |       Ensure `<dt>` and `<dd>` elements are contained by a `<dl>`     |             | Serious  |
-| Syntax      | `th-has-data-cells`      |     Ensure that `<th>` elements and elements with role=columnheader/rowheader have data cells they describe    |             |  Serious |
-| Syntax      | `empty-table-header`      | Ensure table headers have discernible text            |             |  Minor |
-| Syntax      | `empty-heading`      |  Ensure headings have discernible text           |             | Minor  |
-| Syntax      | `listitem`      |       Ensure `<li>` elements are used semantically      |             |  Serious |
-| Syntax      | `image-redundant-alt`      |    Ensure image alternative is not repeated as text         |             | Minor  |
-| Syntax      | `link-name`      |     Ensure links have discernible text        |             | Serious  |
-| Syntax      | `link-in-text-block`      |  Ensure links are distinguished from surrounding text in a way that does not rely on color           |             | Serious  |
-| Syntax      | `input-button-name`      |   Ensure input buttons have discernible text          |             |  Critical |
-| Syntax      | `aria-text`      |       Ensure role="text" is used on elements with no focusable descendants      |             | Serious  |
-| Syntax      | `aria-tooltip-name`      |   Ensure every ARIA tooltip node has an accessible name          |             | Serious  |
-| Syntax      | `aria-command-name`      |    Ensure every ARIA button, link and menuitem has an accessible name         |             |  Serious |
-| Syntax      | `aria-input-field-name`      |   Ensure every ARIA input field has an accessible name          |             |  Serious |
-| Syntax      | `aria-meter-name`      |     Ensure every ARIA meter node has an accessible name        |             | Serious  |
-| Syntax      | `aria-progressbar-name`      |     Ensure every ARIA progressbar node has an accessible name        |             |  Serious |
-| Syntax      | `aria-dialog-name`      |    Ensure every ARIA dialog and alertdialog node has an accessible name         |             |  Serious |
-| Syntax      | `aria-toggle-field-name`      |   Ensure every ARIA toggle field has an accessible name          |             |  Serious |
-| Syntax      | `aria-hidden-body`      |       Ensure aria-hidden="true" is not present on the document body      |             | Critical  |
-| Syntax      | `aria-hidden-focus`      |   Ensure aria-hidden elements are not focusable nor contain focusable elements          |             | Serious  |
-| Syntax      | `nested-interactive`      |     Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies        |             |  Serious |
-| Syntax      | `scrollable-region-focusable`      |    Ensure elements that have scrollable content are accessible by keyboard         |             |  Serious |
-| Syntax      | `no-autoplay-audio`      |   Ensure `<video>` or `<audio>` elements do not autoplay audio for more than 3 seconds without a control mechanism to stop or mute the audio          |             |  Moderate |
-| Syntax      | `region`      |             |             |   |
-| Syntax      | `frame-tested`      |             |             |   |
-| Syntax      | `frame-title`      |      Ensure `<iframe>` and `<frame>` elements have an accessible name       |             | Serious  | 
-| Syntax      | `frame-title-unique`      |    Ensure all page content is contained by landmarks         |             |  Moderate |
-| Syntax      | `video-caption`      |    Ensure `<video>` elements have captions         |             | Critical  |
-| Syntax      | `heading-order`      |      Ensure the order of headings is semantically correct       |             | Moderate  |
-| Syntax      | `accesskeys`      |      Ensure every accesskey attribute value is unique       |             |  Serious |
-| Syntax      | `page-has-heading-one`      |   Ensure that the page, or at least one of its frames contains a level-one heading          |             |  Moderate |
-| Syntax      | `bypass`      |        Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content     |             |  Serious |
-| Syntax      | `server-side-image-map`      |       Ensure that server-side image maps are not used      |             | Minor  |
-| Syntax      | `button-name`      |      Ensure buttons have discernible text       |             | Critical  |
-| Syntax      | `aria-roledescription`      |  Ensure aria-roledescription is only used on elements with an implicit or explicit role           |             |  Serious |
-| Syntax      | `aria-roles`      |   Ensure all elements with a role attribute use a valid value          |             | Critical  |
-| Syntax      | `duplicate-id`      |      Ensure every id attribute value is unique       |             |  Minor |
-| Syntax      | `duplicate-id-active`      |  Ensure every id attribute value of active elements is unique           |             | Serious   |
-| Syntax      | `html-has-lang`      |    Ensure every HTML document has a lang attribute         |             |  Serious |
-| Syntax      | `select-name`      |      Ensure select element has an accessible name       |             |  Critical |
+| Syntax      | `definition-list`      |   Ensure `<dl>` elements are structured correctly          |     1.3.1        | Serious  |
+| Syntax      | `dlitem`      |       Ensure `<dt>` and `<dd>` elements are contained by a `<dl>`     |      1.3.1       | Serious  |
+| Syntax      | `th-has-data-cells`      |     Ensure that `<th>` elements and elements with role=columnheader/rowheader have data cells they describe    |    1.3.1         |  Serious |
+| Syntax      | `empty-table-header`      | Ensure table headers have discernible text            |   1.3.1, 2.4.6          |  Minor |
+| Syntax      | `empty-heading`      |  Ensure headings have discernible text           |      1.3.1, 2.4.6       | Minor  |
+| Syntax      | `listitem`      |       Ensure `<li>` elements are used semantically      |      1.3.1       |  Serious |
+| Syntax      | `image-redundant-alt`      |    Ensure image alternative is not repeated as text         |       1.1.1      | Minor  |
+| Syntax      | `link-name`      |     Ensure links have discernible text        |     2.4.4, 2.4.9        | Serious  |
+| Syntax      | `link-in-text-block`      |  Ensure links are distinguished from surrounding text in a way that does not rely on color           |   1.4.1          | Serious  |
+| Syntax      | `input-button-name`      |   Ensure input buttons have discernible text          |   4.1.2          |  Critical |
+| Syntax      | `aria-text`      |       Ensure role="text" is used on elements with no focusable descendants      |       4.1.2      | Serious  |
+| Syntax      | `aria-tooltip-name`      |   Ensure every ARIA tooltip node has an accessible name          |  4.1.2           | Serious  |
+| Syntax      | `aria-command-name`      |    Ensure every ARIA button, link and menuitem has an accessible name         | 4.1.2            |  Serious |
+| Syntax      | `aria-input-field-name`      |   Ensure every ARIA input field has an accessible name          |  4.1.2           |  Serious |
+| Syntax      | `aria-meter-name`      |     Ensure every ARIA meter node has an accessible name        |    1.1.1         | Serious  |
+| Syntax      | `aria-progressbar-name`      |     Ensure every ARIA progressbar node has an accessible name        |   1.1.1          |  Serious |
+| Syntax      | `aria-dialog-name`      |    Ensure every ARIA dialog and alertdialog node has an accessible name         |  4.1.2           |  Serious |
+| Syntax      | `aria-toggle-field-name`      |   Ensure every ARIA toggle field has an accessible name          |   4.1.2          |  Serious |
+| Syntax      | `aria-hidden-body`      |       Ensure aria-hidden="true" is not present on the document body      |  1.3.1, 4.1.2           | Critical  |
+| Syntax      | `aria-hidden-focus`      |   Ensure aria-hidden elements are not focusable nor contain focusable elements          |    4.1.2         | Serious  |
+| Syntax      | `nested-interactive`      |     Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies        |   4.1.2          |  Serious |
+| Syntax      | `scrollable-region-focusable`      |    Ensure elements that have scrollable content are accessible by keyboard         |    2.1.1, 2.4.3         |  Serious |
+| Syntax      | `no-autoplay-audio`      |   Ensure `<video>` or `<audio>` elements do not autoplay audio for more than 3 seconds without a control mechanism to stop or mute the audio          |       1.4.2      |  Moderate |
+| Syntax      | `region`      |     Ensure all page content is contained by landmarks        |      1.3.1       |  Moderate |
+| Syntax      | `frame-tested`      |   Ensure <iframe> and <frame> elements contain the axe-core script          |     4.1.2, 2.4.2 ,       |  Critical |
+| Syntax      | `frame-title`      |      Ensure `<iframe>` and `<frame>` elements have an accessible name       |   4.1.2, 2.4.2          | Serious  | 
+| Syntax      | `frame-title-unique`      |    Ensure all page content is contained by landmarks         | 4.1.2, 2.4.2             |  Moderate |
+| Syntax      | `video-caption`      |    Ensure `<video>` elements have captions         |   1.2.2          | Critical  |
+| Syntax      | `heading-order`      |      Ensure the order of headings is semantically correct       |    1.3.1         | Moderate  |
+| Syntax      | `accesskeys`      |      Ensure every accesskey attribute value is unique       | 2.1.1, 2.4.1            |  Serious |
+| Syntax      | `page-has-heading-one`      |   Ensure that the page, or at least one of its frames contains a level-one heading          |   2.4.6          |  Moderate |
+| Syntax      | `bypass`      |        Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content     |    2.4.1         |  Serious |
+| Syntax      | `server-side-image-map`      |       Ensure that server-side image maps are not used      | 1.1.1            | Minor  |
+| Syntax      | `button-name`      |      Ensure buttons have discernible text       |     4.1.2        | Critical  |
+| Syntax      | `aria-roledescription`      |  Ensure aria-roledescription is only used on elements with an implicit or explicit role           |   4.1.2          |  Serious |
+| Syntax      | `aria-roles`      |   Ensure all elements with a role attribute use a valid value          |   4.1.2          | Critical  |
+| Syntax      | `duplicate-id`      |      Ensure every id attribute value is unique       |4.1.1|  Minor |
+| Syntax      | `duplicate-id-active`      |  Ensure every id attribute value of active elements is unique           |      4.1.1       | Serious   |
+| Syntax      | `html-has-lang`      |    Ensure every HTML document has a lang attribute         |   3.1.1          |  Serious |
+| Syntax      | `select-name`      |      Ensure select element has an accessible name       |   4.1.2          |  Critical |
 
-<!-- This is commented out.| Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |  Serious |   |
+<!-- This is commented out.
+| Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |  Serious |   |
 | Semantic      | `error-messages`     | Errors are not clearly described, leaving users unable to fix them.                                   | 3.3.1             | Serious  |  Error context (e.g., input validation rules) |
 | Semantic      | `error-correction`   | No accessible suggestions for correcting input errors.                                                | 3.3.3             | Serious  |  Error context and input requirements  |
 | Semantic      | `error-consistency`  | Error messages lack consistency or clarity across interactions.                                       | 3.3.4             | Serious  |  All error messages on the page |
