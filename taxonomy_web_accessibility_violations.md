@@ -24,10 +24,8 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Semantic      | `page-title-not-descriptive`      | Page title fails to describe the content or purpose of the page, making navigation difficult.           | 2.4.2             |  Serious | Page content and purpose  |
 | Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |  Serious |   |
 | Semantic      | `error-messages`     | Errors are not clearly described, leaving users unable to fix them.                                   | 3.3.1             | Serious  |  Error context (e.g., input validation rules) |
-| Semantic      | `error-correction`   | No accessible suggestions for correcting input errors.                                                | 3.3.3             | Serious  |  Error context and input requirements  |
 | Semantic      | `error-consistency`  | Error messages lack consistency or clarity across interactions.                                       | 3.3.4             | Serious  |  All error messages on the page |
-| Semantic      | `status-updates`     | Status changes are not announced to assistive technologies.                                           | 4.1.3             | Serious  |   |
-| Semantic      | `hover-focus`        | Content triggered by hover or focus is inaccessible or non-dismissible.                               | 1.4.13            | Serious |   |
+
 
 ---
 
@@ -130,6 +128,9 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 | Syntax      | `duplicate-id-active`      |  Ensure every id attribute value of active elements is unique           |      4.1.1       | Serious   |
 | Syntax      | `html-has-lang`      |    Ensure every HTML document has a lang attribute         |   3.1.1          |  Serious |
 | Syntax      | `select-name`      |      Ensure select element has an accessible name       |   4.1.2          |  Critical |
+| Syntax      | `status-updates`     | Status changes are not announced to assistive technologies.                                           | 4.1.3             | Serious  |  
+| Syntax      | `hover-focus`        | Content triggered by hover or focus is inaccessible or non-dismissible.                               | 1.4.13            | Serious |  
+| Syntax      | `error-correction`   | No accessible suggestions for correcting input errors.                                                | 3.3.3             | Serious  |  Error context and input requirements  |
 
 <!-- This is commented out.
 | Semantic      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |  Serious |   |
