@@ -4,7 +4,7 @@ This table presents 55 semantic accessibility violations along with associated H
 
 | # | Violation Type | Impact | Description | Affected HTML | Preview of the Web Page with Accessibility Violation |
 |---|------------------|--------|-------------|-----------------------------|------------|
-| 1 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. |   <pre><code>def hello(): \ print("Hello")  \ print("Done")</code></pre>  | ![Img](https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png) |
+| 1 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. |   <pre><code>def hello(): <br/> print("Hello")  <br/> print("Done")</code></pre>  | ![Img](https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png) |
 | 2 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. | | ![Img](https://i.ibb.co/mFYM2Ft/image.png) |
 | 3 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. |  | ![Img](https://i.ibb.co/BPkxx7z/screenshot.png) |
 | 4 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | `` | *(none)* |
