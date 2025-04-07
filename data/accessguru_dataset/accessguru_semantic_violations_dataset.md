@@ -4,7 +4,9 @@ This table presents 55 semantic accessibility violations along with associated H
 
 | # | Violation Type | Impact | Description | Affected HTML | Preview of the Web Page with Accessibility Violation |
 |---|------------------|--------|-------------|-----------------------------|------------|
-| 1 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. | test | ![Img](https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png) |
+| 1 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. | `<html lang="en">
+<img alt="ERCIM logo" src="https://image.png" width="170" height="100"/>
+</html>` | ![Img](https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png) |
 | 2 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. | `<html lang="en"> <svg aria-label="W3C" r...` | ![Img](https://i.ibb.co/mFYM2Ft/image.png) |
 | 3 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. | `<html lang="en"> <canvas aria-label="HTM...` | ![Img](https://i.ibb.co/BPkxx7z/screenshot.png) |
 | 4 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | `<html lang="da"> <head> <title>ACT Rules...` | *(none)* |
