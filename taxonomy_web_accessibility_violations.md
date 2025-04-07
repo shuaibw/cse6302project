@@ -1,6 +1,6 @@
 # Taxonomy of Web Accessibility Violations
 
-Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG Guidelines** it violates, **Impact**, and **Supplementary Information**.
+Each violation includes a **Violation Name**, **Description**, the corresponding **WCAG Guidelines** it violates, **Impact**, and **Supplementary Information**.
 
 - **Syntactic Violations:** These occur when HTML code lacks proper structural elements or attributes required by accessibility standards. Examples include missing alt attributes for images or improperly structured tables, which hinder compliance with accessibility guidelines. (HTML code expertise only)
 - **Layout Violations:** These relate to visual design and organization that do not meet accessibility standards, such as insufficient color contrast between text and background. These issues affect readability and usability for users, especially those with visual impairments. (Familiar with web design principles, make sure it is not distorted for normal users)
@@ -8,7 +8,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 
 
-| **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | **Supplementary Information**|
+| **Category**           | **Violation Name**           | **Description**                                                                                       | **Guidelines**    | **Impact** | **Supplementary Information**|
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|------------------|
 | Semantic      | `image-alt-not-descriptive`      | Inaccurate or misleading alternative text that fails to describe the purpose of the image.            | 1.1.1             |  Critical | Image  |
 | Semantic      | `video-captions-not-descriptive`    | Inaccurate video captions.                                 | 1.2.1, 1.2.3      | Critical  |  Video |
@@ -31,7 +31,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 
 
 
-| **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | **Supplementary Information**|
+| **Category**           | **Violation Name**           | **Description**                                                                                       | **Guidelines**    | **Impact** | **Supplementary Information**|
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|------------------|
 | Layout      | `meta-viewport`      | Ensure `<meta name="viewport">` does not disable text scaling and zooming            |    1.4.4         |  Critical | |
 | Layout      | `meta-viewport-large`      |  Ensure `<meta name="viewport">` can scale a significant amount           |          1.4.4   |  Minor | |
@@ -43,7 +43,7 @@ Each violation includes a **Rule ID**, **Description**, the corresponding **WCAG
 ---
 
 
-| **Category**           | **Rule ID**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
+| **Category**           | **Violation Name**           | **Description**                                                                                       | **Guidelines**    | **Impact** | 
 |-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|-------------------|-------------------|
 | Syntax      | `blink`      |      	Ensure `<blink>` elements are not used       |     2.3.1        | Serious  |
 | Syntax      | `scope-attr-valid`      |       Ensure the scope attribute is used correctly on tables      |      1.3.1       |  Moderate |
