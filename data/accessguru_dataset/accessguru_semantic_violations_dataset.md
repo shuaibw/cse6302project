@@ -8,19 +8,13 @@ This table presents 55 semantic accessibility violations along with associated H
 | 2 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. |  <pre>  &lt;html lang=&quot;en&quot;&gt;&#10;&lt;svg aria-label=&quot;W3C&quot; role=&quot;img&quot; viewbox=&quot;0 0 512 512&quot;&gt;&#10;&lt;path d=&quot;M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512&quot; fill=&quot;#e44d26&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M256 480.5V131H404.3L376 447&quot; fill=&quot;#f16529&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26&quot; fill=&quot;#ebebeb&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8&quot; fill=&quot;#fff&quot;&gt;&lt;/path&gt;&#10;&lt;/svg&gt;&#10;&lt;/html&gt;
 </pre>  | ![Img](https://i.ibb.co/mFYM2Ft/image.png) |
 | 3 | `image-alt-not-descriptive` | Critical | Inaccurate or misleading alternative text that fails to describe the purpose of the image. | <pre> </pre> | ![Img](https://i.ibb.co/BPkxx7z/screenshot.png) |
-| 4 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre> 
- | *(none)* |
+| 4 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre> | *(none)* |
 | 5 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre> | *(none)* |
 | 6 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre>  | *(none)* |
-| 7 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre> 
- | *(none)* |
+| 7 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre> | *(none)* |
 | 8 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre> | *(none)* |
-| 9 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre> 
- | *(none)* |
-| 10 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. |<pre> </pre>  
-
-   
- | *(none)* |
+| 9 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre> </pre> | *(none)* |
+| 10 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. |<pre> </pre> | *(none)* |
 | 11 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre>  </pre> | *(none)* |
 | 12 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre>  </pre> | *(none)* |
 | 13 | `lang-mismatch` | Serious | Page language attribute does not match the actual language of the content. | <pre>  </pre> | *(none)* |
