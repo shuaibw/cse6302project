@@ -21,4 +21,4 @@ You are provided with:
 
 Now, review the HTML and supplementary data. List all semantic violations you detect, and for each: 
 1. Identify the affected HTML element or attribute, 
-2. Specify the violation type. 
+2. Specify the violation type.  """
