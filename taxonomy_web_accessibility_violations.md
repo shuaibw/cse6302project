@@ -23,9 +23,9 @@ Each violation includes a **Violation Name**, **Description**, the corresponding
 | Semantic      | `landmark-purpose-mismatch` | A landmark or ARIA role does not match its actual purpose or placement, such as labeling a `<nav>` in the header as "Footer navigation."                                          | 1.3.6             | Serious  |  Document structure and context around the landmark  |
 | Semantic      | `page-title-not-descriptive`      | Page title fails to describe the content or purpose of the page, making navigation difficult.           | 2.4.2             |  Serious | Page content and purpose  |
 | Semantic      | `autocomplete-purpose-mismatch`     | Input field uses an `autocomplete` attribute that does not accurately reflect the field’s actual purpose, potentially misleading assistive technologies. | 1.3.5             |  Serious    | Form   |
-| Semantic      | `color-only-distinction`            | Visual information is conveyed using color alone without additional indicators like text, shape, or pattern, making it inaccessible to users with color vision deficiencies. | 1.4.1             |  Major    | Visual |
-| Semantic      | `illogical-focus-order`             | Focusable elements receive focus in an order that does not match the visual or logical reading sequence, potentially confusing keyboard users. | 2.4.3             |  Major    | Navigation |
-| Semantic      | `label-name-mismatch`               | The accessible name for a control does not include the visible label text, which may confuse users relying on speech input or screen readers. | 2.5.3             |  Major    | Input |
+| Semantic      | `color-only-distinction`            | Visual information is conveyed using color alone without additional indicators like text, shape, or pattern, making it inaccessible to users with color vision deficiencies. | 1.4.1             |  Serious    | Visual |
+| Semantic      | `illogical-focus-order`             | Focusable elements receive focus in an order that does not match the visual or logical reading sequence, potentially confusing keyboard users. | 2.4.3             |  Serious    | Navigation |
+| Semantic      | `label-name-mismatch`               | The accessible name for a control does not include the visible label text, which may confuse users relying on speech input or screen readers. | 2.5.3             |  Serious    | Input |
 
 
 
@@ -137,10 +137,10 @@ Each violation includes a **Violation Name**, **Description**, the corresponding
 | Syntax      | `status-updates`     | Status changes are not announced to assistive technologies.                                           | 4.1.3             | Serious  |  
 | Syntax      | `hover-focus`        | Content triggered by hover or focus is inaccessible or non-dismissible.                               | 1.4.13            | Serious |  
 | Syntax      | `error-correction`   | No accessible suggestions for correcting input errors.                                                | 3.3.3             | Serious  |  Error context and input requirements  |
-| Syntax      | `single-key-shortcut-no-modifier`   | A character key shortcut is active without a modifier key or a way to disable/remap it, which may interfere with assistive technologies. | 2.1.4             |  Major    | Input  |
+| Syntax      | `single-key-shortcut-no-modifier`   | A character key shortcut is active without a modifier key or a way to disable/remap it, which may interfere with assistive technologies. | 2.1.4             |  Serious    | Input  |
 | Syntax      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |  Serious |   |
 | Syntax      | `single-navigation-method`          | Page provides only one way to locate other pages within the site, limiting user flexibility and discoverability. | 2.4.5             |  Minor    | Navigation |
-| Syntax      | `dragging-no-keyboard-alternative`  | Drag-and-drop functionality is present without a keyboard-accessible alternative, limiting access for users who cannot use a mouse or touch. | 2.5.7             |  Major    | Input |
+| Syntax      | `dragging-no-keyboard-alternative`  | Drag-and-drop functionality is present without a keyboard-accessible alternative, limiting access for users who cannot use a mouse or touch. | 2.5.7             |  Serious    | Input |
 
 
 
