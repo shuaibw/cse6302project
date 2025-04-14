@@ -25,7 +25,7 @@ Each violation includes a **Violation Name**, **Description**, the corresponding
 | Semantic      | `autocomplete-purpose-mismatch`     | Input field uses an `autocomplete` attribute that does not accurately reflect the field’s actual purpose, potentially misleading assistive technologies. | 1.3.5             |  Serious    | Form   |
 | Semantic      | `color-only-distinction`            | Visual information is conveyed using color alone without additional indicators like text, shape, or pattern, making it inaccessible to users with color vision deficiencies. | 1.4.1             |  Serious    | Visual |
 | Semantic      | `illogical-focus-order`             | Focusable elements receive focus in an order that does not match the visual or logical reading sequence, potentially confusing keyboard users. | 2.4.3             |  Serious    | Navigation |
-| Semantic      | `label-name-mismatch`               | The accessible name for a control does not include the visible label text, which may confuse users relying on speech input or screen readers. | 2.5.3             |  Serious    | Input |
+| Semantic      | `label-name-mismatch`               | The accessible name for control does not include the visible label text, which may confuse users relying on speech input or screen readers. | 2.5.3             |  Serious    | Input |
 
 
 
