@@ -226,18 +226,19 @@ run_experiment(chosen_baseline,output_path):
 	        else:
 	        	return "Error: Choose one of the baseline:baseline_one, baseline_two, baseline_three"
 	        
-	        mydict = {
-	            'ID':row['ID'], 'Violation Type':row['Violation Type'], 'Impact':row['Impact'],
-	            'Description':row['Description'], 'Affected HTML':row['Affected HTML'],
-	            'prompts_baseline_one': prompt, 'responses_baseline_one': response
-	        }
+	        new_column1 = 'prompts_' + chosen_baseline
+            new_column2 = 'responses_' + chosen_baseline
+            mydict = {
+                'ID':row['ID'], 'Violation Type':row['Violation Type'], 'Impact':row['Impact'],
+                'Description':row['Description'], 'Affected HTML':row['Affected HTML'],
+                new_column1: prompt, new_column2: response
+            }
 
 	        writer.writerows([mydict])
 	        print(f"Processed {i+1}/{len(dataset)} - Saved to CSV")
 
 	    print(f"Experiment completed! Results saved to {filename}")
-
-
+        
 ############################
 #       RUN
 ############################
