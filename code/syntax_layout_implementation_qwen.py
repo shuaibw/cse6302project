@@ -5,7 +5,7 @@ import time
 import base64
 from openai import OpenAI
 
-API_KEY = "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" # Nadeen
+API_KEY = "" # PASTE YOUR API KEY HERE
 URL = "https://openrouter.ai/api/v1/chat/completions"
 
 with open('/data/prompts_support/violations_short_description.json', 'r') as f:

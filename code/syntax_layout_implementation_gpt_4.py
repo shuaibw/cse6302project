@@ -9,7 +9,7 @@ import ast
 import csv
 import requests
 
-gpt_API_KEY = "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"
+gpt_API_KEY = ""  #PASTE YOUR API KEY HERE
 client = OpenAI(api_key=gpt_API_KEY)
 
 
