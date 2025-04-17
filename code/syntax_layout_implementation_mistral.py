@@ -160,7 +160,7 @@ run_experiment(chosen_baseline,output_path):
        'additional_info', 'failureSummary', 'impact', 'testcase',
        'Additional Context Needed',new_column1, new_column2]
 
-	output_filename = "results_"+prompts+"_syntax_layout_dataset_gpt_4.csv"
+	output_filename = "results_"+prompts+"_syntax_layout_dataset_mistral.csv"
 	filename = os.path.join(output_path, output_filename)
 	file_exists = os.path.exists(filename)
 
