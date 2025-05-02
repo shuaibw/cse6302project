@@ -9,7 +9,7 @@ import time
 from openai import OpenAI
 import csv
 
-gpt_API_KEY = "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"
+gpt_API_KEY = "" #paste your api key here
 client = OpenAI(api_key=gpt_API_KEY)
 
 
@@ -155,7 +155,14 @@ def analyze_web_accessibility_violation(category, category_description, violatio
 
 
 
-df = pd.read_csv("/content/Our_dataset_Final_Final.csv")
+df = pd.read_csv("/content/baseline_two_dataset.csv")
+
+# For baseline dataset to assign Categories
+cat_data = pd.read_csv("/content/violation_taxonomy.csv")
+violation_to_category = cat_data.set_index("violationnumberID")["Category"].to_dict()
+print(violation_to_category)
+df['category'] = df['id'].map(violation_to_category)
+df.head(2)
 
 new_column1 = "Decision_Confirmation"
 new_column2 = "Confidence_Score"
