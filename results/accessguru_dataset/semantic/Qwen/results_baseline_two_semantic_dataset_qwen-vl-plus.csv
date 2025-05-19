@@ -1,0 +1,898 @@
+ID,Violation Type,Impact,Description,Affected HTML,prompts_baseline_two,responses_baseline_two
+1,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">    <img alt=""ERCIM logo"" src=""image.png""/>    </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/485f10faf222cd48fea2ab3ee79c2d354e51ea33.html
+        Error: image-alt-not-descriptive
+        Description: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Suggested change: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Incorrect: <html lang=""en"">    <img alt=""ERCIM logo"" src=""image.png""/>    </html>
+        ","The image in the screenshot has the following HTML code:
+
+```html
+<html lang=""en"">
+    <img alt=""ERCIM logo"" src=""image.png""/>
+</html>
+```
+
+The error message ""image-alt-not-descriptive"" indicates that the alternative text for the image is not descriptive enough. The alternative text ""ERCIM logo"" does not clearly describe the purpose of the image, which is the W3C logo. A more descriptive alternative text could be ""W3C logo"" or ""World Wide Web Consortium logo.""
+
+To correct the error, you can change the alternative text to something more descriptive, like this:
+
+```html
+<html lang=""en"">
+    <img alt=""W3C logo"" src=""image.png""/>
+</html>
+```
+
+This change will make the alternative text more descriptive and help users understand the purpose of the image."
+2,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">  <svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">  <path d=""M108.46""></path>  <path d=""M107.6 "" fill=""#e44d26""></path>  <path d=""M256 "" fill=""#f16529""></path>  <path d=""M142 176"" fill=""#ebebeb""></path>  <path d=""M369.613.6v47.2l93-25.8"" fill=""#fff""></path>  </svg>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2f7d82593e287df64b7459695e355a840254255c.html
+        Error: image-alt-not-descriptive
+        Description: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Suggested change: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Incorrect: <html lang=""en"">  <svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">  <path d=""M108.46""></path>  <path d=""M107.6 "" fill=""#e44d26""></path>  <path d=""M256 "" fill=""#f16529""></path>  <path d=""M142 176"" fill=""#ebebeb""></path>  <path d=""M369.613.6v47.2l93-25.8"" fill=""#fff""></path>  </svg>  </html>
+        ","The image in the screenshot is the logo for HTML5, which is a standard for structuring and presenting content on the World Wide Web. The logo consists of the number ""5"" inside an orange shield, with the word ""HTML"" written above it.
+
+To correct the error ""image-alt-not-descriptive,"" the alternative text (alt text) for the image should accurately describe the purpose of the image. In this case, the alt text could be:
+
+""HTML5 logo""
+
+This alt text clearly and accurately describes the content of the image, which is the logo for HTML5."
+3,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.," <!DOCTYPE html>     <html lang=""en"">     <head>     <meta charset=""UTF-8"">     <! –– Accessibility Violation starts here ––>   <title> Canvas Image Example</title>     </head>     <body>     <canvas aria-label=""HTML 5 logo"" height=""48"" id=""logo"" width=""72"">    </canvas>     <script>     const img = new Image(); img.src = &#x27;/logo.png&#x27;; img.onload = function() { const ctx = document.querySelector(&#x27;#logo&#x27;).getContext(&#x27;2d&#x27;); ctx.drawImage(img, 0, 0, 72, 48); } </script>     </body>     </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/bac67a5a2ada971100bbec89961ad3e6c869f268.html
+        Error: image-alt-not-descriptive
+        Description: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Suggested change: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Incorrect:  <!DOCTYPE html>     <html lang=""en"">     <head>     <meta charset=""UTF-8"">     <! –– Accessibility Violation starts here ––>   <title> Canvas Image Example</title>     </head>     <body>     <canvas aria-label=""HTML 5 logo"" height=""48"" id=""logo"" width=""72"">    </canvas>     <script>     const img = new Image(); img.src = &#x27;/logo.png&#x27;; img.onload = function() { const ctx = document.querySelector(&#x27;#logo&#x27;).getContext(&#x27;2d&#x27;); ctx.drawImage(img, 0, 0, 72, 48); } </script>     </body>     </html>
+        ","The image in the provided HTML code is a canvas element with an `aria-label` attribute set to ""HTML 5 logo."" However, the `aria-label` attribute is not descriptive of the purpose of the image. The `aria-label` attribute should provide a clear and concise description of the image's content or purpose. In this case, a more descriptive `aria-label` could be ""HTML 5 logo image.""
+
+To correct this issue, you can change the `aria-label` attribute to something more descriptive, such as:
+
+```html
+<canvas aria-label=""HTML 5 logo image"" height=""48"" id=""logo"" width=""72"">
+</canvas>
+```
+
+This change will make the `aria-label` attribute more descriptive and help users understand the purpose of the image."
+4,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.," <! –– Accessibility Violation starts here ––>   <html lang=""da"">  <head>  <title>ACT Rules Format 1.0 - Abstract</title>  </head>  <body>  <p>  The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test  rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It  provides a common format that allows any party involved in accessibility testing to document and share their  testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing  methods, including methods implemented by accessibility test tools.  </p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect:  <! –– Accessibility Violation starts here ––>   <html lang=""da"">  <head>  <title>ACT Rules Format 1.0 - Abstract</title>  </head>  <body>  <p>  The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test  rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It  provides a common format that allows any party involved in accessibility testing to document and share their  testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing  methods, including methods implemented by accessibility test tools.  </p>  </body>  </html>
+        ","The error message indicates that the language attribute in the HTML does not match the actual language of the content. The HTML code specifies the language as ""da"" (Danish), but the content is in English. To fix this issue, you should change the `lang` attribute to match the actual language of the content. In this case, you should change it to `lang=""en""` to indicate that the content is in English.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <title>ACT Rules Format 1.0 - Abstract</title>
+</head>
+<body>
+  <p>
+    The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It provides a common format that allows any party involved in accessibility testing to document and share their testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing methods, including methods implemented by accessibility test tools.
+  </p>
+</body>
+</html>
+```
+
+By changing the `lang` attribute to `en`, the error will be resolved, and the language attribute will match the actual language of the content."
+5,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"  <! –– Accessibility Violation starts here ––>              <html lang=""en"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>  <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">  This Dutch phrase literally translates into ""  He went to roost with the chickens"", but it means   that he went to bed early.  </p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect:   <! –– Accessibility Violation starts here ––>              <html lang=""en"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>  <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">  This Dutch phrase literally translates into ""  He went to roost with the chickens"", but it means   that he went to bed early.  </p>  </body>  </html>
+        ","The error in the webpage screenshot is ""lang-mismatch"". This means that the language attribute specified in the HTML (`lang=""en""`) does not match the actual language of the content. The content is in Dutch, but the language attribute is set to ""en"" (English).
+
+To fix this issue, you should change the language attribute to ""nl"" (Dutch) to match the actual language of the content. Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""nl"">
+<head>
+  <title>Met de kippen op stok</title>
+</head>
+<body>
+  <blockquote>
+    <p>""Hij ging met de kippen op stok""</p>
+  </blockquote>
+  <p lang=""nl"">
+    This Dutch phrase literally translates into ""He went to roost with the chickens"", but it means that he went to bed early.
+  </p>
+</body>
+</html>
+```
+
+This code sets the language attribute to ""nl"" and removes the `<p>` element with the `lang=""en""` attribute, as it is not necessary in this case."
+6,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>                  <html lang=""nl"">  <head>  <title>Happy</title>  </head>  <body>    <p>The Dutch word    <! –– Accessibility Violation starts here ––>   ""gelukkig"" has no equivalent in English.</p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <! –– Accessibility Violation starts here ––>                  <html lang=""nl"">  <head>  <title>Happy</title>  </head>  <body>    <p>The Dutch word    <! –– Accessibility Violation starts here ––>   ""gelukkig"" has no equivalent in English.</p>  </body>  </html>
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML document does not match the actual language of the content. In this case, the language attribute is set to ""nl"" (Dutch), but the content is in English. To fix this issue, you should change the language attribute to ""en"" (English) to match the actual language of the content. Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <title>Happy</title>
+</head>
+<body>
+  <p>The Dutch word ""gelukkig"" has no equivalent in English.</p>
+</body>
+</html>
+```
+
+This code sets the language attribute to ""en"" and removes the incorrect language attribute ""nl""."
+7,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""nl"">  <head>  <title>Fireworks over Paris</title>  </head>  <body>  <img alt=""Fireworks over Paris""   src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>  <p lang=""nl"">  Gelukkig nieuwjaar!  </p>  </body>  </html>  ","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <! –– Accessibility Violation starts here ––>    <html lang=""nl"">  <head>  <title>Fireworks over Paris</title>  </head>  <body>  <img alt=""Fireworks over Paris""   src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>  <p lang=""nl"">  Gelukkig nieuwjaar!  </p>  </body>  </html>  
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML does not match the actual language of the content. In the provided HTML code, the language attribute is set to ""nl"" (Dutch), but the content is in Dutch as well. Therefore, the error is not applicable in this case.
+
+However, if the content were in a different language, the suggested change would be to update the language attribute to match the actual language of the content."
+8,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>   <html lang=""nl"">  <head>  <title>Paris</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg ""/ >    <p hidden="" "" id="" caption "" lang= "" en "" >   Fireworks over Paris!    < /p >    < /body >    < /html > ","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <! –– Accessibility Violation starts here ––>   <html lang=""nl"">  <head>  <title>Paris</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg ""/ >    <p hidden="" "" id="" caption "" lang= "" en "" >   Fireworks over Paris!    < /p >    < /body >    < /html > 
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML does not match the actual language of the content. In this case, the language attribute is set to ""nl"" (Dutch), but the content is in English. To fix this issue, you should change the language attribute to ""en"" (English). Here is the corrected code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <title>Paris</title>
+</head>
+<body>
+  <img src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg"" alt=""Fireworks over Paris!"">
+  <p id=""caption"" lang=""en"">Fireworks over Paris!</p>
+</body>
+</html>
+```
+
+In this corrected code, the language attribute is set to ""en"" and the content is also in English, so the language attribute matches the actual language of the content."
+9,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <head>  <title> Stranddorp </title>  </head>  <body>  <article lang=""dutch"">  Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.  </article>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <! –– Accessibility Violation starts here ––>    <html lang=""es"">  <head>  <title> Stranddorp </title>  </head>  <body>  <article lang=""dutch"">  Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.  </article>  </body>  </html>
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML does not match the actual language of the content. In this case, the language attribute is set to ""es"" (Spanish) but the content is in Dutch.
+
+To fix this issue, you should change the language attribute to ""nl"" (Dutch) to match the actual language of the content. Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""nl"">
+<head>
+  <title>Stranddorp</title>
+</head>
+<body>
+  <article>
+    Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.
+  </article>
+</body>
+</html>
+```
+
+This code sets the language attribute to ""nl"" and the content is in Dutch, which should resolve the ""lang-mismatch"" error."
+10,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.," <html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <article lang=""#!"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect:  <html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <article lang=""#!"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML does not match the actual language of the content. In the provided code snippet, the language attribute is set to ""en"" (English), but the content is in English, so there is no mismatch.
+
+However, the content is not in English. The text ""They wandered into a strange Tiki bar on the edge of the small beach town."" is in English, but the language attribute should be set to the language of the content. Since the content is in English, the language attribute should be set to ""en"" as well.
+
+To fix the error, you should change the language attribute to ""en"" in the HTML code:
+
+```html
+<html lang=""en"">
+  <body>
+    <article lang=""en"">
+      They wandered into a strange Tiki bar on the edge of the small beach town.
+    </article>
+  </body>
+</html>
+```
+
+This will ensure that the language attribute matches the actual language of the content."
+11,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""  "">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <! –– Accessibility Violation starts here ––>    <html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""  "">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>
+        ","The error message indicates that the page language attribute does not match the actual language of the content. In the provided HTML code, the `lang` attribute is set to ""fr"" for the `html` element, but the content within the `article` element is in English. This is an accessibility violation because it makes it difficult for users who rely on screen readers or other assistive technologies to understand the content.
+
+To fix this issue, you should set the `lang` attribute of the `html` element to the language of the content. In this case, since the content is in English, you should set the `lang` attribute to ""en"" (English). Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Page Title</title>
+</head>
+<body>
+    <article>
+        They wandered into a strange Tiki bar on the edge of the small beach town.
+    </article>
+</body>
+</html>
+```
+
+By setting the `lang` attribute of the `html` element to ""en"", you ensure that the language attribute matches the actual language of the content, which improves accessibility for users with assistive technologies."
+12,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""english"">  <p aria-hidden=""true"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""english"">  <p aria-hidden=""true"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML does not match the actual language of the content. In this case, the language attribute is set to ""es"" (Spanish) while the content is in English. To fix this issue, you should change the language attribute to ""en"" (English). Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <title>Page Title</title>
+</head>
+<body>
+  <article lang=""en"">
+    <p aria-hidden=""true"">They wandered into a strange Tiki bar on the edge of the small beach town.</p>
+  </article>
+</body>
+</html>
+```
+
+By changing the language attribute to ""en"", the error will be resolved, and the page will be accessible to users who expect the content to be in English."
+13,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""English"">  <p style=""position: absolute; top: 1px"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8ba52b5fa5e123def1f778821219aaec20ca0fe.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""English"">  <p style=""position: absolute; top: 1px"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML does not match the actual language of the content. In this case, the language attribute is set to ""fr"" (French) but the content is in English. To fix this, you should change the language attribute to ""en"" (English). Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+  <body>
+    <article lang=""English"">
+      <p style=""position: absolute; top: 1px"">
+        They wandered into a strange Tiki bar on the edge of the small beach town.
+      </p>
+    </article>
+  </body>
+</html>
+```
+
+This will ensure that the language attribute matches the actual language of the content."
+14,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <article lang=""en"">  <! –– Accessibility Violation starts here ––>    <div lang=""invalid"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </div>  </article>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <article lang=""en"">  <! –– Accessibility Violation starts here ––>    <div lang=""invalid"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </div>  </article>  </body>  </html>
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML does not match the actual language of the content. In this case, the HTML uses the language attribute `lang=""es""` for the entire page, but the content within the `<article>` tag is in English (`lang=""en""`).
+
+To fix this issue, you should either remove the language attribute from the `<article>` tag or change it to match the actual language of the content. Here are two possible solutions:
+
+1. Remove the language attribute from the `<article>` tag:
+```html
+<!DOCTYPE html>
+<html lang=""es"">
+  <body>
+    <article>
+      <div>
+        They wandered into a strange Tiki bar on the edge of the small beach town.
+      </div>
+    </article>
+  </body>
+</html>
+```
+
+2. Change the language attribute to match the actual language of the content:
+```html
+<!DOCTYPE html>
+<html lang=""es"">
+  <body>
+    <article lang=""en"">
+      <div>
+        They wandered into a strange Tiki bar on the edge of the small beach town.
+      </div>
+    </article>
+  </body>
+</html>
+```
+
+Both solutions will resolve the ""lang-mismatch"" error and ensure that the language attribute matches the actual language of the content."
+15,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <div lang=""invalid"">  <img alt=""Fireworks over Paris"" src=""https://PARIS-WORKS.jpg "" / >    < /div >    </body>    </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <div lang=""invalid"">  <img alt=""Fireworks over Paris"" src=""https://PARIS-WORKS.jpg "" / >    < /div >    </body>    </html>
+        ","The error message ""lang-mismatch"" indicates that the language attribute of the HTML document does not match the actual language of the content. In the provided code, the language attribute of the `<html>` element is set to ""en"", which is the language code for English. However, the content of the page is in French, as indicated by the text ""I love ACT rules!"" and the image source URL ""PARIS-WORKS.jpg"".
+
+To fix this issue, you should change the language attribute of the `<html>` element to ""fr"", which is the language code for French. Here is the corrected code:
+
+```html
+<html lang=""fr"">
+  <body>
+    <!-- Accessibility Violation starts here -->
+    <div>
+      <img alt=""Fireworks over Paris"" src=""https://PARIS-WORKS.jpg"" />
+    </div>
+  </body>
+</html>
+```
+
+This will ensure that the language attribute of the HTML document matches the actual language of the content."
+16,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""eng"">I love ACT rules! </p>    </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""eng"">I love ACT rules! </p>    </body>  </html>
+        ","The error message ""lang-mismatch"" indicates that the language attribute specified in the HTML does not match the actual language of the content. In the provided code snippet, the language attribute is set to ""en"" (English), but the content is in Luxembourgish (Lëtzebuerg ass e Land an Europa).
+
+To fix this issue, you should change the language attribute to ""lb"" (Luxembourgish) to match the actual language of the content. Here is the corrected code snippet:
+
+```html
+<html lang=""lb"">
+  <body>
+    <p lang=""lb"">I love ACT rules!</p>
+    Lëtzebuerg ass e Land an Europa.
+  </body>
+</html>
+```
+
+This will ensure that the language attribute matches the actual language of the content, resolving the ""lang-mismatch"" error."
+17,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""lb"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""i-lux"">  Lëtzebuerg ass e Land an Europa.  </p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html
+        Error: lang-mismatch
+        Description: Page language attribute does not match the actual language of the content.
+        Suggested change: Page language attribute does not match the actual language of the content.
+        Incorrect: <html lang=""lb"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""i-lux"">  Lëtzebuerg ass e Land an Europa.  </p>  </body>  </html>
+        ","The error in the webpage screenshot is ""lang-mismatch"". This means that the language attribute of the HTML document does not match the actual language of the content. In the example provided, the language attribute is set to ""lb"" (Luxembourgish), but the content is in Dutch. This can cause confusion for users who are not familiar with Luxembourgish and may not understand the content correctly. To fix this error, the language attribute should be changed to ""nl"" (Dutch) to match the actual language of the content."
+18,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""en"">  <head>  <title>Dutch idioms</title>  </head>  <body>  <p>  The Dutch phrase   <! –– Accessibility Violation starts here ––>    <span lang=""fr"">""  Hij ging met de kippen   op stok""</span>    literally translates into ""He went to  roost with the chickens"",   but it means that he went to bed early.  </p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac.html
+        Error: missing-lang-tag
+        Description: Sections in different languages lack appropriate lang attributes.
+        Suggested change: Sections in different languages lack appropriate lang attributes.
+        Incorrect: <html lang=""en"">  <head>  <title>Dutch idioms</title>  </head>  <body>  <p>  The Dutch phrase   <! –– Accessibility Violation starts here ––>    <span lang=""fr"">""  Hij ging met de kippen   op stok""</span>    literally translates into ""He went to  roost with the chickens"",   but it means that he went to bed early.  </p>  </body>  </html>
+        ","The screenshot shows a webpage with a Dutch phrase that is not properly marked up with a language attribute. The phrase ""Hij ging met de kippen op stok"" is not enclosed within a `<span>` element with a `lang` attribute. The correct markup should include a `lang` attribute on the `<span>` element to indicate the language of the text. Here is the corrected HTML:
+
+```html
+<html lang=""en"">
+<head>
+<title>Dutch idioms</title>
+</head>
+<body>
+<p>
+The Dutch phrase ""Hij ging met de kippen op stok"" literally translates into ""He went to roost with the chickens"", but it means that he went to bed early.
+</p>
+</body>
+</html>
+```
+
+In the corrected markup, the phrase ""Hij ging met de kippen op stok"" is enclosed within a `<span>` element with a `lang` attribute set to `""fr""`, indicating that the text is in French."
+19,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""nl"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">The Dutch phrase</span>        ""Hij ging met de kippen op stok""    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">literally translates into   ""He went to roost with the chickens"", but it means   that he went to bed early.</span>    </p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ffcbd35493c91b4d8ee42c3a7fba9c2356144257.html
+        Error: missing-lang-tag
+        Description: Sections in different languages lack appropriate lang attributes.
+        Suggested change: Sections in different languages lack appropriate lang attributes.
+        Incorrect: <html lang=""nl"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">The Dutch phrase</span>        ""Hij ging met de kippen op stok""    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">literally translates into   ""He went to roost with the chickens"", but it means   that he went to bed early.</span>    </p>  </body>  </html>
+        ","The screenshot provided is a preview of a webpage with a French greeting ""Bonne année !"" which translates to ""Happy New Year!"" in English. The image shows the Eiffel Tower with fireworks in the background, indicating a festive or celebratory theme."
+20,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>     <! –– Accessibility Violation starts here ––>    <div lang=""fr"">  <img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />    </div>       <! –– Accessibility Violation starts here ––>    <p lang=""nl"">   Bonne année !  </p>      </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/d00a83015b309b51bebfc2c85f62488daec3a5d1.html
+        Error: missing-lang-tag
+        Description: Sections in different languages lack appropriate lang attributes.
+        Suggested change: Sections in different languages lack appropriate lang attributes.
+        Incorrect: <html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>     <! –– Accessibility Violation starts here ––>    <div lang=""fr"">  <img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />    </div>       <! –– Accessibility Violation starts here ––>    <p lang=""nl"">   Bonne année !  </p>      </body>  </html>
+        ",Failed after multiple attempts.
+21,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />      <! –– Accessibility Violation starts here ––>    <p hidden="""" id=""caption"" >  Fireworks over Paris  </p>    </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/895a754e85f4fbc8e11cea52295381f41eb384ca.html
+        Error: missing-lang-tag
+        Description: Sections in different languages lack appropriate lang attributes.
+        Suggested change: Sections in different languages lack appropriate lang attributes.
+        Incorrect: <html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />      <! –– Accessibility Violation starts here ––>    <p hidden="""" id=""caption"" >  Fireworks over Paris  </p>    </body>  </html>
+        ","The screenshot provided is a webpage with a French language section. The HTML code for the section is as follows:
+
+```html
+<html lang=""fr"">
+<head>
+<title>Feu d'artifice du nouvel an</title>
+</head>
+<body>
+<img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />
+<p hidden="""" id=""caption"" >Fireworks over Paris</p>
+</body>
+</html>
+```
+
+The issue with this code is that the `<img>` tag is missing a `lang` attribute. The `lang` attribute should be added to the `<img>` tag to specify the language of the content it contains. Here is the corrected code:
+
+```html
+<html lang=""fr"">
+<head>
+<title>Feu d'artifice du nouvel an</title>
+</head>
+<body>
+<img lang=""fr"" aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />
+<p hidden="""" id=""caption"" >Fireworks over Paris</p>
+</body>
+</html>
+```
+
+By adding the `lang=""fr""` attribute to the `<img>` tag, the issue of missing a `lang` attribute is resolved."
+22,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b2a671d96ac510ccc6e34dd58a141d13bb196508.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>
+        ","The error ""link-text-mismatch"" occurs because the link text ""More"" does not clearly indicate the purpose of the link. The link text should be descriptive and convey the purpose of the link to the user. In this case, the link text ""More"" is not descriptive enough and does not clearly indicate that the link will provide more information about the product.
+
+To fix this issue, the link text should be changed to something more descriptive, such as ""Learn More About This Product"" or ""Read More About This Product."" This will help users understand the purpose of the link and make it easier for them to navigate the website."
+23,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <div onclick=""document.location+=&#x27;#main&#x27;""   role=""link"" tabindex=""0"">More</div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <div onclick=""document.location+=&#x27;#main&#x27;""   role=""link"" tabindex=""0"">More</div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>
+        ","The error message ""link-text-mismatch"" indicates that the text of the link does not match the purpose or destination of the link. In this case, the link text ""More"" does not clearly indicate that it is a link to the main content of the page. The link text should be descriptive and clearly indicate the purpose of the link.
+
+To fix this issue, you can change the link text to something more descriptive, such as ""View Main Content"" or ""Read More"". This will make it clear to users that clicking the link will take them to the main content of the page."
+24,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>
+        ","The error ""link-text-mismatch"" in the provided webpage screenshot indicates that the link text does not match the content it is intended to link to. In this case, the link text ""Go"" does not provide clear information about what the link will do or where it will take the user. The link is intended to navigate to the main content, but the text ""Go"" does not clearly convey this purpose.
+
+To fix this issue, the link text should be changed to something more descriptive, such as ""Navigate to Main Content"" or ""Main Content"". This will help users understand the purpose of the link and improve accessibility."
+25,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>See the description of     <! –– Accessibility Violation starts here ––>    <a href=""#desc"">    this product</a>.</p>  <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/771c36b9967faec9926af86041d834b4a108a52e.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>See the description of     <! –– Accessibility Violation starts here ––>    <a href=""#desc"">    this product</a>.</p>  <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>
+        ","The error in the provided webpage screenshot is ""link-text-mismatch."" This error occurs when the text of a link does not accurately describe the content or purpose of the link. In the given example, the link text ""this product"" does not accurately describe the content of the link, which is the description of the product. The correct link text should be more descriptive and informative, such as ""Description of the Product"" or ""Read More About the Product."""
+26,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <ul>  <li>  Ulysses  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" > HTML    </a> </li>        <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images"" >    EPUB    </a>    </li>       <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">   Plain text    </a> </li>        </ul>    </li>    </ul>    </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b130285915a8ca42926a11553a5791f44b65d487.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <ul>  <li>  Ulysses  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" > HTML    </a> </li>        <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images"" >    EPUB    </a>    </li>       <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">   Plain text    </a> </li>        </ul>    </li>    </ul>    </body>  </html>
+        ","The error in the webpage screenshot is ""link-text-mismatch."" This means that the text of the links does not match the text of the links. In the screenshot, the links are labeled as ""HTML,"" ""EPUB,"" and ""Plain text,"" but the actual links are pointing to different resources. The correct change would be to ensure that the text of the links matches the text of the links."
+27,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/b2a671d96ac510ccc6e34dd58a141d13bb196508.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>
+        ","The error ""link-text-mismatch"" occurs because the link text ""More"" does not clearly indicate the purpose of the link, which is to provide more information about the product. The link text should be descriptive and convey the purpose of the link to the user. In this case, a more descriptive link text could be ""Learn More About This Product"" or ""Read More About This Product."""
+28,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <div onclick=""document.location+=&#x27;#main&#x27;"" role=""link"" tabindex=""0"">More  </div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <div onclick=""document.location+=&#x27;#main&#x27;"" role=""link"" tabindex=""0"">More  </div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>
+        ","The error message ""link-text-mismatch"" indicates that the text of the link does not match the purpose or destination of the link. In this case, the link text ""More"" does not clearly indicate that it is a link to the main content of the page. The link text should be descriptive and clearly indicate the purpose of the link.
+
+To fix this issue, you can change the link text to something more descriptive, such as ""View Main Content"" or ""Read More"". This will help users understand the purpose of the link and make it easier for them to navigate the page."
+29,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>
+        ","The error in the webpage screenshot is ""link-text-mismatch."" This error occurs because the link text ""Go"" does not provide enough information about the purpose of the link. The link text should clearly indicate what the link does or where it goes. In this case, the link text ""Go"" is not descriptive enough to convey the purpose of the link.
+
+To fix this issue, you can change the link text to something more descriptive, such as ""Jump to main content"" or ""Navigate to main section."" This will help users understand the purpose of the link and improve their navigation experience."
+30,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>  The W3C held a workshop on June 9-10, 2005 at DERI   Innsbruck (Austria), to gather information about potential   standardization work on Semantics in Web Services.  </p>    <! –– Accessibility Violation starts here ––>    <p><a href=""https://www.workshop-report.html"" > Workshop </a> </p>   </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/98f0638a038a244b0bde70ff316cde1be7ce9a3b.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>  The W3C held a workshop on June 9-10, 2005 at DERI   Innsbruck (Austria), to gather information about potential   standardization work on Semantics in Web Services.  </p>    <! –– Accessibility Violation starts here ––>    <p><a href=""https://www.workshop-report.html"" > Workshop </a> </p>   </body>  </html>
+        ","The error message ""link-text-mismatch"" indicates that the text of the link does not match the text of the link text. In the provided webpage screenshot, the link text is ""Workshop"" and the link is pointing to ""https://www.workshop-report.html"". However, the text of the link does not match the text of the link text. The link text should be the same as the text of the link, so the correct link text should be ""Workshop Report"" or something similar to indicate that the link leads to a report about the workshop."
+31,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <p style=""font-weight: bold"">Ulysses</p>  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" >    HTML    </a>& #10; </li>      <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images "">   EPUB   </a>  </li>     <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt "">    Plain text    </a>    </li>        </ul>   </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/43730455b69439980b95151be477ca594e0d7556.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <p style=""font-weight: bold"">Ulysses</p>  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" >    HTML    </a>& #10; </li>      <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images "">   EPUB   </a>  </li>     <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt "">    Plain text    </a>    </li>        </ul>   </body>  </html>
+        ","The screenshot shows a webpage with the title ""Ulysses"" and a list of links to different formats of the book. The links are:
+
+1. HTML
+2. EPUB
+3. Plain text
+
+The error message indicates that the links fail to convey their purpose or are ambiguous. This is because the text of the links does not clearly indicate the format of the content they are linking to. For example, the link labeled ""HTML"" does not specify that it is linking to an HTML file, and similarly for the other links.
+
+To fix this issue, the text of the links should be updated to clearly indicate the format of the content they are linking to. For example:
+
+1. HTML: ""Download HTML version""
+2. EPUB: ""Download EPUB version""
+3. Plain text: ""Download plain text version""
+
+This will make it clear to users what format they will be downloading when they click on each link."
+32,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 6</title>  </head>  <body>  <table>  <tr>  <th colspan=""3"">Books</th>  </tr>  <tr>  <td>Ulysses</td>      <! –– Accessibility Violation starts here ––>    <td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "">Download </a> </td>    <td> 1.61MB </td>    </tr>    </table>    </body>   </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/45d884e81c4ef8234cfbd85d259dd6a64685c9d2.html
+        Error: link-text-mismatch
+        Description: Links fail to convey their purpose or are ambiguous.
+        Suggested change: Links fail to convey their purpose or are ambiguous.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 6</title>  </head>  <body>  <table>  <tr>  <th colspan=""3"">Books</th>  </tr>  <tr>  <td>Ulysses</td>      <! –– Accessibility Violation starts here ––>    <td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "">Download </a> </td>    <td> 1.61MB </td>    </tr>    </table>    </body>   </html>
+        ","The error in the webpage screenshot is ""link-text-mismatch."" This error occurs because the link text ""Download"" does not clearly indicate the action that the user will perform when they click on it. Instead of ""Download,"" the link text should be more descriptive, such as ""Download Ulysses"" or ""Download 1.61MB,"" to clearly convey the purpose of the link."
+33,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <label>Date    <! –– Accessibility Violation starts here ––>    <input id=""fname"" name=""fname"" type=""text""/></label>    </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/9b967559ff2691dc30436766f53feea55447b348.html
+        Error: form-label-mismatch
+        Description: Forms elements have unclear or incorrect labels.
+        Suggested change: Forms elements have unclear or incorrect labels.
+        Incorrect: <html lang=""en"">  <label>Date    <! –– Accessibility Violation starts here ––>    <input id=""fname"" name=""fname"" type=""text""/></label>    </html>
+        ","The error message ""form-label-mismatch"" indicates that there is a mismatch between the label and the form element. In the provided HTML code, the label ""Date"" is not correctly associated with the input element. The label should be placed immediately before the input element and should have the same name as the input element.
+
+Here is the corrected HTML code:
+
+```html
+<label for=""fname"">Date</label>
+<input id=""fname"" name=""fname"" type=""text""/>
+```
+
+In this corrected code, the label ""Date"" is placed immediately before the input element and has the same `for` attribute value as the input element's `id` attribute. This ensures that the label is correctly associated with the input element, resolving the ""form-label-mismatch"" error."
+34,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <label for=""fname"">Age</label>    <! –– Accessibility Violation starts here ––>    <input id=""address"" name=""address"" type=""text""/>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/1e52060759a535934176a5a981446066aad6b31f.html
+        Error: form-label-mismatch
+        Description: Forms elements have unclear or incorrect labels.
+        Suggested change: Forms elements have unclear or incorrect labels.
+        Incorrect: <html lang=""en"">  <label for=""fname"">Age</label>    <! –– Accessibility Violation starts here ––>    <input id=""address"" name=""address"" type=""text""/>  </html>
+        ","The error ""form-label-mismatch"" occurs because the label for the input element is ""Age"" but the id attribute of the input element is ""address"". This means that the label does not match the id of the input element, which can make it difficult for users to understand what information is expected in the input field.
+
+To fix this issue, you should change the id attribute of the input element to match the label, like this:
+
+```html
+<label for=""age"">Age</label>
+<input id=""age"" name=""age"" type=""text""/>
+```
+
+This will ensure that the label and the id attribute of the input element match, making it easier for users to understand what information is expected in the input field."
+35,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <p id=""label_fname"">What is your previous address?</p>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""add"" name=""add"" type=""text""/>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/fa5104f9bd07fe52813d7e511c3cc87c4c1cf232.html
+        Error: form-label-mismatch
+        Description: Forms elements have unclear or incorrect labels.
+        Suggested change: Forms elements have unclear or incorrect labels.
+        Incorrect: <html lang=""en"">  <p id=""label_fname"">What is your previous address?</p>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""add"" name=""add"" type=""text""/>  </html>
+        ","The screenshot shows a form element with an unclear or incorrect label. The label ""What is your previous address?"" is not associated with the input field below it. To fix this issue, you should ensure that the label is clearly associated with the input field it describes. Here's how you can correct it:
+
+1. Add an `id` attribute to the input field:
+```html
+<input id=""previous-address"" type=""text"" />
+```
+2. Add a `for` attribute to the label, and set its value to the `id` of the input field:
+```html
+<label for=""previous-address"">What is your previous address?</label>
+```
+3. Optionally, you can also add an `aria-describedby` attribute to the input field to provide additional context:
+```html
+<input id=""previous-address"" type=""text"" aria-describedby=""address-description"" />
+```
+4. Add a `title` attribute to the label to provide a short description of the input field:
+```html
+<label for=""previous-address"" title=""Enter your previous address"">What is your previous address?</label>
+```
+Here's the corrected HTML code:
+```html
+<label for=""previous-address"" title=""Enter your previous address"">What is your previous address?</label>
+<input id=""previous-address"" type=""text"" />
+```
+This will ensure that the label is clearly associated with the input field and provides additional context and accessibility information."
+36,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>  <label>First Name:: <input name=""shipping-street"" type=""text""/></label>  <label>Last Name:: <input name=""shipping-street"" type=""text""/></label>    </fieldset>  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Contact Information</h2>  <label>House Number: <input name=""contact-info"" type=""text""/></label>  <label>Street: <input name=""contact-info"" type=""text""/></label>      </fieldset>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/649946098faf6f36b8232ea74fc3bae3cf8997e7.html
+        Error: form-label-mismatch
+        Description: Forms elements have unclear or incorrect labels.
+        Suggested change: Forms elements have unclear or incorrect labels.
+        Incorrect: <html lang=""en"">  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>  <label>First Name:: <input name=""shipping-street"" type=""text""/></label>  <label>Last Name:: <input name=""shipping-street"" type=""text""/></label>    </fieldset>  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Contact Information</h2>  <label>House Number: <input name=""contact-info"" type=""text""/></label>  <label>Street: <input name=""contact-info"" type=""text""/></label>      </fieldset>  </html>
+        ","The screenshot shows a form with two fields for shipping address and contact information. The form has the following issues:
+
+1. **Form Labels Mismatch**: The labels for the input fields do not match the actual input fields. For example, the label for the first name field is ""First Name:"", but the input field is for the last name. Similarly, the label for the last name field is ""Last Name:"", but the input field is for the first name.
+
+2. **Accessibility Violation**: The form labels are placed inside the `fieldset` element, which is not the correct way to structure form labels. The labels should be placed directly before the input fields.
+
+To correct these issues, you should:
+
+1. **Correct the Labels**: Change the labels to match the input fields. For example, the first name field should have a label that says ""First Name:"", and the last name field should have a label that says ""Last Name:"".
+
+2. **Remove Accessibility Violation**: Move the labels directly before the input fields instead of placing them inside the `fieldset` element.
+
+Here is the corrected HTML code:
+
+```html
+<form>
+  <fieldset>
+    <label for=""shipping-first-name"">First Name:</label>
+    <input id=""shipping-first-name"" name=""shipping-first-name"" type=""text"" required>
+    <label for=""shipping-last-name"">Last Name:</label>
+    <input id=""shipping-last-name"" name=""shipping-last-name"" type=""text"" required>
+  </fieldset>
+  <fieldset>
+    <label for=""contact-house-number"">House Number:</label>
+    <input id=""contact-house-number"" name=""contact-house-number"" type=""text"" required>
+    <label for=""contact-street"">Street:</label>
+    <input id=""contact-street"" name=""contact-street"" type=""text"" required>
+  </fieldset>
+</form>
+```
+
+This code corrects the label-mismatch issue and removes the accessibility violation."
+37,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <span id=""search"" style=""display: none"">Search</span>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""submit search by clicking here"" name=""search"" type=""text""/>  <button id=""submit"">Go</button>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html
+        Error: form-label-mismatch
+        Description: Forms elements have unclear or incorrect labels.
+        Suggested change: Forms elements have unclear or incorrect labels.
+        Incorrect: <html lang=""en"">  <span id=""search"" style=""display: none"">Search</span>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""submit search by clicking here"" name=""search"" type=""text""/>  <button id=""submit"">Go</button>  </html>
+        ","The error message ""form-label-mismatch"" indicates that there is an issue with the labels associated with form elements. In the provided HTML code, the form element is missing a label, which is causing the accessibility violation.
+
+To fix this issue, you should add a label element to the form input. Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+  <form>
+    <label for=""search"">Search</label>
+    <input id=""search"" name=""search"" type=""text""/>
+    <button id=""submit"">Go</button>
+  </form>
+</html>
+```
+
+By adding the `<label>` element with the `for` attribute set to the `id` of the input element, you ensure that the label is associated with the correct form element, improving accessibility."
+38,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/79cce8d89309bea03e122d2917d340a525db4de0.html
+        Error: ambiguous-heading
+        Description: Headings are vague, repetitive, or fail to describe the content.
+        Suggested change: Headings are vague, repetitive, or fail to describe the content.
+        Incorrect: <html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  </html>
+        ","The provided webpage screenshot contains an accessibility violation related to the heading element. The heading `<h1>` is used to represent the main content of the page, but it is not descriptive enough. The heading text is ""Weather,"" which is vague and does not provide clear information about the content of the page. The suggested change is to make the heading more descriptive and informative.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Weather and Opening Hours</title>
+</head>
+<body>
+    <h1>Weather and Opening Hours</h1>
+    <p>We are open Monday through Friday from 10 to 16</p>
+</body>
+</html>
+```
+
+In the corrected code, the heading `<h1>` is changed to ""Weather and Opening Hours,"" which provides a clearer and more descriptive title for the page."
+39,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"">Weather</span>    <p>We are open Monday through Friday from 10 to 16</p>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/acae544ba63bf9c71988fb67d491c7d404164f52.html
+        Error: ambiguous-heading
+        Description: Headings are vague, repetitive, or fail to describe the content.
+        Suggested change: Headings are vague, repetitive, or fail to describe the content.
+        Incorrect: <html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"">Weather</span>    <p>We are open Monday through Friday from 10 to 16</p>  </html>
+        ","The error in the provided HTML code is related to the heading element. The heading element `<span aria-level=""1"" role=""heading"">Weather</span>` is not a valid heading tag. In HTML, headings should be defined using the `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>` tags, not `<span>`.
+
+To correct this issue, you should replace the `<span>` tag with a valid heading tag. Here is the corrected code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Weather</title>
+</head>
+<body>
+    <h1>Weather</h1>
+    <p>We are open Monday through Friday from 10 to 16</p>
+</body>
+</html>
+```
+
+This code uses the `<h1>` tag for the heading, which is appropriate for the main heading of the page."
+40,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">  Weather  </span>    <p>  We are open Monday through Friday from 10 to 16  </p>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html
+        Error: ambiguous-heading
+        Description: Headings are vague, repetitive, or fail to describe the content.
+        Suggested change: Headings are vague, repetitive, or fail to describe the content.
+        Incorrect: <html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">  Weather  </span>    <p>  We are open Monday through Friday from 10 to 16  </p>  </html>
+        ","The error in the provided HTML code is related to the use of an `<span>` element with the `aria-level` and `role` attributes to create a heading. This is not a standard practice for creating headings, as headings should typically be created using HTML elements such as `<h1>`, `<h2>`, `<h3>`, etc.
+
+To correct this issue, you should replace the `<span>` element with a proper heading element. Here's the corrected code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Weather</title>
+</head>
+<body>
+    <h1>Weather</h1>
+    <p>We are open Monday through Friday from 10 to 16</p>
+</body>
+</html>
+```
+
+In this corrected code, the heading ""Weather"" is now properly represented using an `<h1>` element, which is a standard practice for creating headings."
+41,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  <p>It is going to rain tomorrow</p>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/d76e8834b616356b2803586a8fbd0825a84e3fc8.html
+        Error: ambiguous-heading
+        Description: Headings are vague, repetitive, or fail to describe the content.
+        Suggested change: Headings are vague, repetitive, or fail to describe the content.
+        Incorrect: <html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  <p>It is going to rain tomorrow</p>  </html>
+        ","The provided webpage screenshot contains an accessibility violation related to the heading element. The heading `<h1>` is used to indicate the main topic or subject of the content, but it is not descriptive enough. The heading text is ""Weather,"" which is too vague and does not provide enough information about the content that follows.
+
+To correct this issue, the heading should be more descriptive and specific to the content it is representing. Here is a suggested change:
+
+```html
+<html lang=""en"">
+  <head>
+    <title>Weather Forecast and Business Hours</title>
+  </head>
+  <body>
+    <h1>Weather Forecast and Business Hours</h1>
+    <p>We are open Monday through Friday from 10 to 16</p>
+    <p>It is going to rain tomorrow</p>
+  </body>
+</html>
+```
+
+In this corrected version, the heading `<h1>` is changed to ""Weather Forecast and Business Hours,"" which is more descriptive and provides a clear indication of the content that follows."
+42,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Apple harvesting season</title>    </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/2c1397032aad720fe43dee2be0d326be56957320.html
+        Error: page-title-not-descriptive
+        Description: Page title fails to describe the content or purpose of the page, making navigation difficult.
+        Suggested change: Page title fails to describe the content or purpose of the page, making navigation difficult.
+        Incorrect: <html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Apple harvesting season</title>    </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>
+        ","The page title ""Apple harvesting season"" is not descriptive of the content on the page, which is about Clementines being ready to be harvested from late October through February. This makes navigation difficult for users who are looking for information about Clementines. To fix this, the page title should be changed to something more descriptive, such as ""Clementines harvesting season."""
+43,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Cucumber and Tomato Harvest</title>  <title>Clementine harvesting season</title>      </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/1844d7bce889d85a80b620468baa804eab3ff2c8.html
+        Error: page-title-not-descriptive
+        Description: Page title fails to describe the content or purpose of the page, making navigation difficult.
+        Suggested change: Page title fails to describe the content or purpose of the page, making navigation difficult.
+        Incorrect: <html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Cucumber and Tomato Harvest</title>  <title>Clementine harvesting season</title>      </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>
+        ","The page title ""Cucumber and Tomato Harvest"" is not descriptive of the content on the page, which is about Clementine harvesting. To fix this, the page title should be changed to something more descriptive of the content, such as ""Clementine Harvesting Season."""
+44,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>University of Arkham</title>    </head>  <body>  <h1>Search results for ""accessibility"" at the University of Arkham</h1>  <p>None</p>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html
+        Error: page-title-not-descriptive
+        Description: Page title fails to describe the content or purpose of the page, making navigation difficult.
+        Suggested change: Page title fails to describe the content or purpose of the page, making navigation difficult.
+        Incorrect: <html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>University of Arkham</title>    </head>  <body>  <h1>Search results for ""accessibility"" at the University of Arkham</h1>  <p>None</p>  </body>  </html>
+        ","The page title ""Search results for 'accessibility' at the University of Arkham"" is not descriptive and does not clearly indicate the content or purpose of the page. This makes navigation difficult for users, as they cannot easily understand what the page is about just by looking at the title.
+
+To fix this issue, the page title should be changed to something more descriptive and relevant to the content of the page. For example:
+
+```
+<title>University of Arkham Accessibility Resources</title>
+```
+
+This title clearly indicates that the page is about accessibility resources at the University of Arkham, making it easier for users to understand the purpose of the page and navigate to it."
+45,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Passed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input alt=""Clear Form"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>    </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6.html
+        Error: button-label-mismatch
+        Description: Buttons labels are unclear or fail to specify their purpose.
+        Suggested change: Buttons labels are unclear or fail to specify their purpose.
+        Incorrect: <html lang=""en"">  <head>  <title>Passed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input alt=""Clear Form"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>    </body>  </html>
+        ","The error in the provided webpage screenshot is ""button-label-mismatch."" This error occurs because the button label ""SUBMIT"" does not have an associated alt attribute, which is required to provide a text alternative for the button. The alt attribute should describe the button's function or purpose.
+
+To fix this issue, you should add an alt attribute to the button with a descriptive text. Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <title>Passed Example 1</title>
+</head>
+<body>
+    <input alt=""Submit Form"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>
+    <button>Submit</button>
+</body>
+</html>
+```
+
+In this corrected version, the button has an alt attribute with the text ""Submit Form,"" which provides a text alternative for the button."
+46,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-label=""Search"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>      </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/b413c09531b239e27bcf79cb57302b429ef59fe6.html
+        Error: button-label-mismatch
+        Description: Buttons labels are unclear or fail to specify their purpose.
+        Suggested change: Buttons labels are unclear or fail to specify their purpose.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-label=""Search"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>      </body>  </html>
+        ","The screenshot shows a login button with the text ""Login"" and an arrow icon. The button is visually clear and does not have any accessibility issues related to button labels. However, the screenshot does not provide enough information to determine if the button has an associated label or if the label is clear and specifies the purpose of the button.
+
+To address the ""button-label-mismatch"" error, you should ensure that the button has a clear and descriptive label that specifies its purpose. For example, you could add a label like ""Login Button"" or ""Submit Login"" to the button. This will help users understand the function of the button and improve accessibility."
+47,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>      </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/cab9b2d06e5a44e2056ccbdbb7096f55ab42859c.html
+        Error: button-label-mismatch
+        Description: Buttons labels are unclear or fail to specify their purpose.
+        Suggested change: Buttons labels are unclear or fail to specify their purpose.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>      </body>  </html>
+        ","The screenshot shows a webpage with an input field containing an image button with a title attribute that does not match the button's label. The title attribute is set to ""Back,"" but the button appears to be a search function, which is represented by a magnifying glass icon. This is an example of the ""button-label-mismatch"" error, as the button's label is unclear or fails to specify its purpose.
+
+To correct this issue, the title attribute should be changed to reflect the actual function of the button, such as ""Search"" or ""Find."" Here is the corrected HTML code:
+
+```html
+<input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Search"" type=""image""/>
+```
+
+This change ensures that the button's label is clear and matches the title attribute, improving accessibility for users."
+48,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>  <div id=""id1"">Upload</div>      </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/7d97d6b2f3fa16760bf66026691281a8179f3260.html
+        Error: button-label-mismatch
+        Description: Buttons labels are unclear or fail to specify their purpose.
+        Suggested change: Buttons labels are unclear or fail to specify their purpose.
+        Incorrect: <html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>  <div id=""id1"">Upload</div>      </body>  </html>
+        ","The screenshot shows a webpage with an accessibility violation related to the `button-label-mismatch` error. The issue is that the button label ""Upload"" does not clearly match the purpose of the button, which is to upload files. The button is represented by an image of an upload arrow, but the text ""Upload"" is not directly associated with the image.
+
+To fix this issue, you should ensure that the button label clearly matches the purpose of the button. In this case, you could change the button label to ""Upload"" to make it more clear and accessible. Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <title>Corrected Example 4</title>
+</head>
+<body>
+    <input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>
+    <div id=""id1"">Upload</div>
+    <button id=""uploadButton"" aria-label=""Upload"">Upload</button>
+</body>
+</html>
+```
+
+In this corrected version, I added a `button` element with an `aria-label` attribute that clearly states the purpose of the button. This helps users understand the function of the button even if they cannot see the image."
+49,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<button id=""voiceSearchButton""   class=""icon-button""   title=""Upload Document"">    <img src=\""https://example.com/icon.png"">   </button>","Given the webpage screenshot and You are operating on this website: https://www.google.com/
+        Error: button-label-mismatch
+        Description: Buttons labels are unclear or fail to specify their purpose.
+        Suggested change: Buttons labels are unclear or fail to specify their purpose.
+        Incorrect: <button id=""voiceSearchButton""   class=""icon-button""   title=""Upload Document"">    <img src=\""https://example.com/icon.png"">   </button>
+        ","The button in the screenshot has a title attribute that reads ""Upload Document,"" but the button itself does not have a clear label that matches this title. The button is represented by an image of a microphone, which is not immediately indicative of the action it performs.
+
+To address the ""button-label-mismatch"" error, you should add a clear and descriptive label to the button. Here's an example of how you could modify the button:
+
+```html
+<button id=""voiceSearchButton"" class=""icon-button"" title=""Upload Document"">
+  <img src=""https://example.com/icon.png"" alt=""Upload Document"">
+</button>
+```
+
+In this example, I've added an `alt` attribute to the `img` tag, which provides a text alternative for the image. This text can be used by screen readers and other assistive technologies to convey the purpose of the button. Additionally, I've removed the `title` attribute and replaced it with a more descriptive `aria-label` attribute, which is a more accessible way to specify the purpose of the button:
+
+```html
+<button id=""voiceSearchButton"" class=""icon-button"" aria-label=""Upload Document"">
+  <img src=""https://example.com/icon.png"" alt=""Upload Document"">
+</button>
+```
+
+This modification ensures that the button has a clear and descriptive label that matches its purpose, addressing the ""button-label-mismatch"" error."
+50,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">      <title>Climate Change Insights</title>      </head>  <body>      <header>          <h1>Understanding Climate Change</h1>          <p>This page highlights the impact of climate change through data visualization.</p>      </header>    <! –– Accessibility Violation starts here ––>        <main>          <img src=""graphblog-1.png "" alt=""A pie chart showing the percentage distribution of diabetes prevalence by age group. "" />      </main>      <footer>     <p> Data sourced from Global Climate Watch  <a href= ""#"" aria-label=""Learn more about climate change"">Learn more</a></p>      </footer>    </body>    </html>","Given the webpage screenshot and You are operating on this website: https://www.example.com/
+        Error: image-alt-not-descriptive
+        Description: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Suggested change: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Incorrect: <!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">      <title>Climate Change Insights</title>      </head>  <body>      <header>          <h1>Understanding Climate Change</h1>          <p>This page highlights the impact of climate change through data visualization.</p>      </header>    <! –– Accessibility Violation starts here ––>        <main>          <img src=""graphblog-1.png "" alt=""A pie chart showing the percentage distribution of diabetes prevalence by age group. "" />      </main>      <footer>     <p> Data sourced from Global Climate Watch  <a href= ""#"" aria-label=""Learn more about climate change"">Learn more</a></p>      </footer>    </body>    </html>
+        ","The image on the webpage is a line graph showing temperature anomaly over time, with different lines representing data from various sources. The alternative text for the image is:
+
+""A pie chart showing the percentage distribution of diabetes prevalence by age group.""
+
+This is an inaccurate and misleading alternative text because it describes a pie chart, which is not present on the webpage. The actual image is a line graph, and the alternative text does not accurately describe the purpose of the image."
+51,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage discussing renewable energy sources with a focus on solar power."">      <title>Renewable Energy Spotlight</title>     </head>  <body>      <header>          <h1>Renewable Energy Sources</h1>          <p>Exploring the future of clean and sustainable energy</p>      </header>        <nav>          <a href=""#solar"">Solar Power</a>          <a href=""#wind"">Wind Energy</a>          <a href=""#hydro"">Hydropower</a>      </nav>        <div class=""container"">          <main>              <h2 id=""solar"">Solar Power</h2>              <p>Solar energy is one of the most abundant and clean sources of renewable energy. It uses photovoltaic cells to convert sunlight directly into electricity.</p>            <! –– Accessibility Violation starts here ––>        <img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Wind turbines at sunset."" />                    <h2 id=""wind"">Wind Energy</h2>              <p>Wind turbines harness the kinetic energy of the wind and transform it into electricity. Wind energy is growing rapidly as a sustainable alternative to fossil fuels.</p>                <h2 id=""hydro"">Hydropower</h2>              <p>Hydropower generates electricity by capturing the energy of moving water, usually from rivers or dams. It is a reliable and proven source of renewable energy.</p>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Renewable Insights  <a href= ""#"" style= ""color: #fff;"" >Contact Us </a> </p>     </footer>    </body>    </html>","Given the webpage screenshot and You are operating on this website: https://www.example.com/
+        Error: image-alt-not-descriptive
+        Description: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Suggested change: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Incorrect: <!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage discussing renewable energy sources with a focus on solar power."">      <title>Renewable Energy Spotlight</title>     </head>  <body>      <header>          <h1>Renewable Energy Sources</h1>          <p>Exploring the future of clean and sustainable energy</p>      </header>        <nav>          <a href=""#solar"">Solar Power</a>          <a href=""#wind"">Wind Energy</a>          <a href=""#hydro"">Hydropower</a>      </nav>        <div class=""container"">          <main>              <h2 id=""solar"">Solar Power</h2>              <p>Solar energy is one of the most abundant and clean sources of renewable energy. It uses photovoltaic cells to convert sunlight directly into electricity.</p>            <! –– Accessibility Violation starts here ––>        <img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Wind turbines at sunset."" />                    <h2 id=""wind"">Wind Energy</h2>              <p>Wind turbines harness the kinetic energy of the wind and transform it into electricity. Wind energy is growing rapidly as a sustainable alternative to fossil fuels.</p>                <h2 id=""hydro"">Hydropower</h2>              <p>Hydropower generates electricity by capturing the energy of moving water, usually from rivers or dams. It is a reliable and proven source of renewable energy.</p>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Renewable Insights  <a href= ""#"" style= ""color: #fff;"" >Contact Us </a> </p>     </footer>    </body>    </html>
+        ","The webpage screenshot shows a website discussing renewable energy sources, with a focus on solar power, wind energy, and hydropower. The image in the ""Solar Power"" section has the following alt text:
+
+""Wind turbines at sunset.""
+
+This alt text is misleading because it does not accurately describe the purpose of the image, which is related to solar power. The correct alt text should describe the solar panels in the image, such as ""Solar panels in a field under a clear blue sky."""
+52,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage promoting mental health awareness and well-being."">      <title>Mental Health Awareness</title>      </head>  <body>      <header>          <h1>Mental Health Matters</h1>          <p>Promoting awareness, reducing stigma, and encouraging self-care</p>      </header>        <nav>          <a href=""#importance"">Importance</a>          <a href=""#tips"">Self-Care Tips</a>          <a href=""#resources"">Resources</a>      </nav>        <div class=""container"">          <main>              <h2 id=""importance"">The Importance of Mental Health</h2>              <p>Mental health is vital to overall well-being. It affects how we think, feel, and act in our daily lives. Recognizing its importance helps reduce stigma and promotes a supportive community.</p>                <! –– Accessibility Violation starts here ––>    <img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" />                    <h2 id=""tips"">Self-Care Tips</h2>              <p>Taking care of your mental health is essential. Here are a few tips:</p>              <ul>                  <li>Practice mindfulness or meditation</li>                  <li>Stay physically active</li>                  <li>Maintain a balanced diet</li>                  <li>Connect with loved ones</li>                  <li>Seek professional help when needed</li>              </ul>                <h2 id=""resources"">Helpful Resources</h2>              <p>If you&#x27;re struggling with your mental health, don&#x27;t hesitate to reach out for help. Here are some trusted resources:</p>              <ul>                  <li><a href=""#"">National Mental Health Hotline</a></li>                  <li><a href=""#"">Mindfulness and Meditation Apps</a></li>                  <li><a href=""#"">Support Groups in Your Area</a></li>              </ul>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Mental Health Awareness  <a href= ""#"" style= ""color: #fff; "" >Contact Us </a> </p>       </footer>    </body>    </html>","Given the webpage screenshot and You are operating on this website: https://www.example.com/
+        Error: image-alt-not-descriptive
+        Description: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Suggested change: Inaccurate or misleading alternative text that fails to describe the purpose of the image.
+        Incorrect: <!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage promoting mental health awareness and well-being."">      <title>Mental Health Awareness</title>      </head>  <body>      <header>          <h1>Mental Health Matters</h1>          <p>Promoting awareness, reducing stigma, and encouraging self-care</p>      </header>        <nav>          <a href=""#importance"">Importance</a>          <a href=""#tips"">Self-Care Tips</a>          <a href=""#resources"">Resources</a>      </nav>        <div class=""container"">          <main>              <h2 id=""importance"">The Importance of Mental Health</h2>              <p>Mental health is vital to overall well-being. It affects how we think, feel, and act in our daily lives. Recognizing its importance helps reduce stigma and promotes a supportive community.</p>                <! –– Accessibility Violation starts here ––>    <img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" />                    <h2 id=""tips"">Self-Care Tips</h2>              <p>Taking care of your mental health is essential. Here are a few tips:</p>              <ul>                  <li>Practice mindfulness or meditation</li>                  <li>Stay physically active</li>                  <li>Maintain a balanced diet</li>                  <li>Connect with loved ones</li>                  <li>Seek professional help when needed</li>              </ul>                <h2 id=""resources"">Helpful Resources</h2>              <p>If you&#x27;re struggling with your mental health, don&#x27;t hesitate to reach out for help. Here are some trusted resources:</p>              <ul>                  <li><a href=""#"">National Mental Health Hotline</a></li>                  <li><a href=""#"">Mindfulness and Meditation Apps</a></li>                  <li><a href=""#"">Support Groups in Your Area</a></li>              </ul>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Mental Health Awareness  <a href= ""#"" style= ""color: #fff; "" >Contact Us </a> </p>       </footer>    </body>    </html>
+        ","The webpage screenshot shows a website promoting mental health awareness and well-being. The main content includes sections on the importance of mental health, self-care tips, and helpful resources. The image in the ""The Importance of Mental Health"" section has an alternative text that is not descriptive and misleading. The alternative text reads: ""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" This is incorrect because the image actually depicts a circular diagram with six segments labeled ""Managing Stress,"" ""Meaning and Purpose,"" ""Quality Sleep,"" ""Staying Active,"" ""Social Connection,"" and ""Brain Healthy Diet."" The alternative text does not accurately describe the purpose of the image, which is to illustrate the various aspects of mental health."
+53,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">      <title>Sustainable Living</title>      </head>  <body>      <header>          <h1>Sustainable Living</h1>          <p>Small steps for a greener planet.</p>      </header>        <div class=""container"">          <main>              <h2>Eco-Friendly Tips</h2>              <p>Click the button below to reveal practical tips for sustainable living:</p>             <! –– Accessibility Violation starts here ––>       <button id=""revealTips"" role=""button"" aria-label=""Submit Form"">Show Tips</button>                  <div id=""tips"" class=""tips"">                  <h3>Eco-Friendly Tips</h3>                  <ul>                      <li>Reduce, reuse, and recycle wherever possible.</li>                      <li>Conserve water by fixing leaks and using water-efficient appliances.</li>                      <li>Opt for energy-efficient lighting and appliances.</li>                      <li>Support local and sustainable products.</li>                      <li>Plant trees or grow your own garden to offset your carbon footprint.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Sustainable Living Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.example.com/
+        Error: button-label-mismatch
+        Description: Buttons labels are unclear or fail to specify their purpose.
+        Suggested change: Buttons labels are unclear or fail to specify their purpose.
+        Incorrect: <!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">      <title>Sustainable Living</title>      </head>  <body>      <header>          <h1>Sustainable Living</h1>          <p>Small steps for a greener planet.</p>      </header>        <div class=""container"">          <main>              <h2>Eco-Friendly Tips</h2>              <p>Click the button below to reveal practical tips for sustainable living:</p>             <! –– Accessibility Violation starts here ––>       <button id=""revealTips"" role=""button"" aria-label=""Submit Form"">Show Tips</button>                  <div id=""tips"" class=""tips"">                  <h3>Eco-Friendly Tips</h3>                  <ul>                      <li>Reduce, reuse, and recycle wherever possible.</li>                      <li>Conserve water by fixing leaks and using water-efficient appliances.</li>                      <li>Opt for energy-efficient lighting and appliances.</li>                      <li>Support local and sustainable products.</li>                      <li>Plant trees or grow your own garden to offset your carbon footprint.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Sustainable Living Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>
+        ","The webpage screenshot shows a website promoting sustainable living. The main issue highlighted is the ""button-label-mismatch"" error, which means that the button labels are unclear or fail to specify their purpose. Specifically, the button labeled ""Show Tips"" is not clearly labeled as a button, which can confuse users.
+
+To fix this issue, the button should be clearly labeled as a button. Here is a suggested change:
+
+```html
+<button id=""revealTips"" role=""button"" aria-label=""Show Tips"">Show Tips</button>
+```
+
+This change will make it clear that the button is intended to show tips, and it will also improve accessibility by providing an accessible label."
+54,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">      <title>Healthy Eating Habits</title>      </head>  <body>      <header>          <h1>Healthy Eating</h1>          <p>Simple steps to build better eating habits.</p>      </header>        <div class=""container"">          <main>              <h2>Healthy Eating Tips</h2>              <p>Click the button below to learn more about maintaining a balanced diet:</p>                <! –– Accessibility Violation starts here ––>    <button id=""revealTips"" aria-label=""Click to go back to the homepage"" title=""Click to go back to the homepage"">Show Tips</button>                <div id=""tips"" class=""tips"">                  <h3>Tips for a Balanced Diet</h3>                  <ul>                      <li>Incorporate more fruits and vegetables into your meals.</li>                      <li>Stay hydrated by drinking plenty of water.</li>                      <li>Choose whole grains over refined grains.</li>                      <li>Limit your intake of added sugars and saturated fats.</li>                      <li>Practice portion control to avoid overeating.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Healthy Eating Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>","Given the webpage screenshot and You are operating on this website: https://www.example.com/
+        Error: button-label-mismatch
+        Description: Buttons labels are unclear or fail to specify their purpose.
+        Suggested change: Buttons labels are unclear or fail to specify their purpose.
+        Incorrect: <!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">      <title>Healthy Eating Habits</title>      </head>  <body>      <header>          <h1>Healthy Eating</h1>          <p>Simple steps to build better eating habits.</p>      </header>        <div class=""container"">          <main>              <h2>Healthy Eating Tips</h2>              <p>Click the button below to learn more about maintaining a balanced diet:</p>                <! –– Accessibility Violation starts here ––>    <button id=""revealTips"" aria-label=""Click to go back to the homepage"" title=""Click to go back to the homepage"">Show Tips</button>                <div id=""tips"" class=""tips"">                  <h3>Tips for a Balanced Diet</h3>                  <ul>                      <li>Incorporate more fruits and vegetables into your meals.</li>                      <li>Stay hydrated by drinking plenty of water.</li>                      <li>Choose whole grains over refined grains.</li>                      <li>Limit your intake of added sugars and saturated fats.</li>                      <li>Practice portion control to avoid overeating.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Healthy Eating Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>
+        ","The webpage screenshot shows a website with the title ""Healthy Eating"" and a subtitle ""Simple steps to build better eating habits."" Below the title, there is a button labeled ""Show Tips"" with a green background. The button is intended to reveal more information about healthy eating tips when clicked.
+
+The issue with the button is that its label ""Show Tips"" does not clearly specify its purpose. It is unclear whether clicking the button will show tips for a balanced diet or go back to the homepage. This can lead to confusion for users.
+
+To fix this issue, the button label should be changed to something more descriptive, such as ""Learn More About Balanced Diet Tips"" or ""View Healthy Eating Tips."" This will make it clear to users what they can expect when they click the button."
+55,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">      <title>Climate Change Action</title>      </head>  <body>      <header>          <h1>Take Action on Climate Change</h1>          <p>Simple actions for a sustainable future.</p>      </header>        <div class=""container"">          <main>              <h2>Get Involved</h2>              <p>Click the button below to submit your pledge for climate action:</p>            <! –– Accessibility Violation starts here ––>        <button id=""pledgeButton"" role=""link"" aria-labelledby=""Upload Document"">Learn More</button>                              <div id=""formContainer"" class=""form-container"">                  <h3>Your Climate Pledge</h3>                  <form>                      <label for=""name"">Your Name:</label>                      <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">                        <label for=""email"">Your Email:</label>                      <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">                        <button type=""submit"">Submit Pledge</button>                  </form>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Climate Change Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;pledgeButton&#x27;);          const formContainer = document.getElementById(&#x27;formContainer&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              formContainer.style.display = formContainer.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html></p>","Given the webpage screenshot and You are operating on this website: https://www.example.com/
+        Error: button-label-mismatch
+        Description: Buttons labels are unclear or fail to specify their purpose.
+        Suggested change: Buttons labels are unclear or fail to specify their purpose.
+        Incorrect: <!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">      <title>Climate Change Action</title>      </head>  <body>      <header>          <h1>Take Action on Climate Change</h1>          <p>Simple actions for a sustainable future.</p>      </header>        <div class=""container"">          <main>              <h2>Get Involved</h2>              <p>Click the button below to submit your pledge for climate action:</p>            <! –– Accessibility Violation starts here ––>        <button id=""pledgeButton"" role=""link"" aria-labelledby=""Upload Document"">Learn More</button>                              <div id=""formContainer"" class=""form-container"">                  <h3>Your Climate Pledge</h3>                  <form>                      <label for=""name"">Your Name:</label>                      <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">                        <label for=""email"">Your Email:</label>                      <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">                        <button type=""submit"">Submit Pledge</button>                  </form>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Climate Change Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;pledgeButton&#x27;);          const formContainer = document.getElementById(&#x27;formContainer&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              formContainer.style.display = formContainer.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html></p>
+        ","The webpage screenshot shows a section titled ""Get Involved"" with a button labeled ""Learn More."" The button is intended to provide more information about submitting a pledge for climate action. However, the button label ""Learn More"" does not clearly specify its purpose, which is to submit a pledge. This could lead to confusion for users who are looking to take action on climate change.
+
+To address this issue, the button label should be changed to something more specific, such as ""Submit Pledge"" or ""Take Action."" This will make it clear to users that clicking the button will allow them to submit their pledge for climate action."

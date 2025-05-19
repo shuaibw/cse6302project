@@ -1,0 +1,1296 @@
+,ID,webURL,Violation Type,Impact,Description,Affected HTML,prompts_baseline_one,responses_baseline_one
+0,1,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/485f10faf222cd48fea2ab3ee79c2d354e51ea33.html,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">    <img alt=""ERCIM logo"" src=""image.png""/>    </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">    <img alt=""ERCIM logo"" src=""image.png""/>    </html>"", can you fix the accessibility issue related to the success criteria: ( Inaccurate or misleading alternative text that fails to describe the purpose of the image. ) according to WCAG 2.1?
+    ","In the provided HTML snippet, the image is described using an `alt` attribute with the text ""ERCIM logo."" However, based on the screenshot you provided, the image actually displays the ""W3C"" logo, not the ""ERCIM"" logo. To fix the accessibility issue and comply with the WCAG 2.1 guidelines regarding accurate and meaningful alternative text, you should change the `alt` attribute to correctly describe the image.
+
+Here is the corrected version of the HTML code:
+
+```html
+<html lang=""en"">
+    <img alt=""W3C logo"" src=""image.png""/>
+</html>
+```
+
+This correction ensures the alternative text accurately reflects the image displayed, providing a more accessible web experience for users who rely on screen readers or other assistive technologies."
+1,2,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2f7d82593e287df64b7459695e355a840254255c.html,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">  <svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">  <path d=""M108.46""></path>  <path d=""M107.6 "" fill=""#e44d26""></path>  <path d=""M256 "" fill=""#f16529""></path>  <path d=""M142 176"" fill=""#ebebeb""></path>  <path d=""M369.613.6v47.2l93-25.8"" fill=""#fff""></path>  </svg>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">  <path d=""M108.46""></path>  <path d=""M107.6 "" fill=""#e44d26""></path>  <path d=""M256 "" fill=""#f16529""></path>  <path d=""M142 176"" fill=""#ebebeb""></path>  <path d=""M369.613.6v47.2l93-25.8"" fill=""#fff""></path>  </svg>  </html>"", can you fix the accessibility issue related to the success criteria: ( Inaccurate or misleading alternative text that fails to describe the purpose of the image. ) according to WCAG 2.1?
+    ","To make the SVG code compliant with WCAG 2.1 accessibility guidelines regarding alternative text descriptions, you should revise the `aria-label` in the SVG element to more accurately describe the image and its purpose. Currently, the `aria-label` is ""W3C,"" which does not convey the meaning or purpose of the SVG graphic - the HTML5 logo in this case.
+
+Here is the corrected version of your SVG code:
+
+```html
+<html lang=""en"">
+<svg aria-label=""HTML5 logo"" role=""img"" viewbox=""0 0 512 512"">
+  <path d=""M108.46""></path>
+  <path d=""M107.6 "" fill=""#e44d26""></path>
+  <path d=""M256 "" fill=""#f16529""></path>
+  <path d=""M142 176"" fill=""#ebebeb""></path>
+  <path d=""M369.613.6v47.2l93-25.8"" fill=""#fff""></path>
+</svg>
+</html>
+```
+
+This adjustment changes the `aria-label` to ""HTML5 logo,"" which directly describes what the image represents. This is crucial for users who rely on screen readers to understand visual content on web pages."
+2,3,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/bac67a5a2ada971100bbec89961ad3e6c869f268.html,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.," <!DOCTYPE html>     <html lang=""en"">     <head>     <meta charset=""UTF-8"">     <! –– Accessibility Violation starts here ––>   <title> Canvas Image Example</title>     </head>     <body>     <canvas aria-label=""HTML 5 logo"" height=""48"" id=""logo"" width=""72"">    </canvas>     <script>     const img = new Image(); img.src = &#x27;/logo.png&#x27;; img.onload = function() { const ctx = document.querySelector(&#x27;#logo&#x27;).getContext(&#x27;2d&#x27;); ctx.drawImage(img, 0, 0, 72, 48); } </script>     </body>     </html>","
+    Given the webpage screenshot and the following source code "" <!DOCTYPE html>     <html lang=""en"">     <head>     <meta charset=""UTF-8"">     <! –– Accessibility Violation starts here ––>   <title> Canvas Image Example</title>     </head>     <body>     <canvas aria-label=""HTML 5 logo"" height=""48"" id=""logo"" width=""72"">    </canvas>     <script>     const img = new Image(); img.src = &#x27;/logo.png&#x27;; img.onload = function() { const ctx = document.querySelector(&#x27;#logo&#x27;).getContext(&#x27;2d&#x27;); ctx.drawImage(img, 0, 0, 72, 48); } </script>     </body>     </html>"", can you fix the accessibility issue related to the success criteria: ( Inaccurate or misleading alternative text that fails to describe the purpose of the image. ) according to WCAG 2.1?
+    ","To fix the accessibility issue where the alternative text for the canvas element fails to adequately describe the image displayed (in this case, the W3C logo including the trademark), you need to provide a more descriptive and accurate `aria-label`. Since the existing `aria-label` only mentions ""HTML 5 logo,"" but the image is actually the ""W3C logo"", an accurate and purposeful alternative text must reflect this discrepancy.
+
+Here's how the HTML tag for the canvas should be updated to better describe its content according to WCAG 2.1 guidelines for providing text alternatives:
+
+```html
+<canvas aria-label=""W3C organization logo with registered trademark symbol"" height=""48"" id=""logo"" width=""72""></canvas>
+```
+
+This `aria-label` explains exactly what is depicted in the image (the W3C organization's logo), including the detail about the trademark symbol, which is crucial for a complete understanding of what the image represents. It’s important for alternative text to convey not only the visual aspect but also any meaningful content that the image communicates, especially when trademark or branding elements are involved."
+3,4,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.," <! –– Accessibility Violation starts here ––>   <html lang=""da"">  <head>  <title>ACT Rules Format 1.0 - Abstract</title>  </head>  <body>  <p>  The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test  rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It  provides a common format that allows any party involved in accessibility testing to document and share their  testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing  methods, including methods implemented by accessibility test tools.  </p>  </body>  </html>","
+    Given the webpage screenshot and the following source code "" <! –– Accessibility Violation starts here ––>   <html lang=""da"">  <head>  <title>ACT Rules Format 1.0 - Abstract</title>  </head>  <body>  <p>  The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test  rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It  provides a common format that allows any party involved in accessibility testing to document and share their  testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing  methods, including methods implemented by accessibility test tools.  </p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","To address the accessibility issue regarding the page language attribute in the source code you provided, you need to ensure that the language declared in the `<html>` tag matches the actual language of the content. The screenshot confirms that the content is in English, but the HTML tag in your source code specifies ""da"" (Danish). To fix this, you should change the `lang` attribute to ""en"" for English. Here is the corrected part of your source code:
+
+```html
+<! –– Accessibility Violation starts here ––>
+<html lang=""en"">
+<head>
+<title>ACT Rules Format 1.0 - Abstract</title>
+</head>
+<body>
+<p>
+The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It provides a common format that allows any party involved in accessibility testing to document and share their testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing methods, including methods implemented by accessibility test tools.
+</p>
+</body>
+</html>
+```
+
+By making this change, you are ensuring that browsers and assistive technologies can appropriately interpret the language of the content, which is critical for users relying on text-to-speech or similar aids. This correction aligns with WCAG 2.1 guidance regarding language of web pages."
+4,5,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"  <! –– Accessibility Violation starts here ––>              <html lang=""en"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>  <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">  This Dutch phrase literally translates into ""  He went to roost with the chickens"", but it means   that he went to bed early.  </p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""  <! –– Accessibility Violation starts here ––>              <html lang=""en"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>  <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">  This Dutch phrase literally translates into ""  He went to roost with the chickens"", but it means   that he went to bed early.  </p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","In the provided HTML source code, the primary language of the webpage is set to English (`lang=""en""`). However, the webpage contains content (the phrase ""Hij ging met de kippen op stok"") that is in Dutch. This can lead to a mismatch between the declared language and the actual language of part of the content, potentially confusing users and assistive technologies.
+
+To fix this accessibility issue, the `lang` attribute should be properly set for each part of the content according to its language. Here is the modified HTML code:
+
+```html
+<!–– Accessibility Violation starts here ––>
+<html lang=""en"">
+<head>
+<title>Met de kippen op stok</title>
+</head>
+<body>
+<blockquote>
+  <!-- Set the lang attribute to ""nl"" for Dutch content -->
+  <p lang=""nl"">""Hij ging met de kippen op stok""</p>
+</blockquote>
+<p>This Dutch phrase literally translates into ""He went to roost with the chickens"", but it means that he went to bed early.</p>
+</body>
+</html>
+```
+
+In this correction:
+- I added `lang=""nl""` to the `<p>` tag containing the Dutch phrase. This change informs screen readers and other assistive technologies about the language switch, enabling them to handle the pronunciation and other language-specific processes correctly.
+- For clarity and maintainability, I removed the unnecessary setting of English (`lang=""en""`) on the other paragraph as the `lang` attribute on the `<html>` tag already defaults the content language to English."
+5,6,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>                  <html lang=""nl"">  <head>  <title>Happy</title>  </head>  <body>    <p>The Dutch word    <! –– Accessibility Violation starts here ––>   ""gelukkig"" has no equivalent in English.</p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<! –– Accessibility Violation starts here ––>                  <html lang=""nl"">  <head>  <title>Happy</title>  </head>  <body>    <p>The Dutch word    <! –– Accessibility Violation starts here ––>   ""gelukkig"" has no equivalent in English.</p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","The content of the webpage specifies that the language is Dutch as indicated by the `<html lang=""nl"">`, although the majority of the content is in English except for the one word ""gelukkig"", which is Dutch. According to WCAG 2.1, the language specified in the `lang` attribute should match the primary language of the webpage content, which enhances accessibility for screen readers and other assistive technologies.
+
+To fix the accessibility issue, change the language attribute to ""en"" since most of the content is in English. Modify the Dutch word ""gelukkig"" to explicitly specify its language inline. Here’s how you can revise the HTML code:
+
+```html
+<! –– Fixed Accessibility Violation ––>
+<html lang=""en"">
+  <head>
+    <title>Happy</title>
+  </head>
+  <body>
+    <p>The Dutch word <span lang=""nl"">gelukkig</span> has no equivalent in English.</p>
+  </body>
+</html>
+```
+
+This updated code sets the page's language to English (`lang=""en""`) and specifically notes that the word ""gelukkig"" is in Dutch (`<span lang=""nl"">gelukkig</span>`). This change helps assistive technology provide the correct pronunciation for the Dutch word, improving the accessibility of the webpage.
+"
+6,7,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""nl"">  <head>  <title>Fireworks over Paris</title>  </head>  <body>  <img alt=""Fireworks over Paris""   src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>  <p lang=""nl"">  Gelukkig nieuwjaar!  </p>  </body>  </html>  ","
+    Given the webpage screenshot and the following source code ""<! –– Accessibility Violation starts here ––>    <html lang=""nl"">  <head>  <title>Fireworks over Paris</title>  </head>  <body>  <img alt=""Fireworks over Paris""   src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>  <p lang=""nl"">  Gelukkig nieuwjaar!  </p>  </body>  </html>  "", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","The text in the body of your webpage screenshot indicates that the content is using the Dutch language; ""Gelukkig nieuwjaar"" means ""Happy New Year"" in Dutch. However, the language specified in the `<html>` tag must accurately reflect the main language of the webpage to meet the accessibility success criteria according to the Web Content Accessibility Guidelines (WCAG) 2.1. 
+
+In your provided HTML code, you have set the language attribute in the `<html>` tag to ""nl"" (Dutch), which is consistent with your webpage content:
+
+```html
+<! –– Accessibility Violation starts here ––>
+<html lang=""nl"">
+<head>
+<title>Fireworks over Paris</title>
+</head>
+<body>
+<img alt=""Fireworks over Paris"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p lang=""nl"">
+Gelukkig nieuwjaar!
+</p>
+</body>
+</html>
+```
+
+If the issue pointed to the language attribute not matching because only the image is related to Paris (French content), not the language of the text itself, then your HTML code is actually correct in setting the language as ""nl"", because the text content is indeed in Dutch. 
+
+If this is the case, there isn't an accessibility issue regarding the language attribute not matching the content here, as the set language of ""Dutch"" matches the text ""Gelukkig nieuwjaar!"". Make sure to apply correct language attributes consistently if other languages are present in larger portions of content on the same page or in a different context."
+7,8,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>   <html lang=""nl"">  <head>  <title>Paris</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg ""/ >    <p hidden="" "" id="" caption "" lang= "" en "" >   Fireworks over Paris!    < /p >    < /body >    < /html > ","
+    Given the webpage screenshot and the following source code ""<! –– Accessibility Violation starts here ––>   <html lang=""nl"">  <head>  <title>Paris</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg ""/ >    <p hidden="" "" id="" caption "" lang= "" en "" >   Fireworks over Paris!    < /p >    < /body >    < /html > "", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","To address the accessibility issue in the provided HTML code related to the mismatch between the page language attribute and the actual language of the content, the changes involve correcting the `lang` attributes to ensure they accurately reflect the language used in the content of the webpage.
+
+Here’s the corrected version of the source code:
+
+```html
+<! –– Accessibility Fixed ––>
+<html lang=""en"">   <!-- Update the language attribute to English because the content is in English -->
+<head>
+<title>Paris</title>
+</head>
+<body>
+<img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg""/>
+<p hidden="""" id=""caption"" lang=""en""> <!-- Lang attribute is correctly 'en' as the text is in English -->
+Fireworks over Paris!
+</p>
+</body>
+</html>
+```
+
+**Corrections and Explanations:**
+1. **Page Language:** The original HTML tag `<html lang=""nl"">` had the language set to Dutch (`nl`), which should be corrected to English (`en`) since the caption content ""Fireworks over Paris!"" is in English.
+2. **Content Language within Elements:** The `<p>` tag holding the caption text was already correctly marked with `lang=""en""`. I left this alone as it correctly specifies the language of its content.
+
+These changes help ensure that screen readers and other assistive technologies can accurately interpret the webpage content according to its specified language, thereby aligning with WCAG 2.1 regulations regarding accessibility."
+8,9,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <head>  <title> Stranddorp </title>  </head>  <body>  <article lang=""dutch"">  Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.  </article>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <head>  <title> Stranddorp </title>  </head>  <body>  <article lang=""dutch"">  Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.  </article>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","The accessibility issue in the HTML source code you've provided concerns the incorrect use of the language attribute. The main content of the page is described in Dutch, but the `lang` attribute of the `<html>` element is set to ""es"" (Spanish). To correct this and adhere to WCAG 2.1 guidelines concerning language attributes, you should set the language attribute to ""nl"" (Dutch) for the `<html>` element to correctly represent the page's principal language. Here is the corrected source code:
+
+```html
+<! –– Accessibility Violation starts here ––>
+<html lang=""nl"">
+<head>
+  <title> Stranddorp </title>
+</head>
+<body>
+  <article>
+    Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.
+  </article>
+</body>
+</html>
+```
+
+Additionally, because the content described within the `<article>` tag is also in Dutch, there is no need for a separate `lang` attribute on the `<article>` unless it deviates from the main language of the document. Therefore, I have removed the `lang=""dutch""` attribute from the `<article>` tag in the corrected version."
+9,10,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.," <html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <article lang=""#!"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>","
+    Given the webpage screenshot and the following source code "" <html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <article lang=""#!"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","To fix the accessibility issue identified in the source code, you should ensure that the `lang` attribute of the `<article>` element appropriately reflects the language of the content within it. In this case, the content within the article tag is in English, but the `lang` attribute is incorrectly set as `#!`. This mismatch can lead to problems with screen readers and other assistive technologies that rely on language attributes to provide correct pronunciation, grammar, and so on.
+
+You should update the source code as follows:
+
+```html
+<html lang=""en"">
+<body>
+<!-- Accessibility Violation starts here -->
+<article lang=""en"">
+They wandered into a strange Tiki bar on the edge of the small beach town.
+</article>
+</body>
+</html>
+```
+
+In this corrected version, both the `<html>` and `<article>` tags correctly specify `lang=""en""`, which reflects that the content is in English. This change will help in meeting WCAG 2.1 criteria for language attributes, ensuring that the webpage is more accessible to users with assistive technologies."
+10,11,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""  "">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<! –– Accessibility Violation starts here ––>    <html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""  "">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","To fix the accessibility issue related to the success criteria mentioned, you should ensure that the language attribute correctly reflects the language of the content within the webpage. In the provided source code, the global `<html>` tag has a `lang` attribute set to ""fr"" (French), while the content inside the article is in English. Similarly, the `<article>` element has an empty `lang` attribute, which is not providing any useful information about the language used in that part of the content.
+
+Here is the corrected version of the source code with appropriate language attributes:
+
+```html
+<!DOCTYPE html>
+<html lang=""en""> <!-- Corrected the language attribute to English -->
+  <body>
+    <article> <!-- Removed the empty lang attribute -->
+      They wandered into a strange Tiki bar on the edge of the small beach town.
+    </article>
+  </body>
+</html>
+```
+
+In this corrected source code:
+- The `lang` attribute of the `<html>` tag is now set to ""en"" to match the English content of the webpage.
+- The `lang` attribute is removed from the `<article>` tag, as it's redundant when the language matches the page's primary language setting.
+  
+This adjustment ensures that screen readers and other assistive technologies can accurately convey the content in the correct language, fulfilling WCAG 2.1 compliance requirements pertaining to language declaration."
+11,12,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""english"">  <p aria-hidden=""true"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""english"">  <p aria-hidden=""true"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","To address the accessibility issue in the provided HTML code snippet in accordance with WCAG 2.1, particularly the concerns regarding the language attributes not matching the actual language of the content, we need to adjust the `lang` attribute values accordingly. The text contained in your HTML indicates it is in English, but the `lang` attribute in the `<html>` element is set to ""es"" (Spanish), which does not match the content's language.
+
+Here is the corrected version of the source code:
+
+```html
+<! –– Accessibility Violation corrected here ––>
+<html lang=""en""> <!-- Change 'es' to 'en' to correctly reflect the content language -->
+<body>
+<article>
+<p>
+They wandered into a strange Tiki bar on the edge of the small beach town.
+</p>
+</article>
+</body>
+</html>
+```
+
+In this corrected version:
+- The `lang` attribute in the `<html>` element has been changed from ""es"" to ""en"" to correctly reflect that the content is written in English.
+- The `lang=""english""` in the `<article>` was removed because ""english"" is not a valid language attribute value and it seems redundant to specify the language at that level again unless there was a section in another language.
+
+These adjustments help assistive technologies like screen readers to interpret the content in the correct language, enhancing accessibility and the user experience for people relying on these technologies."
+12,13,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8ba52b5fa5e123def1f778821219aaec20ca0fe.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""English"">  <p style=""position: absolute; top: 1px"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""English"">  <p style=""position: absolute; top: 1px"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","The primary accessibility issue in the provided source code pertains to the incorrect language attribute in the `<article>` element. The `lang` attribute for the `<article>` tag is set to ""English"", which is not a valid BCP 47 language tag. It needs to reflect the correct language of the content in a proper format. 
+
+To correct this issue, you should modify the `lang` attribute to ""en"" for English, as follows:
+
+```html
+<html lang=""fr"">
+  <body>
+    <!-- Accessibility Violation starts here -->
+    <article lang=""en"">
+      <p style=""position: absolute; top: 1px"">
+        They wandered into a strange Tiki bar on the edge of the small beach town.
+      </p>
+    </article>
+  </body>
+</html>
+```
+
+This change ensures that assistive technologies, such as screen readers, can correctly interpret the language of the text within the `<article>`, providing a better user experience for individuals who rely on such technologies. The `lang=""fr""` on the `<html>` tag correctly indicates that any undefined sections or possibly other texts on the page are in French, while the `lang=""en""` on the `<article>` tag specifies that the text contained in that section is in English."
+13,14,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <article lang=""en"">  <! –– Accessibility Violation starts here ––>    <div lang=""invalid"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </div>  </article>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <article lang=""en"">  <! –– Accessibility Violation starts here ––>    <div lang=""invalid"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </div>  </article>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","To address the accessibility issue related to the incorrect use of language attributes as noted in the provided source code and align it with the WCAG 2.1 standards, you should ensure that the language attribute accurately reflects the actual language of the content enclosed within each element. 
+
+In the provided source code, the `<html>` element is defined with `lang=""es""` suggesting the primary language of the document is Spanish. However, the actual content within the `<div>` is in English. Also, the `<div>` incorrectly uses `lang=""invalid""`, which is not a valid language tag. Here's the corrected version of the source code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">  <!-- Assuming entire document primary content should be in English -->
+<body>
+<article>
+    <!-- Correctly set the language of this division if different from the primary language of the document -->
+    <div lang=""en"">They wandered into a strange Tiki bar on the edge of the small beach town.</div>
+</article>
+</body>
+</html>
+```
+
+**Changes Made**:
+1. Updated the `lang` attribute in the `<html>` tag to `en` to reflect the primary language of the document as English.
+2. Corrected the `lang` attribute in the `<div>` tag to `en` since the text within the snippet is in English, ensuring assistive technologies can accurately interpret and relay the content.
+
+These changes ensure that the language attributes properly match the language of the content, thus improving accessibility and satisfying WCAG 2.1 guidelines on language attributes."
+14,15,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <div lang=""invalid"">  <img alt=""Fireworks over Paris"" src=""https://PARIS-WORKS.jpg "" / >    < /div >    </body>    </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <div lang=""invalid"">  <img alt=""Fireworks over Paris"" src=""https://PARIS-WORKS.jpg "" / >    < /div >    </body>    </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","To fix the accessibility issue pointed out, where the language attribute does not match the actual language content, you'd need to assess which language the content is written in and ensure that the `lang` attribute correctly reflects that.
+
+Based on the provided code snippet and description, it appears that the text content where the violation starts is in English `<div lang=""invalid"">` but has the language set to ""invalid"" which is not a correct language code.
+
+Here's a corrected version of the source code:
+
+```html
+<html lang=""en"">
+<body>
+  <!-- Accessibility Violation resolved here by setting the correct language attribute -->
+  <div lang=""en"">
+    <img alt=""Fireworks over Paris"" src=""https://PARIS-WORKS.jpg"" />
+  </div>
+</body>
+</html>
+```
+
+In this correction:
+- The `div` element’s `lang` attribute has been corrected to ""en"" to match the actual language of the content within it, which includes an image with `alt` text in English.
+- The comment syntax was also corrected from `<! –– Accessibility Violation starts here ––>` to `<!-- Accessibility Violation resolved here by setting the correct language attribute -->` for proper HTML commenting.
+- Extraneous spaces in the closing tags and the self-closing slash in the `img` tag have been properly adjusted (`src=""https://PARIS-WORKS.jpg"" />` to `src=""https://PARIS-WORKS.jpg""`). The space before the self-closing slash is optional in HTML5 and doesn't affect functionality or compliance.
+
+This resolution ensures the content meets the WCAG 2.1 requirements for language specification under success criterion 3.1.1 (Language of Page), which helps in providing text content that can be transformed correctly by assistive technologies."
+15,16,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""eng"">I love ACT rules! </p>    </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""eng"">I love ACT rules! </p>    </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","The text shown in the screenshot, ""Lëtzebuerg ass e Land an Europa,"" is in Luxembourgish. Therefore, the corresponding language tags in your HTML code should correctly reflect this to avoid the accessibility issue related to the mismatch of page language attributes and the actual language of the content. According to the WCAG 2.1 guidelines, accurate language identification helps assistive technologies (like screen readers) interpret the text correctly, which improves accessibility for users who rely on these technologies.
+
+Here is how you can fix the source code:
+
+```html
+<html lang=""lb"">
+<body>
+    <!-- Accessibility fix: adjusted lang attribute to match content language -->
+    <p lang=""lb"">Lëtzebuerg ass e Land an Europa.</p>
+</body>
+</html>
+```
+
+In this corrected version:
+- I've changed the `lang` attribute in both the `<html>` and `<p>` tags to ""lb"", which is the language subtag for Luxembourgish as per the IETF language tag standard.
+
+This update ensures that both the page and the specific paragraph correctly declare the language of the content, thus aligning with the WCAG 2.1 success criteria relating to language attributes."
+16,17,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""lb"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""i-lux"">  Lëtzebuerg ass e Land an Europa.  </p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""lb"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""i-lux"">  Lëtzebuerg ass e Land an Europa.  </p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page language attribute does not match the actual language of the content. ) according to WCAG 2.1?
+    ","To fix the accessibility issue related to the language attribute mismatch in the given HTML code, it's important to make sure that both the webpage's primary language and the actual language of the content are correctly specified. The line `lang=""lb""` in the `<html>` tag suggests the primary language of the page is Luxembourgish (ISO code 'lb'), and the paragraph `<p lang=""i-lux"">` contains text in Luxembourgish about Luxembourg (""Lëtzebuerg ass e Land an Europa."").
+
+It seems like the language code ""i-lux"" is not a standard language code and might be incorrect or user-defined. Here is how you can correct the code to better adhere to web accessibility guidelines according to WCAG 2.1:
+
+```html
+<html lang=""lb"">
+<body>
+  <!-- Accessibility Violation corrected -->
+  <p>
+    Lëtzebuerg ass e Land an Europa.
+  </p>
+</body>
+</html>
+```
+
+In this corrected version:
+- The `lang=""lb""` attribute on the `<html>` tag remains, indicating that the primary language of the page is Luxembourgish.
+- The `<p>` tag no longer has the `lang=""i-lux""` attribute, which was incorrect and unnecessary, as the content is indeed in Luxembourgish, correctly matching the page's primary language setting.
+
+If there were any segments of the content in a different language, you should set the `lang` attribute to the appropriate code for that specific language at the start of the segment. For example, for a sentence in German: `<p lang=""de"">Beispieltext auf Deutsch.</p>`. This ensures both readability and accessibility for users and assistive technologies understanding different languages."
+17,18,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac.html,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""en"">  <head>  <title>Dutch idioms</title>  </head>  <body>  <p>  The Dutch phrase   <! –– Accessibility Violation starts here ––>    <span lang=""fr"">""  Hij ging met de kippen   op stok""</span>    literally translates into ""He went to  roost with the chickens"",   but it means that he went to bed early.  </p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Dutch idioms</title>  </head>  <body>  <p>  The Dutch phrase   <! –– Accessibility Violation starts here ––>    <span lang=""fr"">""  Hij ging met de kippen   op stok""</span>    literally translates into ""He went to  roost with the chickens"",   but it means that he went to bed early.  </p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Sections in different languages lack appropriate lang attributes. ) according to WCAG 2.1?
+    ","To correct the accessibility issue in the source code according to WCAG 2.1 standards, you need to ensure that the language attribute (`lang`) accurately represents the language of the content it marks. In this example, the Dutch phrase ""Hij ging met de kippen op stok"" is incorrectly using a `lang=""fr""` attribute, which indicates the content is in French. However, this phrase is actually in Dutch.
+
+Here is the corrected source code snippet:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Dutch idioms</title>
+</head>
+<body>
+  <p>
+    The Dutch phrase
+    <!-- Accessibility Violation starts here -->
+    <span lang=""nl"">""Hij ging met de kippen op stok""</span>
+    literally translates into ""He went to roost with the chickens"", but it means that he went to bed early.
+  </p>
+</body>
+</html>
+```
+
+In the corrected version, the `span` element's `lang` attribute has been changed from `""fr""` to `""nl""` which is the appropriate ISO code for the Dutch language. This correction helps assistive technologies like screen readers to correctly determine and announce the language in which the text is written, enhancing accessibility for users who rely on such technologies."
+18,19,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ffcbd35493c91b4d8ee42c3a7fba9c2356144257.html,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""nl"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">The Dutch phrase</span>        ""Hij ging met de kippen op stok""    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">literally translates into   ""He went to roost with the chickens"", but it means   that he went to bed early.</span>    </p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""nl"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">The Dutch phrase</span>        ""Hij ging met de kippen op stok""    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">literally translates into   ""He went to roost with the chickens"", but it means   that he went to bed early.</span>    </p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Sections in different languages lack appropriate lang attributes. ) according to WCAG 2.1?
+    ","In the provided HTML source code, the primary violations concerning language tagging per the WCAG 2.1 guidelines involve incorrect or missing `lang` attributes that align with the content's language. This makes it challenging for screen readers to appropriately interpret and vocalize the text. Here's how you can fix the issues:
+
+1. **Root element (`<html>`)**: It's set correctly with `lang=""nl""` since the primary content is in Dutch. No change needed here.
+
+2. **English paragraph (`<p>`)**: The text within is primarily English but contains an embedded French segment. The paragraph starts in Dutch, switches to English, and then to French.
+
+3. **French spans (`<span>`)**: The segments in French need to be clearly marked, ensuring that screen readers switch languages accordingly.
+
+Here's the revised source code with appropriate `lang` attributes for compliance with WCAG guidelines:
+
+```html
+<html lang=""nl"">
+<head>
+  <title>Met de kippen op stok</title>
+</head>
+<body>
+  <!-- Accessibility Violation starts here -->
+  <blockquote>
+    <p>""Hij ging met de kippen op stok""</p> <!-- Dutch content, `lang=""nl""` is inherited -->
+  </blockquote>
+  <!-- Accessibility Violation starts here -->
+  <p lang=""en""> <!-- Starts in Dutch so switch to the main language of content -->
+    <span lang=""nl"">""Hij ging met de kippen op stok""</span> <!-- Dutch phrase inside English paragraph -->
+    "" literally translates into ""He went to roost with the chickens"", but it means that he went to bed early.
+    <!-- Accessibility Violation starts here -->
+    <span lang=""fr"">la phrase néerlandaise ""Hij ging met de kippen op stok"" se traduit littéralement par ""Il est allé se percher avec les poules"", mais cela signifie qu'il est allé se coucher tôt.</span> <!-- Correct French translation with `lang=""fr""` -->
+  </p>
+</body>
+</html>
+```
+
+### Explanation:
+- **Dutch phrase within an English paragraph**: I wrapped the Dutch phrase with a `span` that has a `lang=""nl""` attribute to signify the switch back to Dutch briefly before continuing in English.
+- **French translation**: The entire French translation is properly enclosed in a `span` with `lang=""fr""` to ensure linguistic accuracy for screen readers.
+  
+This structure clarifies the language changes for both users and user agents (like screen readers), enhancing accessibility and compliance with WCAG 2.1."
+19,20,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/d00a83015b309b51bebfc2c85f62488daec3a5d1.html,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>     <! –– Accessibility Violation starts here ––>    <div lang=""fr"">  <img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />    </div>       <! –– Accessibility Violation starts here ––>    <p lang=""nl"">   Bonne année !  </p>      </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>     <! –– Accessibility Violation starts here ––>    <div lang=""fr"">  <img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />    </div>       <! –– Accessibility Violation starts here ––>    <p lang=""nl"">   Bonne année !  </p>      </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Sections in different languages lack appropriate lang attributes. ) according to WCAG 2.1?
+    ","To address the accessibility issue related to the different language sections in your HTML document, you should ensure that each section has an appropriate `lang` attribute that matches the language of the content. In your provided HTML, the image description and a paragraph are incorrectly tagged with languages that do not match their content. Here is how you can fix it:
+
+1. The `alt` text for the image is in English, so the `div` containing the image should have the `lang` attribute set to `en` for English.
+
+2. The `p` tag content `Bonne année !` is in French, but the `lang` attribute for that tag is incorrectly set to `nl` (Dutch). You should change the `lang` attribute to `fr` for French.
+
+Here is the revised source code:
+
+```html
+<html lang=""fr"">
+<head>
+    <title>Feu d'artifice du nouvel an</title>
+</head>
+<body>
+    <!-- Accessibility Violation fixed here -->
+    <div lang=""en"">
+        <img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />
+    </div>
+    <!-- Accessibility Violation fixed here -->
+    <p lang=""fr"">
+        Bonne année !
+    </p>
+</body>
+</html>
+```
+
+This updated code correctly assigns language tags to different sections based on their content, which should address the WCAG 2.1 guidelines for language attributes, thereby making the content more accessible to users, especially those using screen readers."
+20,21,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/895a754e85f4fbc8e11cea52295381f41eb384ca.html,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />      <! –– Accessibility Violation starts here ––>    <p hidden="""" id=""caption"" >  Fireworks over Paris  </p>    </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />      <! –– Accessibility Violation starts here ––>    <p hidden="""" id=""caption"" >  Fireworks over Paris  </p>    </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Sections in different languages lack appropriate lang attributes. ) according to WCAG 2.1?
+    ","To fix the accessibility issue related to the usage of different languages in the provided HTML code and align it with the WCAG 2.1 guidelines, specifically where content in different languages requires appropriate `lang` attributes, you should ensure that all text content is marked with the correct language attribute. This is important for screen reader users, as it allows the screen reader to use the correct pronunciation rules.
+
+The provided HTML code has a primary language specified as French (`lang=""fr""`), but the caption text description for the image is in English. Therefore, you should specify the language for the English text to enhance accessibility:
+
+```html
+<html lang=""fr"">
+<head>
+  <title>Feu d&#x27;artifice du nouvel an</title>
+</head>
+<body>
+  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg"" />
+  <!-- Accessibility Violation starts here -->
+  <p hidden="""" id=""caption"" lang=""en"">Fireworks over Paris</p>
+</body>
+</html>
+```
+
+Here, I added `lang=""en""` to the `<p>` element containing the caption in English. This tells assistive technologies that although the main content of the document is in French, the caption text is in English, ensuring that it is read correctly."
+21,22,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b2a671d96ac510ccc6e34dd58a141d13bb196508.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","To fix the accessibility issue associated with conveying the purpose of the link more clearly, you should modify the anchor text to provide more context. This improvement ensures compliance with WCAG 2.1 criteria by making links understandable out of context and meaningful. The original link text ""More"" is vague and does not communicate what follows the link.
+
+Here is the revised version of your HTML code with an improved link description:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Failed Example 1</title>
+</head>
+<body>
+  <!-- Accessibility Violation corrected here -->
+  <a href=""#desc"">Learn more about the product structure</a>
+  <p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>
+```
+
+### Explanation:
+- **Link Text Modified**: The text of the link has been changed from ""More"" to ""Learn more about the product structure."" This text is more descriptive and tells the user what to expect when they follow the link, i.e., more information about the structure of the product in terms of its web pages.
+- **Link Purpose**: By specifying the purpose in the link text, we assist all users, including those using assistive technologies such as screen readers, to understand the destination and context of the link without needing to read surrounding content. This makes browsing more intuitive and accessible.
+
+This change adheres to the WCAG 2.1 guideline that links need to be understandable by providing users with a clear understanding of the link's destination."
+22,23,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <div onclick=""document.location+=&#x27;#main&#x27;""   role=""link"" tabindex=""0"">More</div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <div onclick=""document.location+=&#x27;#main&#x27;""   role=""link"" tabindex=""0"">More</div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","To make the link element in your web page's source code more accessible and compliant with the Web Content Accessibility Guidelines (WCAG) 2.1, specifically addressing that links should convey clear and distinct purpose, you can modify the HTML as follows:
+
+1. **Replace the `<div>` element with a more appropriate `<a>` (anchor) tag**, which is inherently designed to be used as a link. This change provides better semantic meaning and is more readily understood by assistive technologies like screen readers.
+
+2. **Include an `aria-label` attribute** to the anchor tag to provide a clear description of the link's purpose. This attribute can help users understand the function of the link when using screen readers.
+
+3. **Ensure proper focus management** by using the anchor tag which supports keyboard focus by default when `href` is used.
+
+Here is the modified version of your source code:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Failed Example 2</title>
+</head>
+<body>
+  <!-- Accessibility Improvements starts here -->
+  <a href=""#main"" aria-label=""View main content"" tabindex=""0"">More about the content</a>
+  <main>
+    <p id=""main"">This is the main content.</p>
+  </main>
+</body>
+</html>
+```
+
+### Changes Made:
+- **Switched `<div>` to `<a>` tag** to improve semantic meaning.
+- **Added** `href=""#main""` which provides the functionality to jump directly to the part of the page with id `main`. This attribute also makes the element focusable.
+- **Included** `aria-label=""View main content""` which gives screen readers clear information about the purpose of the link.
+- **Enhanced link text** from ""More"" to ""More about the content"" to improve clarity about what the link does when read by users and screen readers.
+
+These modifications will help ensure that the link is not only accessible but also provides clear and unambiguous information about its purpose, in line with WCAG 2.1 guidelines."
+23,24,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","The accessibility issue here entails the lack of descriptive text for the link defined within the `<svg>` element. According to WCAG 2.1, links should convey clear and descriptive information about the destination or purpose of the link. The text ""Go"" does not provide enough context to inform the user about what the link does or where it leads.
+
+To fix this accessibility issue, consider changing the link text to something more descriptive regarding its action or destination. Since the link points to the main content of the page, you could update the text to something like ""Skip to main content"" or ""Go to main content"". Here's how you can modify the HTML code to improve the accessibility:
+
+```html
+<html lang=""en"">
+  <head>
+    <title>Improved Accessibility Example</title>
+  </head>
+  <body>
+    <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+      <!-- Accessibility Improvement begins here -->
+      <a href=""#main"" aria-label=""Skip to main content"">
+        <text x=""20"" y=""20"">Go to Main Content</text>
+      </a>
+    </svg>
+    <main>
+      <p id=""main"">This is the main content.</p>
+    </main>
+  </body>
+</html>
+```
+
+### Key Modifications:
+1. **Descriptive Link Text:** The text within the link has been changed from ""Go"" to ""Go to Main Content"", which clearly states its function.
+2. **Use of `aria-label`:** Although the text has been made more descriptive, using `aria-label` adds an additional layer of clarity, especially beneficial for those using screen readers. This attribute describes the purpose of the link in more precise terms.
+
+These changes ensure that the link’s purpose is clear to all users, including those using assistive technologies, aligning the webpage with WCAG guidelines."
+24,25,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/771c36b9967faec9926af86041d834b4a108a52e.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>See the description of     <! –– Accessibility Violation starts here ––>    <a href=""#desc"">    this product</a>.</p>  <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>See the description of     <! –– Accessibility Violation starts here ––>    <a href=""#desc"">    this product</a>.</p>  <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","The accessibility issue in the example provided revolves around the ambiguous nature of the link text, which fails to convey the specific purpose of the link. According to WCAG 2.1, link text should be descriptive enough to be understood when taken out of context. The link text ""this product"" could potentially be unclear or ambiguous to users, particularly those using screen readers.
+
+Here's an improved version of the HTML source code with a more descriptive link text:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Failed Example 4</title>
+</head>
+<body>
+  <p>See the <a href=""#desc"">description of the product and its web page components</a>.</p>
+  <p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>
+```
+
+In this revised version, the link text ""description of the product and its web page components"" explicitly states what the link is about, thereby making it clear to all users, including those relying on assistive technologies, what to expect when they follow the link. This link text is especially helpful because it ensures that even when read out of context, its purpose remains explicit and straightforward."
+25,26,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b130285915a8ca42926a11553a5791f44b65d487.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <ul>  <li>  Ulysses  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" > HTML    </a> </li>        <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images"" >    EPUB    </a>    </li>       <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">   Plain text    </a> </li>        </ul>    </li>    </ul>    </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <ul>  <li>  Ulysses  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" > HTML    </a> </li>        <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images"" >    EPUB    </a>    </li>       <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">   Plain text    </a> </li>        </ul>    </li>    </ul>    </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","To address the accessibility issue in the provided source code, specifically ensuring that the links convey their purpose clearly in accordance with WCAG 2.1 guidelines, you need to make the link text more descriptive. The link text should inform users where the link will take them or what the link will provide, especially for those who rely on screen readers. Currently, the links are labeled only as ""HTML"", ""EPUB"", and ""Plain text"", which do not adequately describe their purpose or content.
+
+Here's how you can modify the HTML code to improve link text descriptions:
+
+```html
+<html lang=""en"">
+<head>
+    <title>Failed Example 5</title>
+</head>
+<body>
+    <ul>
+        <li>
+            Ulysses
+            <ul>
+                <!-- Accessibility Enhancement starts here -->
+                <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html"">Read 'Ulysses' by James Joyce in HTML format</a></li>
+                <li><a href=""https://www.gutenberg.org/ebooks/4300.epub.images"">Download 'Ulysses' by James Joyce as an EPUB file</a></li>
+                <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">Access 'Ulysses' by James Joyce in Plain text format</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+```
+
+### Adjustments Made:
+1. **Link Descriptions Enhanced**: Each link text is now more descriptive about what action the user is performing and what they will receive. This is crucial for screen reader users and improves usability for everyone.
+2. **Clear Context and Content**: The language around each format adds clarity and assists users in understanding what each link offers without needing to guess based on file type alone.
+
+These modifications conform more closely to the WCAG 2.1 guideline for link purposes (2.4.4 Link Purpose (In Context)) by making each link’s purpose clear from the link text itself."
+26,27,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/b2a671d96ac510ccc6e34dd58a141d13bb196508.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","The accessibility issue in the given webpage is about the link text ""More"" which is ambiguous and does not convey the purpose of the link clearly. According to WCAG 2.1, link text should be descriptive enough to inform users about what to expect when they click the link, especially for those relying on screen readers.
+
+To fix this, you can make the link text more descriptive by replacing ""More"" with text that explicitly describes the purpose of the link, such as ""More about the product."" Here’s how the revised HTML code would look:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Accessible Example</title>
+</head>
+<body>
+  <!-- Accessibility Improved Version -->
+  <a href=""#desc"">More about the product</a>
+  <p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>
+```
+
+This change helps all users, including those using screen readers, to better understand where the link will take them and what information they can expect to find, therefore improving the accessibility of the webpage."
+27,28,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <div onclick=""document.location+=&#x27;#main&#x27;"" role=""link"" tabindex=""0"">More  </div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <div onclick=""document.location+=&#x27;#main&#x27;"" role=""link"" tabindex=""0"">More  </div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","The primary accessibility issue in the provided HTML code is that the clickable element, which is used as a link (indicated by `div onclick` and `role=""link""`), does not have a clear and descriptive text indicating its purpose. Using vague text like ""More"" can be ambiguous and does not inform the user about what to expect from the link, especially for those using screen readers.
+
+To fix this accessibility issue in line with WCAG 2.1 success criteria, you should provide a more descriptive link text that conveys the purpose of the link clearly. Additionally, consider using a proper anchor `<a>` tag for links instead of a `<div>` with role and onclick attributes, as this approach uses standard HTML practices, which improve accessibility and are more semantically correct. Here’s how you can modify the HTML code:
+
+```html
+<html lang=""en"">
+  <head>
+    <title>Failed Example 2</title>
+  </head>
+  <body>
+    <div role=""link"" tabindex=""0"" onclick=""location.href='#main';"">
+      <a href=""#main"" style=""text-decoration: none; color: inherit;"">Discover More About the Main Content</a>
+    </div>
+    <main>
+      <p id=""main"">This is the main content.</p>
+    </main>
+  </body>
+</html>
+```
+
+### Changes made:
+1. Changed the clickable text from ""More"" to ""Discover More About the Main Content"" to provide more context and clarity.
+2. Used an `<a>` element inside the `<div>` with an actual `href` attribute pointing to the `#main`, making it more standard and accessible.
+3. Added inline styles to the `<a>` tag to ensure the appearance is consistent with the original design intent (i.e., no underline and inherit color).
+4. Kept the `<div>` with `role=""link""` and `tabindex=""0""` to maintain focusable behavior, although these might be redundant with the proper use of an `<a>` tag, they ensure wider accessibility support.
+
+This modification not only enhances the semantics of the document by using the correct element for navigation but also improves accessibility by providing a clear, descriptive link text. It's essential for users, especially those with disabilities, to understand the purpose of each interactive element on the page.
+"
+28,29,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","The SVG hyperlink saying ""Go"" is ambiguous and does not effectively convey the purpose of the link, which is to navigate to the main content of the page. To improve accessibility and meet WCAG 2.1 guidelines, you should provide a more descriptive label that clearly states the purpose of the link. Here's how you can modify the source code:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Accessible Example</title>
+</head>
+<body>
+  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+    <!-- Accessibility Enhanced here -->
+    <a href=""#main"">
+      <text x=""20"" y=""20"">Go to Main Content</text>
+    </a>
+  </svg>
+  <main>
+    <p id=""main"">This is the main content.</p>
+  </main>
+</body>
+</html>
+```
+
+Changes made:
+1. Changed the text within the `<text>` tag from ""Go"" to ""Go to Main Content"". This provides a clearer understanding of where the link will navigate, thus making the link text meaningful and specific.
+
+These changes enhance the understanding for all users, including those using assistive technologies, by clearly describing the destination of the link."
+29,30,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/98f0638a038a244b0bde70ff316cde1be7ce9a3b.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>  The W3C held a workshop on June 9-10, 2005 at DERI   Innsbruck (Austria), to gather information about potential   standardization work on Semantics in Web Services.  </p>    <! –– Accessibility Violation starts here ––>    <p><a href=""https://www.workshop-report.html"" > Workshop </a> </p>   </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>  The W3C held a workshop on June 9-10, 2005 at DERI   Innsbruck (Austria), to gather information about potential   standardization work on Semantics in Web Services.  </p>    <! –– Accessibility Violation starts here ––>    <p><a href=""https://www.workshop-report.html"" > Workshop </a> </p>   </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","To enhance the accessibility of the link in the provided source code and make it conform to WCAG 2.1 guidelines regarding link purpose clarity, you should update the link text to specifically describe its target. The current link text ""Workshop"" is ambiguous and does not convey enough information about where the link leads.
+
+Here is the updated section of the HTML code:
+
+```html
+<p>
+  The W3C held a workshop on June 9-10, 2005 at DERI Innsbruck (Austria), to gather information about potential standardization work on Semantics in Web Services.
+</p>
+<p>
+  <a href=""https://www.workshop-report.html"">Read the detailed workshop report on Semantics in Web Services</a>
+</p>
+```
+
+In this updated version:
+- The link text is changed to ""Read the detailed workshop report on Semantics in Web Services"" instead of just ""Workshop,"" making it clear what clicking on the link will provide. This clear, descriptive link text meets WCAG 2.1 success criterion 2.4.4 (Link Purpose (In Context)) by ensuring that the purpose of the link is evident from the link text itself."
+30,31,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/43730455b69439980b95151be477ca594e0d7556.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <p style=""font-weight: bold"">Ulysses</p>  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" >    HTML    </a>& #10; </li>      <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images "">   EPUB   </a>  </li>     <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt "">    Plain text    </a>    </li>        </ul>   </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <p style=""font-weight: bold"">Ulysses</p>  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" >    HTML    </a>& #10; </li>      <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images "">   EPUB   </a>  </li>     <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt "">    Plain text    </a>    </li>        </ul>   </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","To address the accessibility issue related to conveying the purpose of each link, we can modify the anchor text to make it more descriptive. This change will help users, especially those using screen readers, to better understand what each link leads to without needing to guess or navigate to the link to find out. Here's an updated version of the source code with the fixes:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Failed Example 5</title>
+</head>
+<body>
+  <p style=""font-weight: bold"">Ulysses</p>
+  <ul>
+    <!-- Accessibility Fix Applied -->
+    <li>
+      <a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html"">
+        Read ""Ulysses"" by James Joyce in HTML format
+      </a>
+    </li>
+    <!-- Accessibility Fix Applied -->
+    <li>
+      <a href=""https://www.gutenberg.org/ebooks/4300.epub.images"">
+        Download ""Ulysses"" by James Joyce as an EPUB file with images
+      </a>
+    </li>
+    <!-- Accessibility Fix Applied -->
+    <li>
+      <a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">
+        Download ""Ulysses"" by James Joyce as plain text
+      </a>
+    </li>
+  </ul>
+</body>
+</html>
+```
+
+### Key Changes Explained:
+1. **Descriptive Text**: Each link's text now describes what users will receive or see after clicking the link. This directly addresses the problem of ambiguous link text and makes it clear that the links are for specific versions of ""Ulysses"" by James Joyce.
+   
+2. **Accessibility and Usability Improvement**: These changes not only aid accessibility but also improve the overall user experience by providing clear, informative link text. This helps all users, not just those using assistive technology.
+
+This revised code now meets the Web Content Accessibility Guidelines (WCAG) 2.1 requirement that links must convey their purpose clearly to the user."
+31,32,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/45d884e81c4ef8234cfbd85d259dd6a64685c9d2.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 6</title>  </head>  <body>  <table>  <tr>  <th colspan=""3"">Books</th>  </tr>  <tr>  <td>Ulysses</td>      <! –– Accessibility Violation starts here ––>    <td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "">Download </a> </td>    <td> 1.61MB </td>    </tr>    </table>    </body>   </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 6</title>  </head>  <body>  <table>  <tr>  <th colspan=""3"">Books</th>  </tr>  <tr>  <td>Ulysses</td>      <! –– Accessibility Violation starts here ––>    <td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "">Download </a> </td>    <td> 1.61MB </td>    </tr>    </table>    </body>   </html>"", can you fix the accessibility issue related to the success criteria: ( Links fail to convey their purpose or are ambiguous. ) according to WCAG 2.1?
+    ","In the provided HTML snippet, the word ""Download"" used as the link text for downloading the book ""Ulysses"" is ambiguous because it does not clarify what is being downloaded. This might cause confusion, especially for users who rely on screen readers or when links are taken out of context.
+
+To make the link more accessible and clear, you should modify the anchor text to include specific information about what the link does. For example, changing the link text from ""Download"" to ""Download Ulysses"" provides clear information about the link's purpose. Additionally, to further enhance accessibility, you can use the `aria-label` attribute to provide screen reader users with extra context. Here is how you could modify the HTML:
+
+```html
+<html lang=""en"">
+<head>
+<title>Failed Example 6</title>
+</head>
+<body>
+<table>
+<tr>
+<th colspan=""3"">Books</th>
+</tr>
+<tr>
+<td>Ulysses</td>
+<!-- Accessibility Enhancement starts here -->
+<td>
+<a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html"" aria-label=""Download Ulysses, PDF, 1.61MB"">Download Ulysses</a>
+</td>
+<td>1.61MB</td>
+</tr>
+</table>
+</body>
+</html>
+```
+
+In this edited HTML:
+- The link text ""Download Ulysses"" directly states what the user can expect to download by clicking the link.
+- The addition of `aria-label` provides additional descriptive text, helping to inform the user about the file type and size, which can be particularly useful if the link text doesn't sufficiently convey this detail on its own.
+
+This correction addresses the WCAG 2.1 success criteria regarding the clarity of link purposes by making the link text more specific and understandable."
+32,33,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/9b967559ff2691dc30436766f53feea55447b348.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <label>Date    <! –– Accessibility Violation starts here ––>    <input id=""fname"" name=""fname"" type=""text""/></label>    </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <label>Date    <! –– Accessibility Violation starts here ––>    <input id=""fname"" name=""fname"" type=""text""/></label>    </html>"", can you fix the accessibility issue related to the success criteria: ( Forms elements have unclear or incorrect labels. ) according to WCAG 2.1?
+    ","The main accessibility issue with the example provided is that the input element for entering a date does not have a label that is programmatically associated with it. This can make it difficult for users, particularly those relying on screen readers, to understand what information is expected in the input field.
+
+To fix this issue, you should modify the HTML code so that the label is properly associated with the input element using the `for` attribute in the label tag. The `for` attribute value should match the `id` of the input element. Additionally, the `id` attribute of the input should be descriptive and relevant to its purpose. Since this input is for a date, it would make sense to change the `id` and the name from `fname` to something more descriptive like `date`.
+
+Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+<label for=""date"">Date</label>
+<input id=""date"" name=""date"" type=""text""/>
+</html>
+```
+
+In this corrected version:
+- The `<label>` tag's `for` attribute is set to `""date""`, which matches the `id` of the `<input>` element.
+- The `id` and `name` attributes of the input are changed to ""date"" to better indicate its purpose.
+- This setup ensures that assistive technologies can correctly associate the label with the input field, improving form accessibility."
+33,34,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/1e52060759a535934176a5a981446066aad6b31f.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <label for=""fname"">Age</label>    <! –– Accessibility Violation starts here ––>    <input id=""address"" name=""address"" type=""text""/>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <label for=""fname"">Age</label>    <! –– Accessibility Violation starts here ––>    <input id=""address"" name=""address"" type=""text""/>  </html>"", can you fix the accessibility issue related to the success criteria: ( Forms elements have unclear or incorrect labels. ) according to WCAG 2.1?
+    ","The issue with the provided HTML code lies in the mismatch between the `<label>` tag and the `<input>` tag. The label displays ""Age"", suggesting that users are expected to input their age, but the corresponding input element is identified by an `id` of ""address"" and named ""address,"" which would typically be used for a field to enter a street address, not an age.
+
+To resolve this accessibility issue and align the fields accurately with appropriate labels as per WCAG 2.1 standards, the HTML should be corrected so that the label correctly matches the input it is associated with. Here is the fixed version of the code:
+
+```html
+<html lang=""en"">
+  <label for=""age"">Age</label>
+  <input id=""age"" name=""age"" type=""text""/>
+</html>
+```
+
+In this corrected version:
+- The `for` attribute in the `<label>` tag now correctly matches the `id` of the `<input>` field, ensuring that the label is associated with the correct input field.
+- The `id` and `name` attributes of the `<input>` have been changed to ""age"" to accurately reflect the data expected from the user, which is their age. This not only makes the form more intuitive but also improves accessibility by ensuring that screen readers can properly interpret the label and field association."
+34,35,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/fa5104f9bd07fe52813d7e511c3cc87c4c1cf232.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <p id=""label_fname"">What is your previous address?</p>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""add"" name=""add"" type=""text""/>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <p id=""label_fname"">What is your previous address?</p>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""add"" name=""add"" type=""text""/>  </html>"", can you fix the accessibility issue related to the success criteria: ( Forms elements have unclear or incorrect labels. ) according to WCAG 2.1?
+    ","To fix the accessibility issue in the provided HTML snippet in accordance with WCAG 2.1, you need to ensure that the form input element is properly associated with its label. This helps users, particularly those who use screen readers, to understand what information is requested in the input field.
+
+The issue with your source code is that the `aria-labelledby` attribute on the input element refers to an id ""add"" that does not exist on any label element. Here's how you can correct it:
+
+1. Add a `label` element with the correct content and associate it with the input field by giving the label an `id` that matches the `aria-labelledby` attribute of the input.
+
+2. Ensure that the input's `name` attribute does not conflict with its `aria-labelledby` attribute.
+
+Here's the corrected HTML snippet:
+
+```html
+<html lang=""en"">
+  <body>
+    <!-- Label for the input field -->
+    <label id=""label_address"">What is your previous address?</label>
+    
+    <!-- Input field properly linked to the label above -->
+    <input aria-labelledby=""label_address"" name=""previous_address"" type=""text""/>
+  </body>
+</html>
+```
+
+**Explanation:**
+- The `label` element has an `id` of ""label_address"".
+- The `input` element’s `aria-labelledby` attribute now correctly references `label_address`, ensuring the label is programmatically associated with the input.
+- I changed the `name` attribute of the input element to ""previous_address"" to better reflect its purpose and avoid confusion with the aria attributes.
+
+This modification ensures that the label is clearly linked to the corresponding input field, making the form more accessible for everyone, including users who rely on assistive technologies."
+35,36,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/649946098faf6f36b8232ea74fc3bae3cf8997e7.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>  <label>First Name:: <input name=""shipping-street"" type=""text""/></label>  <label>Last Name:: <input name=""shipping-street"" type=""text""/></label>    </fieldset>  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Contact Information</h2>  <label>House Number: <input name=""contact-info"" type=""text""/></label>  <label>Street: <input name=""contact-info"" type=""text""/></label>      </fieldset>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>  <label>First Name:: <input name=""shipping-street"" type=""text""/></label>  <label>Last Name:: <input name=""shipping-street"" type=""text""/></label>    </fieldset>  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Contact Information</h2>  <label>House Number: <input name=""contact-info"" type=""text""/></label>  <label>Street: <input name=""contact-info"" type=""text""/></label>      </fieldset>  </html>"", can you fix the accessibility issue related to the success criteria: ( Forms elements have unclear or incorrect labels. ) according to WCAG 2.1?
+    ","To address the accessibility issues highlighted in the provided source code, we need to make changes that ensure each form element is clearly and accurately labeled. Expanded use of `<label>` and correcting the input `name` attributes to correctly associate with what the input is intended to gather are crucial adjustments.
+
+Here is the revised source code with these issues fixed:
+
+```html
+<html lang=""en"">
+  <fieldset>
+    <h2>Shipping Address</h2> <!-- Made the header visible by removing the positioning styles -->
+    <label for=""first-name"">First Name:
+      <input id=""first-name"" name=""first-name"" type=""text""/>
+    </label>
+    <label for=""last-name"">Last Name:
+      <input id=""last-name"" name=""last-name"" type=""text""/>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <h2>Contact Information</h2> <!-- Made the header visible by removing the positioning styles -->
+    <label for=""house-number"">House Number:
+      <input id=""house-number"" name=""house-number"" type=""text""/>
+    </label>
+    <label for=""street"">Street:
+      <input id=""street"" name=""street"" type=""text""/>
+    </label>
+  </fieldset>
+</html>
+```
+
+### Key Changes Made:
+1. **Visibility of Section Headers:** Updated the `h2` header tags by removing the absolute positioning and the off-screen placement (`top: -9999px; left: -9999px;`). This ensures that the headings are visible to screen reader users and properly announce the beginning of each form section. 
+
+2. **Proper Use of Labels and Inputs:** Each `<input>` tag now has a corresponding `<label>` with a `for` attribute that matches the `id` of the associated input field. This establishes a proper relationship between the label and the input, improving the accessibility for screen readers and those with motor impairments as they can click the label to focus on the input.
+
+3. **Correct Naming of Input Fields:** Changed the `name` attributes of the inputs to reflect the data they are supposed to collect (e.g., ""first-name"", ""last-name"", ""house-number"", ""street""). This helps in accurately capturing the data and likewise aids in form data handling on the back end. 
+
+With these changes, the form not only becomes more usable for all users but also complies better with WCAG 2.1 guidelines concerning form element labeling and visibility."
+36,37,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <span id=""search"" style=""display: none"">Search</span>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""submit search by clicking here"" name=""search"" type=""text""/>  <button id=""submit"">Go</button>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <span id=""search"" style=""display: none"">Search</span>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""submit search by clicking here"" name=""search"" type=""text""/>  <button id=""submit"">Go</button>  </html>"", can you fix the accessibility issue related to the success criteria: ( Forms elements have unclear or incorrect labels. ) according to WCAG 2.1?
+    ","To fix the accessibility violation related to form elements having unclear or incorrect labels as per WCAG 2.1 guidelines, you need to clearly associate the text input field with its functional label in a way that is programmatically determinable. The existing code incorrectly uses an `aria-labelledby` attribute that refers to a non-existent element or misguides about the button's function as a label for the text field. Here’s how you can modify the HTML code to improve accessibility:
+
+1. **Ensure the 'label' element is used correctly**: Use a `label` element to provide a clear, visible description for the text input field.
+2. **Correct use of `aria-labelledby`**: Ensure that `aria-labelledby` points to an ID of an element that exists and describes the input field properly.
+3. **Add visibility to the label**: Since the label ""Search"" is hidden with `display: none`, it should be made visible or provided in a way that assistsive technologies can read it.
+
+Here’s a corrected version of your HTML:
+
+```html
+<html lang=""en"">
+  <!-- Visible label element that correctly labels the input field -->
+  <label for=""searchInput"">Search</label>
+  <input id=""searchInput"" name=""search"" type=""text"" aria-labelledby=""searchLabel""/>
+
+  <!-- Explain the button functionality properly -->
+  <button id=""submit"" aria-label=""Submit search"">Go</button>
+
+</html>
+```
+
+### Changes and Explanations:
+1. **Label Element**: A visible `label` element with `for` attribute that links it to the ID of the input (`searchInput`), providing a clear label for the text box.
+2. **Input ID and ARIA**: Adding an `id=""searchInput""` to the input, which is referenced by the `label`'s `for` attribute. Additionally, the input does not need `aria-labelledby` anymore since it's explicitly labelled.
+3. **Button ARIA Label**: Enhanced the button with an `aria-label` describing its action, making it clear for screen readers.
+
+This modification will improve the accessibility of the form by making sure that the form elements have clear and correct labels, complying with the WCAG 2.1 guidelines for accessible forms."
+37,38,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/79cce8d89309bea03e122d2917d340a525db4de0.html,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  </html>"", can you fix the accessibility issue related to the success criteria: ( Headings are vague, repetitive, or fail to describe the content. ) according to WCAG 2.1?
+    ","The heading ""Weather"" in the given HTML code and webpage screenshot does not adequately describe the content of the webpage, particularly when it primarily focuses on operating hours. An accessible and descriptive heading helps users, especially those using screen readers, understand the primary content or purpose of the page without ambiguity. To address this WCAG 2.1 success criterion concern, the heading should be updated to better match the page content.
+
+Here's the revised source code that should better align with the content of the webpage:
+
+```html
+<html lang=""en"">
+    <!-- Accessibility Improvement: Updated Heading -->
+    <h1>Operating Hours</h1>
+    <p>We are open Monday through Friday from 10 to 16</p>
+</html>
+```
+
+By updating the heading to ""Operating Hours"", we make it clear to the user what the main focus of the page is. This approach improves the semantic structure and accessibility of the page, making it more user-friendly for everyone, including those with disabilities."
+38,39,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/acae544ba63bf9c71988fb67d491c7d404164f52.html,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"">Weather</span>    <p>We are open Monday through Friday from 10 to 16</p>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"">Weather</span>    <p>We are open Monday through Friday from 10 to 16</p>  </html>"", can you fix the accessibility issue related to the success criteria: ( Headings are vague, repetitive, or fail to describe the content. ) according to WCAG 2.1?
+    ","To address the accessibility issue highlighted in the source code, it's essential to ensure that the headings used on the page properly describe and reflect the content they introduce. In the provided example, the heading ""Weather"" does not accurately reflect the content that follows, which is about business hours rather than meteorological conditions.
+
+The accessibility issue can be corrected by amending the heading to more accurately describe the content below it. Additionally, it's important to use semantic HTML to help screen readers and other assistive technologies properly interpret the structure and important sections of the page. The `<span>` tag with `role=""heading""` and `aria-level=""1""` can be replaced with a more appropriate HTML heading tag such as `<h1>`, `<h2>`, etc., depending on the importance and structure of the content within the page.
+
+Here’s how the improved HTML might look:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <title>Business Hours</title>
+</head>
+<body>
+    <!-- Accessibility Improved Heading -->
+    <h1>Business Hours</h1>
+    <p>We are open Monday through Friday from 10 to 16</p>
+</body>
+</html>
+```
+
+**Changes made:**
+1. **Heading Element Changed:** The `<span>` tag has been replaced with a `<h1>` tag that is more semantic and automatically recognized by assistive technologies without additional ARIA attributes.
+2. **Heading Content Updated:** Updated the text from ""Weather"" to ""Business Hours"" to more accurately reflect the content below, i.e., operating hours.
+
+These changes help ensure the page is more accessible and the headings clearly and accurately guide the user through the content, fulfilling the WCAG 2.1 success criteria regarding clear and descriptive headings."
+39,40,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">  Weather  </span>    <p>  We are open Monday through Friday from 10 to 16  </p>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">  Weather  </span>    <p>  We are open Monday through Friday from 10 to 16  </p>  </html>"", can you fix the accessibility issue related to the success criteria: ( Headings are vague, repetitive, or fail to describe the content. ) according to WCAG 2.1?
+    ","To address the accessibility issue identified in your source code, particularly concerning the vague and hidden heading that fails to describe the content appropriately, you can take the following steps:
+
+1. **Use an Appropriate Heading Level**: Ensure that the heading accurately represents the structure and content of the webpage. For instance, use `<h1>` to `<h6>` tags properly to convey the hierarchical structure of the content.
+
+2. **Make the Heading Visible and Descriptive**: Remove the CSS that positions it out of the visible area (`style=""position: absolute; top: -9999px; left: -9999px;""`) and replace the heading to be more descriptive of the content provided under it.
+
+3. **Change the Role Appropriately**: The `role` attribute should match the semantic purpose of the element. Since we're now using a heading element (`<h1>`, `<h2>`, etc.), the role `heading` is implicitly set, and we can therefore remove the explicit role attribute.
+
+Here is the fixed version of your HTML based on the above recommendations:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Business Hours</title>
+</head>
+<body>
+  <!-- Improved Accessibility -->
+  <h1>Business Hours</h1>
+  <p>We are open Monday through Friday from 10 to 16</p>
+</body>
+</html>
+```
+
+### Explanation of Changes:
+- **`<h1>` Tag**: I replaced `<span>` with an `<h1>` tag to utilize the appropriate HTML element for a primary heading, ensuring it is recognized by accessibility tools.
+- **Visible and Accurate Content**: The heading ""Business Hours"" is now both visible and descriptive, giving clarity about the content that follows.
+- **Removed Style and Role**: The CSS styles that hid the text and the explicit `role` have been removed as they are no longer necessary. The `<h1>` element natively serves the purpose of a page-heading.
+
+These changes will improve the webpage's accessibility by making the headings useful and visible, thereby conforming to the WCAG 2.1 standards about headings being descriptive and meaningful."
+40,41,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/d76e8834b616356b2803586a8fbd0825a84e3fc8.html,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  <p>It is going to rain tomorrow</p>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  <p>It is going to rain tomorrow</p>  </html>"", can you fix the accessibility issue related to the success criteria: ( Headings are vague, repetitive, or fail to describe the content. ) according to WCAG 2.1?
+    ","To enhance the accessibility of this webpage and make it compliant with the Web Content Accessibility Guidelines (WCAG) 2.1, specifically improving the way content is organized under headers, you can improve the headings to more clearly reflect the structure and content of the page. Here's how you can modify the HTML source code:
+
+```html
+<html lang=""en"">
+  <h1>Weather Forecast and Office Hours</h1>
+  <h2>Office Hours</h2>
+  <p>We are open Monday through Friday from 10:00 AM to 4:00 PM</p>
+  <h2>Tomorrow's Weather</h2>
+  <p>It is going to rain tomorrow.</p>
+</html>
+```
+
+### Changes and Justifications:
+1. **Title Change**: I changed the main heading to ""Weather Forecast and Office Hours."" This heading provides a clearer overview of the two types of information presented on the page, which helps users immediately understand the context.
+
+2. **Additional Headings**: I introduced additional subheadings (""Office Hours"" and ""Tomorrow's Weather""). These subheadings make the page structure clear and allow users to easily navigate and find the specific pieces of information they are looking for.
+
+3. **Formatting Time**: The time format ""10 to 16"" has been changed to ""10:00 AM to 4:00 PM"" for clarity and to cater to a broader audience, including those who might not be familiar with a 24-hour clock format.
+
+These adjustments should help improve the accessibility of your webpage by ensuring that headings are more descriptive and content is better organized. This satisfies WCAG 2.1 criteria pertaining to clear and descriptive headings that help users find content, navigate, and understand the structure of the website."
+41,42,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/2c1397032aad720fe43dee2be0d326be56957320.html,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Apple harvesting season</title>    </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Apple harvesting season</title>    </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page title fails to describe the content or purpose of the page, making navigation difficult. ) according to WCAG 2.1?
+    ","To fix the accessibility issue pertaining to the page title described in the source code you provided, the title within the `<head>` tags needs to be updated to accurately reflect the main content and purpose of the webpage. Specifically, the title ""Apple harvesting season"" does not align with the content displayed in the screenshot and the webpage itself, which details the harvesting season for clementines.
+
+Here is a revised version of your source code with an updated, more descriptive title:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <!-- Accessibility Fix applied here -->
+    <title>Clementine Harvesting Season Information</title>
+</head>
+<body>
+    <p>
+        Clementines will be ready to harvest from late October through February.
+    </p>
+</body>
+</html>
+```
+
+By changing the title to ""Clementine Harvesting Season Information,"" the title now reflects the webpage's content and purpose, which aligns with the Web Content Accessibility Guidelines (WCAG) 2.1 requirements, making the navigation and identification of the webpage's content easier for users, especially for those using assistive technologies."
+42,43,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/1844d7bce889d85a80b620468baa804eab3ff2c8.html,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Cucumber and Tomato Harvest</title>  <title>Clementine harvesting season</title>      </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Cucumber and Tomato Harvest</title>  <title>Clementine harvesting season</title>      </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page title fails to describe the content or purpose of the page, making navigation difficult. ) according to WCAG 2.1?
+    ","To fix the accessibility issue related to the success criteria about the page title in the given HTML source, you should ensure that the <title> element uniquely describes the content and purpose of the webpage. This helps in better navigation, especially for those using screen readers.
+
+Here are the issues and fix:
+
+1. **Multiple Title Tags**: You should never include more than one `<title>` tag in a single HTML document. This confuses browsers and screen readers, as they might not be sure which title to display or announce.
+
+2. **Descriptive Title**: Ensure the title is descriptive of the webpage’s content. From the included content and previous <title> tags, it seems the focus is on the harvesting season of certain fruits.
+
+### Corrected Source Code:
+
+Here’s how you might revise your HTML to better portray the page's content and purpose:
+
+```html
+<html lang=""en"">
+<head>
+    <!-- Accessibility Corrected -->
+    <title>Clementine Harvesting Season: October to February</title>
+</head>
+<body>
+<p>
+    Clementines will be ready to harvest from late October through February.
+</p>
+</body>
+</html>
+```
+
+### Explanation:
+
+- **Single Title**: I’ve included only one `<title>` tag.
+- **Descriptive and Complete**: The title now clearly describes the main content of the page, which is the harvesting season for Clementines. This is more specific and useful for users, especially when they have multiple tabs open or are using assistive technologies.
+
+By making these adjustments, your webpage will be more accessible and comply better with WCAG 2.1 guidelines related to providing navigable, understandable content."
+43,44,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>University of Arkham</title>    </head>  <body>  <h1>Search results for ""accessibility"" at the University of Arkham</h1>  <p>None</p>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>University of Arkham</title>    </head>  <body>  <h1>Search results for ""accessibility"" at the University of Arkham</h1>  <p>None</p>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Page title fails to describe the content or purpose of the page, making navigation difficult. ) according to WCAG 2.1?
+    ","To fix the accessibility issue mentioned, the page title should clearly reflect the specific content or purpose of the webpage. The original title, ""University of Arkham,"" is too generic and does not inform users about the specifics of the page. It should instead mirror or be similar to the main heading on the page to make navigation easier and more intuitive, particularly for users utilizing screen readers.
+
+Here’s how you can update the HTML source code to improve the page title:
+
+```html
+<html lang=""en"">
+<head>
+    <!-- Accessibility fix applied: Updated page title to better describe the page content -->
+    <title>Search Results for 'Accessibility' - University of Arkham</title>
+</head>
+<body>
+    <h1>Search results for ""accessibility"" at the University of Arkham</h1>
+    <p>None</p>
+</body>
+</html>
+```
+
+This change enhances the webpage’s accessibility by making the title more descriptive of the page’s content, thereby assisting in better navigation and orientation for all users, including those with disabilities."
+44,45,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6.html,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Passed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input alt=""Clear Form"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>    </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Passed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input alt=""Clear Form"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>    </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Buttons labels are unclear or fail to specify their purpose. ) according to WCAG 2.1?
+    ","To address the accessibility issue mentioned in the provided source code relevant to the WCAG 2.1 success criteria that require button labels to be clear and specify their purpose, the issue in your source code is the incorrect use of the `alt` attribute on the `input` element of type `""image""`.
+
+In HTML, `input` elements of type `""image""` are used to create graphical submit buttons, i.e., buttons that submit a form. The `alt` attribute of the `input` tag should be used to provide an alternative text that describes the button's function. This text serves as the button label for screen readers and other assistive technologies.
+
+In the given HTML snippet, the `alt` attribute value ""Clear Form"" does not correspond with the action performed by the button (based on the source code, the purpose of the image input is not explicitly mentioned, and there's potential mismatch with provided image which says ""SUBMIT""). 
+
+Let's correct it assuming the button is meant to submit a form:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Passed Example 1</title>
+</head>
+<body>
+  <!-- Accessibility Modification starts here -->
+  <input alt=""Submit Form"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>
+</body>
+</html>
+```
+
+Here are the key changes and considerations:
+- The `alt` attribute is now ""Submit Form"" which describes the action of the button clearly.
+- If this button is actually intended for clearing the form, then the attribute should read ""Clear Form"" and the functionality should be modified accordingly.
+
+This fix improves the accessibility by ensuring that users who rely on assistive technologies will understand the purpose of the button."
+45,46,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/b413c09531b239e27bcf79cb57302b429ef59fe6.html,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-label=""Search"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>      </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-label=""Search"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>      </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Buttons labels are unclear or fail to specify their purpose. ) according to WCAG 2.1?
+    ","To address the accessibility issue related to the input element used as a button in the given HTML code, we need to ensure the button clearly communicates its purpose to all users, including those using screen readers. From the image you've provided and the code snippet, it seems the button intended for ""Login"" is incorrectly labeled as ""Search"" in its `aria-label`.
+
+Here's the revised version of the HTML code that corrects this accessibility issue:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <title>Fixed Example</title>
+</head>
+<body>
+  <!-- Accessibility Fix Applied here -->
+  <input aria-label=""Login"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image"" alt=""Login""/>
+</body>
+</html>
+```
+
+### Changes Made:
+1. **Corrected `aria-label`:** The `aria-label` attribute was updated from ""Search"" to ""Login"" to clearly reflect the button's function, matching the visual label shown in the image.
+
+2. **Added `alt` attribute:** I added an `alt` attribute to provide alternative text that serves the same purpose and presents the same information as the image, fulfilling the requirement for non-text content (WCAG 2.1, 1.1.1).
+
+These modifications help ensure that the button is both functionally and semantically accurate, improving accessibility in accordance with WCAG 2.1 guidelines."
+46,47,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/cab9b2d06e5a44e2056ccbdbb7096f55ab42859c.html,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>      </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>      </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Buttons labels are unclear or fail to specify their purpose. ) according to WCAG 2.1?
+    ","To address the accessibility issue in the provided HTML code snippet where the button label is unclear or fails to specify its purpose, we need to ensure that the input element, which is designed as a button, clearly communicates its function to all users, including those using screen readers. Currently, the title attribute of the button is ""Back"" but the icon suggests it is a search button. There is a mismatch in the functionality indicated by the title attribute and the icon used.
+
+Here’s how you can fix the HTML code to make it more accessible:
+
+1. **Update the title attribute**: Change the title attribute to accurately describe the button's function. Since the icon is a search icon, the title should reflect this.
+2. **Use alt attribute for image buttons**: Even though the `input` type is ""image"", it is essential to use the `alt` attribute to describe the image because screen readers will read this out to users who can't see the image.
+
+Below is the corrected version of the HTML code:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Example with Improved Accessibility</title>
+</head>
+<body>
+  <!-- Accessibility Improvement -->
+  <input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" alt=""Search"" title=""Search"" type=""image""/>
+</body>
+</html>
+```
+
+Key Changes:
+- I replaced the title ""Back"" with ""Search"" to match the function indicated by the icon.
+- Added an `alt` attribute with the value ""Search"" which is crucial for users relying on screen readers, ensuring they understand the button's purpose even if they cannot see the icon.
+
+This update helps in meeting the Web Content Accessibility Guidelines (WCAG) 2.1 success criteria regarding providing clear and descriptive labels for interactive elements to aid navigation and usability for all users."
+47,48,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/7d97d6b2f3fa16760bf66026691281a8179f3260.html,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>  <div id=""id1"">Upload</div>      </body>  </html>","
+    Given the webpage screenshot and the following source code ""<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>  <div id=""id1"">Upload</div>      </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Buttons labels are unclear or fail to specify their purpose. ) according to WCAG 2.1?
+    ","Based on the HTML code you provided and the accessibility issue regarding unclear button labels, the issue appears to be with the way the label is linked to the input element. The `<input>` element of type `image` is being used as a button but its labeling technique with `aria-labelledby` may not be fully effective without proper implementation. Specifically, the positioning of the `<div>` relative to the `<input>` as well as the hierarchy could be improved for better screen reader compatibility.
+
+Here's a revised version of your HTML code to make the button label clear and more accessible according to WCAG 2.1:
+
+```html
+<html lang=""en"">
+<head>
+  <title>Fixed Example</title>
+</head>
+<body>
+  <!-- Accessibility Violation corrected -->
+  <label id=""uploadButtonLabel"" for=""uploadButton"">Upload</label>
+  <input id=""uploadButton"" type=""image"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" aria-labelledby=""uploadButtonLabel"" alt=""Upload""/>
+</body>
+</html>
+```
+
+What I changed:
+1. **Use of `<label>` Element**: I replaced the `<div>` with a `<label>` element, which is more semantically correct for describing form elements. The `for` attribute in the `<label>` explicitly associates the label with the input button by referring to its ID.
+
+2. **`alt` Attribute on `<input>`**: I added an `alt` attribute to the input element. The `alt` attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the `src` attribute, or if the user uses a screen reader). The value ""Upload"" clearly describes the button's function, adding another layer of accessibility.
+
+3. **Added `id` to `<input>`**: I assigned an `id` to the `<input>` that matches the `for` attribute of the `<label>`, ensuring that the relationship is properly established for accessibility tools.
+
+By making these adjustments, you improve the semantic structure and screen reader compatibility, enhancing the overall accessibility of the webpage.
+"
+48,49,https://www.google.com/,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<button id=""voiceSearchButton""   class=""icon-button""   title=""Upload Document"">    <img src=\""https://example.com/icon.png"">   </button>","
+    Given the webpage screenshot and the following source code ""<button id=""voiceSearchButton""   class=""icon-button""   title=""Upload Document"">    <img src=\""https://example.com/icon.png"">   </button>"", can you fix the accessibility issue related to the success criteria: ( Buttons labels are unclear or fail to specify their purpose. ) according to WCAG 2.1?
+    ","To address the accessibility issue related to unclear button labels as outlined in the WCAG 2.1, you need to ensure that the button is clearly labeled so that it is understandable to all users, including those using screen readers. The existing button uses an image of a microphone but its associated title attribute indicates ""Upload Document"", which is likely incorrect and does not describe the button's purpose effectively.
+
+Given the image seems to represent a microphone typically used for voice or audio related functions, I am assuming this button is meant for voice search or similar audio-based input.
+
+Here's how you can revise the source code to make it meet accessibility standards better:
+
+```html
+<button id=""voiceSearchButton"" class=""icon-button"" aria-label=""Start voice search"">
+    <img src=""https://example.com/icon.png"" alt=""Microphone icon for voice search"">
+</button>
+```
+
+### Changes Made:
+1. **Correcting the `aria-label`:** The `aria-label` attribute directly provides an accessible name for the button that can be read by screen readers. It describes the button's functionality, which is supposed to be for voice search.
+2. **Updating the `alt` attribute for the image:** The `alt` attribute provides a text alternative for the image, crucial for screen readers. It describes what the image represents, reinforcing the purpose of the button.
+
+With these changes, the button now clearly communicates its purpose to all users, including those relying on assistive technologies, aligning with WCAG 2.1 accessibility standards."
+49,50,https://www.example.com/,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">      <title>Climate Change Insights</title>      </head>  <body>      <header>          <h1>Understanding Climate Change</h1>          <p>This page highlights the impact of climate change through data visualization.</p>      </header>    <! –– Accessibility Violation starts here ––>        <main>          <img src=""graphblog-1.png "" alt=""A pie chart showing the percentage distribution of diabetes prevalence by age group. "" />      </main>      <footer>     <p> Data sourced from Global Climate Watch  <a href= ""#"" aria-label=""Learn more about climate change"">Learn more</a></p>      </footer>    </body>    </html>","
+    Given the webpage screenshot and the following source code ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">      <title>Climate Change Insights</title>      </head>  <body>      <header>          <h1>Understanding Climate Change</h1>          <p>This page highlights the impact of climate change through data visualization.</p>      </header>    <! –– Accessibility Violation starts here ––>        <main>          <img src=""graphblog-1.png "" alt=""A pie chart showing the percentage distribution of diabetes prevalence by age group. "" />      </main>      <footer>     <p> Data sourced from Global Climate Watch  <a href= ""#"" aria-label=""Learn more about climate change"">Learn more</a></p>      </footer>    </body>    </html>"", can you fix the accessibility issue related to the success criteria: ( Inaccurate or misleading alternative text that fails to describe the purpose of the image. ) according to WCAG 2.1?
+    ","To fix the accessibility issue related to the inaccurate alternative text in the source code, the `alt` attribute for the image tag should accurately describe the specific image displayed on the webpage. The existing `alt` text describes a different graph altogether which does not match the one shown in the screenshot. 
+
+Here is the corrected version of the image tag:
+
+```html
+<img src=""graphblog-1.png"" alt=""Line graph showing temperature anomalies from 1880 to 2020, comparing data from NASA Goddard Institute for Space Studies, Hadley Center/Climatic Research Unit, NOAA National Center for Environmental Information, and Berkeley Earth against a common baseline of 1951-1980."" />
+```
+
+This corrected `alt` attribute provides a clear and accurate description of what the image represents, aligning with the content shown in the screenshot and meeting WCAG 2.1 accessibility standards for non-text content."
+50,51,https://www.example.com/,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage discussing renewable energy sources with a focus on solar power."">      <title>Renewable Energy Spotlight</title>     </head>  <body>      <header>          <h1>Renewable Energy Sources</h1>          <p>Exploring the future of clean and sustainable energy</p>      </header>        <nav>          <a href=""#solar"">Solar Power</a>          <a href=""#wind"">Wind Energy</a>          <a href=""#hydro"">Hydropower</a>      </nav>        <div class=""container"">          <main>              <h2 id=""solar"">Solar Power</h2>              <p>Solar energy is one of the most abundant and clean sources of renewable energy. It uses photovoltaic cells to convert sunlight directly into electricity.</p>            <! –– Accessibility Violation starts here ––>        <img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Wind turbines at sunset."" />                    <h2 id=""wind"">Wind Energy</h2>              <p>Wind turbines harness the kinetic energy of the wind and transform it into electricity. Wind energy is growing rapidly as a sustainable alternative to fossil fuels.</p>                <h2 id=""hydro"">Hydropower</h2>              <p>Hydropower generates electricity by capturing the energy of moving water, usually from rivers or dams. It is a reliable and proven source of renewable energy.</p>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Renewable Insights  <a href= ""#"" style= ""color: #fff;"" >Contact Us </a> </p>     </footer>    </body>    </html>","
+    Given the webpage screenshot and the following source code ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage discussing renewable energy sources with a focus on solar power."">      <title>Renewable Energy Spotlight</title>     </head>  <body>      <header>          <h1>Renewable Energy Sources</h1>          <p>Exploring the future of clean and sustainable energy</p>      </header>        <nav>          <a href=""#solar"">Solar Power</a>          <a href=""#wind"">Wind Energy</a>          <a href=""#hydro"">Hydropower</a>      </nav>        <div class=""container"">          <main>              <h2 id=""solar"">Solar Power</h2>              <p>Solar energy is one of the most abundant and clean sources of renewable energy. It uses photovoltaic cells to convert sunlight directly into electricity.</p>            <! –– Accessibility Violation starts here ––>        <img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Wind turbines at sunset."" />                    <h2 id=""wind"">Wind Energy</h2>              <p>Wind turbines harness the kinetic energy of the wind and transform it into electricity. Wind energy is growing rapidly as a sustainable alternative to fossil fuels.</p>                <h2 id=""hydro"">Hydropower</h2>              <p>Hydropower generates electricity by capturing the energy of moving water, usually from rivers or dams. It is a reliable and proven source of renewable energy.</p>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Renewable Insights  <a href= ""#"" style= ""color: #fff;"" >Contact Us </a> </p>     </footer>    </body>    </html>"", can you fix the accessibility issue related to the success criteria: ( Inaccurate or misleading alternative text that fails to describe the purpose of the image. ) according to WCAG 2.1?
+    ","In the HTML source code you provided, the `<img>` element has an `alt` attribute that inaccurately describes the image it represents. The alt text claims the image shows ""Wind turbines at sunset,"" however, the actual image depicts solar panels. This is a clear violation of WCAG 2.1 success criteria, which requires that non-text content like images provide text alternatives that serve the equivalent purpose.
+
+To fix this accessibility issue, you should modify the `alt` attribute to accurately describe the image. Here's how you can update the `alt` text:
+
+Original code:
+```html
+<img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Wind turbines at sunset."" />
+```
+
+Corrected code:
+```html
+<img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Solar panels on a field under a clear blue sky."" />
+```
+
+This correction ensures that the alternative text for the image accurately reflects its content, thereby improving the web page's accessibility and compliance with WCAG guidelines."
+51,52,https://www.example.com/,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage promoting mental health awareness and well-being."">      <title>Mental Health Awareness</title>      </head>  <body>      <header>          <h1>Mental Health Matters</h1>          <p>Promoting awareness, reducing stigma, and encouraging self-care</p>      </header>        <nav>          <a href=""#importance"">Importance</a>          <a href=""#tips"">Self-Care Tips</a>          <a href=""#resources"">Resources</a>      </nav>        <div class=""container"">          <main>              <h2 id=""importance"">The Importance of Mental Health</h2>              <p>Mental health is vital to overall well-being. It affects how we think, feel, and act in our daily lives. Recognizing its importance helps reduce stigma and promotes a supportive community.</p>                <! –– Accessibility Violation starts here ––>    <img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" />                    <h2 id=""tips"">Self-Care Tips</h2>              <p>Taking care of your mental health is essential. Here are a few tips:</p>              <ul>                  <li>Practice mindfulness or meditation</li>                  <li>Stay physically active</li>                  <li>Maintain a balanced diet</li>                  <li>Connect with loved ones</li>                  <li>Seek professional help when needed</li>              </ul>                <h2 id=""resources"">Helpful Resources</h2>              <p>If you&#x27;re struggling with your mental health, don&#x27;t hesitate to reach out for help. Here are some trusted resources:</p>              <ul>                  <li><a href=""#"">National Mental Health Hotline</a></li>                  <li><a href=""#"">Mindfulness and Meditation Apps</a></li>                  <li><a href=""#"">Support Groups in Your Area</a></li>              </ul>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Mental Health Awareness  <a href= ""#"" style= ""color: #fff; "" >Contact Us </a> </p>       </footer>    </body>    </html>","
+    Given the webpage screenshot and the following source code ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage promoting mental health awareness and well-being."">      <title>Mental Health Awareness</title>      </head>  <body>      <header>          <h1>Mental Health Matters</h1>          <p>Promoting awareness, reducing stigma, and encouraging self-care</p>      </header>        <nav>          <a href=""#importance"">Importance</a>          <a href=""#tips"">Self-Care Tips</a>          <a href=""#resources"">Resources</a>      </nav>        <div class=""container"">          <main>              <h2 id=""importance"">The Importance of Mental Health</h2>              <p>Mental health is vital to overall well-being. It affects how we think, feel, and act in our daily lives. Recognizing its importance helps reduce stigma and promotes a supportive community.</p>                <! –– Accessibility Violation starts here ––>    <img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" />                    <h2 id=""tips"">Self-Care Tips</h2>              <p>Taking care of your mental health is essential. Here are a few tips:</p>              <ul>                  <li>Practice mindfulness or meditation</li>                  <li>Stay physically active</li>                  <li>Maintain a balanced diet</li>                  <li>Connect with loved ones</li>                  <li>Seek professional help when needed</li>              </ul>                <h2 id=""resources"">Helpful Resources</h2>              <p>If you&#x27;re struggling with your mental health, don&#x27;t hesitate to reach out for help. Here are some trusted resources:</p>              <ul>                  <li><a href=""#"">National Mental Health Hotline</a></li>                  <li><a href=""#"">Mindfulness and Meditation Apps</a></li>                  <li><a href=""#"">Support Groups in Your Area</a></li>              </ul>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Mental Health Awareness  <a href= ""#"" style= ""color: #fff; "" >Contact Us </a> </p>       </footer>    </body>    </html>"", can you fix the accessibility issue related to the success criteria: ( Inaccurate or misleading alternative text that fails to describe the purpose of the image. ) according to WCAG 2.1?
+    ","To address the accessibility issue involving inaccurate or misleading alternative text for the image, it is important to provide a correct and descriptive alt attribute that properly describes the image's content and purpose.
+
+The given alt text in the initial webpage code describes the image inaccurately, as the screenshot shows that the image actually contains a diagram related to mental health strategies. The given alt text suggests it might be describing unrelated objects, which is misleading.
+
+Here is the corrected line of HTML code to address this accessibility issue according to WCAG 2.1 criteria for accurate and descriptive alternative texts:
+
+```html
+<img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""Infographic illustrating key components of mental health: Managing Stress, Meaning and Purpose, Quality Sleep, Brain Healthy Diet, Social Connection, and Staying Active."">
+```
+This alt text accurately describes the infographic's content, focusing on key aspects of mental health management, making it clear and informative for users who rely on screen readers or who cannot see the image directly."
+52,53,https://www.example.com/,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">      <title>Sustainable Living</title>      </head>  <body>      <header>          <h1>Sustainable Living</h1>          <p>Small steps for a greener planet.</p>      </header>        <div class=""container"">          <main>              <h2>Eco-Friendly Tips</h2>              <p>Click the button below to reveal practical tips for sustainable living:</p>             <! –– Accessibility Violation starts here ––>       <button id=""revealTips"" role=""button"" aria-label=""Submit Form"">Show Tips</button>                  <div id=""tips"" class=""tips"">                  <h3>Eco-Friendly Tips</h3>                  <ul>                      <li>Reduce, reuse, and recycle wherever possible.</li>                      <li>Conserve water by fixing leaks and using water-efficient appliances.</li>                      <li>Opt for energy-efficient lighting and appliances.</li>                      <li>Support local and sustainable products.</li>                      <li>Plant trees or grow your own garden to offset your carbon footprint.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Sustainable Living Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">      <title>Sustainable Living</title>      </head>  <body>      <header>          <h1>Sustainable Living</h1>          <p>Small steps for a greener planet.</p>      </header>        <div class=""container"">          <main>              <h2>Eco-Friendly Tips</h2>              <p>Click the button below to reveal practical tips for sustainable living:</p>             <! –– Accessibility Violation starts here ––>       <button id=""revealTips"" role=""button"" aria-label=""Submit Form"">Show Tips</button>                  <div id=""tips"" class=""tips"">                  <h3>Eco-Friendly Tips</h3>                  <ul>                      <li>Reduce, reuse, and recycle wherever possible.</li>                      <li>Conserve water by fixing leaks and using water-efficient appliances.</li>                      <li>Opt for energy-efficient lighting and appliances.</li>                      <li>Support local and sustainable products.</li>                      <li>Plant trees or grow your own garden to offset your carbon footprint.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Sustainable Living Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Buttons labels are unclear or fail to specify their purpose. ) according to WCAG 2.1?
+    ","The accessibility issue in the provided source code arises from the `aria-label` attribute of the button. This attribute is currently set as ""Submit Form,"" which is misleading because the button is meant to reveal tips, not submit a form. Clear and descriptive button labels are essential for accessibility, particularly for screen reader users, as they rely on these labels to understand the function of the button.
+
+To fix this issue, change the `aria-label` attribute of the button to accurately describe its action. Here is the corrected line of code:
+
+```html
+<button id=""revealTips"" role=""button"" aria-label=""Show eco-friendly tips"">Show Tips</button>
+```
+
+This change will make it clear to all users, especially those using assistive technologies, what action the button will perform. The `aria-label` now explicitly states that pressing the button will display eco-friendly tips, aligning with the button's purpose shown in the user interface."
+53,54,https://www.example.com/,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">      <title>Healthy Eating Habits</title>      </head>  <body>      <header>          <h1>Healthy Eating</h1>          <p>Simple steps to build better eating habits.</p>      </header>        <div class=""container"">          <main>              <h2>Healthy Eating Tips</h2>              <p>Click the button below to learn more about maintaining a balanced diet:</p>                <! –– Accessibility Violation starts here ––>    <button id=""revealTips"" aria-label=""Click to go back to the homepage"" title=""Click to go back to the homepage"">Show Tips</button>                <div id=""tips"" class=""tips"">                  <h3>Tips for a Balanced Diet</h3>                  <ul>                      <li>Incorporate more fruits and vegetables into your meals.</li>                      <li>Stay hydrated by drinking plenty of water.</li>                      <li>Choose whole grains over refined grains.</li>                      <li>Limit your intake of added sugars and saturated fats.</li>                      <li>Practice portion control to avoid overeating.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Healthy Eating Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>","
+    Given the webpage screenshot and the following source code ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">      <title>Healthy Eating Habits</title>      </head>  <body>      <header>          <h1>Healthy Eating</h1>          <p>Simple steps to build better eating habits.</p>      </header>        <div class=""container"">          <main>              <h2>Healthy Eating Tips</h2>              <p>Click the button below to learn more about maintaining a balanced diet:</p>                <! –– Accessibility Violation starts here ––>    <button id=""revealTips"" aria-label=""Click to go back to the homepage"" title=""Click to go back to the homepage"">Show Tips</button>                <div id=""tips"" class=""tips"">                  <h3>Tips for a Balanced Diet</h3>                  <ul>                      <li>Incorporate more fruits and vegetables into your meals.</li>                      <li>Stay hydrated by drinking plenty of water.</li>                      <li>Choose whole grains over refined grains.</li>                      <li>Limit your intake of added sugars and saturated fats.</li>                      <li>Practice portion control to avoid overeating.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Healthy Eating Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>"", can you fix the accessibility issue related to the success criteria: ( Buttons labels are unclear or fail to specify their purpose. ) according to WCAG 2.1?
+    ","To address the accessibility issue related to unclear button labels on the webpage, the `aria-label` and `title` attributes of the ""Show Tips"" button need to be corrected to accurately describe its functionality. Currently, the `aria-label` and `title` are misleading as they suggest that the button will navigate the user back to the homepage, while the actual function of the button is to reveal additional content about healthy eating tips.
+
+Here is the corrected portion of the HTML code with proper button label descriptions, ensuring that the button's purpose is clear and catered towards improving web accessibility according to WCAG 2.1 standards:
+
+```html
+<button id=""revealTips"" aria-label=""Show more tips on healthy eating"" title=""Show more tips on healthy eating"">Show Tips</button>
+```
+
+This modification clarifies the purpose of the button both visually and non-visually, thereby providing a better user experience for all users, including those using assistive technologies."
+54,55,https://www.example.com/,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">      <title>Climate Change Action</title>      </head>  <body>      <header>          <h1>Take Action on Climate Change</h1>          <p>Simple actions for a sustainable future.</p>      </header>        <div class=""container"">          <main>              <h2>Get Involved</h2>              <p>Click the button below to submit your pledge for climate action:</p>            <! –– Accessibility Violation starts here ––>        <button id=""pledgeButton"" role=""link"" aria-labelledby=""Upload Document"">Learn More</button>                              <div id=""formContainer"" class=""form-container"">                  <h3>Your Climate Pledge</h3>                  <form>                      <label for=""name"">Your Name:</label>                      <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">                        <label for=""email"">Your Email:</label>                      <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">                        <button type=""submit"">Submit Pledge</button>                  </form>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Climate Change Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;pledgeButton&#x27;);          const formContainer = document.getElementById(&#x27;formContainer&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              formContainer.style.display = formContainer.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html></p>","
+    Given the webpage screenshot and the following source code ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">      <title>Climate Change Action</title>      </head>  <body>      <header>          <h1>Take Action on Climate Change</h1>          <p>Simple actions for a sustainable future.</p>      </header>        <div class=""container"">          <main>              <h2>Get Involved</h2>              <p>Click the button below to submit your pledge for climate action:</p>            <! –– Accessibility Violation starts here ––>        <button id=""pledgeButton"" role=""link"" aria-labelledby=""Upload Document"">Learn More</button>                              <div id=""formContainer"" class=""form-container"">                  <h3>Your Climate Pledge</h3>                  <form>                      <label for=""name"">Your Name:</label>                      <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">                        <label for=""email"">Your Email:</label>                      <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">                        <button type=""submit"">Submit Pledge</button>                  </form>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Climate Change Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;pledgeButton&#x27;);          const formContainer = document.getElementById(&#x27;formContainer&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              formContainer.style.display = formContainer.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html></p>"", can you fix the accessibility issue related to the success criteria: ( Buttons labels are unclear or fail to specify their purpose. ) according to WCAG 2.1?
+    ","To address the accessibility issue regarding unclear button labels in the provided HTML code, it's important to make sure the text on the button directly corresponds to its function. Since the button in question is intended to reveal a form to submit a climate pledge, the button label should clearly reflect this action.
+
+Here’s how the code can be corrected:
+
+1. **Modify the button text**: Change the button text from ""Learn More"" to ""Submit Your Climate Pledge"" or a similar phrase that accurately describes the action.
+  
+2. **Fix the `aria-labelledby` attribute**: This attribute should reference the ID of an element that correctly labels the button. Currently, it's set to a non-existent element ""Upload Document"", which is incorrect and confusing.
+
+3. **Add proper aria attributes for visibility and accessibility**: Use `aria-expanded` to help assistive technologies understand the state of the section controlled by the button (whether it's expanded or collapsed).
+
+Here is the corrected part of the HTML code:
+
+```html
+<button id=""pledgeButton"" aria-labelledby=""pledgeLabel"" aria-expanded=""false"">Submit Your Climate Pledge</button>
+<h4 id=""pledgeLabel"" class=""visually-hidden"">Submit Your Climate Pledge</h4>
+
+<script>
+    const button = document.getElementById('pledgeButton');
+    const formContainer = document.getElementById('formContainer');
+
+    button.addEventListener('click', () => {
+        const isVisible = formContainer.style.display === 'block';
+        formContainer.style.display = isVisible ? 'none' : 'block';
+        button.setAttribute('aria-expanded', !isVisible);
+    });
+</script>
+```
+
+**Explanation**:
+- **Button Text**: Updated to ""Submit Your Climate Pledge"" to accurately describe the function of the button.
+- **`aria-labelledby`**: Now references an ID `pledgeLabel` which is an element that contains an appropriate label for the button. (You can alternatively place the label directly inside the button if you prefer not to use `aria-labelledby`).
+- **`aria-expanded`**: This attribute reflects whether the related content (the form in this case) is currently visible or not. The button's `aria-expanded` attribute is dynamically updated in the JavaScript based on whether the form is shown or hidden.
+- **JavaScript**: Adjusted to set `aria-expanded` attribute properly based on visibility to help screen readers and other assistive technologies understand the current state of the form.
+
+These changes improve the button's accessibility by making its purpose clear and helping users with assistive technologies navigate the site more effectively."

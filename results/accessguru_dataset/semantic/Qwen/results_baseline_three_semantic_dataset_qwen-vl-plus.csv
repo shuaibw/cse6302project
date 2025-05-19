@@ -1,0 +1,658 @@
+ID,webURL,Violation Type,Impact,Description,Affected HTML,prompts_baseline_three,responses_baseline_three
+1,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/485f10faf222cd48fea2ab3ee79c2d354e51ea33.html,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">    <img alt=""ERCIM logo"" src=""image.png""/>    </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">    <img alt=""ERCIM logo"" src=""image.png""/>    </html>"" ","Yes, the HTML code is accessible. It contains a self-closing `img` tag with an `alt` attribute to provide alternative text for the image. The `lang` attribute is also present, which is not strictly necessary but can be useful for accessibility purposes."
+2,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2f7d82593e287df64b7459695e355a840254255c.html,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<html lang=""en"">  <svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">  <path d=""M108.46""></path>  <path d=""M107.6 "" fill=""#e44d26""></path>  <path d=""M256 "" fill=""#f16529""></path>  <path d=""M142 176"" fill=""#ebebeb""></path>  <path d=""M369.613.6v47.2l93-25.8"" fill=""#fff""></path>  </svg>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">  <path d=""M108.46""></path>  <path d=""M107.6 "" fill=""#e44d26""></path>  <path d=""M256 "" fill=""#f16529""></path>  <path d=""M142 176"" fill=""#ebebeb""></path>  <path d=""M369.613.6v47.2l93-25.8"" fill=""#fff""></path>  </svg>  </html>"" ","The HTML code provided is not valid. It contains a `svg` element with incomplete `path` elements and missing `d` attributes. Additionally, the `d` attribute values are not properly formatted for SVG paths. Here is a corrected version of the code:
+
+```html
+<html lang=""en"">
+  <svg aria-label=""W3C"" role=""img"" viewbox=""0 0 512 512"">
+    <path d=""M108.46,0H107.6V176H256V369.613H142V176H369.613V0ZM107.6,176H256V369.613H108.46V176ZM256,176H369.613V0ZM108.46,0H142V176H256V369.613H108.46V0ZM142,176H256V369.613H108.46V176ZM369.613,0H108.46V176H256V369.613H369.613V0ZM108.46,176H142V369.613H256V176H108.46V369.613ZM142,0H256V369.613H108.46V0ZM369.613,176H108.46V369.613H142V176H369.613V369.613ZM108.46,369.613H142V176H256V369.613H108.46V176ZM142,369.613H256V176H108.46V369.613H142V176ZM369.613,369.613H108.46V176H142V369.613H369.613V176ZM108.46,176H142V369.613H256V176H108.46V369.613ZM142,176H256V369.613H108.46V176ZM369.613,176H108.46V369.613H142V176H369.613V369.613ZM108.46,369.613H142V176H256V369.613H108.46V176ZM142,369.613H256V176H108.46V369.613H142V176ZM369.613,369.613H108.46V176H142V369.613H369.613V176ZM108.46,176H142V369.613H256V176H108.46V369.613ZM142,176H256V369.613H108.46V176ZM369.613,176H108.46V369.613H142V176H369.613V369.613ZM108.46,369.613H142V176H256V369.613H108.46V176ZM142,369.613H256V176H108.46V369.613H142V176ZM369.613,369.613H108.46V176H142V369.613H369.613V176ZM108.46,176H142V369.613H256V176H108.46V369.613ZM142,176H256V369.613H108.46V176ZM369.613,176H108.46V369.613H142V176H369.613V369.613ZM108.46,369.613H142V176H256V369.613H108.46V176ZM142,369.613H256V176H108.46V369.613H142V176ZM369.613,369.613H108.46V176H142V369.613H369.613V176ZM108.46,176H142V369.613H256V176H108.46V369.613ZM142,176H256V369.613H108.46V176ZM369.613,176H108"
+3,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/bac67a5a2ada971100bbec89961ad3e6c869f268.html,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.," <!DOCTYPE html>     <html lang=""en"">     <head>     <meta charset=""UTF-8"">     <! –– Accessibility Violation starts here ––>   <title> Canvas Image Example</title>     </head>     <body>     <canvas aria-label=""HTML 5 logo"" height=""48"" id=""logo"" width=""72"">    </canvas>     <script>     const img = new Image(); img.src = &#x27;/logo.png&#x27;; img.onload = function() { const ctx = document.querySelector(&#x27;#logo&#x27;).getContext(&#x27;2d&#x27;); ctx.drawImage(img, 0, 0, 72, 48); } </script>     </body>     </html>","Given the webpage screenshot, Is the following HTML code accessible? "" <!DOCTYPE html>     <html lang=""en"">     <head>     <meta charset=""UTF-8"">     <! –– Accessibility Violation starts here ––>   <title> Canvas Image Example</title>     </head>     <body>     <canvas aria-label=""HTML 5 logo"" height=""48"" id=""logo"" width=""72"">    </canvas>     <script>     const img = new Image(); img.src = &#x27;/logo.png&#x27;; img.onload = function() { const ctx = document.querySelector(&#x27;#logo&#x27;).getContext(&#x27;2d&#x27;); ctx.drawImage(img, 0, 0, 72, 48); } </script>     </body>     </html>"" ",No
+4,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.," <! –– Accessibility Violation starts here ––>   <html lang=""da"">  <head>  <title>ACT Rules Format 1.0 - Abstract</title>  </head>  <body>  <p>  The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test  rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It  provides a common format that allows any party involved in accessibility testing to document and share their  testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing  methods, including methods implemented by accessibility test tools.  </p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? "" <! –– Accessibility Violation starts here ––>   <html lang=""da"">  <head>  <title>ACT Rules Format 1.0 - Abstract</title>  </head>  <body>  <p>  The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test  rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It  provides a common format that allows any party involved in accessibility testing to document and share their  testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing  methods, including methods implemented by accessibility test tools.  </p>  </body>  </html>"" ","The HTML code provided is not accessible. The accessibility violation starts with the comment `<!–– Accessibility Violation starts here ––>` which is not a valid HTML comment. Additionally, the HTML code does not have any semantic elements such as `<header>`, `<main>`, `<footer>`, etc., which are important for accessibility."
+5,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"  <! –– Accessibility Violation starts here ––>              <html lang=""en"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>  <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">  This Dutch phrase literally translates into ""  He went to roost with the chickens"", but it means   that he went to bed early.  </p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""  <! –– Accessibility Violation starts here ––>              <html lang=""en"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>  <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">  This Dutch phrase literally translates into ""  He went to roost with the chickens"", but it means   that he went to bed early.  </p>  </body>  </html>"" ","The HTML code in the screenshot is not accessible. The issue is that the `blockquote` element is missing a closing `</blockquote>` tag. Additionally, the `lang` attribute is not used correctly. The `lang` attribute should be used on the `html` element to specify the language of the content, not on the `p` element."
+6,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>                  <html lang=""nl"">  <head>  <title>Happy</title>  </head>  <body>    <p>The Dutch word    <! –– Accessibility Violation starts here ––>   ""gelukkig"" has no equivalent in English.</p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<! –– Accessibility Violation starts here ––>                  <html lang=""nl"">  <head>  <title>Happy</title>  </head>  <body>    <p>The Dutch word    <! –– Accessibility Violation starts here ––>   ""gelukkig"" has no equivalent in English.</p>  </body>  </html>"" ","No, the HTML code is not accessible. The code contains two accessibility violations:
+
+1. The `lang` attribute on the `html` element should be set to the language of the content, not the language of the page. In this case, the content is in Dutch, so the `lang` attribute should be set to `nl` (Dutch).
+
+2. The `<!– Accessibility Violation starts here ––>` comments are not valid HTML and should be removed.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""nl"">
+<head>
+  <title>Happy</title>
+</head>
+<body>
+  <p>The Dutch word ""gelukkig"" has no equivalent in English.</p>
+</body>
+</html>
+```"
+7,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""nl"">  <head>  <title>Fireworks over Paris</title>  </head>  <body>  <img alt=""Fireworks over Paris""   src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>  <p lang=""nl"">  Gelukkig nieuwjaar!  </p>  </body>  </html>  ","Given the webpage screenshot, Is the following HTML code accessible? ""<! –– Accessibility Violation starts here ––>    <html lang=""nl"">  <head>  <title>Fireworks over Paris</title>  </head>  <body>  <img alt=""Fireworks over Paris""   src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>  <p lang=""nl"">  Gelukkig nieuwjaar!  </p>  </body>  </html>  "" ","Yes, the HTML code is accessible. It includes a lang attribute on the img tag and the p tag, which specifies the language of the content. The alt attribute on the img tag provides a text alternative for the image, which is important for accessibility. The title attribute on the head tag provides a short description of the page, which can be helpful for users who rely on screen readers."
+8,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>   <html lang=""nl"">  <head>  <title>Paris</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg ""/ >    <p hidden="" "" id="" caption "" lang= "" en "" >   Fireworks over Paris!    < /p >    < /body >    < /html > ","Given the webpage screenshot, Is the following HTML code accessible? ""<! –– Accessibility Violation starts here ––>   <html lang=""nl"">  <head>  <title>Paris</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg ""/ >    <p hidden="" "" id="" caption "" lang= "" en "" >   Fireworks over Paris!    < /p >    < /body >    < /html > "" ","No, the HTML code is not accessible. The image has an alt attribute with a value of ""Fireworks over Paris!"", but the alt attribute is not required to be present. Additionally, the image has an aria-labelledby attribute with a value of ""caption"", but the caption element is not present in the code. The caption element should be present and have a value of ""Fireworks over Paris!"" to make the image accessible."
+9,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <head>  <title> Stranddorp </title>  </head>  <body>  <article lang=""dutch"">  Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.  </article>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <head>  <title> Stranddorp </title>  </head>  <body>  <article lang=""dutch"">  Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.  </article>  </body>  </html>"" ","The HTML code you provided is not accessible because it contains an accessibility violation. The violation is the use of the `lang` attribute on the `article` element. The `lang` attribute is not supported on the `article` element in HTML. Instead, you should use the `lang` attribute on the `html` element to specify the language of the entire page."
+10,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.," <html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <article lang=""#!"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? "" <html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <article lang=""#!"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **Language Attribute**: The `lang` attribute is not properly used. It should be `lang=""en""` instead of `lang=""#!""`.
+
+2. **Accessibility Violation**: The `lang` attribute is not a valid attribute for an `article` element. It should be used on the `html` element to specify the language of the document.
+
+Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+  <body>
+    <article>
+      They wandered into a strange Tiki bar on the edge of the small beach town.
+    </article>
+  </body>
+</html>
+```
+
+This code is now accessible and follows the W3C standards for HTML."
+11,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""  "">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<! –– Accessibility Violation starts here ––>    <html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""  "">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </article>  </body>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **Missing `lang` attribute**: The `lang` attribute is missing from the `article` element. It should be `lang=""fr""` to indicate that the content is in French.
+
+2. **Incorrect `lang` attribute on `article` element**: The `lang` attribute on the `article` element should be `lang=""fr""` instead of `lang=""  ""`. The space is unnecessary.
+
+3. **Incorrect `lang` attribute on `html` element**: The `lang` attribute on the `html` element should be `lang=""fr""` instead of `lang=""fr"">`. The closing angle bracket is unnecessary.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""fr"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Page Title</title>
+</head>
+<body>
+    <article lang=""fr"">
+        They wandered into a strange Tiki bar on the edge of the small beach town.
+    </article>
+</body>
+</html>
+```
+
+This code is now accessible and follows the W3C standards for HTML."
+12,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""english"">  <p aria-hidden=""true"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""english"">  <p aria-hidden=""true"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>"" ","No, the HTML code is not accessible. The `lang` attribute is not a valid attribute for the `article` element. The `lang` attribute is used to specify the language of the content within an element, but it is not applicable to the `article` element. Additionally, the `aria-hidden` attribute is not a valid attribute for the `p` element. The `aria-hidden` attribute is used to specify that an element is not intended to be interacted with by users, but it is not applicable to the `p` element."
+13,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8ba52b5fa5e123def1f778821219aaec20ca0fe.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""English"">  <p style=""position: absolute; top: 1px"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""fr"">  <body>  <! –– Accessibility Violation starts here ––>    <article lang=""English"">  <p style=""position: absolute; top: 1px"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </p>  </article>  </body>  </html>"" ","No, the HTML code is not accessible. The article element is missing a closing tag, and the p element has a style attribute that is not semantically correct. Additionally, the article element has a lang attribute with a value of ""English"", which is not semantically correct for an article element."
+14,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <article lang=""en"">  <! –– Accessibility Violation starts here ––>    <div lang=""invalid"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </div>  </article>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<! –– Accessibility Violation starts here ––>    <html lang=""es"">  <body>  <article lang=""en"">  <! –– Accessibility Violation starts here ––>    <div lang=""invalid"">  They wandered into a strange Tiki bar on the edge of the   small beach town.  </div>  </article>  </body>  </html>"" ","No, the HTML code is not accessible. The `lang` attribute is not supported in HTML5 and should be removed. Additionally, the `lang` attribute should be used consistently throughout the document."
+15,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <div lang=""invalid"">  <img alt=""Fireworks over Paris"" src=""https://PARIS-WORKS.jpg "" / >    < /div >    </body>    </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>   <div lang=""invalid"">  <img alt=""Fireworks over Paris"" src=""https://PARIS-WORKS.jpg "" / >    < /div >    </body>    </html>"" ","No, the HTML code is not accessible. The `lang` attribute on the `div` element is not valid and should be removed. Additionally, the `lang` attribute on the `html` element should be set to the language of the content, not the language of the webpage."
+16,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""eng"">I love ACT rules! </p>    </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""eng"">I love ACT rules! </p>    </body>  </html>"" ","No, the HTML code is not accessible. The issue is that the `<p>` element has a `lang` attribute with a value of ""eng"", which is not a valid language code. The correct value should be a valid language code, such as ""en"" for English. Additionally, the text in the `<p>` element is in German, which is not the language specified by the `lang` attribute."
+17,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html,lang-mismatch,Serious,Page language attribute does not match the actual language of the content.,"<html lang=""lb"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""i-lux"">  Lëtzebuerg ass e Land an Europa.  </p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""lb"">  <body>  <! –– Accessibility Violation starts here ––>    <p lang=""i-lux"">  Lëtzebuerg ass e Land an Europa.  </p>  </body>  </html>"" ","No, the HTML code is not accessible. The `lang` attribute is not supported in HTML5 and should not be used. Additionally, the `lang` attribute should not be used on the `p` element, as it is not a language attribute."
+18,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac.html,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""en"">  <head>  <title>Dutch idioms</title>  </head>  <body>  <p>  The Dutch phrase   <! –– Accessibility Violation starts here ––>    <span lang=""fr"">""  Hij ging met de kippen   op stok""</span>    literally translates into ""He went to  roost with the chickens"",   but it means that he went to bed early.  </p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Dutch idioms</title>  </head>  <body>  <p>  The Dutch phrase   <! –– Accessibility Violation starts here ––>    <span lang=""fr"">""  Hij ging met de kippen   op stok""</span>    literally translates into ""He went to  roost with the chickens"",   but it means that he went to bed early.  </p>  </body>  </html>"" ",The HTML code is accessible.
+19,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ffcbd35493c91b4d8ee42c3a7fba9c2356144257.html,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""nl"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">The Dutch phrase</span>        ""Hij ging met de kippen op stok""    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">literally translates into   ""He went to roost with the chickens"", but it means   that he went to bed early.</span>    </p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""nl"">  <head>  <title>Met de kippen op stok</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <blockquote>  <p>""Hij ging met de kippen op stok""</p>  </blockquote>  <p lang=""en"">    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">The Dutch phrase</span>        ""Hij ging met de kippen op stok""    <! –– Accessibility Violation starts here ––>    <span lang=""fr"">literally translates into   ""He went to roost with the chickens"", but it means   that he went to bed early.</span>    </p>  </body>  </html>"" ","No, the HTML code is not accessible. The code contains accessibility violations, which are indicated by the comments ""<– Accessibility Violation starts here ––>"". These violations include using the `lang` attribute on elements that do not have a language attribute, and using the `lang` attribute on elements that do not have a language attribute."
+20,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/d00a83015b309b51bebfc2c85f62488daec3a5d1.html,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>     <! –– Accessibility Violation starts here ––>    <div lang=""fr"">  <img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />    </div>       <! –– Accessibility Violation starts here ––>    <p lang=""nl"">   Bonne année !  </p>      </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>     <! –– Accessibility Violation starts here ––>    <div lang=""fr"">  <img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />    </div>       <! –– Accessibility Violation starts here ––>    <p lang=""nl"">   Bonne année !  </p>      </body>  </html>"" ",Failed after multiple attempts.
+21,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/895a754e85f4fbc8e11cea52295381f41eb384ca.html,missing-lang-tag,Serious,Sections in different languages lack appropriate lang attributes.,"<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />      <! –– Accessibility Violation starts here ––>    <p hidden="""" id=""caption"" >  Fireworks over Paris  </p>    </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""fr"">  <head>  <title>Feu d&#x27;artifice du nouvel an</title>  </head>  <body>  <img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg "" />      <! –– Accessibility Violation starts here ––>    <p hidden="""" id=""caption"" >  Fireworks over Paris  </p>    </body>  </html>"" ","Yes, the HTML code is accessible. The image has an alt attribute with a caption, and the caption is also accessible through the aria-labelledby attribute. The hidden attribute on the p element is not necessary and can be removed."
+22,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b2a671d96ac510ccc6e34dd58a141d13bb196508.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>"" ","No, the HTML code is not accessible. The accessibility violation starts with the `<a href=""#desc"">More</a>` tag. The `id` attribute of the `p` element should be the same as the `href` attribute of the `a` element for proper accessibility."
+23,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <div onclick=""document.location+=&#x27;#main&#x27;""   role=""link"" tabindex=""0"">More</div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>   <div onclick=""document.location+=&#x27;#main&#x27;""   role=""link"" tabindex=""0"">More</div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>"" ","The HTML code in the screenshot is not fully accessible. Here are the issues:
+
+1. **Accessibility Violation**: The `onclick` attribute is used to add a link to the main content, which is not semantically correct. Instead, the `a` element should be used with the `href` attribute to create a link.
+
+2. **Role and Tab Index**: The `div` element with the `onclick` attribute has a `role` attribute set to ""link"" and a `tabindex` attribute set to ""0"". This is not semantically correct and can lead to confusion for screen readers and other assistive technologies.
+
+Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+<head>
+    <title>Failed Example 2</title>
+</head>
+<body>
+    <div role=""button"" tabindex=""0"">More</div>
+    <main>
+        <p id=""main"">This is the main content.</p>
+    </main>
+</body>
+</html>
+```
+
+In the corrected code:
+- The `onclick` attribute has been removed from the `div` element.
+- The `div` element is now set to `role=""button""` and `tabindex=""0""`, which is more semantically correct for a button-like element.
+- The `a` element has been removed, as it is not needed in this context."
+24,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **SVG Accessibility**: The SVG element is not accessible because it does not have a `role` attribute, which is required for accessibility. The `role` attribute should be set to `img` or `presentation` if the SVG is not intended to be interactive.
+
+2. **SVG Text Accessibility**: The text within the SVG element does not have an `aria-label` or `aria-labelledby` attribute, which are required to provide a textual alternative for screen readers.
+
+3. **SVG Link Accessibility**: The `a` element within the SVG is not accessible because it does not have an `aria-label` or `aria-labelledby` attribute to provide a textual alternative for screen readers.
+
+Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+<head>
+    <title>Failed Example 3</title>
+</head>
+<body>
+    <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"" role=""img"">
+        <text x=""20"" y=""20"" aria-label=""Go"">Go</text>
+    </svg>
+    <main>
+        <p id=""main"">This is the main content.</p>
+    </main>
+</body>
+</html>
+```
+
+This code includes the necessary `role` attribute for the SVG, an `aria-label` attribute for the text within the SVG, and an `aria-label` attribute for the link within the SVG."
+25,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/771c36b9967faec9926af86041d834b4a108a52e.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>See the description of     <! –– Accessibility Violation starts here ––>    <a href=""#desc"">    this product</a>.</p>  <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>See the description of     <! –– Accessibility Violation starts here ––>    <a href=""#desc"">    this product</a>.</p>  <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>"" ","Yes, the HTML code is accessible. The code uses the `<a>` tag with the `href` attribute to link to the description of the product, and the `id` attribute to reference the description within the `<p>` tag. The text within the `<a>` tag is also accessible and can be read by screen readers."
+26,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b130285915a8ca42926a11553a5791f44b65d487.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <ul>  <li>  Ulysses  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" > HTML    </a> </li>        <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images"" >    EPUB    </a>    </li>       <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">   Plain text    </a> </li>        </ul>    </li>    </ul>    </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <ul>  <li>  Ulysses  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" > HTML    </a> </li>        <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images"" >    EPUB    </a>    </li>       <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">   Plain text    </a> </li>        </ul>    </li>    </ul>    </body>  </html>"" ","Yes, the HTML code is accessible. The code is structured correctly and uses semantic HTML elements. The `<ul>` element is used to create an unordered list, and the `<li>` element is used to create list items. The `<a>` element is used to create links to different formats of the text. The only issue is that the links are not enclosed in `<li>` elements, which is not a major accessibility issue."
+27,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/b2a671d96ac510ccc6e34dd58a141d13bb196508.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <a href=""#desc"">More</a>    <p id=""desc"">This product consists of several web pages.</p>  </body>  </html>"" ","No, the HTML code is not accessible. The accessibility violation is that the `a` element is not associated with a `title` attribute or an `aria-label` attribute. This makes it difficult for screen readers to convey the purpose of the link to users who rely on them."
+28,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <div onclick=""document.location+=&#x27;#main&#x27;"" role=""link"" tabindex=""0"">More  </div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <div onclick=""document.location+=&#x27;#main&#x27;"" role=""link"" tabindex=""0"">More  </div>    <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **Accessibility Violation**: The `onclick` attribute is not semantically correct for a link. It should be replaced with an `a` element with a `href` attribute.
+
+2. **Role and Tabindex**: The `div` element with `onclick` and `role=""link""` and `tabindex=""0""` is not semantically correct. It should be replaced with an `a` element.
+
+Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+<head>
+    <title>Failed Example 2</title>
+</head>
+<body>
+    <div role=""button"" tabindex=""0"">More</div>
+    <main>
+        <p id=""main"">This is the main content.</p>
+    </main>
+</body>
+</html>
+```
+
+This code uses an `a` element with `role=""button""` and `tabindex=""0""` to indicate that the link is clickable and can be tabbed to. The `onclick` attribute is replaced with an `a` element with a `href` attribute."
+29,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>  <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">    <! –– Accessibility Violation starts here ––>    <a href=""#main"">    <text x=""20"" y=""20"">  Go  </text>  </a>  </svg>  <main>  <p id=""main"">This is the main content.</p>  </main>  </body>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **SVG Accessibility**: The SVG element is not accessible because it does not have a `role` attribute, which is required for accessibility. Additionally, the `x` and `y` attributes are not semantically meaningful and should be replaced with `x=""0""` and `y=""0""` to indicate the position of the SVG element.
+
+2. **SVG Link**: The `a` element within the SVG is not semantically correct. It should be replaced with a `button` element to make it accessible.
+
+3. **SVG Text**: The `text` element within the SVG should have a `role` attribute set to `presentation` to indicate that it is a decorative element and not meant to be read by screen readers.
+
+Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+<head>
+    <title>Failed Example 3</title>
+</head>
+<body>
+    <svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"" role=""button"" tabindex=""0"">
+        <text x=""0"" y=""0"" role=""presentation"">Go</text>
+    </svg>
+    <main>
+        <p id=""main"">This is the main content.</p>
+    </main>
+</body>
+</html>
+```
+
+This code now includes the necessary `role` and `tabindex` attributes for accessibility, and the `text` element is correctly marked as decorative."
+30,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/98f0638a038a244b0bde70ff316cde1be7ce9a3b.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>  The W3C held a workshop on June 9-10, 2005 at DERI   Innsbruck (Austria), to gather information about potential   standardization work on Semantics in Web Services.  </p>    <! –– Accessibility Violation starts here ––>    <p><a href=""https://www.workshop-report.html"" > Workshop </a> </p>   </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>  <p>  The W3C held a workshop on June 9-10, 2005 at DERI   Innsbruck (Austria), to gather information about potential   standardization work on Semantics in Web Services.  </p>    <! –– Accessibility Violation starts here ––>    <p><a href=""https://www.workshop-report.html"" > Workshop </a> </p>   </body>  </html>"" ","The HTML code in the screenshot is not accessible. The accessibility violation starts with the `<p>` tag that contains an anchor element `<a>`. The anchor element should not be used as a paragraph element, as it is intended for linking to other web pages or resources, not for creating paragraphs of text. The correct way to create a paragraph is to use the `<p>` tag without any anchor elements."
+31,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/43730455b69439980b95151be477ca594e0d7556.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <p style=""font-weight: bold"">Ulysses</p>  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" >    HTML    </a>& #10; </li>      <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images "">   EPUB   </a>  </li>     <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt "">    Plain text    </a>    </li>        </ul>   </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 5</title>  </head>  <body>  <p style=""font-weight: bold"">Ulysses</p>  <ul>    <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "" >    HTML    </a>& #10; </li>      <! –– Accessibility Violation starts here ––>    <li>  <a href=""https://www.gutenberg.org/ebooks/4300.epub.images "">   EPUB   </a>  </li>     <! –– Accessibility Violation starts here ––>    <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt "">    Plain text    </a>    </li>        </ul>   </body>  </html>"" ","The HTML code is not fully accessible. Here are the issues:
+
+1. **Accessibility Violation**: The `<!– Accessibility Violation starts here ––>` comments indicate that there are accessibility issues in the code. However, the specific issues are not detailed in the provided code snippet.
+
+2. **Link Text**: The link text for the EPUB and Plain text links is not descriptive enough. For accessibility, link text should be descriptive and convey the purpose of the link. For example, the link text could be ""Download EPUB"" or ""Read Plain text"".
+
+3. **Alternative Text for Images**: There is no alternative text (`alt`) attribute for the images. This is important for screen readers and other assistive technologies to convey the content of the images to users who cannot see them.
+
+Here is a revised version of the HTML code with the above issues addressed:
+
+```html
+<html lang=""en"">
+<head>
+    <title>Failed Example 5</title>
+</head>
+<body>
+    <p style=""font-weight: bold"">Ulysses</p>
+    <ul>
+        <li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html"">Download HTML</a></li>
+        <li><a href=""https://www.gutenberg.org/ebooks/4300.epub.images"">Download EPUB</a></li>
+        <li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">Read Plain text</a></li>
+    </ul>
+</body>
+</html>
+```
+
+This version includes descriptive link text and removes the accessibility violation comments."
+32,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/45d884e81c4ef8234cfbd85d259dd6a64685c9d2.html,link-text-mismatch,Serious,Links fail to convey their purpose or are ambiguous.,"<html lang=""en"">  <head>  <title>Failed Example 6</title>  </head>  <body>  <table>  <tr>  <th colspan=""3"">Books</th>  </tr>  <tr>  <td>Ulysses</td>      <! –– Accessibility Violation starts here ––>    <td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "">Download </a> </td>    <td> 1.61MB </td>    </tr>    </table>    </body>   </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 6</title>  </head>  <body>  <table>  <tr>  <th colspan=""3"">Books</th>  </tr>  <tr>  <td>Ulysses</td>      <! –– Accessibility Violation starts here ––>    <td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.html "">Download </a> </td>    <td> 1.61MB </td>    </tr>    </table>    </body>   </html>"" ","The HTML code is not fully accessible. The accessibility violation starts with the `<td>` tag that contains the `href` attribute. This tag should be replaced with a `<a>` tag to properly link to the download page. Additionally, the `href` attribute should be updated to point to the correct download URL."
+33,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/9b967559ff2691dc30436766f53feea55447b348.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <label>Date    <! –– Accessibility Violation starts here ––>    <input id=""fname"" name=""fname"" type=""text""/></label>    </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <label>Date    <! –– Accessibility Violation starts here ––>    <input id=""fname"" name=""fname"" type=""text""/></label>    </html>"" ","No, the HTML code is not accessible. The accessibility violation is the use of the `<!–– Accessibility Violation starts here ––>` comment, which is not a valid HTML comment and is not recognized by web browsers. This comment is not semantically meaningful and does not provide any useful information to assistive technologies or users with disabilities. It is recommended to use semantic HTML elements and attributes to improve accessibility, such as using the `<label>` element to associate a label with the input field."
+34,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/1e52060759a535934176a5a981446066aad6b31f.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <label for=""fname"">Age</label>    <! –– Accessibility Violation starts here ––>    <input id=""address"" name=""address"" type=""text""/>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <label for=""fname"">Age</label>    <! –– Accessibility Violation starts here ––>    <input id=""address"" name=""address"" type=""text""/>  </html>"" ","No, the HTML code is not accessible. The label for the input field is missing, which makes it difficult for screen readers and other assistive technologies to provide information about the input field. Additionally, the id attribute of the input field should be changed to match the label text, which is ""Age"" in this case."
+35,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/fa5104f9bd07fe52813d7e511c3cc87c4c1cf232.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <p id=""label_fname"">What is your previous address?</p>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""add"" name=""add"" type=""text""/>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <p id=""label_fname"">What is your previous address?</p>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""add"" name=""add"" type=""text""/>  </html>"" ","Yes, the HTML code is accessible. The screenshot shows a label with the text ""What is your previous address?"" and an input field below it. The label is associated with the input field using the `for` attribute, which is a best practice for accessibility. The `aria-labelledby` attribute is also used to associate the label with the input field, which is another accessibility best practice."
+36,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/649946098faf6f36b8232ea74fc3bae3cf8997e7.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>  <label>First Name:: <input name=""shipping-street"" type=""text""/></label>  <label>Last Name:: <input name=""shipping-street"" type=""text""/></label>    </fieldset>  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Contact Information</h2>  <label>House Number: <input name=""contact-info"" type=""text""/></label>  <label>Street: <input name=""contact-info"" type=""text""/></label>      </fieldset>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>  <label>First Name:: <input name=""shipping-street"" type=""text""/></label>  <label>Last Name:: <input name=""shipping-street"" type=""text""/></label>    </fieldset>  <fieldset>    <! –– Accessibility Violation starts here ––>    <h2 style=""position: absolute; top: -9999px; left: -9999px;"">Contact Information</h2>  <label>House Number: <input name=""contact-info"" type=""text""/></label>  <label>Street: <input name=""contact-info"" type=""text""/></label>      </fieldset>  </html>"" ","The HTML code is not accessible. The accessibility violations are:
+
+1. The `h2` elements with `position: absolute; top: -9999px; left: -9999px;` styles are not semantically meaningful and do not provide any useful information to screen readers or other assistive technologies. They should be removed or replaced with more semantically appropriate elements.
+
+2. The `fieldset` elements are not semantically meaningful and do not provide any useful information to screen readers or other assistive technologies. They should be replaced with more semantically appropriate elements such as `form` elements.
+
+Here is an example of how the code could be made more accessible:
+
+```html
+<form>
+  <fieldset>
+    <legend>Shipping Address</legend>
+    <label>First Name:</label>
+    <input name=""shipping-street"" type=""text"" />
+
+    <label>Last Name:</label>
+    <input name=""shipping-street"" type=""text"" />
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+    <label>House Number:</label>
+    <input name=""contact-info"" type=""text"" />
+
+    <label>Street:</label>
+    <input name=""contact-info"" type=""text"" />
+  </fieldset>
+</form>
+```
+
+This code uses `legend` elements to provide a label for each `fieldset`, and replaces the `h2` elements with `legend` elements. The `fieldset` elements are replaced with `form` elements, which are more semantically appropriate for grouping related form controls."
+37,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html,form-label-mismatch,Critical,Forms elements have unclear or incorrect labels.,"<html lang=""en"">  <span id=""search"" style=""display: none"">Search</span>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""submit search by clicking here"" name=""search"" type=""text""/>  <button id=""submit"">Go</button>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <span id=""search"" style=""display: none"">Search</span>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""submit search by clicking here"" name=""search"" type=""text""/>  <button id=""submit"">Go</button>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **Accessibility Attributes**: The `aria-labelledby` attribute is not correctly used. It should be `aria-labelledby=""search-label""` to identify the label for the search input.
+
+2. **HTML Structure**: The `span` element with the `id=""search""` should not be used for accessibility purposes. Instead, it should be replaced with a `label` element to provide a text label for the search input.
+
+Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+  <span id=""search"" style=""display: none"">Search</span>
+  <label for=""search"">Search</label>
+  <input aria-labelledby=""search-label"" name=""search"" type=""text""/>
+  <button id=""submit"">Go</button>
+</html>
+```
+
+This code now includes a `label` element with the `for` attribute pointing to the `input` element, which provides a text label for the search input. The `aria-labelledby` attribute is also correctly used to identify the label for the search input."
+38,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/79cce8d89309bea03e122d2917d340a525db4de0.html,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **Missing ARIA Labels**: The heading `<h1>` does not have an ARIA label. This is important for screen readers to understand the content of the heading.
+
+2. **Missing ARIA Roles**: The `<p>` element does not have an ARIA role. This is necessary for screen readers to understand the purpose of the paragraph.
+
+Here is the corrected HTML code:
+
+```html
+<html lang=""en"">
+  <body>
+    <h1 role=""heading"" aria-label=""Weather"">Weather</h1>
+    <p role=""text"" aria-label=""Opening Hours"">We are open Monday through Friday from 10 to 16</p>
+  </body>
+</html>
+```
+
+This code includes ARIA labels and roles for both the heading and the paragraph, making the webpage more accessible."
+39,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/acae544ba63bf9c71988fb67d491c7d404164f52.html,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"">Weather</span>    <p>We are open Monday through Friday from 10 to 16</p>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"">Weather</span>    <p>We are open Monday through Friday from 10 to 16</p>  </html>"" ","The HTML code in the screenshot is not fully accessible. The `<span>` element with the `aria-level=""1""` and `role=""heading""` attributes is not semantically correct. Instead, it should be a `<h1>` element to indicate a heading. Additionally, the `<p>` element should be wrapped in a `<main>` element to indicate the main content of the page. Here is the corrected code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Weather</title>
+</head>
+<body>
+    <main>
+        <h1>Weather</h1>
+        <p>We are open Monday through Friday from 10 to 16</p>
+    </main>
+</body>
+</html>
+```
+
+This code is semantically correct and follows the best practices for accessibility."
+40,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">  Weather  </span>    <p>  We are open Monday through Friday from 10 to 16  </p>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">  Weather  </span>    <p>  We are open Monday through Friday from 10 to 16  </p>  </html>"" ","No, the HTML code is not accessible. The `aria-level` and `role` attributes are not valid HTML attributes and should not be used. Additionally, the `style` attribute is not valid HTML and should not be used. The `lang` attribute is also not necessary in this case, as the language of the content is already specified in the `lang` attribute of the `html` element."
+41,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/d76e8834b616356b2803586a8fbd0825a84e3fc8.html,ambiguous-heading,Moderate,"Headings are vague, repetitive, or fail to describe the content.","<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  <p>It is going to rain tomorrow</p>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">    <! –– Accessibility Violation starts here ––>    <h1>Weather</h1>    <p>We are open Monday through Friday from 10 to 16</p>  <p>It is going to rain tomorrow</p>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **Missing ARIA Labels**: The `<h1>` tag is used for the main heading, but it is not associated with any ARIA labels. This can make it difficult for screen readers to understand the purpose of the heading.
+
+2. **Duplicate Content**: The text ""It is going to rain tomorrow"" is repeated twice, which is not necessary and can be confusing.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Weather</title>
+</head>
+<body>
+    <h1 role=""heading"">Weather</h1>
+    <p>We are open Monday through Friday from 10 to 16</p>
+    <p>It is going to rain tomorrow</p>
+</body>
+</html>
+```
+
+This code includes an ARIA label for the `<h1>` tag and removes the duplicate text."
+42,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/2c1397032aad720fe43dee2be0d326be56957320.html,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Apple harvesting season</title>    </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Apple harvesting season</title>    </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>"" ","The HTML code provided is not accessible because it does not have a proper structure. The `<html>` tag is missing a closing tag, and the `<title>` tag is missing a closing tag. Additionally, the `<head>` tag is missing a closing tag."
+43,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/1844d7bce889d85a80b620468baa804eab3ff2c8.html,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Cucumber and Tomato Harvest</title>  <title>Clementine harvesting season</title>      </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>Cucumber and Tomato Harvest</title>  <title>Clementine harvesting season</title>      </head>  <body>  <p>  Clementines will be ready to harvest from late October   through February.  </p>  </body>  </html>"" ","No, the HTML code is not accessible. The code has a missing closing tag for the `<title>` element, which is required for accessibility. Additionally, the code has a duplicate `<title>` element, which is not necessary and can cause confusion for screen readers."
+44,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html,page-title-not-descriptive,Serious,"Page title fails to describe the content or purpose of the page, making navigation difficult.","<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>University of Arkham</title>    </head>  <body>  <h1>Search results for ""accessibility"" at the University of Arkham</h1>  <p>None</p>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>    <! –– Accessibility Violation starts here ––>    <title>University of Arkham</title>    </head>  <body>  <h1>Search results for ""accessibility"" at the University of Arkham</h1>  <p>None</p>  </body>  </html>"" ","The HTML code provided is not fully accessible. Here are the issues:
+
+1. **Title Tag**: The `<title>` tag is missing. This is crucial for search engines and users with screen readers. It should contain a descriptive title for the webpage.
+
+2. **Alternative Text for Images**: There are no images in the provided code, but if there were, they should have alternative text (alt text) to describe the images for users who cannot see them.
+
+3. **Headings**: The `<h1>` tag is used for the main heading, but it should be used sparingly and only for the most important headings. The `<h2>` tag might be more appropriate for the main heading.
+
+4. **Content**: The `<p>` tag is used for paragraphs, but it should be used appropriately. If there is no content, it might be better to remove the `<p>` tag or use a different tag.
+
+Here is a revised version of the HTML code that addresses these issues:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>University of Arkham Accessibility Search Results</title>
+</head>
+<body>
+    <h1>Search results for ""accessibility"" at the University of Arkham</h1>
+    <p>None</p>
+</body>
+</html>
+```
+
+This version includes a title tag, uses appropriate heading tags, and has a `<p>` tag with content."
+45,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6.html,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Passed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input alt=""Clear Form"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>    </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Passed Example 1</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input alt=""Clear Form"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>    </body>  </html>"" ","No, the HTML code is not accessible. The image input element is missing an `aria-label` attribute, which is required to provide a text alternative for the image. Additionally, the `alt` attribute is not used to provide a text alternative for the image."
+46,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/b413c09531b239e27bcf79cb57302b429ef59fe6.html,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-label=""Search"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>      </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 2</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-label=""Search"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>      </body>  </html>"" ","No, the HTML code is not accessible. The `src` attribute on the `input` element is not a valid attribute for an `input` element. Additionally, the `aria-label` attribute is not a valid attribute for an `input` element. The `src` attribute should be replaced with a valid attribute, such as `value`, and the `aria-label` attribute should be replaced with a valid attribute, such as `placeholder`."
+47,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/cab9b2d06e5a44e2056ccbdbb7096f55ab42859c.html,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>      </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 3</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""Back"" type=""image""/>      </body>  </html>"" ","No, the HTML code is not accessible. The `src` attribute of the `input` element is used to specify the URL of an image, but it should be used with the `img` element instead. Additionally, the `title` attribute should be used to provide a text alternative for the image."
+48,https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/7d97d6b2f3fa16760bf66026691281a8179f3260.html,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>  <div id=""id1"">Upload</div>      </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<html lang=""en"">  <head>  <title>Failed Example 4</title>  </head>  <body>    <! –– Accessibility Violation starts here ––>    <input aria-labelledby=""id1"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/icon.svg"" type=""image""/>  <div id=""id1"">Upload</div>      </body>  </html>"" ","No, the HTML code is not accessible. The accessibility violation is that the `src` attribute is used instead of the `src` attribute. The `src` attribute should be used to specify the source of an image, not the `src` attribute."
+49,https://www.google.com/,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<button id=""voiceSearchButton""   class=""icon-button""   title=""Upload Document"">    <img src=\""https://example.com/icon.png"">   </button>","Given the webpage screenshot, Is the following HTML code accessible? ""<button id=""voiceSearchButton""   class=""icon-button""   title=""Upload Document"">    <img src=\""https://example.com/icon.png"">   </button>"" ","The HTML code provided is generally accessible, but there are a few minor issues that could be improved for better accessibility:
+
+1. **Alternative Text for the Image**: The `img` tag should have an `alt` attribute to provide a text description of the image for users who are visually impaired or using screen readers. This helps them understand the purpose of the image.
+
+2. **Aria-Label for the Button**: The `button` element should have an `aria-label` attribute to provide a text description of the button for screen readers. This helps users understand the function of the button.
+
+Here is the updated HTML code with the necessary improvements:
+
+```html
+<button id=""voiceSearchButton"" class=""icon-button"" aria-label=""Upload Document"">
+    <img src=""https://example.com/icon.png"" alt=""Upload Document Icon"">
+</button>
+```
+
+This code now includes an `alt` attribute for the image and an `aria-label` attribute for the button, making the webpage more accessible."
+50,https://www.example.com/,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">      <title>Climate Change Insights</title>      </head>  <body>      <header>          <h1>Understanding Climate Change</h1>          <p>This page highlights the impact of climate change through data visualization.</p>      </header>    <! –– Accessibility Violation starts here ––>        <main>          <img src=""graphblog-1.png "" alt=""A pie chart showing the percentage distribution of diabetes prevalence by age group. "" />      </main>      <footer>     <p> Data sourced from Global Climate Watch  <a href= ""#"" aria-label=""Learn more about climate change"">Learn more</a></p>      </footer>    </body>    </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">      <title>Climate Change Insights</title>      </head>  <body>      <header>          <h1>Understanding Climate Change</h1>          <p>This page highlights the impact of climate change through data visualization.</p>      </header>    <! –– Accessibility Violation starts here ––>        <main>          <img src=""graphblog-1.png "" alt=""A pie chart showing the percentage distribution of diabetes prevalence by age group. "" />      </main>      <footer>     <p> Data sourced from Global Climate Watch  <a href= ""#"" aria-label=""Learn more about climate change"">Learn more</a></p>      </footer>    </body>    </html>"" ","The HTML code provided is not accessible. Here are the issues:
+
+1. **Image Alternative Text**: The `alt` attribute on the image tag is missing. This is crucial for accessibility as it provides a textual description of the image for users who are visually impaired and rely on screen readers.
+
+2. **Link Accessibility**: The `href` attribute on the link tag is missing. This is necessary for users who are visually impaired and rely on screen readers to understand the link's destination.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">
+    <title>Climate Change Insights</title>
+</head>
+<body>
+    <header>
+        <h1>Understanding Climate Change</h1>
+        <p>This page highlights the impact of climate change through data visualization.</p>
+    </header>
+    <main>
+        <img src=""graphblog-1.png"" alt=""A pie chart showing the percentage distribution of diabetes prevalence by age group."" />
+    </main>
+    <footer>
+        <p>Data sourced from Global Climate Watch | <a href=""#"" aria-label=""Learn more about climate change"">Learn more</a></p>
+    </footer>
+</body>
+</html>
+```
+
+This code now includes the necessary `alt` attribute for the image and the `href` attribute for the link, making the webpage more accessible."
+51,https://www.example.com/,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage discussing renewable energy sources with a focus on solar power."">      <title>Renewable Energy Spotlight</title>     </head>  <body>      <header>          <h1>Renewable Energy Sources</h1>          <p>Exploring the future of clean and sustainable energy</p>      </header>        <nav>          <a href=""#solar"">Solar Power</a>          <a href=""#wind"">Wind Energy</a>          <a href=""#hydro"">Hydropower</a>      </nav>        <div class=""container"">          <main>              <h2 id=""solar"">Solar Power</h2>              <p>Solar energy is one of the most abundant and clean sources of renewable energy. It uses photovoltaic cells to convert sunlight directly into electricity.</p>            <! –– Accessibility Violation starts here ––>        <img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Wind turbines at sunset."" />                    <h2 id=""wind"">Wind Energy</h2>              <p>Wind turbines harness the kinetic energy of the wind and transform it into electricity. Wind energy is growing rapidly as a sustainable alternative to fossil fuels.</p>                <h2 id=""hydro"">Hydropower</h2>              <p>Hydropower generates electricity by capturing the energy of moving water, usually from rivers or dams. It is a reliable and proven source of renewable energy.</p>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Renewable Insights  <a href= ""#"" style= ""color: #fff;"" >Contact Us </a> </p>     </footer>    </body>    </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage discussing renewable energy sources with a focus on solar power."">      <title>Renewable Energy Spotlight</title>     </head>  <body>      <header>          <h1>Renewable Energy Sources</h1>          <p>Exploring the future of clean and sustainable energy</p>      </header>        <nav>          <a href=""#solar"">Solar Power</a>          <a href=""#wind"">Wind Energy</a>          <a href=""#hydro"">Hydropower</a>      </nav>        <div class=""container"">          <main>              <h2 id=""solar"">Solar Power</h2>              <p>Solar energy is one of the most abundant and clean sources of renewable energy. It uses photovoltaic cells to convert sunlight directly into electricity.</p>            <! –– Accessibility Violation starts here ––>        <img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Wind turbines at sunset."" />                    <h2 id=""wind"">Wind Energy</h2>              <p>Wind turbines harness the kinetic energy of the wind and transform it into electricity. Wind energy is growing rapidly as a sustainable alternative to fossil fuels.</p>                <h2 id=""hydro"">Hydropower</h2>              <p>Hydropower generates electricity by capturing the energy of moving water, usually from rivers or dams. It is a reliable and proven source of renewable energy.</p>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Renewable Insights  <a href= ""#"" style= ""color: #fff;"" >Contact Us </a> </p>     </footer>    </body>    </html>"" ","The HTML code provided is generally accessible, but there are a few issues that could be improved for better accessibility:
+
+1. **Image Alternative Text**: The image of solar panels does not have alternative text. Adding alternative text (alt) will help screen readers describe the image to users who are visually impaired.
+
+2. **Link Accessibility**: The links in the navigation menu are not accessible. They should be styled with `:focus` and `:hover` states to ensure that users can easily navigate the site using keyboard navigation.
+
+3. **Consistent Heading Structure**: The headings are not consistently structured. For example, the main content headings are `h2` while the subheadings are `h1`. This can be confusing for users and may affect the readability of the content.
+
+4. **Consistent Font Size**: The font size for the main content is inconsistent. The `p` tags have a font size of 16px, while the `h1` and `h2` tags have a font size of 24px. Consistent font sizes can improve readability.
+
+5. **Consistent Line Height**: The line height for the main content is inconsistent. The `p` tags have a line height of 1.5, while the `h1` and `h2` tags have a line height of 1.2. Consistent line heights can improve readability.
+
+6. **Consistent Font Weight**: The font weight for the main content is inconsistent. The `p` tags have a font weight of 400, while the `h1` and `h2` tags have a font weight of 700. Consistent font weights can improve readability.
+
+7. **Consistent Font Color**: The font color for the main content is inconsistent. The `p` tags have a font color of #333, while the `h1` and `h2` tags have a font color of #000. Consistent font colors can improve readability.
+
+8. **Consistent Font Family**: The font family for the main content is inconsistent. The `p` tags have a font family of Arial, sans-serif, while the `h1` and `h2` tags have a font family of Georgia, serif. Consistent font families can improve readability.
+
+9. **Consistent Font Size for Links**: The font size for the links in the navigation menu is inconsistent. The `a` tags have a font size of 16px, while the `h1` and `h2` tags have a font size of 24px. Consistent font sizes can improve readability.
+
+10. **Consistent Font Weight for Links**: The font weight for the links in the navigation menu is inconsistent. The `a` tags have a font weight of 700, while the `h1` and `h2` tags have a font weight of 400. Consistent font weights can improve readability.
+
+11. **Consistent Font Color for Links**: The font color for the links in the navigation menu is inconsistent. The `a` tags have a font color of #000, while the `h1` and `h2` tags have a font color of #000. Consistent font colors can improve readability.
+
+12. **Consistent Font Family for Links**: The font family for the links in the navigation menu is inconsistent. The `a` tags have a font family of Arial, sans-serif, while the `h1` and `h2` tags have a font family of Georgia, serif. Consistent font families can improve readability.
+
+13. **Consistent Font Size for Main Content**: The font size for the main content is inconsistent. The `p` tags have a font size of 16px, while the `h1` and `h2` tags have a font size of 24px. Consistent font sizes can improve readability.
+
+14. **Consistent Font Weight for Main Content**: The font weight for the main content is inconsistent. The `p` tags have a font weight of 400, while the `h1` and `h2` tags have a font weight of 700. Consistent font weights can improve readability.
+
+15. **Consistent Font Color for Main Content**: The font color for the main content is inconsistent. The `p` tags have a font color of #333, while the `h1` and `h2` tags have a font color of #000. Consistent font colors can improve readability.
+
+16. **Consistent Font Family for Main Content**: The font family for the main content is inconsistent. The `p` tags have a font family of Arial, sans-serif, while the `h1` and `h2` tags have a font family of Georgia, serif. Consistent font families can improve readability.
+
+17. **Consistent Font Size for Links**: The font size for the links in the navigation menu is inconsistent. The `a` tags have a font size of 16px, while the `h1` and `h2` tags have a font size of 24px. Consistent font sizes can improve readability.
+
+18. **Consistent Font Weight for Links**: The font weight for the links in the navigation menu is inconsistent. The `a` tags have a font weight of 700, while the `h1` and `h2` tags have a font weight of 400. Consistent font weights can improve readability.
+
+19. **Consistent Font Color for Links**: The font color for the links in the navigation menu is inconsistent. The `a` tags have a font color of #000, while the `h1` and `h2` tags have a font color of #000. Consistent font colors can improve readability.
+
+20. **Consistent Font Family for Links**: The font family for the links in the navigation menu is inconsistent. The `a` tags have a font family of Arial, sans-serif, while the `h1` and `h2` tags have a font family of Georgia, serif. Consistent font families can improve readability.
+
+21. **Consistent Font Size for Main Content**: The font size for the main content is inconsistent. The `p` tags have a font size of 16px, while the `h1` and `h2` tags have a font size of 24px. Consistent font sizes can improve readability.
+
+22. **Consistent Font Weight for Main Content**: The font weight for the main content is inconsistent. The `p` tags have a font weight of 400, while the `h1` and `h2` tags have a font weight of 700. Consistent font weights can improve readability.
+
+23. **Consistent Font Color for Main Content**: The font color for the main content is inconsistent. The `p` tags have a font color of #333, while the `h1` and `h2` tags have a font color of #000. Consistent font colors can improve readability.
+
+24. **Consistent Font Family for Main Content**: The"
+52,https://www.example.com/,image-alt-not-descriptive,Critical,Inaccurate or misleading alternative text that fails to describe the purpose of the image.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage promoting mental health awareness and well-being."">      <title>Mental Health Awareness</title>      </head>  <body>      <header>          <h1>Mental Health Matters</h1>          <p>Promoting awareness, reducing stigma, and encouraging self-care</p>      </header>        <nav>          <a href=""#importance"">Importance</a>          <a href=""#tips"">Self-Care Tips</a>          <a href=""#resources"">Resources</a>      </nav>        <div class=""container"">          <main>              <h2 id=""importance"">The Importance of Mental Health</h2>              <p>Mental health is vital to overall well-being. It affects how we think, feel, and act in our daily lives. Recognizing its importance helps reduce stigma and promotes a supportive community.</p>                <! –– Accessibility Violation starts here ––>    <img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" />                    <h2 id=""tips"">Self-Care Tips</h2>              <p>Taking care of your mental health is essential. Here are a few tips:</p>              <ul>                  <li>Practice mindfulness or meditation</li>                  <li>Stay physically active</li>                  <li>Maintain a balanced diet</li>                  <li>Connect with loved ones</li>                  <li>Seek professional help when needed</li>              </ul>                <h2 id=""resources"">Helpful Resources</h2>              <p>If you&#x27;re struggling with your mental health, don&#x27;t hesitate to reach out for help. Here are some trusted resources:</p>              <ul>                  <li><a href=""#"">National Mental Health Hotline</a></li>                  <li><a href=""#"">Mindfulness and Meditation Apps</a></li>                  <li><a href=""#"">Support Groups in Your Area</a></li>              </ul>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Mental Health Awareness  <a href= ""#"" style= ""color: #fff; "" >Contact Us </a> </p>       </footer>    </body>    </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A simple webpage promoting mental health awareness and well-being."">      <title>Mental Health Awareness</title>      </head>  <body>      <header>          <h1>Mental Health Matters</h1>          <p>Promoting awareness, reducing stigma, and encouraging self-care</p>      </header>        <nav>          <a href=""#importance"">Importance</a>          <a href=""#tips"">Self-Care Tips</a>          <a href=""#resources"">Resources</a>      </nav>        <div class=""container"">          <main>              <h2 id=""importance"">The Importance of Mental Health</h2>              <p>Mental health is vital to overall well-being. It affects how we think, feel, and act in our daily lives. Recognizing its importance helps reduce stigma and promotes a supportive community.</p>                <! –– Accessibility Violation starts here ––>    <img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" />                    <h2 id=""tips"">Self-Care Tips</h2>              <p>Taking care of your mental health is essential. Here are a few tips:</p>              <ul>                  <li>Practice mindfulness or meditation</li>                  <li>Stay physically active</li>                  <li>Maintain a balanced diet</li>                  <li>Connect with loved ones</li>                  <li>Seek professional help when needed</li>              </ul>                <h2 id=""resources"">Helpful Resources</h2>              <p>If you&#x27;re struggling with your mental health, don&#x27;t hesitate to reach out for help. Here are some trusted resources:</p>              <ul>                  <li><a href=""#"">National Mental Health Hotline</a></li>                  <li><a href=""#"">Mindfulness and Meditation Apps</a></li>                  <li><a href=""#"">Support Groups in Your Area</a></li>              </ul>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Mental Health Awareness  <a href= ""#"" style= ""color: #fff; "" >Contact Us </a> </p>       </footer>    </body>    </html>"" ","The HTML code provided is generally accessible. It includes proper structure, semantic elements, and alternative text for images. However, there is an accessibility violation in the image alt text. The alt text for the image is ""A diagram of unrelated objects and ideas, possibly showcasing the lifecycle of a butterfly, an exercise routine, or random abstract symbols."" This is not descriptive enough and does not convey the actual content of the image. It should be replaced with a more descriptive alt text that accurately describes the image content."
+53,https://www.example.com/,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">      <title>Sustainable Living</title>      </head>  <body>      <header>          <h1>Sustainable Living</h1>          <p>Small steps for a greener planet.</p>      </header>        <div class=""container"">          <main>              <h2>Eco-Friendly Tips</h2>              <p>Click the button below to reveal practical tips for sustainable living:</p>             <! –– Accessibility Violation starts here ––>       <button id=""revealTips"" role=""button"" aria-label=""Submit Form"">Show Tips</button>                  <div id=""tips"" class=""tips"">                  <h3>Eco-Friendly Tips</h3>                  <ul>                      <li>Reduce, reuse, and recycle wherever possible.</li>                      <li>Conserve water by fixing leaks and using water-efficient appliances.</li>                      <li>Opt for energy-efficient lighting and appliances.</li>                      <li>Support local and sustainable products.</li>                      <li>Plant trees or grow your own garden to offset your carbon footprint.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Sustainable Living Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">      <title>Sustainable Living</title>      </head>  <body>      <header>          <h1>Sustainable Living</h1>          <p>Small steps for a greener planet.</p>      </header>        <div class=""container"">          <main>              <h2>Eco-Friendly Tips</h2>              <p>Click the button below to reveal practical tips for sustainable living:</p>             <! –– Accessibility Violation starts here ––>       <button id=""revealTips"" role=""button"" aria-label=""Submit Form"">Show Tips</button>                  <div id=""tips"" class=""tips"">                  <h3>Eco-Friendly Tips</h3>                  <ul>                      <li>Reduce, reuse, and recycle wherever possible.</li>                      <li>Conserve water by fixing leaks and using water-efficient appliances.</li>                      <li>Opt for energy-efficient lighting and appliances.</li>                      <li>Support local and sustainable products.</li>                      <li>Plant trees or grow your own garden to offset your carbon footprint.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Sustainable Living Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>"" ","The HTML code provided is generally accessible, but there are a few minor issues that could be improved for better accessibility:
+
+1. **Button Accessibility**: The button with the id `revealTips` has an `aria-label` attribute, but it is not a `button` element. It should be a `button` element to ensure proper accessibility. Additionally, the `aria-label` should be more descriptive and include the action of the button.
+
+2. **Button Text**: The button text ""Show Tips"" is not very descriptive. It would be better to use a more descriptive text like ""View Eco-Friendly Tips"" or ""Get Sustainable Living Tips"".
+
+3. **Button Positioning**: The button is positioned below the main content, which might not be ideal for users who are looking for the tips immediately. It could be moved to a more prominent position, such as above the tips or to the side.
+
+Here is a revised version of the HTML code with the above issues addressed:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">
+    <title>Sustainable Living</title>
+</head>
+<body>
+    <header>
+        <h1>Sustainable Living</h1>
+        <p>Small steps for a greener planet.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Eco-Friendly Tips</h2>
+            <p>Click the button below to reveal practical tips for sustainable living:</p>
+            <button id=""revealTips"" role=""button"" aria-label=""View Eco-Friendly Tips"">View Tips</button>
+            <div id=""tips"" class=""tips"">
+                <h3>Eco-Friendly Tips</h3>
+                <ul>
+                    <li>Reduce, reuse, and recycle wherever possible.</li>
+                    <li>Conserve water by fixing leaks and using water-efficient appliances.</li>
+                    <li>Opt for energy-efficient lighting and appliances.</li>
+                    <li>Support local and sustainable products.</li>
+                    <li>Plant trees or grow your own garden to offset your carbon footprint.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sustainable Living Initiative <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('revealTips');
+        const tips = document.getElementById('tips');
+
+        button.addEventListener('click', () => {
+            tips.style.display = tips.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
+```
+
+These changes should improve the accessibility of the webpage."
+54,https://www.example.com/,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">      <title>Healthy Eating Habits</title>      </head>  <body>      <header>          <h1>Healthy Eating</h1>          <p>Simple steps to build better eating habits.</p>      </header>        <div class=""container"">          <main>              <h2>Healthy Eating Tips</h2>              <p>Click the button below to learn more about maintaining a balanced diet:</p>                <! –– Accessibility Violation starts here ––>    <button id=""revealTips"" aria-label=""Click to go back to the homepage"" title=""Click to go back to the homepage"">Show Tips</button>                <div id=""tips"" class=""tips"">                  <h3>Tips for a Balanced Diet</h3>                  <ul>                      <li>Incorporate more fruits and vegetables into your meals.</li>                      <li>Stay hydrated by drinking plenty of water.</li>                      <li>Choose whole grains over refined grains.</li>                      <li>Limit your intake of added sugars and saturated fats.</li>                      <li>Practice portion control to avoid overeating.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Healthy Eating Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>","Given the webpage screenshot, Is the following HTML code accessible? ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">      <title>Healthy Eating Habits</title>      </head>  <body>      <header>          <h1>Healthy Eating</h1>          <p>Simple steps to build better eating habits.</p>      </header>        <div class=""container"">          <main>              <h2>Healthy Eating Tips</h2>              <p>Click the button below to learn more about maintaining a balanced diet:</p>                <! –– Accessibility Violation starts here ––>    <button id=""revealTips"" aria-label=""Click to go back to the homepage"" title=""Click to go back to the homepage"">Show Tips</button>                <div id=""tips"" class=""tips"">                  <h3>Tips for a Balanced Diet</h3>                  <ul>                      <li>Incorporate more fruits and vegetables into your meals.</li>                      <li>Stay hydrated by drinking plenty of water.</li>                      <li>Choose whole grains over refined grains.</li>                      <li>Limit your intake of added sugars and saturated fats.</li>                      <li>Practice portion control to avoid overeating.</li>                  </ul>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Healthy Eating Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;revealTips&#x27;);          const tips = document.getElementById(&#x27;tips&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              tips.style.display = tips.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html>"" ","The HTML code provided is generally accessible, but there are a few minor issues that could be improved for better accessibility:
+
+1. **Button Accessibility**: The button with the id `revealTips` has an `aria-label` attribute, but it is not clear what the button is intended to do. It would be better to provide a more descriptive `aria-label` or `title` that clearly states the function of the button.
+
+2. **Button Text**: The button text ""Show Tips"" is not very descriptive. It would be better to provide a more descriptive text that clearly states what the button does.
+
+3. **Button Positioning**: The button is positioned below the main content, which might not be ideal for users who are navigating with a screen reader. It would be better to position the button above the main content or provide a clear indication of its purpose.
+
+Here is an updated version of the HTML code with the above issues addressed:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">
+    <title>Healthy Eating</title>
+</head>
+<body>
+    <header>
+        <h1>Healthy Eating</h1>
+        <p>Simple steps to build better eating habits.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Healthy Eating Tips</h2>
+            <p>Click the button below to learn more about maintaining a balanced diet:</p>
+            <button id=""revealTips"" aria-label=""Click to show tips"" title=""Click to show tips"">Show Tips</button>
+            <div id=""tips"" class=""tips"" style=""display: none;"">
+                <h3>Tips for a Balanced Diet</h3>
+                <ul>
+                    <li>Incorporate more fruits and vegetables into your meals.</li>
+                    <li>Stay hydrated by drinking plenty of water.</li>
+                    <li>Choose whole grains over refined grains.</li>
+                    <li>Limit your intake of added sugars and saturated fats.</li>
+                    <li>Practice portion control to avoid overeating.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Healthy Eating Initiative <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('revealTips');
+        const tips = document.getElementById('tips');
+
+        button.addEventListener('click', () => {
+            tips.style.display = tips.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
+```
+
+This updated version addresses the issues with the button's accessibility, text, and positioning."
+55,https://www.example.com/,button-label-mismatch,Critical,Buttons labels are unclear or fail to specify their purpose.,"<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">      <title>Climate Change Action</title>      </head>  <body>      <header>          <h1>Take Action on Climate Change</h1>          <p>Simple actions for a sustainable future.</p>      </header>        <div class=""container"">          <main>              <h2>Get Involved</h2>              <p>Click the button below to submit your pledge for climate action:</p>            <! –– Accessibility Violation starts here ––>        <button id=""pledgeButton"" role=""link"" aria-labelledby=""Upload Document"">Learn More</button>                              <div id=""formContainer"" class=""form-container"">                  <h3>Your Climate Pledge</h3>                  <form>                      <label for=""name"">Your Name:</label>                      <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">                        <label for=""email"">Your Email:</label>                      <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">                        <button type=""submit"">Submit Pledge</button>                  </form>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Climate Change Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;pledgeButton&#x27;);          const formContainer = document.getElementById(&#x27;formContainer&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              formContainer.style.display = formContainer.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html></p>","Given the webpage screenshot, Is the following HTML code accessible? ""<!DOCTYPE html>  <html lang=""en"">  <head>      <meta charset=""UTF-8"">      <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">      <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">      <title>Climate Change Action</title>      </head>  <body>      <header>          <h1>Take Action on Climate Change</h1>          <p>Simple actions for a sustainable future.</p>      </header>        <div class=""container"">          <main>              <h2>Get Involved</h2>              <p>Click the button below to submit your pledge for climate action:</p>            <! –– Accessibility Violation starts here ––>        <button id=""pledgeButton"" role=""link"" aria-labelledby=""Upload Document"">Learn More</button>                              <div id=""formContainer"" class=""form-container"">                  <h3>Your Climate Pledge</h3>                  <form>                      <label for=""name"">Your Name:</label>                      <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">                        <label for=""email"">Your Email:</label>                      <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">                        <button type=""submit"">Submit Pledge</button>                  </form>              </div>          </main>      </div>        <footer>          <p>&amp;copy; 2025 Climate Change Initiative  <a href=""#"" style=""color: #fff;"">Contact Us</a></p>      </footer>        <script>          const button = document.getElementById(&#x27;pledgeButton&#x27;);          const formContainer = document.getElementById(&#x27;formContainer&#x27;);            button.addEventListener(&#x27;click&#x27;, () => {              formContainer.style.display = formContainer.style.display === &#x27;block&#x27; ? &#x27;none&#x27; : &#x27;block&#x27;;          });      </script>  </body>  </html></p>"" ","The HTML code provided is generally accessible, but there are a few issues that could be improved for better accessibility:
+
+1. **Button Accessibility**: The button with the `id=""pledgeButton""` has an `aria-labelledby=""Upload Document""`, which is not a valid attribute for a button. It should be `aria-label=""Learn More""` or `aria-labelledby=""Learn More""`.
+
+2. **Form Accessibility**: The form container has an `id=""formContainer""` and a `class=""form-container""`. It should have an `aria-labelledby=""Your Climate Pledge""` to provide a label for the form.
+
+3. **Form Labels**: The form labels should be associated with their respective input fields using `for` attributes. For example:
+   ```html
+   <label for=""name"">Your Name:</label>
+   <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">
+   ```
+
+4. **Form Submission**: The form should have a `role=""form""` attribute to indicate that it is a form.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">
+    <title>Climate Change Action</title>
+</head>
+<body>
+    <header>
+        <h1>Take Action on Climate Change</h1>
+        <p>Simple actions for a sustainable future.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Get Involved</h2>
+            <p>Click the button below to submit your pledge for climate action:</p>
+            <button id=""pledgeButton"" role=""button"" aria-label=""Learn More"">Learn More</button>
+            <div id=""formContainer"" class=""form-container"" aria-labelledby=""Your Climate Pledge"">
+                <h3>Your Climate Pledge</h3>
+                <form role=""form"">
+                    <label for=""name"">Your Name:</label>
+                    <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">
+                    <label for=""email"">Your Email:</label>
+                    <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">
+                    <button type=""submit"">Submit Pledge</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Climate Change Initiative <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('pledgeButton');
+        const formContainer = document.getElementById('formContainer');
+
+        button.addEventListener('click', () => {
+            formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
+```
+
+These changes should improve the accessibility of the webpage."
