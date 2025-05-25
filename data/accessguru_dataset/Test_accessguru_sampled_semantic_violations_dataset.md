@@ -20,7 +20,7 @@ This table presents 55 semantic accessibility violations along with associated H
           <pre>&lt;html lang=&quot;en&quot;&gt; &#10; &lt;img alt=&quot;ERCIM logo&quot; src=&quot;image.png&quot;/&gt; &#10; &lt;/html&gt;</pre>
       </td>
       <td>
-          <html lang="en"><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" width="50%"></html>
+          <html lang="en"><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" width="40%"></html>
       </td>
   </tr>  
   <tr>
@@ -31,7 +31,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;svg aria-label=&quot;W3C&quot; role=&quot;img&quot; viewbox=&quot;0 0 512 512&quot;&gt;&#10;&lt;path d=&quot;M108.46&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M107.6 &quot; fill=&quot;#e44d26&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M256 &quot; fill=&quot;#f16529&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M142 176&quot; fill=&quot;#ebebeb&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M369.613.6v47.2l93-25.8&quot; fill=&quot;#fff&quot;&gt;&lt;/path&gt;&#10;&lt;/svg&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://i.ibb.co/mFYM2Ft/image.png"width="50%" ></td>
+    <td><img src="https://i.ibb.co/mFYM2Ft/image.png"width="40%" ></td>
 </tr>
 <tr>
     <td>3</td>
@@ -43,7 +43,7 @@ This table presents 55 semantic accessibility violations along with associated H
     </td>
     <td>
         <!DOCTYPE html>                
-        <html lang="en"><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" width="50%"/></html>
+        <html lang="en"><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" width="40%"/></html>
     </td>
 </tr>
 <tr>
@@ -84,7 +84,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;html lang=&quot;nl&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Fireworks over Paris&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;img alt=&quot;Fireworks over Paris&quot; &#10;src=&quot;/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg&quot;/&gt;&#10;&lt;p lang=&quot;nl&quot;&gt;&#10;Gelukkig nieuwjaar!&#10;&lt;/p&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/7.png" width="100%" ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/7.png" width="80%" ></td>
 </tr>
 <tr>
     <td>8</td>
@@ -94,7 +94,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;!-- Accessibility Violation Starts Here --&quot;&gt; &#10;&lt;html lang=&quot;nl&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Paris&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;img aria-labelledby=&quot;caption&quot; src=&quot;https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg &quot;/ &gt; &#10; &lt;p hidden=&quot; &quot; id=&quot; caption &quot; lang= &quot; en &quot; &gt; &#10;Fireworks over Paris! &#10; &lt; /p &gt; &#10; &lt; /body &gt; &#10; &lt; /html &gt; </pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/8.png" width="100%"></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/8.png" width="90%"></td>
 </tr>
 <tr>
     <td>9</td>
@@ -204,7 +204,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;nl&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Met de kippen op stok&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;blockquote&gt;&#10;&lt;p&gt;&quot;Hij ging met de kippen op stok&quot;&lt;/p&gt;&#10;&lt;/blockquote&gt;&#10;&lt;p lang=&quot;en&quot;&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;span lang=&quot;fr&quot;&gt;The Dutch phrase&lt;/span&gt; &#10;&#10; &#10;&quot;Hij ging met de kippen op stok&quot;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;span lang=&quot;fr&quot;&gt;literally translates into &#10;&quot;He went to roost with the chickens&quot;, but it means &#10;that he went to bed early.&lt;/span&gt;&#10;&#10;&lt;/p&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/19.png" width="100%"></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/19.png" width="90%"></td>
 </tr>
 <tr>
     <td>20</td>
@@ -224,7 +224,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;fr&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Feu d&#x27;artifice du nouvel an&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;img aria-labelledby=&quot;caption&quot; src=&quot;https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg &quot; /&gt; &#10;&#10; &lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;p hidden=&quot;&quot; id=&quot;caption&quot; &gt;&#10;Fireworks over Paris&#10;&lt;/p&gt;&#10;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/21.png" width="100%"></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/21.png" width="90%"></td>
 </tr>
 <tr>
     <td>22</td>
