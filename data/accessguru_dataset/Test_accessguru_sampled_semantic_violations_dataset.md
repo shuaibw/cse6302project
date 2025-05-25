@@ -19,8 +19,7 @@ This table presents 55 semantic accessibility violations along with associated H
       <td>
           <pre>&lt;html lang=&quot;en&quot;&gt; &#10; &lt;img alt=&quot;ERCIM logo&quot; src=&quot;image.png&quot;/&gt; &#10; &lt;/html&gt;</pre>
       </td>
-      <td>
-          <html lang="en"><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" width="170" height="100"/></html>
+      <td><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" >
       </td>
   </tr>  
   <tr>
