@@ -9,7 +9,7 @@ This table presents 55 semantic accessibility violations along with associated H
       <th >Impact <br/>______</th>
       <th >Description <br/>__________ </th>
       <th style="width: 250px; word-break: break-word; white-space: pre-wrap;">Affected HTML <br/>_______________</th>
-      <th style="width: 400px;">Preview of the Web Page with Accessibility Violation<br/>__________________________________________________________</th>
+      <th style="width: 400px;">Preview of the Web Page with Accessibility Violation<br/>_______________________________________________________________</th>
   </tr>
   <tr>
       <td>1</td>
