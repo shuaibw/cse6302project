@@ -20,7 +20,7 @@ This table presents 55 semantic accessibility violations along with associated H
           <pre>&lt;html lang=&quot;en&quot;&gt; &#10; &lt;img alt=&quot;ERCIM logo&quot; src=&quot;image.png&quot;/&gt; &#10; &lt;/html&gt;</pre>
       </td>
       <td>
-          <html lang="en"><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" width="170" height="100"/></html>
+          <html lang="en"><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" class="preview-img"></html>
       </td>
   </tr>  
   <tr>
@@ -31,7 +31,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;svg aria-label=&quot;W3C&quot; role=&quot;img&quot; viewbox=&quot;0 0 512 512&quot;&gt;&#10;&lt;path d=&quot;M108.46&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M107.6 &quot; fill=&quot;#e44d26&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M256 &quot; fill=&quot;#f16529&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M142 176&quot; fill=&quot;#ebebeb&quot;&gt;&lt;/path&gt;&#10;&lt;path d=&quot;M369.613.6v47.2l93-25.8&quot; fill=&quot;#fff&quot;&gt;&lt;/path&gt;&#10;&lt;/svg&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td>![Img](https://i.ibb.co/mFYM2Ft/image.png)</td>
+    <td><img src="https://i.ibb.co/mFYM2Ft/image.png" class="preview-img"></td>
 </tr>
 <tr>
     <td>3</td>
