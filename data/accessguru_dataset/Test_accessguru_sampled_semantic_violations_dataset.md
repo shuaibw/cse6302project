@@ -234,7 +234,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 1&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt; &#10;&lt;a href=&quot;#desc&quot;&gt;More&lt;/a&gt;&#10;&#10;&lt;p id=&quot;desc&quot;&gt;This product consists of several web pages.&lt;/p&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/22.png"  ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/22.png" width="80%" ></td>
 </tr>
 <tr>
     <td>23</td>
@@ -244,7 +244,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 2&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt; &#10;&lt;div onclick=&quot;document.location+=&#x27;#main&#x27;&quot; &#10;role=&quot;link&quot; tabindex=&quot;0&quot;&gt;More&lt;/div&gt;&#10;&#10;&lt;main&gt;&#10;&lt;p id=&quot;main&quot;&gt;This is the main content.&lt;/p&gt;&#10;&lt;/main&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/23.png" ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/23.png" width="60%"></td>
 </tr>
 <tr>
     <td>24</td>
@@ -254,7 +254,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 3&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;svg x=&quot;0&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; y=&quot;0&quot;&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;a href=&quot;#main&quot;&gt;&#10;&#10;&lt;text x=&quot;20&quot; y=&quot;20&quot;&gt;&#10;Go&#10;&lt;/text&gt;&#10;&lt;/a&gt;&#10;&lt;/svg&gt;&#10;&lt;main&gt;&#10;&lt;p id=&quot;main&quot;&gt;This is the main content.&lt;/p&gt;&#10;&lt;/main&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/24.png" ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/24.png" width="60%"></td>
 </tr>
 <tr>
     <td>25</td>
@@ -264,7 +264,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 4&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;p&gt;See the description of &#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;a href=&quot;#desc&quot;&gt;&#10;&#10;this product&lt;/a&gt;.&lt;/p&gt;&#10;&lt;p id=&quot;desc&quot;&gt;This product consists of several web pages.&lt;/p&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/25.png" ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/25.png" width="70%"></td>
 </tr>
 <tr>
     <td>26</td>
@@ -274,7 +274,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 5&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&#10;Ulysses&#10;&lt;ul&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;li&gt;&lt;a href=&quot;https://www.gutenberg.org/files/4300/4300-h/4300-h.html &quot; &gt; HTML &#10; &lt;/a&gt; &lt;/li&gt; &#10;&#10;&#10; &lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;li&gt;&#10;&lt;a href=&quot;https://www.gutenberg.org/ebooks/4300.epub.images&quot; &gt; &#10; EPUB &#10; &lt;/a&gt; &#10; &lt;/li&gt; &#10; &#10; &lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;li&gt;&lt;a href=&quot;https://www.gutenberg.org/files/4300/4300-0.txt&quot;&gt; &#10;Plain text &#10; &lt;/a&gt; &lt;/li&gt; &#10;&#10;&#10; &lt;/ul&gt; &#10; &lt;/li&gt; &#10; &lt;/ul&gt; &#10; &lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/26.png" ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/26.png" width="70%" ></td>
 </tr>
 <tr>
     <td>27</td>
@@ -284,7 +284,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 1&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;a href=&quot;#desc&quot;&gt;More&lt;/a&gt;&#10;&#10;&lt;p id=&quot;desc&quot;&gt;This product consists of several web pages.&lt;/p&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/27.png"  ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/27.png"  width="80%"></td>
 </tr>
 <tr>
     <td>28</td>
@@ -294,7 +294,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 2&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;div onclick=&quot;document.location+=&#x27;#main&#x27;&quot; role=&quot;link&quot; tabindex=&quot;0&quot;&gt;More&#10;&lt;/div&gt;&#10;&#10;&lt;main&gt;&#10;&lt;p id=&quot;main&quot;&gt;This is the main content.&lt;/p&gt;&#10;&lt;/main&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/28.png" ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/28.png" width="70%"></td>
 </tr>
 <tr>
     <td>29</td>
@@ -304,7 +304,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 3&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;svg x=&quot;0&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; y=&quot;0&quot;&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;a href=&quot;#main&quot;&gt;&#10;&#10;&lt;text x=&quot;20&quot; y=&quot;20&quot;&gt;&#10;Go&#10;&lt;/text&gt;&#10;&lt;/a&gt;&#10;&lt;/svg&gt;&#10;&lt;main&gt;&#10;&lt;p id=&quot;main&quot;&gt;This is the main content.&lt;/p&gt;&#10;&lt;/main&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/29.png" ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/29.png" width="70%"></td>
 </tr>
 <tr>
     <td>30</td>
@@ -324,7 +324,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre>&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;title&gt;Failed Example 5&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;p style=&quot;font-weight: bold&quot;&gt;Ulysses&lt;/p&gt;&#10;&lt;ul&gt;&#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;li&gt;&lt;a href=&quot;https://www.gutenberg.org/files/4300/4300-h/4300-h.html &quot; &gt; &#10; HTML &#10; &lt;/a&gt;& #10; &lt;/li&gt; &#10;&#10; &lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;li&gt;&#10;&lt;a href=&quot;https://www.gutenberg.org/ebooks/4300.epub.images &quot;&gt; &#10;EPUB &#10;&lt;/a&gt;&#10;&lt;/li&gt;&#10;&#10; &lt;!-- Accessibility Violation Starts Here --&quot;&gt;  &#10;&lt;li&gt;&lt;a href=&quot;https://www.gutenberg.org/files/4300/4300-0.txt &quot;&gt; &#10; Plain text &#10; &lt;/a&gt; &#10; &lt;/li&gt; &#10;&#10;&#10; &lt;/ul&gt; &#10;&lt;/body&gt;&#10;&lt;/html&gt;</pre>
     </td>
-    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/31.png" ></td>
+    <td><img src="https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/31.png" width="70%"></td>
 </tr>
 <tr>
     <td>32</td>
