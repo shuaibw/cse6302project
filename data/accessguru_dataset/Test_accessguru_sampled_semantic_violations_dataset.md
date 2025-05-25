@@ -8,8 +8,8 @@ This table presents 55 semantic accessibility violations along with associated H
       <th >Violation Type</th>
       <th >Impact</th>
       <th >Description</th>
-      <th style="width: 200px;">Affected HTML</th>
-      <th style="width: 200px;">Preview of the Web Page with Accessibility Violation</th>
+      <th >Affected HTML</th>
+      <th style="width: 300px;">Preview of the Web Page with Accessibility Violation</th>
   </tr>
   <tr>
       <td>1</td>
@@ -19,7 +19,7 @@ This table presents 55 semantic accessibility violations along with associated H
       <td>
           <pre>&lt;html lang=&quot;en&quot;&gt; &#10; &lt;img alt=&quot;ERCIM logo&quot; src=&quot;image.png&quot;/&gt; &#10; &lt;/html&gt;</pre>
       </td>
-      <td><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" >
+      <td><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" class="preview-img">
       </td>
   </tr>  
   <tr>
@@ -40,9 +40,7 @@ This table presents 55 semantic accessibility violations along with associated H
     <td>
         <pre> &lt;!DOCTYPE html&gt; &#10;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&#10; &lt;head&gt;&#10;&#10; &lt;meta charset=&quot;UTF-8&quot;&gt; &#10;&#10;&lt;!-- Accessibility Violation Starts Here --&quot;&gt; &#10;&lt;title&gt; Canvas Image Example&lt;/title&gt; &#10;&#10;&lt;/head&gt; &#10;&#10;&lt;body&gt; &#10;&#10;&lt;canvas aria-label=&quot;HTML 5 logo&quot; height=&quot;48&quot; id=&quot;logo&quot; width=&quot;72&quot;&gt;&#10;&#10;&lt;/canvas&gt; &#10;&#10;&lt;script&gt; &#10;&#10;const img = new Image(); img.src = &#x27;/logo.png&#x27;; img.onload = function() { const ctx = document.querySelector(&#x27;#logo&#x27;).getContext(&#x27;2d&#x27;); ctx.drawImage(img, 0, 0, 72, 48); } &lt;/script&gt; &#10;&#10;&lt;/body&gt; &#10;&#10;&lt;/html&gt;</pre>
     </td>
-    <td>
-        <!DOCTYPE html>                
-        <html lang="en"><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" width="170" height="100"/></html>
+    <td><img alt="ERCIM logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/1200px-W3C%C2%AE_Icon.svg.png" class="preview-img">
     </td>
 </tr>
 <tr>
