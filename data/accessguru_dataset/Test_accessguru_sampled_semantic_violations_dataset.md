@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/834eef93-b49b-472b-95e2-65963f5a0dcc)# Semantic Accessibility Violations Dataset
+# Semantic Accessibility Violations Dataset
 
 This table presents 55 semantic accessibility violations along with associated HTML and image context where applicable.
 
