@@ -78,7 +78,7 @@ Under the following terms:
 ---
 ## 📄 Citation
 
-If you use this work, please cite:
+If you find this work useful, please consider citing our paper:
 
 ``` @inproceedings{fathallah2025accessguru,
   title={AccessGuru: Leveraging LLMs to Detect and Correct Web Accessibility Violations in HTML Code},
@@ -86,4 +86,4 @@ If you use this work, please cite:
   booktitle={Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility},
   year={2025},
   publisher={ACM}
-} ```
+} 
