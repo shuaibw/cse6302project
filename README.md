@@ -1,4 +1,46 @@
-# AccessGuruLLM
+# AccessGuru: Leveraging LLMs to Detect and Correct Web Accessibility Violations in HTML Code
 
 
-## Human developer correction study: https://surveyjs.io/published?id=c2ebd794-0b9d-4af2-a4ab-79c5ddb6c509
+---
+
+## Overview
+
+**AccessGuru** is a novel system that combines large language models (LLMs) and accessibility testing tools to **automatically detect and correct web accessibility violations** in HTML code.
+
+Contributions:
+
+-  A taxonomy categorizing Web accessibility violations into **Syntactic**, **Semantic**, and **Layout** violations
+-  A benchmark dataset of **3,500+ real-world violations** across **112 types**
+-  A modular pipeline:
+  - `AccessGuruDetect`: Detect violations (Axe-Playwright + LLM)
+  - `AccessGuruCorrect`: Generate corrections using LLM prompting strategies
+
+---
+
+## 📁 Repository Structure
+
+---
+
+## Dataset
+- 3,500 annotated HTML violations
+- 112 distinct types
+- Sourced from 448 real-world web pages across domains (health, news, e-commerce, etc.)
+
+## Baselines 
+Reproducible baseline implementations:
+
+- Zero-shot prompting 
+- Contextual prompting 
+- ReAct prompting
+
+## Human Evaluation
+This repository includes a developer study to compare LLM-generated accessibility corrections with human-written ones. We evaluated 55 semantic violations using:
+- Manual expert annotations based on WCAG 2.1
+- Sentence-BERT semantic similarity with developer-generated fixes
+
+You can contribute to our ongoing evaluation study by participating in a short survey and reviewing a small set of HTML accessibility corrections. Participate in the Evaluation Survey
+(https://surveyjs.io/published?id=c2ebd794-0b9d-4af2-a4ab-79c5ddb6c509)
+
+Your feedback will support future benchmarking and the design of more effective accessibility correction systems.
+
+
