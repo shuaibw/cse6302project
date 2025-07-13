@@ -1,8 +1,6 @@
 # AccessGuru: Leveraging LLMs to Detect and Correct Web Accessibility Violations in HTML Code
 
 
----
-
 ## Overview
 
 **AccessGuru** is a novel system that combines large language models (LLMs) and accessibility testing tools to **automatically detect and correct web accessibility violations** in HTML code.
