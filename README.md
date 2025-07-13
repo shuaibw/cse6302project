@@ -69,10 +69,23 @@ Your feedback will support future benchmarking and the design of more effective 
 
 ## 🧪 Results
 
-| Method                | Paper Link                     |
-|----------------------|---------------------------------|
-| ReAct Prompting       | [arXiv:2306.04567](https://arxiv.org/abs/2306.04567) |
-
+| Method                          | Model          | Avg. Δ Score (Ours) | # Fixed (Ours) | Avg. Δ Score (Huang et al.) | # Fixed (Huang et al.) |
+| ------------------------------- | -------------- | ------------------- | -------------- | --------------------------- | ---------------------- |
+| Contextual Prompting            | GPT-4          | 0.46                | 123            | 0.42                        | 86                     |
+| ReAct Prompting                 | GPT-4          | 0.50                | 141            | 0.48                        | 91                     |
+| Zero-shot Prompting             | GPT-4          | 0.19                | 43             | 0.12                        | 19                     |
+| **AccessGuru (no reprompting)** | GPT-4          | *0.72*              | *184*          | *0.67*                      | *119*                  |
+| **AccessGuru (Ours)**           | **GPT-4**      | **0.84**            | **204**        | **0.83**                    | **141**                |
+| Contextual Prompting            | Mistral-7B     | 0.12                | 44             | 0.27                        | 62                     |
+| ReAct Prompting                 | Mistral-7B     | 0.13                | 45             | 0.26                        | 48                     |
+| Zero-shot Prompting             | Mistral-7B     | 0.05                | 10             | 0.002                       | 2                      |
+| **AccessGuru (no reprompting)** | Mistral-7B     | *0.50*              | *162*          | *0.51*                      | *110*                  |
+| **AccessGuru (Ours)**           | **Mistral-7B** | **0.82**            | **200**        | **0.79**                    | **147**                |
+| Contextual Prompting            | Qwen2.5        | 0.41                | 121            | 0.39                        | 77                     |
+| ReAct Prompting                 | Qwen2.5        | 0.44                | 130            | 0.37                        | 71                     |
+| Zero-shot Prompting             | Qwen2.5        | 0.14                | 54             | 0.19                        | 49                     |
+| **AccessGuru (no reprompting)** | Qwen2.5        | *0.49*              | *153*          | *0.52*                      | *103*                  |
+| **AccessGuru (Ours)**           | **Qwen2.5**    | **0.74**            | **183**        | **0.75**                    | **126**                |
 
 ## 📬 Contact
 
