@@ -89,6 +89,25 @@ Your feedback will support future benchmarking and the design of more effective 
 
 <p align="center"><b>Table 1:</b> Comparison of the decrease in violation score and the number of corrected accessibility violations for syntax & layout violations on our dataset and the dataset from Huang et al. Dataset</p>
 
+| Method                          | Model       | Avg. Violation Score Decrease | # Corrected Violations |
+| ------------------------------- | ----------- | ----------------------------- | ---------------------- |
+| Contextual Prompting            | GPT-4       | 0.82                          | 44                     |
+| ReAct Prompting                 | GPT-4       | 0.87                          | 48                     |
+| Zero-shot Prompting             | GPT-4       | 0.33                          | 18                     |
+| **AccessGuru (no reprompting)** | GPT-4       | *0.92*                        | *51*                   |
+| **AccessGuru (Ours)**           | **GPT-4**   | **0.96**                      | **53**                 |
+| Contextual Prompting            | Pixtral     | 0.75                          | 41                     |
+| ReAct Prompting                 | Pixtral     | 0.81                          | 44                     |
+| Zero-shot Prompting             | Pixtral     | 0.54                          | 29                     |
+| **AccessGuru (no reprompting)** | Pixtral     | *0.83*                        | *46*                   |
+| **AccessGuru (Ours)**           | **Pixtral** | **0.92**                      | **51**                 |
+| Contextual Prompting            | Qwen-VL     | 0.60                          | 32                     |
+| ReAct Prompting                 | Qwen-VL     | 0.37                          | 20                     |
+| Zero-shot Prompting             | Qwen-VL     | 0.18                          | 8                      |
+| **AccessGuru (no reprompting)** | Qwen-VL     | *0.69*                        | *37*                   |
+| **AccessGuru (Ours)**           | **Qwen-VL** | **0.75**                      | **41**                 |
+
+<p align="center"><b>Table 2:</b> Comparison of average violation score decrease and number of corrected semantic accessibility violations on our dataset (Size = 55).t</p>
 
 ## 📬 Contact
 
