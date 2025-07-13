@@ -84,9 +84,10 @@ If you find this work useful, please consider citing our paper:
 }
 
 ---
+
 ## 📚 References
 
-```bibtex
+```
 @inproceedings{DBLP:conf/ccnc/DelnevoAM24,
   author       = {Giovanni Delnevo and
                   Manuel Andruccioli and
