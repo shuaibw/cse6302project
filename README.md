@@ -69,7 +69,7 @@ Your feedback will support future benchmarking and the design of more effective 
 
 ## 🧪 Results
 
-| Method                          | Model          | Avg. Δ Score (Ours) | # Fixed (Ours) | Avg. Δ Score (Huang et al.) | # Fixed (Huang et al.) |
+| Method                          | Model          | Avg. Violation Score Decrease (Our Dataset, Size=250) | # Corrected Violations (Our Dataset, Size=250) | Avg. Violation Score Decrease (Huang et al. Dataset, Size=171) | # Corrected Violations (Huang et al. Dataset, Size=171) |
 | ------------------------------- | -------------- | ------------------- | -------------- | --------------------------- | ---------------------- |
 | Contextual Prompting            | GPT-4          | 0.46                | 123            | 0.42                        | 86                     |
 | ReAct Prompting                 | GPT-4          | 0.50                | 141            | 0.48                        | 91                     |
@@ -86,6 +86,9 @@ Your feedback will support future benchmarking and the design of more effective 
 | Zero-shot Prompting             | Qwen2.5        | 0.14                | 54             | 0.19                        | 49                     |
 | **AccessGuru (no reprompting)** | Qwen2.5        | *0.49*              | *153*          | *0.52*                      | *103*                  |
 | **AccessGuru (Ours)**           | **Qwen2.5**    | **0.74**            | **183**        | **0.75**                    | **126**                |
+
+<p align="center"><b>Table 1:</b> Comparison of the decrease in violation score and the number of corrected accessibility violations for syntax & layout violations on our dataset and the dataset from Huang et al. Dataset</p>
+
 
 ## 📬 Contact
 
