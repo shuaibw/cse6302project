@@ -13,7 +13,9 @@
   - `AccessGuruDetect`: Detect violations (Axe-Playwright + LLM)
   - `AccessGuruCorrect`: Generate corrections using LLM prompting strategies
 
-
+<p align="center">
+  <img src="assets/AccessGuruPipeline.png" alt="Overview of the AccessGuru Detection Module. Given a raw HTML document (left), the detection module applies two detectors: (1) a syntax and layout detector based on the Axe-Playwright accessibility testing engine and (2) an LLM-based semantic detector. The module outputs a set of detected accessibility violations (right)." width="700"/>
+</p>
 
 ## 📁 Repository Structure
 
