@@ -28,7 +28,8 @@
 ## 📦 Baselines 
 Reproducible baseline implementations:
 
-- Zero-shot prompting 
+- **Zero-shot prompting**
+ Othman et al. "On the Interaction with Large Language Models for Web Accessibility: Implications and Challenges." (2024)
 - Contextual prompting 
 - ReAct prompting
   
