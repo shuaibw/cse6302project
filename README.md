@@ -70,7 +70,7 @@ The AccessGuru dataset is licensed under a [Creative Commons Attribution 4.0 Int
 
  Code under this repo is licensed under a MIT License.
 
----
+
 ## 📄 Citation
 
 If you find this work useful, please consider citing our paper:
@@ -83,7 +83,8 @@ If you find this work useful, please consider citing our paper:
   publisher={ACM}
 }
 
-### 📚 References
+---
+## 📚 References
 
 ```bibtex
 @inproceedings{DBLP:conf/ccnc/DelnevoAM24,
