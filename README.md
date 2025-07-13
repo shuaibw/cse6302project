@@ -77,7 +77,8 @@ The AccessGuru dataset is licensed under a [Creative Commons Attribution 4.0 Int
 
 If you find this work useful, please consider citing our paper:
 
-``` @inproceedings{fathallah2025accessguru,
+```
+@inproceedings{fathallah2025accessguru,
   title={AccessGuru: Leveraging LLMs to Detect and Correct Web Accessibility Violations in HTML Code},
   author={Fathallah, Nadeen and Hernández, Daniel and Staab, Steffen},
   booktitle={Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility},
@@ -85,6 +86,6 @@ If you find this work useful, please consider citing our paper:
   publisher={ACM}
 }
 
----
+
 
 
