@@ -24,7 +24,7 @@
 - 112 distinct types
 - Sourced from 448 real-world web pages across domains (health, news, e-commerce, etc.)
 
----
+
 ## 📦 Baselines 
 Reproducible baseline implementations:
 
@@ -32,7 +32,7 @@ Reproducible baseline implementations:
 - Contextual prompting 
 - ReAct prompting
   
----
+
 
 ## 👩‍💻 Human Evaluation
 This repository includes a developer study to compare LLM-generated accessibility corrections with human-written ones. We evaluated 55 semantic violations using:
@@ -44,18 +44,18 @@ This repository includes a developer study to compare LLM-generated accessibilit
 
 Your feedback will support future benchmarking and the design of more effective accessibility correction systems.
 
----
+
 
 ## 🧪 Results
 
----
+
 
 ## 📬 Contact
 
 For inquiries, feel free to contact:
 nadeen.fathallah@ki.uni-stuttgart.de
 
----
+
 
 ## 📜 Licensing Information
 This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
