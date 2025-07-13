@@ -19,7 +19,7 @@
 
 
 <p align="center">
-  <img src="data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/fig1.png" alt="Overview of the AccessGuru Detection Module. Given a raw HTML document (left), the detection module applies two detectors: (1) a syntax and layout detector based on the Axe-Playwright accessibility testing engine and (2) an LLM-based semantic detector. The module outputs a set of detected accessibility violations (right)." width="700"/>
+  <img src="data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/fig1.png" alt="Overview of AccessGuru's correction module: For each Web accessibility violation $v$ detected by \method \emph{Detect}, the LLM is prompted to generate the corrected code. The generated code is assigned a violation score; if the violation score remains above zero, corrective re-prompting is applied to improve the response further." width="700"/>
 </p>
 ## 📁 Repository Structure
 
