@@ -17,7 +17,7 @@ Contributions:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ---
 
@@ -26,12 +26,15 @@ Contributions:
 - 112 distinct types
 - Sourced from 448 real-world web pages across domains (health, news, e-commerce, etc.)
 
+---
 ## Baselines 
 Reproducible baseline implementations:
 
 - Zero-shot prompting 
 - Contextual prompting 
 - ReAct prompting
+  
+---
 
 ## Human Evaluation
 This repository includes a developer study to compare LLM-generated accessibility corrections with human-written ones. We evaluated 55 semantic violations using:
@@ -43,4 +46,40 @@ You can contribute to our ongoing evaluation study by participating in a short s
 
 Your feedback will support future benchmarking and the design of more effective accessibility correction systems.
 
+---
 
+## Contact
+
+For inquiries, feel free to contact:
+nadeen.fathallah@ki.uni-stuttgart.de
+
+---
+
+## Licensing Information
+This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+ [View Full License](https://creativecommons.org/licenses/by/4.0/)
+
+ Code under this repo is licensed under a MIT License.
+
+---
+## Citation
+
+If you use this work, please cite:
+
+@inproceedings{fathallah2025accessguru,
+  title={AccessGuru: Leveraging LLMs to Detect and Correct Web Accessibility Violations in HTML Code},
+  author={Fathallah, Nadeen and Hernández, Daniel and Staab, Steffen},
+  booktitle={Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility},
+  year={2025},
+  publisher={ACM}
+}
