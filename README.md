@@ -69,6 +69,9 @@ Your feedback will support future benchmarking and the design of more effective 
 
 ## 🧪 Results
 
+| Method                | Paper Link                     |
+|----------------------|---------------------------------|
+| ReAct Prompting       | [arXiv:2306.04567](https://arxiv.org/abs/2306.04567) |
 
 
 ## 📬 Contact
