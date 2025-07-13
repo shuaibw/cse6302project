@@ -39,7 +39,9 @@ This repository includes a developer study to compare LLM-generated accessibilit
 - Manual expert annotations based on WCAG 2.1
 - Sentence-BERT semantic similarity with developer-generated fixes
 
-📋 You can contribute to our ongoing evaluation study by participating in a short survey and reviewing a small set of HTML accessibility corrections. Participate in the Evaluation Survey
+📋 You can contribute to our ongoing evaluation study by participating in a short survey and reviewing a small set of HTML accessibility corrections. 
+
+Participate in the Evaluation Survey
 (https://surveyjs.io/published?id=c2ebd794-0b9d-4af2-a4ab-79c5ddb6c509)
 
 Your feedback will support future benchmarking and the design of more effective accessibility correction systems.
