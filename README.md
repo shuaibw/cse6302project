@@ -13,11 +13,11 @@
   - `AccessGuruDetect`: Detect violations (Axe-Playwright + LLM)
   - `AccessGuruCorrect`: Generate corrections using LLM prompting strategies
 
----
+
 
 ## 📁 Repository Structure
 
----
+
 
 ## 📊 Dataset
 - 3,500 annotated HTML violations
