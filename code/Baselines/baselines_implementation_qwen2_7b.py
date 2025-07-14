@@ -33,9 +33,7 @@ import csv
 import requests
 
 # OpenRouter API Key (Replace with your actual key)
-API_KEY = "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" # Nadeen
-# API_KEY  = "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" #Pema
-# API_KEY  = "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" #Pema2
+API_KEY = "" # Nadeen
 # OpenRouter API URL
 URL = "https://openrouter.ai/api/v1/chat/completions"
 
