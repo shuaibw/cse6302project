@@ -40,11 +40,12 @@
 │   │   ├── syntax_layout_implementation_mistral.py  # Mistral-based baselines for syntax/layout violations
 │   │   ├── syntax_layout_implementation_qwen.py     # Qwen-based baselines for syntax/layout violations
 │
-|   ├──AccessGuru/
-|   |   ├──AccessGuruDetect/
+|   ├── AccessGuru/
+|   |   ├── AccessGuruDetect/
 |   |   |   ├── playwrightCode.py                        # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
 |   |   |   ├── accessguru_detect_syntax_layout_violation.py # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
-|   |   ├──AccessGuruCorrect/
+|   |   |   ├── accessguru_detect_semantic_violation.md      # LLM-based Semantic Detector Prompt for detecting semantic Web accessibility violations
+|   |   ├── AccessGuruCorrect/
 |   |   |   ├── semantic_metacognitive_reprompting_gpt4.py         # Ours: GPT-4 with metacognitive reprompting for semantic violations
 |   |   |   ├── semantic_metacognitive_reprompting_QwenPixtral.py  # Ours: Qwen + Pixtral with metacognitive reprompting for semantic violations
 |   |   |   ├── syntax_layout_metacognitive_reprompting_gpt4.py     # Ours: GPT-4 with metacognitive reprompting for syntax/layout
@@ -53,13 +54,16 @@
 |   |   |   ├── syntax_metacognitive_implementation_GPT4.py     # GPT-4 implementation (Ablation Study: no reprompting variant)
 |   |   |   ├── syntax_metacognitive_implementation_Qwen.py     # Qwen implementation (Ablation Study: no reprompting variant)
 |   |   |   ├── syntax_metacognitive_implementation_mistral.py  # Mistral implementation (Ablation Study: no reprompting variant)
-
+|   |   |   ├── accessguru_correction_mistral.py             # LLM-based correction pipeline for syntax and layout (Mistral model) (Ablation Study: no reprompting variant)
+|   ├── Post-Processing_Evaluation/
+|   |   ├── filter_extract_llm_responses.py              # Utility for filtering and extracting LLM responses to extract the generated code snippet by the LLM (post-processed with manual review).
+|   |   ├── syntax_layout_evaluation.py                  # Script for computing violation score and evaluation of syntax and layout corrections (post-processed with manual review).
+|
 ├── data/                                        # Datasets and prompt-related resources
 │
 │   ├── accessguru_dataset/                      # Our dataset of Web accessibility Violations
 │   │   ├── accessguru_sampled_syntax_layout_dataset.csv         # Sampled subset of syntax & layout violations (Size=250)
 │   │   ├── accessguru_sampled_semantic_violations.csv           # Sampled subset of semantic violations (Size=55)
-│   │   ├── accessguru_sampled_semantic_violations_dataset.md    # Description of the semantic dataset (You can view our sampled dataset of Semantic Web accessibility violations here, Size=55)
 │   │   ├── Original_full_data.csv                               # Full dataset before filtering/sampling (Size=3500)
 │
 │   ├── prompts_support/                        # Files supporting prompt construction and WCAG mapping
@@ -76,15 +80,8 @@
 │
 ├── results/                             # (To be described) Evaluation outputs and results from experiments
 │
-├── accessguru_detect_semantic_violation.md      # LLM-based Semantic Detector Prompt for detecting semantic Web accessibility violations
-├── accessguru_detect_syntax_layout_violation.py # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
-│
-├── accessguru_correction_mistral.py             # LLM-based correction pipeline (Mistral model)
-│
-├── filter_extract_llm_responses.py              # Utility for filtering and extracting LLM responses to extract the generated code snippet by the LLM (post-processed with manual review).
-├── syntax_layout_evaluation.py                  # Script for computing violation score and evaluation of syntax and layout corrections (post-processed with manual review).
-│
 ├── taxonomy_web_accessibility_violations.md     # Our Full taxonomy of accessibility violations.
+├── accessguru_sampled_semantic_violations_dataset.md    # Description of the semantic dataset (You can view our sampled dataset of Semantic Web accessibility violations here, Size=55)
 │
 ├── LICENSE.txt                         # License file (CC BY 4.0)
 ├── README.md                          # Project documentation
