@@ -46,7 +46,7 @@
 ├── LICENSE.txt                         # License file (CC BY 4.0)
 ├── README.md                          # Project documentation
 ├── .gitignore                         # Git ignore configuration
-
+```
 
 ## 📊 Dataset
 - 3,500 annotated HTML Web accessibility violations
