@@ -132,6 +132,43 @@ To ensure our evaluation reflects real-world Web accessibility violations, we sa
 
 ### Dataset Structure 
 
+Each row in our dataset corresponds to a unique web accessibility violation instance observed on a specific webpage. The dataset is stored as a CSV file and contains the following fields:
+
+| Field Name               | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `id`                    | Unique identifier for the violation case                                    |
+| `category`              | Type of accessibility violation (`Layout`, `Syntactic`, `Semantic`)         |
+| `webURL`                | The URL of the webpage where the violation was found                        |
+| `numViolations`         | Total number of violations detected on the page                             |
+| `violationnumberID`     | Unique ID representing the specific violation type (e.g., image-alt)        |
+| `initialImpactScore`    | Numerical severity score for the violation (e.g., 1-5)                      |
+| `description`           | Description of the WCAG rule the violation violates                         |
+| `affectedHTMLElement(s)`| Snippet of the HTML elements affected by violation                          |
+| `additional_info`       | Any extra information needed to correct the violation (e.g., image for image-alt-not-descriptive) |
+| `failureSummary`        | Summary of how the element fails accessibility compliance                   |
+| `impact`                | Severity label (e.g. `Minor`, `Moderate`, `Serious`, `Critical`)            |
+
+### 📌 Example Entry
+
+Here is a simplified example of a dataset entry:
+
+| Field                  | Value                                                                                  |
+|------------------------|----------------------------------------------------------------------------------------|
+| `id`                  | 230914312                                                                              |
+| `category`            | Layout                                                                                 |
+| `webURL`              | https://www.dailymail.co.uk                                                            |
+| `numViolations`       | 13                                                                                     |
+| `violationnumberID`   | color-contrast-enhanced                                                                |
+| `initialImpactScore`  | 4                                                                                      |
+| `description`         | Ensures the contrast between foreground and background colors meets WCAG 2 AAA threshold |
+| `affectedHTMLElement(s)` | `<span class="">1AM</span>`, `<span class="is-exclusive">EXCLUSIVE</span>`       |
+| `additional_info`     | foreground: `#ffffff`, background: `#f03649`                                           |
+| `failureSummary`      | Poor color contrast makes text unreadable for users with vision impairments            |
+| `impact`              | Serious                                                                                |
+
+👉 You can explore the full dataset [here](data/accessguru_dataset).
+
+
 ## 📦 Baselines 
 Reproducible baseline implementations:
 
