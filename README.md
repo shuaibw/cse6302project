@@ -78,7 +78,11 @@
 │   ├── Our_dataset_Survey.json             # Survey form shown to Developers for evaluating LLM vs. human corrections
 │   └── humanCorrection_developer1.csv      # Developer 1's manual HTML corrections for semantic violations
 │
-├── results/                             # (To be described) Evaluation outputs and results from experiments
+├── results/                             # Contains evaluation results for both baseline and AccessGuru-generated outputs.
+│   ├── accesssguru_dataset/            # Model outputs evaluated on the AccessGuru dataset for our method (AccessGuru) and 3 baseline methods.
+│   │   ├── semantic/                   # Semantic violation results per LLM (e.g., GPT4, Qwen-VL, Pixtral).
+│   │   └── syntax_layout/             # Syntax and layout violation results per LLM (e.g., GPT4, Qwen, Mistral).
+│   └── baseline_dataset/              # Results from baseline dataset: Syntax and layout violation results per LLM (e.g., GPT4, Qwen, Mistral) for our method (AccessGuru) and 3 baseline methods.
 │
 ├── taxonomy_web_accessibility_violations.md     # Our Full taxonomy of accessibility violations.
 ├── accessguru_sampled_semantic_violations_dataset.md    # Description of the semantic dataset (You can view our sampled dataset of Semantic Web accessibility violations here, Size=55)
