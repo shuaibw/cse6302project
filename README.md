@@ -39,7 +39,7 @@
 │   │   ├── syntax_layout_implementation_gpt_4.py    # GPT-4-based baselines for syntax/layout violations
 │   │   ├── syntax_layout_implementation_mistral.py  # Mistral-based baselines for syntax/layout violations
 │   │   ├── syntax_layout_implementation_qwen.py     # Qwen-based baselines for syntax/layout violations
-│
+│   
 |   ├── AccessGuru/
 |   |   ├── AccessGuruDetect/
 |   |   |   ├── playwrightCode.py                        # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
@@ -60,6 +60,7 @@
 |   |   ├── filter_extract_llm_responses.py              # Utility for filtering and extracting LLM responses to extract the generated code snippet by the LLM (post-processed with manual review).
 |   |   ├── syntax_layout_evaluation.py                  # Script for computing violation score and evaluation of syntax and layout corrections (post-processed with manual review).
 |   |   ├── compare_llm_corrections_humancorrections_semantic.py #Script computes the semantic similarity between LLM-generated corrections and multiple human-written corrections of semantic Web accessibility violations.
+│   
 ├── data/                                        # Datasets and prompt-related resources
 │
 │   ├── accessguru_dataset/                      # Our dataset of Web accessibility Violations
@@ -70,7 +71,7 @@
 │   ├── prompts_support/                        # Files supporting prompt construction and WCAG mapping
 │   │   ├── Playwright_all_detection_tags.csv   # Tags extracted for using Axe-Playwright in rule-based detection
 │   │   ├── WCAGGuidelines.csv                  # WCAG guideline references used in prompt templates
-│   │   ├── mapping_dict_file.json              # Mapping violations defined in our taxonomy to corresponding WCAG that can be used for correction
+│   │   ├── mapping_dict_file.json              # Mapping violations defined in our taxonomy to the corresponding WCAG that can be used for correction
 │   │   ├── violation_taxonomy.csv              # Our proposed taxonomy of Web accessibility violation categories
 │   │   └── violations_short_description.json   # Brief descriptions of each violation type defined in our proposed taxonomy
 │   └── baseline_two_dataset.csv                # Dataset from Huang et al. (2024) used for evaluation
