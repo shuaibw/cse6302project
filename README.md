@@ -26,7 +26,7 @@
 <p align="center"><b>Figure 2:</b> Overview of AccessGuru's correction module: For each Web accessibility violation detected by AccessGuru Detection Module, the LLM is prompted to generate the corrected code. The generated code is assigned a violation score; if the violation score remains above zero, corrective re-prompting is applied to improve the response further.</p>
 
 ## 📁 Repository Structure
-
+```
 ├── data/                                # (To be described) Dataset of accessibility violations
 ├── human_developer_correction_study/   # (To be described) Data and results from the human evaluation study
 ├── results/                             # (To be described) Evaluation outputs and results from experiments
