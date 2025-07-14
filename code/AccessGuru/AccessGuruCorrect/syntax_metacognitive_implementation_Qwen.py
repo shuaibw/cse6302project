@@ -7,8 +7,8 @@ import time
 import csv
 
 # OpenRouter API Key (Replace with your actual key)
-# API_KEY  = "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" #Pema
-API_KEY = "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" # Nadeen
+
+API_KEY = "" # Nadeen
 
 # OpenRouter API URL
 QWEN_API_URL = "https://openrouter.ai/api/v1/chat/completions"
