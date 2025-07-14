@@ -59,7 +59,7 @@
 |   ├── Post-Processing_Evaluation/
 |   |   ├── filter_extract_llm_responses.py              # Utility for filtering and extracting LLM responses to extract the generated code snippet by the LLM (post-processed with manual review).
 |   |   ├── syntax_layout_evaluation.py                  # Script for computing violation score and evaluation of syntax and layout corrections (post-processed with manual review).
-|   |   ├── compare_llm_corrections_humancorrections_semantic.py #This script computes the semantic similarity between LLM-generated corrections and multiple human-written corrections of semantic Web accessibbility violations
+|   |   ├── compare_llm_corrections_humancorrections_semantic.py #Script computes the semantic similarity between LLM-generated corrections and multiple human-written corrections of semantic Web accessibility violations.
 ├── data/                                        # Datasets and prompt-related resources
 │
 │   ├── accessguru_dataset/                      # Our dataset of Web accessibility Violations
