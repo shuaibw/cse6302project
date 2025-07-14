@@ -55,6 +55,7 @@
 |   |   |   ├── syntax_metacognitive_implementation_Qwen.py     # Qwen implementation (Ablation Study: no reprompting variant)
 |   |   |   ├── syntax_metacognitive_implementation_mistral.py  # Mistral implementation (Ablation Study: no reprompting variant)
 |   |   |   ├── accessguru_correction_mistral.py             # LLM-based correction pipeline for syntax and layout (Mistral model) (Ablation Study: no reprompting variant)
+│
 |   ├── Post-Processing_Evaluation/
 |   |   ├── filter_extract_llm_responses.py              # Utility for filtering and extracting LLM responses to extract the generated code snippet by the LLM (post-processed with manual review).
 |   |   ├── syntax_layout_evaluation.py                  # Script for computing violation score and evaluation of syntax and layout corrections (post-processed with manual review).
@@ -72,8 +73,7 @@
 │   │   ├── mapping_dict_file.json              # Mapping violations defined in our taxonomy to corresponding WCAG that can be used for correction
 │   │   ├── violation_taxonomy.csv              # Our proposed taxonomy of Web accessibility violation categories
 │   │   └── violations_short_description.json   # Brief descriptions of each violation type defined in our proposed taxonomy
-│
-│   └── baseline_two_dataset.csv                # Reproduced dataset from Huang et al. (2024) used for baseline evaluation
+│   └── baseline_two_dataset.csv                # Dataset from Huang et al. (2024) used for evaluation
 ├── human_developer_correction_study/       # Contains survey responses and accessibility corrections from 3 Developers 
 │   ├── Our_dataset_Survey.json             # Survey form shown to Developers for evaluating LLM vs. human corrections
 │   └── humanCorrection_developer1.csv      # Developer 1's manual HTML corrections for semantic violations
