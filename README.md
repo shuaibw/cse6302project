@@ -88,6 +88,34 @@
 ├── .gitignore                         # Git ignore configuration
 ```
 
+## 🧾 Taxonomy of Web Accessibility Violations
+
+We define a structured taxonomy to categorize and analyze web accessibility violations addressed in our study. Each violation entry includes:
+
+- **Violation Name**  
+- **Description**  
+- **WCAG Guidelines** it violates  
+- **Impact** on user accessibility  
+- **Supplementary Information** (e.g., the context or media type)
+
+### 📚 Violation Categories
+
+- **Syntactic Violations**  
+  These occur when HTML code lacks proper structural elements or attributes required by accessibility standards.  
+  _Example:_ Missing `alt` attributes for images or improper use of `<table>` elements.  
+  _(Requires HTML code expertise)_
+
+- **Layout Violations**  
+  Visual design and UI issues that hinder usability or readability, such as insufficient color contrast.  
+  _(Requires familiarity with web design principles and awareness of visual accessibility)_
+
+- **Semantic Violations**  
+  Misuse or absence of meaningful content or attributes that convey context to assistive technologies.  
+  _Example:_ Using placeholder text like `"image123"` for alt attributes.
+
+> 📝 The full list of violations and their metadata is available in [taxonomy_web_accessibility_violations.md](taxonomy_web_accessibility_violations.md).
+
+
 ## 📊 Dataset
 - 3,500 annotated HTML Web accessibility violations
 - 112 distinct types
