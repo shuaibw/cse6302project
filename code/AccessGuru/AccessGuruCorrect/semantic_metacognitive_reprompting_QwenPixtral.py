@@ -290,7 +290,7 @@ def test1sample():
 	print(s5)
 	print()
 
-API_KEY = "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"  # Replace with your actual API key
+API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
 # MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions" #For correction -->threw error
 Openrouter_API_URL = "https://openrouter.ai/api/v1/chat/completions" #used this on Semantic_implementation
 
