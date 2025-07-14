@@ -28,7 +28,10 @@
 ## 📁 Repository Structure
 ```
 ├── data/                                # (To be described) Dataset of accessibility violations
-├── human_developer_correction_study/   # (To be described) Data and results from the human evaluation study
+├── human_developer_correction_study/       # Contains survey responses and accessibility corrections from 3 Developers 
+│   ├── Our_dataset_Survey.json             # Survey form shown to Developers for evaluating LLM vs. human corrections
+│   └── humanCorrection_developer1.csv      # Developer 1's manual HTML corrections for semantic violations
+│
 ├── results/                             # (To be described) Evaluation outputs and results from experiments
 │
 ├── accessguru_detect_semantic_violation.md      # LLM-based Semantic Detector Prompt for detecting semantic Web accessibility violations
