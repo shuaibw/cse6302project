@@ -27,6 +27,25 @@
 
 ## 📁 Repository Structure
 
+├── data/                                # (To be described) Dataset of accessibility violations
+├── human_developer_correction_study/   # (To be described) Data and results from the human evaluation study
+├── results/                             # (To be described) Evaluation outputs and results from experiments
+│
+├── accessguru_correction_mistral.py             # LLM-based correction pipeline (Mistral model)
+├── accessguru_detect_semantic_violation.md      # Notes & logic for detecting semantic violations
+├── accessguru_detect_syntax_layout_violation.py # Detection logic using Axe-Playwright for syntax/layout
+│
+├── baselines_implementation_gpt_4.py            # Baseline correction using GPT-4
+├── baselines_implementation_mistral_7b.py       # Baseline correction using Mistral-7B
+├── baselines_implementation_qwen2_7b.py         # Baseline correction using Qwen2-7B
+│
+├── filter_extract_llm_responses.py              # Utility for filtering and extracting LLM responses
+├── syntax_layout_evaluation.py                  # Script for computing violation score and evaluation
+├── taxonomy_web_accessibility_violations.md     # Full taxonomy of accessibility violations used in prompts
+│
+├── LICENSE.txt                         # License file (CC BY 4.0)
+├── README.md                          # Project documentation
+├── .gitignore                         # Git ignore configuration
 
 
 ## 📊 Dataset
@@ -113,7 +132,7 @@ Your feedback will support future benchmarking and the design of more effective 
 | **AccessGuru (w/o reprompting)** | Qwen-VL     | *0.69*                        | *37*                   |
 | **AccessGuru (Ours)**           | **Qwen-VL** | **0.75**                      | **41**                 |
 
-<p align="center"><b>Table 2:</b> Comparison of average violation score decrease and number of corrected semantic accessibility violations on our dataset (Size = 55).t</p>
+<p align="center"><b>Table 2:</b> Comparison of average violation score decrease and number of corrected semantic accessibility violations on our dataset (Size = 55).</p>
 
 ## 📬 Contact
 
