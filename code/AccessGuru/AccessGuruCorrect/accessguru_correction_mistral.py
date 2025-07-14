@@ -3,7 +3,7 @@
 !pip install huggingface_hub
 !pip install langchain_community
 from huggingface_hub import login
-login('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')
+login('Hugging_face_token')
 !pip install -q -U langchain transformers bitsandbytes accelerate
 
 import torch
@@ -347,7 +347,7 @@ import requests
 import time
 
 # Mistral AI API Setup
-API_KEY = "vvTq9I5kiAf5MNib86BsJbifDjcjahQr"  # Replace with your actual API key
+API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions"
 
 def reset_chat_history():
@@ -544,7 +544,7 @@ import requests
 import time
 
 # Mistral AI API Setup
-API_KEY = "vvTq9I5kiAf5MNib86BsJbifDjcjahQr"  # Replace with your actual API key
+API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions"
 
 def reset_chat_history():
@@ -987,7 +987,7 @@ else:
 
 import requests
 
-API_KEY = "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"
+API_KEY = "YOUR_API_KEY"
 URL = "https://openrouter.ai/api/v1/chat/completions"
 
 # Initialize conversation history
@@ -1044,7 +1044,7 @@ print("A2:", answer2)
 import requests  # Library for making API calls
 
 # OpenRouter API Key (Replace with your actual key)
-API_KEY = "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"
+API_KEY = "YOUR_API_KEY"
 
 # OpenRouter API URL
 URL = "https://openrouter.ai/api/v1/chat/completions"
