@@ -27,7 +27,22 @@
 
 ## 📁 Repository Structure
 ```
-├── data/                                # (To be described) Dataset of accessibility violations
+├── data/                                        # Datasets and prompt-related resources
+│
+│   ├── accessguru_dataset/                      # Our dataset of Web accessibility Violations
+│   │   ├── accessguru_sampled_syntax_layout_dataset.csv         # Sampled subset of syntax & layout violations (Size=250)
+│   │   ├── accessguru_sampled_semantic_violations.csv           # Sampled subset of semantic violations (Size=55)
+│   │   ├── accessguru_sampled_semantic_violations_dataset.md    # Description of the semantic dataset (You can view our sampled dataset of Semantic Web accessibility violations here, Size=55)
+│   │   ├── Original_full_data.csv                               # Full dataset before filtering/sampling (Size=3500)
+│
+│   ├── prompts_support/                        # Files supporting prompt construction and WCAG mapping
+│   │   ├── Playwright_all_detection_tags.csv   # Tags extracted for using Axe-Playwright in rule-based detection
+│   │   ├── WCAGGuidelines.csv                  # WCAG guideline references used in prompt templates
+│   │   ├── mapping_dict_file.json              # Mapping violations defined in our taxonomy to corresponding WCAG that can be used for correction
+│   │   ├── violation_taxonomy.csv              # Our proposed taxonomy of Web accessibility violation categories
+│   │   └── violations_short_description.json   # Brief descriptions of each violation type defined in our proposed taxonomy
+│
+│   └── baseline_two_dataset.csv                # Reproduced dataset from Huang et al. (2024) used for baseline evaluation
 ├── human_developer_correction_study/       # Contains survey responses and accessibility corrections from 3 Developers 
 │   ├── Our_dataset_Survey.json             # Survey form shown to Developers for evaluating LLM vs. human corrections
 │   └── humanCorrection_developer1.csv      # Developer 1's manual HTML corrections for semantic violations
@@ -64,7 +79,6 @@ We crawled each URL using Playwright and retained only those pages where `docume
 
 To ensure our evaluation reflects real-world Web accessibility violations, we sampled a representative subset of 305 violations from our full dataset of 3,500 instances. Sampling aligns the distribution of violation types in the subset with real-world frequencies reported in the WebAIM 2025 study. This method avoids biases caused by overrepresented violation types in large-scale crawled data but does not reflect their actual prevalence across the Web. This subset size was chosen to enable controlled and consistent comparison across LLMs and baselines. 
 
-### Dataset Access
 ### Dataset Structure 
 
 ## 📦 Baselines 
