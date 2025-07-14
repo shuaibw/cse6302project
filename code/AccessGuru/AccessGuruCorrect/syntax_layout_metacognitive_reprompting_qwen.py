@@ -8,7 +8,7 @@ import time
 from openai import OpenAI
 import csv
 
-API_KEY = "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" # Nadeen
+API_KEY = "API_key" # Nadeen
 QWEN_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
