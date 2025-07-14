@@ -10,7 +10,7 @@ import csv
 import os
 from mistralai import Mistral
 
-API_KEY = "vvTq9I5kiAf5MNib86BsJbifDjcjahQr"  # Replace with your actual API key
+API_KEY = "API_KEY"  # Replace with your actual API key
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions"
 
 
