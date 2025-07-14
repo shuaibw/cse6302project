@@ -55,7 +55,7 @@ pipeline_inst = pipeline(
         pad_token_id=tokenizer.eos_token_id,
 )
 
-llm = HuggingFacePipeline(pipeline=pipeline_inst)gpt_API_KEY = "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"
+llm = HuggingFacePipeline(pipeline=pipeline_inst)gpt_API_KEY = ""
 
 
 def generate_response(question, template):
