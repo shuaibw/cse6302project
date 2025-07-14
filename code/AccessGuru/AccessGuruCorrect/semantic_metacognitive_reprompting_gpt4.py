@@ -8,12 +8,12 @@ import csv
 from openai import OpenAI
 import base64
 
-gpt_API_KEY = "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"
+gpt_API_KEY = "API_KEY"
 client = OpenAI(api_key=gpt_API_KEY)
 # MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions" #For correction -->threw error
-# API_KEY = "vvTq9I5kiAf5MNib86BsJbifDjcjahQr"  # Replace with your actual API key
+# API_KEY = "API_KEY"  # Replace with your actual API key
 # Openrouter_API_URL = "https://openrouter.ai/api/v1/chat/completions" #used this on Semantic_implementation
-# API_KEY = "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"  # Replace with your actual API key
+# API_KEY = "API_KEY"  # Replace with your actual API key
 
 # model_name = "mistralai/pixtral-12b"
 # model_name = "qwen/qwen-vl-plus"
