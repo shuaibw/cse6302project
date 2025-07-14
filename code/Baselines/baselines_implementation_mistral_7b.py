@@ -159,7 +159,7 @@ p3
 
 !pip install huggingface_hub
 from huggingface_hub import login
-login('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')
+login('hugging_face_token')
 !pip install langchain
 !pip install langchain_community
 !pip install -q -U langchain transformers bitsandbytes accelerate
