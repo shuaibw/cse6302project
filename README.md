@@ -27,6 +27,33 @@
 
 ## 📁 Repository Structure
 ```
+├── code/                                        # Main implementation files for syntax/layout and semantic violation correction
+│
+│   ├── Baselines/
+│   │   ├── baselines_implementation_gpt_4.py            # Baselines implementation for Syntax and Layout Web accessibility violations correction with GPT-4. (Reproduced and adapted from original baseline methods for comparative evaluation in AccessGuru.)
+│   │   ├── baselines_implementation_mistral_7b.py       # Baselines implementation for Syntax and Layout Web accessibility violations correction with Mistral-7B. (Reproduced and adapted from original baseline methods for comparative evaluation in AccessGuru.) 
+│   │   ├── baselines_implementation_qwen2_7b.py         # Baselines implementation for Syntax and Layout Web accessibility violations correction with Qwen2-7B. (Reproduced and adapted from original baseline methods for comparative evaluation in AccessGuru.)
+│   │   ├── semantic_implementation_gpt_4.py         # GPT-4-based baselines implementation for semantic corrections
+│   │   ├── semantic_implementation_pixtral.py       # Pixtral-based baselines implementation for semantic corrections
+│   │   ├── semantic_implementation_qwen_vl.py       # Qwen-VL-based baselines implementation for semantic corrections
+│   │   ├── syntax_layout_implementation_gpt_4.py    # GPT-4-based baselines for syntax/layout violations
+│   │   ├── syntax_layout_implementation_mistral.py  # Mistral-based baselines for syntax/layout violations
+│   │   ├── syntax_layout_implementation_qwen.py     # Qwen-based baselines for syntax/layout violations
+│
+|   ├──AccessGuru/
+|   |   ├──AccessGuruDetect/
+|   |   |   ├── playwrightCode.py                        # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
+|   |   |   ├── accessguru_detect_syntax_layout_violation.py # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
+|   |   ├──AccessGuruCorrect/
+|   |   |   ├── semantic_metacognitive_reprompting_gpt4.py         # Ours: GPT-4 with metacognitive reprompting for semantic violations
+|   |   |   ├── semantic_metacognitive_reprompting_QwenPixtral.py  # Ours: Qwen + Pixtral with metacognitive reprompting for semantic violations
+|   |   |   ├── syntax_layout_metacognitive_reprompting_gpt4.py     # Ours: GPT-4 with metacognitive reprompting for syntax/layout
+|   |   |   ├── syntax_layout_metacognitive_reprompting_mistral.py  # Ours: Mistral with metacognitive reprompting
+|   |   |   ├── syntax_layout_metacognitive_reprompting_qwen.py     # Ours: Qwen with metacognitive reprompting
+|   |   |   ├── syntax_metacognitive_implementation_GPT4.py     # GPT-4 implementation (Ablation Study: no reprompting variant)
+|   |   |   ├── syntax_metacognitive_implementation_Qwen.py     # Qwen implementation (Ablation Study: no reprompting variant)
+|   |   |   ├── syntax_metacognitive_implementation_mistral.py  # Mistral implementation (Ablation Study: no reprompting variant)
+
 ├── data/                                        # Datasets and prompt-related resources
 │
 │   ├── accessguru_dataset/                      # Our dataset of Web accessibility Violations
@@ -53,9 +80,6 @@
 ├── accessguru_detect_syntax_layout_violation.py # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
 │
 ├── accessguru_correction_mistral.py             # LLM-based correction pipeline (Mistral model)
-├── baselines_implementation_gpt_4.py            # Baselines implementation for Web accessibility violations correction with GPT-4. (Reproduced and adapted from original baseline methods for comparative evaluation in AccessGuru.)
-├── baselines_implementation_mistral_7b.py       # Baselines implementation for Web accessibility violations correction with Mistral-7B. (Reproduced and adapted from original baseline methods for comparative evaluation in AccessGuru.) 
-├── baselines_implementation_qwen2_7b.py         # Baselines implementation for Web accessibility violations correction with Qwen2-7B. (Reproduced and adapted from original baseline methods for comparative evaluation in AccessGuru.)
 │
 ├── filter_extract_llm_responses.py              # Utility for filtering and extracting LLM responses to extract the generated code snippet by the LLM (post-processed with manual review).
 ├── syntax_layout_evaluation.py                  # Script for computing violation score and evaluation of syntax and layout corrections (post-processed with manual review).
