@@ -1,0 +1,927 @@
+Questionaire number,Fix
+1,"<img alt=""W3C logo with letters W3C written in blue and black"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png""/>"
+2,"<html lang=""en"">
+<svg aria-label=""icon on Html 5"" role=""img"" viewbox=""0 0 512 512"">
+<path d=""M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6""></path>
+<path d=""M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"" fill=""#e44d26""></path>
+<path d=""M256 480.5V131H404.3L376 447"" fill=""#f16529""></path>
+<path d=""M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"" fill=""#ebebeb""></path>
+<path d=""M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"" fill=""#fff""></path>
+</svg>
+</html>"
+3,"<!DOCTYPE html> 
+
+<html lang=""en"">
+
+ <head>
+
+ <meta charset=""UTF-8""> 
+
+<!-- Accessibility Violation Starts Here --""> 
+<title> Canvas Image Example</title> 
+
+</head> 
+
+<body> 
+
+<canvas aria-label=""W3C logo"" height=""48"" id=""logo"" width=""72"">
+
+</canvas> 
+
+<script> 
+
+const img = new Image(); img.src = '/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png'; img.onload = function() { const ctx = document.querySelector('#logo').getContext('2d'); ctx.drawImage(img, 0, 0, 72, 48); } </script> 
+
+</body> 
+
+</html> 
+"
+4," <!-- Accessibility Violation Starts Here --""> 
+<html lang=""en"">
+<head>
+<title>ACT Rules Format 1.0 - Abstract</title>
+</head>
+<body>
+<p>
+The Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test
+rules. These test rules can be used for developing automated testing tools and manual testing methodologies. It
+provides a common format that allows any party involved in accessibility testing to document and share their
+testing procedures in a robust and understandable manner. This enables transparency and harmonization of testing
+methods, including methods implemented by accessibility test tools.
+</p>
+</body>
+</html>"
+5,"<!-- Accessibility Violation Starts Here --"">            
+<html lang=""nl"">
+<head>
+<title>Met de kippen op stok</title>
+</head>
+<body>
+<blockquote>
+<p>""Hij ging met de kippen op stok""</p>
+</blockquote>
+<p lang=""en"">
+This Dutch phrase literally translates into ""
+He went to roost with the chickens"", but it means 
+that he went to bed early.
+</p>
+</body>
+</html>"
+6," <!-- Accessibility Violation Starts Here --"">                
+<html lang=""en"">
+<head>
+<title>Happy</title>
+</head>
+<body>
+
+<p lang= ""nl"" >The Dutch word 
+ <!-- Accessibility Violation Starts Here --""> 
+""gelukkig"" has no equivalent in English.</p>
+</body>
+</html>"
+7,"<!-- Accessibility Violation Starts Here --"">  
+<html lang=""en"">
+<head>
+<title>Fireworks over Paris</title>
+</head>
+<body>
+<img alt=""Fireworks over Paris"" 
+src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg""/>
+<p lang=""nl"">
+Gelukkig nieuwjaar!
+</p>
+</body>
+</html>"
+8,"<!-- Accessibility Violation Starts Here --""> 
+<html lang=""en"">
+<head>
+<title>Paris</title>
+</head>
+<body>
+<img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg""/>
+<p hidden="""" id=""caption"" lang=""en"">
+Fireworks over Paris!
+</p>
+</body>
+</html>"
+9,"<!-- Accessibility Violation Starts Here --"">  
+<html lang=""nl"">
+<head>
+<title> Stranddorp </title>
+</head>
+<body>
+<article lang=""nl"">
+Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.
+</article>
+</body>
+</html>"
+10,"<html lang=""en"">
+<body>
+<!-- Accessibility Violation Starts Here --""> 
+<article lang=""en"">
+They wandered into a strange Tiki bar on the edge of the 
+small beach town.
+</article>
+</body>
+</html>"
+11,"<!-- Accessibility Violation Starts Here --"">  
+<html lang=""en"">
+<body>
+<!-- Accessibility Violation Starts Here --"">  
+<article lang=""en"">
+They wandered into a strange Tiki bar on the edge of the 
+small beach town.
+</article>
+</body>
+</html>"
+12,"<!-- Accessibility Violation Starts Here --"">  
+<html lang=""en"">
+<body>
+<!-- Accessibility Violation Starts Here --"">  
+<article lang=""en"">
+<p aria-hidden=""true"">
+They wandered into a strange Tiki bar on the edge of the 
+small beach town.
+</p>
+</article>
+</body>
+</html>"
+13,"<html lang=""en"">
+<body>
+<!-- Accessibility Violation Starts Here --"">  
+<article lang=""en"">
+<p style=""position: absolute; top: 1px"">
+They wandered into a strange Tiki bar on the edge of the 
+small beach town.
+</p>
+</article>
+</body>
+</html>"
+14,"<!-- Accessibility Violation Starts Here --"">  
+<html lang=""en"">
+<body>
+<article lang=""en"">
+<!-- Accessibility Violation Starts Here --"">  
+<div lang=""en"">
+They wandered into a strange Tiki bar on the edge of the 
+small beach town.
+</div>
+</article>
+</body>
+</html>"
+15,"<html lang=""en"">
+<body>
+<!-- Accessibility Violation Starts Here --"">  
+<div lang=""en"">
+<img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg""/>
+</div>
+</body>
+</html>"
+16,"<html lang=""en"">
+<body>
+<!-- Accessibility Violation Starts Here --"">  
+<p lang=""en"">I love ACT rules!</p>
+</body>
+</html>"
+17,"<html lang=""lb"">
+<body>
+<!-- Accessibility Violation Starts Here --"">  
+<p lang=""lb"">
+Lëtzebuerg ass e Land an Europa.
+</p>
+</body>
+</html>"
+18,"<html lang=""en"">
+<head>
+<title>Dutch idioms</title>
+</head>
+<body>
+<p>
+The Dutch phrase 
+<!-- Accessibility Violation Starts Here --"">  
+<span lang=""nl"">""
+Hij ging met de kippen 
+op stok""</span>
+
+literally translates into ""He went to
+roost with the chickens"", 
+but it means that he went to bed early.
+</p>
+</body>
+</html>"
+19,"<html lang=""nl"">
+<head>
+<title>Met de kippen op stok</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --"">  
+<blockquote>
+<p>""Hij ging met de kippen op stok""</p>
+</blockquote>
+<p>
+
+<!-- Accessibility Violation Starts Here --"">  
+<span lang=""en"">The Dutch phrase</span> 
+
+ 
+""Hij ging met de kippen op stok""
+
+<!-- Accessibility Violation Starts Here --"">  
+<span lang=""en"">literally translates into 
+""He went to roost with the chickens"", but it means 
+that he went to bed early.</span>
+
+</p>
+</body>
+</html>"
+20,"<html lang=""fr"">
+<head>
+<title>Feu d'artifice du nouvel an</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --"">  
+<div lang=""en"">
+<img alt=""Fireworks over Paris"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg""/>
+</div>
+
+
+<!-- Accessibility Violation Starts Here --"">  
+<p lang=""fr""> 
+Bonne année !
+</p>
+
+
+</body>
+</html>"
+21,"<html lang=""fr"">
+<head>
+<title>Feu d'artifice du nouvel an</title>
+</head>
+<body>
+<img aria-labelledby=""caption"" src=""https://www.bvjhostelparis.com/wp-content/uploads/2017/07/PARIS-FIRE-WORKS.jpg""/>
+
+<!-- Accessibility Violation Starts Here --"">  
+<p hidden="""" id=""caption"" lang=""en"">
+Fireworks over Paris
+</p>
+
+</body>
+</html>"
+22,"<html lang=""en"">
+<head>
+<title>Failed Example 1</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --""> 
+<a href=""#desc"">Click to view product</a>
+
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>"
+23,"<html lang=""en"">
+<head>
+<title>Failed Example 2</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --""> 
+<div onclick=""document.location+='#main'"" 
+role=""link"" tabindex=""0"">View main content</div>
+
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+</html>"
+24,"<html lang=""en"">
+<head>
+<title>Failed Example 3</title>
+</head>
+<body>
+<svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+
+<!-- Accessibility Violation Starts Here --"">  
+<a href=""#main"">
+
+<text x=""20"" y=""20"">
+Go to main
+</text>
+</a>
+</svg>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+</html>"
+25,"<html lang=""en"">
+<head>
+<title>Failed Example 4</title>
+</head>
+<body>
+<p>See the description of 
+
+<!-- Accessibility Violation Starts Here --"">  
+<a href=""#desc"">
+
+product description link</a>.</p>
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>"
+26,"<html lang=""en"">
+<head>
+<title>Failed Example 5</title>
+</head>
+<body>
+<ul>
+<li>
+Ulysses
+<ul>
+
+<!-- Accessibility Violation Starts Here --"">  
+<li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm""> click link to view HTML of Ulysses
+</a></li>
+
+
+<!-- Accessibility Violation Starts Here --"">  
+<li>
+<a href=""https://www.gutenberg.org/ebooks/4300.epub.images?session_id=04cd710372888de8d8d322215cdfe8ce5b0f8d73"">
+click link to view EPUB of Ulysses
+</a>
+</li>
+
+<!-- Accessibility Violation Starts Here --"">  
+<li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt""> 
+click link to view Plain text of Ulysses
+</a></li>
+
+
+</ul>
+</li>
+</ul>
+</body>
+</html>"
+27,"<html lang=""en"">
+<head>
+<title>Failed Example 1</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --"">  
+<a href=""#desc"">Click link to view product</a>
+
+<p id=""desc"">This product consists of several web pages.</p>
+</body>
+</html>"
+28,"<html lang=""en"">
+<head>
+<title>Failed Example 2</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --"">  
+<div onclick=""document.location+='#main'"" role=""link"" tabindex=""0"">view main content
+</div>
+
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+</html>"
+29,"<html lang=""en"">
+<head>
+<title>Failed Example 3</title>
+</head>
+<body>
+<svg x=""0"" xmlns=""http://www.w3.org/2000/svg"" y=""0"">
+
+<!-- Accessibility Violation Starts Here --"">  
+<a href=""#main"">
+
+<text x=""20"" y=""20"">
+Go to main content
+</text>
+</a>
+</svg>
+<main>
+<p id=""main"">This is the main content.</p>
+</main>
+</body>
+</html>"
+30,"<html lang=""en"">
+<head>
+<title>Failed Example 4</title>
+</head>
+<body>
+<p>
+The W3C held a workshop on June 9-10, 2005 at DERI 
+Innsbruck (Austria), to gather information about potential 
+standardization work on Semantics in Web Services.
+</p>
+
+<!-- Accessibility Violation Starts Here --"">  
+<p><a href=""https://www.w3.org/2005/04/FSWS/workshop-report.html"">Click Workshop Link</a></p>
+
+</body>
+</html>"
+31,"<html lang=""en"">
+<head>
+<title>Failed Example 5</title>
+</head>
+<body>
+<p style=""font-weight: bold"">Ulysses</p>
+<ul>
+
+<!-- Accessibility Violation Starts Here --"">  
+<li><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm""> 
+Download Ulysses as HTML 
+</a>
+</li>
+
+<!-- Accessibility Violation Starts Here --"">  
+<li>
+<a href=""https://www.gutenberg.org/ebooks/4300.epub.images?session_id=04cd710372888de8d8d322215cdfe8ce5b0f8d73"">
+Download Ulysses as EPUB
+</a>
+</li>
+
+<!-- Accessibility Violation Starts Here --"">  
+<li><a href=""https://www.gutenberg.org/files/4300/4300-0.txt"">
+Download Ulysses as Plain text 
+</a>
+</li>
+
+
+</ul>
+</body>
+</html>"
+32,"<html lang=""en"">
+<head>
+<title>Failed Example 6</title>
+</head>
+<body>
+<table>
+<tr>
+<th colspan=""3"">Books</th>
+</tr>
+<tr>
+<td>Ulysses</td>
+
+<!-- Accessibility Violation Starts Here --"">  
+<td><a href=""https://www.gutenberg.org/files/4300/4300-h/4300-h.htm"">Link for Ulysses Download</a></td>
+
+
+<td>1.61MB</td>
+</tr>
+</table>
+</body>
+</html>"
+33,"<html lang=""en"">
+<label>First Name
+
+<!-- Accessibility Violation Starts Here --"">  
+<input id=""fname"" name=""fname"" type=""text""/></label>
+
+</html>"
+34,"<html lang=""en"">
+<label for=""address"">Address</label>
+
+<!-- Accessibility Violation Starts Here --"">  
+<input id=""address"" name=""address"" type=""text""/>
+</html>"
+35,"<html lang=""en"">
+<p id=""label_address"">What is your previous address?</p>
+
+<!-- Accessibility Violation Starts Here --"">  
+<input aria-labelledby=""previous address"" name=""add"" type=""text""/>
+</html>"
+36,"<!-- Accessibility Violation Starts Here --"">  
+<h2 style=""position: absolute; top: -9999px; left: -9999px;"">Shipping address</h2>
+<label>First Name:: <input name=""First Name"" type=""text""/></label>
+<label>Last Name:: <input name=""Last Name"" type=""text""/></label>
+
+</fieldset>
+<fieldset>
+
+<!-- Accessibility Violation Starts Here --"">  
+<h2 style=""position: absolute; top: -9999px; left: -9999px;"">Contact Information</h2>
+<label>House Number: <input name=""house number"" type=""text""/></label>
+<label>Street: <input name=""street"" type=""text""/></label>
+
+
+</fieldset>
+</html>"
+37,"<html lang=""en"">
+<span id=""search"" style=""display: none"">Search</span>
+
+<!-- Accessibility Violation Starts Here --"">  
+<input aria-labelledby=""Type search here"" name=""search"" type=""text""/>
+<button id=""submit"">Go</button>
+</html>"
+38,"<html lang=""en"">
+
+<!-- Accessibility Violation Starts Here --"">  
+<h1>Our working hours</h1>
+
+<p>We are open Monday through Friday from 10 to 16</p>
+</html>"
+39,"<html lang=""en"">
+
+<!-- Accessibility Violation Starts Here --"">  
+<span aria-level=""1"" role=""heading"">Opening Hours</span>
+
+<p>We are open Monday through Friday from 10 to 16</p>
+</html>"
+40,"<html lang=""en"">
+
+<!-- Accessibility Violation Starts Here --"">  
+<span aria-level=""1"" role=""heading"" style=""position: absolute; top: -9999px; left: -9999px;"">
+Opening Hours</span>
+
+<p>
+We are open Monday through Friday from 10 to 16
+</p>
+</html>"
+41,"<html lang=""en"">
+
+<!-- Accessibility Violation Starts Here --"">  
+<h1>Weather and opening hours</h1>
+
+<p>We are open Monday through Friday from 10 to 16</p>
+<p>It is going to rain tomorrow</p>
+</html>"
+42,"<html lang=""en"">
+<head>
+
+<!-- Accessibility Violation Starts Here --"">  
+<title>Fruits harvesting season</title>
+
+</head>
+<body>
+<p>
+Clementines will be ready to harvest from late October 
+through February.
+</p>
+</body>
+</html>"
+43,"<html lang=""en"">
+<head>
+
+<!-- Accessibility Violation Starts Here --"">  
+
+<title>Clementine harvesting season</title>
+
+
+</head>
+<body>
+<p>
+Clementines will be ready to harvest from late October 
+through February.
+</p>
+</body>
+</html>"
+44,"<html lang=""en"">
+<head>
+
+<!-- Accessibility Violation Starts Here --"">  
+<title>Search results for ""accessibility"" at the University of Arkham</title>
+
+</head>
+<body>
+<h1>Search results for ""accessibility"" at the University of Arkham</h1>
+<p>None</p>
+</body>
+</html>"
+45,"<html lang=""en"">
+<head>
+<title>Passed Example 1</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --"">  
+<input alt=""Submit Button"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+
+</body>
+</html>"
+46,"<html lang=""en"">
+<head>
+<title>Failed Example 2</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --"">  
+<input aria-label=""Login Button"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+
+
+</body>
+</html>"
+47,"HTML Code to Fix:
+
+<html lang=""en"">
+<head>
+<title>Failed Example 3</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --"">  
+<input src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" title=""search button"" type=""image""/>
+
+
+</body>
+</html>"
+48,"<html lang=""en"">
+<head>
+<title>Failed Example 4</title>
+</head>
+<body>
+
+<!-- Accessibility Violation Starts Here --"">  
+<input aria-labelledby=""Upload Button"" src=""/WAI/content-assets/wcag-act-rules/test-assets/shared/search-icon.svg"" type=""image""/>
+<div id=""id1"">Upload</div>
+
+
+</body>
+</html>"
+,"<button id=""voiceSearchButton"" 
+class=""searchbox-icon-button"" 
+title=""Voice Search""> 
+ <img src=""https://example.com/upload-icon.png""> 
+</button>"
+,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A simple webpage about climate change featuring a graph image with accessibility considerations."">
+    <title>Climate Change Insights</title>
+  
+</head>
+<body>
+    <header>
+        <h1>Understanding Climate Change</h1>
+        <p>This page highlights the impact of climate change through data visualization.</p>
+    </header>
+
+<!-- Accessibility Violation Starts Here --"">  
+    <main>
+        <img src=""https://www.climaterealityproject.org/sites/default/files/graphblog-1.png"" alt=""A graph showing the temperature change in degree celcuis through the years 1880-2020 ."" />
+    </main>
+
+
+
+    <footer>
+        <p>Data sourced from Global Climate Watch | <a href=""#"" aria-label=""Learn more about climate change"">Learn more</a></p>
+    </footer>
+</body>
+</html>"
+,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A simple webpage discussing renewable energy sources with a focus on solar power."">
+    <title>Renewable Energy Spotlight</title>
+   </head>
+<body>
+    <header>
+        <h1>Renewable Energy Sources</h1>
+        <p>Exploring the future of clean and sustainable energy</p>
+    </header>
+
+    <nav>
+        <a href=""#solar"">Solar Power</a>
+        <a href=""#wind"">Wind Energy</a>
+        <a href=""#hydro"">Hydropower</a>
+    </nav>
+
+    <div class=""container"">
+        <main>
+            <h2 id=""solar"">Solar Power</h2>
+            <p>Solar energy is one of the most abundant and clean sources of renewable energy. It uses photovoltaic cells to convert sunlight directly into electricity.</p>
+        
+<!-- Accessibility Violation Starts Here --"">  
+    <img src=""https://images.stockcake.com/public/b/7/a/b7a38663-0207-4222-932a-d25a576f5dd7_large/solar-power-generation-stockcake.jpg"" alt=""Solar Panels in the morning on grass areas"" />
+
+
+
+            <h2 id=""wind"">Wind Energy</h2>
+            <p>Wind turbines harness the kinetic energy of the wind and transform it into electricity. Wind energy is growing rapidly as a sustainable alternative to fossil fuels.</p>
+
+            <h2 id=""hydro"">Hydropower</h2>
+            <p>Hydropower generates electricity by capturing the energy of moving water, usually from rivers or dams. It is a reliable and proven source of renewable energy.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Renewable Insights | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+</body>
+</html>"
+,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A simple webpage promoting mental health awareness and well-being."">
+    <title>Mental Health Awareness</title>
+    </head>
+<body>
+    <header>
+        <h1>Mental Health Matters</h1>
+        <p>Promoting awareness, reducing stigma, and encouraging self-care</p>
+    </header>
+
+    <nav>
+        <a href=""#importance"">Importance</a>
+        <a href=""#tips"">Self-Care Tips</a>
+        <a href=""#resources"">Resources</a>
+    </nav>
+
+    <div class=""container"">
+        <main>
+            <h2 id=""importance"">The Importance of Mental Health</h2>
+            <p>Mental health is vital to overall well-being. It affects how we think, feel, and act in our daily lives. Recognizing its importance helps reduce stigma and promotes a supportive community.</p>
+            
+<!-- Accessibility Violation Starts Here --"">  
+<img src=""https://thumbs.dreamstime.com/b/mental-health-infographic-diagram-chart-illustration-banner-presentation-has-managing-stress-meaning-purpose-staying-active-315756097.jpg"" alt=""A diagram of mental health aspects to focus on i.e quality sleep,social connection,managing stress, finding meaning and purpose, staying safe,brain healthy diet ."" />
+
+            
+
+<h2 id=""tips"">Self-Care Tips</h2>
+            <p>Taking care of your mental health is essential. Here are a few tips:</p>
+            <ul>
+                <li>Practice mindfulness or meditation</li>
+                <li>Stay physically active</li>
+                <li>Maintain a balanced diet</li>
+                <li>Connect with loved ones</li>
+                <li>Seek professional help when needed</li>
+            </ul>
+
+            <h2 id=""resources"">Helpful Resources</h2>
+            <p>If you're struggling with your mental health, don't hesitate to reach out for help. Here are some trusted resources:</p>
+            <ul>
+                <li><a href=""#"">National Mental Health Hotline</a></li>
+                <li><a href=""#"">Mindfulness and Meditation Apps</a></li>
+                <li><a href=""#"">Support Groups in Your Area</a></li>
+            </ul>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mental Health Awareness | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+</body>
+</html>"
+,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting sustainable living with an interactive feature to display eco-friendly tips."">
+    <title>Sustainable Living</title>
+    </head>
+<body>
+    <header>
+        <h1>Sustainable Living</h1>
+        <p>Small steps for a greener planet.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Eco-Friendly Tips</h2>
+            <p>Click the button below to reveal practical tips for sustainable living:</p>
+         
+<!-- Accessibility Violation Starts Here --"">  
+   <button id=""revealTips"" role=""button"" aria-label=""Show Tips Button"">Show Tips</button>
+
+
+            <div id=""tips"" class=""tips"">
+                <h3>Eco-Friendly Tips</h3>
+                <ul>
+                    <li>Reduce, reuse, and recycle wherever possible.</li>
+                    <li>Conserve water by fixing leaks and using water-efficient appliances.</li>
+                    <li>Opt for energy-efficient lighting and appliances.</li>
+                    <li>Support local and sustainable products.</li>
+                    <li>Plant trees or grow your own garden to offset your carbon footprint.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sustainable Living Initiative | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('revealTips');
+        const tips = document.getElementById('tips');
+
+        button.addEventListener('click', () => {
+            tips.style.display = tips.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>"
+,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting healthy eating habits with interactive tips on balanced diets."">
+    <title>Healthy Eating Habits</title>
+    </head>
+<body>
+    <header>
+        <h1>Healthy Eating</h1>
+        <p>Simple steps to build better eating habits.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Healthy Eating Tips</h2>
+            <p>Click the button below to learn more about maintaining a balanced diet:</p>
+            
+<!-- Accessibility Violation Starts Here --"">  
+<button id=""revealTips"" aria-label=""Click to show tips for balanced diet"" title=""Click to go back to the homepage"">Show Tips</button>
+
+            <div id=""tips"" class=""tips"">
+                <h3>Tips for a Balanced Diet</h3>
+                <ul>
+                    <li>Incorporate more fruits and vegetables into your meals.</li>
+                    <li>Stay hydrated by drinking plenty of water.</li>
+                    <li>Choose whole grains over refined grains.</li>
+                    <li>Limit your intake of added sugars and saturated fats.</li>
+                    <li>Practice portion control to avoid overeating.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Healthy Eating Initiative | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('revealTips');
+        const tips = document.getElementById('tips');
+
+        button.addEventListener('click', () => {
+            tips.style.display = tips.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>"
+,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <meta name=""description"" content=""A webpage promoting climate change awareness and actionable steps."">
+    <title>Climate Change Action</title>
+    </head>
+<body>
+    <header>
+        <h1>Take Action on Climate Change</h1>
+        <p>Simple actions for a sustainable future.</p>
+    </header>
+
+    <div class=""container"">
+        <main>
+            <h2>Get Involved</h2>
+            <p>Click the button below to submit your pledge for climate action:</p>
+        
+<!-- Accessibility Violation Starts Here --"">  
+    <button id=""pledgeButton"" role=""link"" aria-labelledby=""Learn More about submitting pledge for climate action"">Learn More</button>
+            
+
+            <div id=""formContainer"" class=""form-container"">
+                <h3>Your Climate Pledge</h3>
+                <form>
+                    <label for=""name"">Your Name:</label>
+                    <input type=""text"" id=""name"" name=""name"" placeholder=""Enter your name"">
+
+                    <label for=""email"">Your Email:</label>
+                    <input type=""email"" id=""email"" name=""email"" placeholder=""Enter your email"">
+
+                    <button type=""submit"">Submit Pledge</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Climate Change Initiative | <a href=""#"" style=""color: #fff;"">Contact Us</a></p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('pledgeButton');
+        const formContainer = document.getElementById('formContainer');
+
+        button.addEventListener('click', () => {
+            formContainer.style.display = formContainer.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>"
