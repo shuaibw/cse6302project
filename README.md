@@ -216,7 +216,7 @@ Your feedback will support future benchmarking and the design of more effective 
 | ReAct Prompting                 | Mistral-7B     | 0.13                | 45             | 0.26                        | 48                     |
 | Zero-shot Prompting             | Mistral-7B     | 0.05                | 10             | 0.002                       | 2                      |
 | **AccessGuru (w/o reprompting)** | Mistral-7B     | *0.50*              | *162*          | *0.51*                      | *110*                  |
-| **AccessGuru (Ours)**           | **Mistral-7B** | **0.82**            | **200**        | **0.79**                    | **147**                |
+| **AccessGuru (Ours)**           | **Mistral-7B** | **0.82**            | **200**        | **0.76**                    | **127**                |
 | Contextual Prompting            | Qwen2.5        | 0.41                | 121            | 0.39                        | 77                     |
 | ReAct Prompting                 | Qwen2.5        | 0.44                | 130            | 0.37                        | 71                     |
 | Zero-shot Prompting             | Qwen2.5        | 0.14                | 54             | 0.19                        | 49                     |
