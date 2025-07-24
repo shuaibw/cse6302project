@@ -98,10 +98,10 @@
 We define a structured taxonomy to categorize and analyze web accessibility violations addressed in our study. Each violation entry includes:
 
 - **Violation Name**  
-- **Description**  
+- **Violation Description**  
 - **WCAG Guidelines** it violates  
-- **Impact** on user accessibility  
-- **Supplementary Information** (e.g., the context or media type)
+- **Impact** rating, the severity of each violation based on how much it hinders user interaction with the Web content 
+- **Supplementary Information** required alongside the HTML to understand, detect, and correct the violation (e.g., image for image-alt-not-descriptive) 
 
 ### 📚 Violation Categories
 
