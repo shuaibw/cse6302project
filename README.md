@@ -129,7 +129,11 @@ To support both detection and correction, we introduce a novel taxonomy that org
 - Sourced from 448 real-world web pages across domains (health, news, e-commerce, etc.)
 
 ### Dataset Summary
-We introduce a new dataset that comprehensively covers syntactic, semantic, and layout accessibility violations, reflecting real-world accessibility violations. Our dataset was collected through a structured process guided by the [WebAIM 2025 study](https://webaim.org/projects/million/), which identifies commonly visited websites with accessibility violations. To account for variation in accessibility violations across domains—e.g., government sites often use data tables, while e-commerce relies heavily on forms and images—we used GPT-4 to identify a diverse set of popular Web domains such as health, education, government, news, technology, and e-commerce, including multilingual websites. We then asked GPT-4 to suggest representative URLs from each category based on sites listed in the WebAIM 2025 study. This process yielded 448 URLs. 
+We introduce a new dataset that comprehensively covers syntactic, semantic, and layout accessibility violations, reflecting real-world accessibility violations. 
+
+Our dataset was collected through a structured process guided by the [WebAIM 2025 study](https://webaim.org/projects/million/), which identifies commonly visited websites with accessibility violations. 
+
+To account for variation in accessibility violations across domains—e.g., government sites often use data tables, while e-commerce relies heavily on forms and images—we used GPT-4 to identify a diverse set of popular Web domains such as health, education, government, news, technology, and e-commerce, including multilingual websites. We then asked GPT-4 to suggest representative URLs from each category based on sites listed in the WebAIM 2025 study. This process yielded 448 URLs. 
 
 We crawled each URL using Playwright and retained only those pages where `document.readyState === "complete"`.  We applied AccessGuru Detection Module (See Figure 1) to each URL to identify Web accessibility violations.  This yielded 3,500 Web accessibility violations. The dataset spans over 112 distinct violation types across all three categories. To our knowledge, it is the most comprehensive publicly available dataset of real-world Web accessibility violations to date.  
 
@@ -145,8 +149,6 @@ To ensure our evaluation reflects real-world Web accessibility violations, we sa
   - Classification of website accessibility compliance.
   - Prioritization of high-impact violations for correction.
   - Training models to detect or explain accessibility violations in unfamiliar layouts.
-
-> 📝 You can view examples of semantic Web accessibility violations at [accessguru_sampled_semantic_violations_dataset.md](accessguru_sampled_semantic_violations_dataset.md).
 
 ### Dataset Structure 
 
@@ -183,6 +185,8 @@ Here is a simplified example of a dataset entry:
 | `additional_info`     | foreground: `#ffffff`, background: `#f03649`                                           |
 | `failureSummary`      | Poor color contrast makes text unreadable for users with vision impairments            |
 | `impact`              | Serious                                                                                |
+
+> 📝 You can view examples of semantic Web accessibility violations at [accessguru_sampled_semantic_violations_dataset.md](accessguru_sampled_semantic_violations_dataset.md).
 
 👉 You can explore the full dataset [here](data/accessguru_dataset).
 
