@@ -135,6 +135,17 @@ We crawled each URL using Playwright and retained only those pages where `docume
 
 To ensure our evaluation reflects real-world Web accessibility violations, we sampled a representative subset of 305 violations from our full dataset of 3,500 instances. Sampling aligns the distribution of violation types in the subset with real-world frequencies reported in the WebAIM 2025 study. This method avoids biases caused by overrepresented violation types in large-scale crawled data but does not reflect their actual prevalence across the Web. This subset size was chosen to enable controlled and consistent comparison across LLMs and baselines. 
 
+### ⚙️ Use Cases
+- Evaluating the effectiveness of LLMs in automated web accessibility repair.
+- Fine-tuning models for accessibility-focused HTML correction.
+- Benchmarking rule-based vs. AI-based accessibility tools.
+- Understanding the distribution and severity of accessibility issues in real-world web content.
+- Supporting other downstream accessibility tasks, such as:
+      - Accessibility-aware webpage generation (e.g., generating accessible HTML from scratch).
+      - Classification of website accessibility compliance.
+      - Prioritization of high-impact violations for correction.
+      - Training models to detect or explain accessibility violations in unfamiliar layouts.
+
 > 📝 You can view examples of semantic Web accessibility violations at [accessguru_sampled_semantic_violations_dataset.md](accessguru_sampled_semantic_violations_dataset.md).
 
 ### Dataset Structure 
@@ -182,16 +193,19 @@ We use the ACCESS Baseline dataset introduced in Huang et al. 2024 for compariso
 The dataset was generated using the Playwright Accessibility API to scan a set of ~25 diverse and representative websites (e.g., Google Calendar, Quora, BBC, New York Times, Slack, etc.). It includes 171 recorded accessibility violations, spanning 40 violation types.
 
 ### 📄 Data Fields
-Name	Description	Type
-webURL	Website URL passed into the dataframe	text
-numViolations	Number of violations from the URL	integer
-id	Type of accessibility violation	text
-initialScore	Summed impact score of violations (1–5 scale)	integer
-description	Purpose of the accessibility feature	text
-help	Describes accessibility requirements	text
-html	HTML element associated with the violation	HTML tags
-DOM	Full DOM structure of the webpage	text
-DOMCorrected	DOM after applying LLM-generated corrections	text
+
+| **Name**         | **Description**                                              | **Type**     |
+|------------------|--------------------------------------------------------------|--------------|
+| `webURL`         | Website URL passed into the dataframe                        | text         |
+| `numViolations`  | Number of accessibility violations detected on the URL       | integer      |
+| `id`             | Type or category of violation (e.g., color contrast, alt text) | text         |
+| `initialScore`   | Severity score based on weighted sum of violations           | integer      |
+| `description`    | Purpose of the accessibility feature related to the violation | text         |
+| `help`           | Guideline description for accessibility compliance            | text         |
+| `html`           | Raw HTML element involved in the violation                    | HTML tags    |
+| `DOM`            | Original DOM structure of the webpage                         | text         |
+| `DOMCorrected`   | Modified DOM with accessibility corrections applied           | text         |
+
 
 ### 📉 Impact Scoring
 Each violation is assigned a severity score:
