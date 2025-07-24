@@ -14,7 +14,7 @@
   - `AccessGuruCorrect`: Generate corrections using LLM prompting strategies
 
 <p align="center">
-  <img src="data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/detect2.png" alt="Overview of the AccessGuru Detection Module. Given a raw HTML document (left), the detection module applies two detectors: (1) a syntax and layout detector based on the Axe-Playwright accessibility testing engine and (2) an LLM-based semantic detector. The module outputs a set of detected accessibility violations (right)." width="700"/>
+  <img src="data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/detect2.png" alt="Overview of the AccessGuru Detection Module. Given a raw HTML document and Web page screenshot (left), the detection module applies two detectors: (1) a syntax and layout detector based on the Axe-Playwright accessibility testing engine and (2) an LLM-based semantic detector. The module outputs a set of detected accessibility violations (right)." width="700"/>
 </p>
 
 <p align="center"><b>Figure 1:</b> Overview of the AccessGuru Detection Module. Given a raw HTML document (left), the detection module applies two detectors: (1) a syntax and layout detector based on the Axe-Playwright accessibility testing engine and (2) an LLM-based semantic detector. The module outputs a set of detected accessibility violations (right).</p>
