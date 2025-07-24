@@ -123,7 +123,7 @@ To support both detection and correction, we introduce a novel taxonomy that org
 > 📝 The full list of violations and their metadata is available in [taxonomy_web_accessibility_violations.md](taxonomy_web_accessibility_violations.md).
 
 
-## 📊 Dataset
+## 📊 Our Dataset
 - 3,500 annotated HTML Web accessibility violations
 - 112 distinct types
 - Sourced from 448 real-world web pages across domains (health, news, e-commerce, etc.)
@@ -175,6 +175,34 @@ Here is a simplified example of a dataset entry:
 
 👉 You can explore the full dataset [here](data/accessguru_dataset).
 
+## 📊 ACCESS Baseline Dataset
+
+We use the ACCESS Baseline dataset introduced in Huang et al. 2024 for comparison and evaluation. 
+
+The dataset was generated using the Playwright Accessibility API to scan a set of ~25 diverse and representative websites (e.g., Google Calendar, Quora, BBC, New York Times, Slack, etc.). It includes 171 recorded accessibility violations, spanning 40 violation types.
+
+### 📄 Data Fields
+Name	Description	Type
+webURL	Website URL passed into the dataframe	text
+numViolations	Number of violations from the URL	integer
+id	Type of accessibility violation	text
+initialScore	Summed impact score of violations (1–5 scale)	integer
+description	Purpose of the accessibility feature	text
+help	Describes accessibility requirements	text
+html	HTML element associated with the violation	HTML tags
+DOM	Full DOM structure of the webpage	text
+DOMCorrected	DOM after applying LLM-generated corrections	text
+
+### 📉 Impact Scoring
+Each violation is assigned a severity score:
+
+Critical = 5
+Serious = 4
+Moderate = 3
+Minor = 2
+Cosmetic = 1
+
+👉 You can explore the full baseline dataset [here](data/baseline_two_dataset.csv)
 
 ## 📦 Baselines 
 Reproducible baseline implementations:
