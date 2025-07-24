@@ -306,6 +306,7 @@ Your feedback will support future benchmarking and the design of more effective 
 | **Average (All 55)**       | —             | **0.77**                     |
 
 <p align="center"><b>Table 3:</b> S-BERT Semantic Similarity Between AccessGuru (GPT-4) Corrections and Three Human Developer Corrections, on our semantic violations dataset (Size = 55). </p> 
+
 ## 📬 Contact
 
 For inquiries, feel free to contact:
