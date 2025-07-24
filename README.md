@@ -291,8 +291,21 @@ Your feedback will support future benchmarking and the design of more effective 
 | **AccessGuru (w/o reprompting)** | Qwen-VL     | *0.69*                        | *37*                   |
 | **AccessGuru (Ours)**           | **Qwen-VL** | **0.75**                      | **41**                 |
 
-<p align="center"><b>Table 2:</b> Comparison of average violation score decrease and number of corrected semantic accessibility violations on our dataset (Size = 55).</p>
+<p align="center"><b>Table 2:</b> Comparison of average violation score decrease and number of corrected semantic accessibility violations on our semantic violations dataset (Size = 55).</p>
 
+
+| **Violation Type**         | **# Samples** | **Avg. Similarity (S-BERT)** |
+| -------------------------- | ------------- | ---------------------------- |
+| image-alt-not-descriptive  | 6             | 0.83                         |
+| lang-mismatch              | 18            | 0.84                         |
+| link-text-mismatch         | 11            | 0.68                         |
+| form-label-mismatch        | 5             | 0.70                         |
+| ambiguous-heading          | 4             | 0.68                         |
+| page-title-not-descriptive | 3             | 0.86                         |
+| button-label-mismatch      | 8             | 0.83                         |
+| **Average (All 55)**       | —             | **0.77**                     |
+
+<p align="center"><b>Table 3:</b> S-BERT Semantic Similarity Between AccessGuru (GPT-4) Corrections and Three Human Developer Corrections, on our semantic violations dataset (Size = 55). </p> 
 ## 📬 Contact
 
 For inquiries, feel free to contact:
