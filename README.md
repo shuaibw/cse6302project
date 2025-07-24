@@ -95,15 +95,9 @@
 
 ## 🧾 Taxonomy of Web Accessibility Violations
 
-We define a structured taxonomy to categorize and analyze web accessibility violations addressed in our study. Each violation entry includes:
+To support both detection and correction, we introduce a novel taxonomy that organizes common real-world accessibility violations into three categories:
 
-- **Violation Name**  
-- **Violation Description**  
-- **WCAG Guidelines** it violates  
-- **Impact** rating, the severity of each violation based on how much it hinders user interaction with the Web content 
-- **Supplementary Information** required alongside the HTML to understand, detect, and correct the violation (e.g., image for image-alt-not-descriptive) 
-
-### 📚 Violation Categories
+#### 📚 Violation Categories
 
 - **Syntactic Violations**  
   These occur when HTML code lacks proper structural elements or attributes required by accessibility standards.  
@@ -117,6 +111,14 @@ We define a structured taxonomy to categorize and analyze web accessibility viol
 - **Semantic Violations**  
   Misuse or absence of meaningful content or attributes that convey context to assistive technologies.  
   _Example:_ Using placeholder text like `"image123"` for alt attributes.
+
+ Each violation entry includes:
+
+- **Violation Name**  
+- **Violation Description**  
+- **WCAG Guidelines** it violates  
+- **Impact** rating, the severity of each violation based on how much it hinders user interaction with the Web content 
+- **Supplementary Information** required alongside the HTML to understand, detect, and correct the violation (e.g., image for image-alt-not-descriptive) 
 
 > 📝 The full list of violations and their metadata is available in [taxonomy_web_accessibility_violations.md](taxonomy_web_accessibility_violations.md).
 
