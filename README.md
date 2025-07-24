@@ -141,10 +141,10 @@ To ensure our evaluation reflects real-world Web accessibility violations, we sa
 - Benchmarking rule-based vs. AI-based accessibility tools.
 - Understanding the distribution and severity of accessibility issues in real-world web content.
 - Supporting other downstream accessibility tasks, such as:
-      - Accessibility-aware webpage generation (e.g., generating accessible HTML from scratch).
-      - Classification of website accessibility compliance.
-      - Prioritization of high-impact violations for correction.
-      - Training models to detect or explain accessibility violations in unfamiliar layouts.
+  - Accessibility-aware webpage generation (e.g., generating accessible HTML from scratch).
+  - Classification of website accessibility compliance.
+  - Prioritization of high-impact violations for correction.
+  - Training models to detect or explain accessibility violations in unfamiliar layouts.
 
 > 📝 You can view examples of semantic Web accessibility violations at [accessguru_sampled_semantic_violations_dataset.md](accessguru_sampled_semantic_violations_dataset.md).
 
