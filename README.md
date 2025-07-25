@@ -190,7 +190,7 @@ Here is a simplified example of a dataset entry:
 
 👉 You can explore the full dataset [here](data/accessguru_dataset).
 
-## 📊 ACCESS Baseline Dataset
+## 📊 ACCESS- Baseline Dataset
 
 We use the ACCESS Baseline dataset introduced in Huang et al. 2024 for comparison and evaluation. 
 
@@ -221,6 +221,8 @@ Minor = 2
 Cosmetic = 1
 
 👉 You can explore the full baseline dataset [here](data/baseline_two_dataset.csv)
+
+Huang, Calista, et al. "Access: Prompt engineering for automated web accessibility violation corrections." arXiv preprint arXiv:2401.16450 (2024).
 
 ## 📦 Baselines 
 Reproducible baseline implementations:
