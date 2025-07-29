@@ -156,17 +156,21 @@ Each row in our dataset corresponds to a unique web accessibility violation inst
 
 | Field Name               | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
-| `id`                    | Unique identifier for the violation case                                    |
-| `category`              | Type of accessibility violation (`Layout`, `Syntactic`, `Semantic`)         |
-| `webURL`                | The URL of the webpage where the violation was found                        |
-| `numViolations`         | Total number of violations detected on the page                             |
-| `violationnumberID`     | Unique ID representing the specific violation type (e.g., image-alt)        |
-| `initialImpactScore`    | Numerical severity score for the violation (e.g., 1-5)                      |
-| `description`           | Description of the WCAG rule the violation violates                         |
-| `affectedHTMLElement(s)`| Snippet of the HTML elements affected by violation                          |
-| `additional_info`       | Any extra information needed to correct the violation (e.g., image for image-alt-not-descriptive) |
-| `failureSummary`        | Summary of how the element fails accessibility compliance                   |
-| `impact`                | Severity label (e.g. `Minor`, `Moderate`, `Serious`, `Critical`)            |
+| `id`                    | Unique identifier for the URL                                   |
+|`domain_category` | The domain of the website's subject area (Domains: Educational Platforms, Government and Public Services, News and Media, E-commerce, Streaming Platforms, Health and Wellness, Technology, Science and Research )|
+| `web_URL| `The URL of the webpage where the violation was found                        |
+| `scrape_status`                | Status indicating whether the webpage was successfully scraped or not|
+| `html_file_name`                | Filename of the saved HTML file associated with the scraped page|
+| `violation_count`                | Total number of accessibility violations found on the page|
+| `violation_name`                | Name of the violated accessibility|
+| `violation_score`                | Score representing the impact of the violation|
+| `violation_description`                | Short description of the violation type|
+| `violation_description_url`                | URL linking to a detailed explanation of the violation|
+| `affected_html_elements`                | Snippet of HTML showing the elements affected by the violation|
+| `violation_category`                | Category of the accessibility issue (Categories: Syntax, Layout, Semantic)|
+| `violation_impact`                | Impact level of the violation (Impact Levels: 'cosmetic', 'minor', 'moderate', 'serious', 'critical')|
+| `wcag_reference`                | The WCAG (Web Content Accessibility Guidelines) reference numbers that the violation relates to|
+| `supplementary_information`                | Extra Snippet of HTML relevant to the violation needed for LLMs to understand the affected_html_elements|
 
 ### 📌 Example Entry
 
