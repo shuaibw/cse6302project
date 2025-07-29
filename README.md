@@ -158,7 +158,7 @@ Each row in our dataset corresponds to a unique web accessibility violation inst
 |--------------------------|-----------------------------------------------------------------------------|
 | `id`                    | Unique identifier for the URL                                   |
 |`domain_category` | The domain of the website's subject area (Domains: Educational Platforms, Government and Public Services, News and Media, E-commerce, Streaming Platforms, Health and Wellness, Technology, Science and Research )|
-| `web_URL| `The URL of the webpage where the violation was found                        |
+| `web_URL`| The URL of the webpage where the violation was found                        |
 | `scrape_status`                | Status indicating whether the webpage was successfully scraped or not|
 | `html_file_name`                | Filename of the saved HTML file associated with the scraped page|
 | `violation_count`                | Total number of accessibility violations found on the page|
