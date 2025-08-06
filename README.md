@@ -162,6 +162,7 @@ Each row in our dataset corresponds to a unique web accessibility violation inst
 | `web_URL`| The URL of the webpage where the violation was found                        |
 | `scrape_status`                | Status indicating whether the webpage was successfully scraped or not|
 | `html_file_name`                | Filename of the saved HTML file associated with the scraped page|
+| `html_file_path`                | Path to the saved HTML file associated with the scraped page|
 | `violation_count`                | Total number of accessibility violations found on the page|
 | `violation_name`                | Name of the violated accessibility|
 | `violation_score`                | Score representing the impact of the violation|
