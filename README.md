@@ -178,19 +178,27 @@ Each row in our dataset corresponds to a unique web accessibility violation inst
 
 Here is a simplified example of a dataset entry:
 
-| Field                  | Value                                                                                  |
-|------------------------|----------------------------------------------------------------------------------------|
-| `id`                  | 230914312                                                                              |
-| `category`            | Layout                                                                                 |
-| `webURL`              | https://www.dailymail.co.uk                                                            |
-| `numViolations`       | 13                                                                                     |
-| `violationnumberID`   | color-contrast-enhanced                                                                |
-| `initialImpactScore`  | 4                                                                                      |
-| `description`         | Ensures the contrast between foreground and background colors meets WCAG 2 AAA threshold |
-| `affectedHTMLElement(s)` | `<span class="">1AM</span>`, `<span class="is-exclusive">EXCLUSIVE</span>`       |
-| `additional_info`     | foreground: `#ffffff`, background: `#f03649`                                           |
-| `failureSummary`      | Poor color contrast makes text unreadable for users with vision impairments            |
-| `impact`              | Serious                                                                                |
+| Field | Value |
+| --- | --- |
+| `id` | 700_0 |
+| `web_URL_id` | 700 |
+| `domain_category` | Government and Public Services |
+| `web_URL` | https://www.usa.gov/about-the-us |
+| `scrape_status` | scraped |
+| `html_file_name` | www_usa_gov_about_the_us.html |
+| `html_file_path` | /content/workspace/FullPipeline/html_pages_async/www_usa_gov_about_the_us.html |
+| `violation_count` | 4 |
+| `violation_name` | color-contrast-enhanced |
+| `violation_score` | 4 |
+| `violation_description` | Ensures the contrast between foreground and background colors meets WCAG 2 AAA contrast ratio thresholds |
+| `violation_description_url` | https://dequeuniversity.com/rules/axe/4.4/color-contrast-enhanced?application=axeAPI |
+| `affected_html_elements` | <a href="/buy-from-government">How to buy from the U.S. government</a>, <a href="/holidays">Learn about American holidays</a>, <a href="/agency-index">Find government agencies</a> |
+| `violation_category` | Layout |
+| `violation_impact` | serious |
+| `wcag_reference` | ['1.4.6 Contrast (Enhanced)'] |
+| `supplementary_information` | {'fgColor': '#00bde3', 'bgColor': '#112f4e', 'contrastRatio': 6.09, 'fontSize': '13.6pt (18.08px)', 'fontWeight': 'normal', 'messageKey': None, 'expectedContrastRatio': '7:1', 'shadowColor': None} |
+
+This table presents a sample record of an accessibility violation found on the webpage https://www.usa.gov/about-the-us. It includes identifiers such as id and web_URL_id, the domain category, and URLs for both the page and the violation description. The sample data violation is categorized under Layout violation category, specifically concerns color contrast enhancement with a serious impact level. The table shows that the Webpage has 4 instances of this violation, listing affected HTML elements from the webpage. File paths and scrape status confirm the page's local HTML file has been saved successfully. Additional details about the violation, including WCAG references and supplementary informations are also provided.  Here, since the violation is related to color-contrast-enhanced, the supplementary_information provides detailed styling data, including the foreground color (#00bde3), background color (#112f4e), actual contrast ratio (6.09), font size (13.6pt (18.08px)), font weight (normal), expected contrast ratio (7:1), and other relevant attributes like shadow color which can be helpful for LLMs to understand the affected_html_elements better.
 
 > 📝 You can view examples of semantic Web accessibility violations at [accessguru_sampled_semantic_violations_dataset.md](accessguru_sampled_semantic_violations_dataset.md).
 
