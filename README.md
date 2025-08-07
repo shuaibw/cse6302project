@@ -151,7 +151,7 @@ To ensure our evaluation reflects real-world Web accessibility violations, we sa
   - Prioritization of high-impact violations for correction.
   - Training models to detect or explain accessibility violations in unfamiliar layouts.
 
-### Dataset Structure 
+### Dataset Fields 
 
 Each row in our dataset corresponds to a unique web accessibility violation instance observed on a specific webpage. The dataset is stored as a CSV file and contains the following fields:
 
