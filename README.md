@@ -209,7 +209,7 @@ This table presents a sample record of an accessibility violation found on the w
 
 We use the ACCESS Baseline dataset introduced in Huang et al. 2024 for comparison and evaluation. 
 
-The dataset was generated using the Playwright Accessibility API to scan a set of ~25 diverse and representative websites (e.g., Google Calendar, Quora, BBC, New York Times, Slack, etc.). It includes 171 recorded accessibility violations, spanning 40 violation types.
+The dataset was generated using the Playwright Accessibility API to scan a set of ~25 diverse and representative websites (e.g., Google Calendar, Quora, BBC, New York Times, Slack, etc.). It includes 171 recorded accessibility violations, spanning 42 violation types.
 
 ### 📄 Data Fields
 
