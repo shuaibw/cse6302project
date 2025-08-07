@@ -77,6 +77,8 @@
 ├── human_developer_correction_study/       # Contains survey responses and accessibility corrections from 3 Developers 
 │   ├── Our_dataset_Survey.json             # Survey form shown to Developers for evaluating LLM vs. human corrections
 │   └── humanCorrection_developer1.csv      # Developer 1's manual HTML corrections for semantic violations
+│   └── humanCorrection_developer2.csv      # Developer 2's manual HTML corrections for semantic violations
+│   └── humanCorrection_developer3.csv      # Developer 3's manual HTML corrections for semantic violations
 │
 ├── results/                             # Contains evaluation results for both baseline and AccessGuru-generated outputs.
 │   ├── accesssguru_dataset/            # Model outputs evaluated on the AccessGuru dataset for our method (AccessGuru) and 3 baseline methods.
