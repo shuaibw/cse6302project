@@ -193,7 +193,7 @@ Here is a simplified example of a dataset entry:
 | `violation_score` | 4 |
 | `violation_description` | Ensures the contrast between foreground and background colors meets WCAG 2 AAA contrast ratio thresholds |
 | `violation_description_url` | https://dequeuniversity.com/rules/axe/4.4/color-contrast-enhanced?application=axeAPI |
-| `affected_html_elements` | <a href="/buy-from-government">How to buy from the U.S. government</a>, <a href="/holidays">Learn about American holidays</a>, <a href="/agency-index">Find government agencies</a> |
+| `affected_html_elements` | `<a href="/buy-from-government">How to buy from the U.S. government</a>, <a href="/holidays">Learn about American holidays</a>, <a href="/agency-index">Find government agencies</a>` |
 | `violation_category` | Layout |
 | `violation_impact` | serious |
 | `wcag_reference` | ['1.4.6 Contrast (Enhanced)'] |
