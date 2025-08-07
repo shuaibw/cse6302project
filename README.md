@@ -8,7 +8,7 @@
 🔬 Contributions:
 
 -  A taxonomy categorizing Web accessibility violations into **Syntactic**, **Semantic**, and **Layout** violations
--  A benchmark dataset of **3,500 real-world violations** across **112 types**
+-  A benchmark dataset of **3,524 real-world violations** across **94 types**
 -  A modular pipeline:
   - `AccessGuruDetect`: Detect violations (Axe-Playwright + LLM)
   - `AccessGuruCorrect`: Generate corrections using LLM prompting strategies
@@ -125,20 +125,20 @@ To support both detection and correction, we introduce a novel taxonomy that org
 
 
 ## 📊 Our Dataset
-- 3,500 annotated HTML Web accessibility violations
-- 112 distinct types
-- Sourced from 448 real-world web pages across domains (health, news, e-commerce, etc.)
+- 3,524 annotated HTML Web accessibility violations
+- 94 distinct types
+- Sourced from 588 real-world web pages across domains (health, news, e-commerce, etc.)
 
 ### Dataset Summary
 We introduce a new dataset that comprehensively covers syntactic, semantic, and layout accessibility violations, reflecting real-world accessibility violations. 
 
 Our dataset was collected through a structured process guided by the [WebAIM 2025 study](https://webaim.org/projects/million/), which identifies commonly visited websites with accessibility violations. 
 
-To account for variation in accessibility violations across domains—e.g., government sites often use data tables, while e-commerce relies heavily on forms and images—we used GPT-4 to identify a diverse set of popular Web domains such as health, education, government, news, technology, and e-commerce, including multilingual websites. We then asked GPT-4 to suggest representative URLs from each category based on sites listed in the WebAIM 2025 study. This process yielded 448 URLs. 
+To account for variation in accessibility violations across domains—e.g., government sites often use data tables, while e-commerce relies heavily on forms and images—we used GPT-4 to identify a diverse set of popular Web domains such as health, education, government, news, technology, and e-commerce, including multilingual websites. We then asked GPT-4 to suggest representative URLs from each category based on sites listed in the WebAIM 2025 study. This process yielded 588 URLs. 
 
-We crawled each URL using Playwright and retained only those pages where `document.readyState === "complete"`.  We applied AccessGuru Detection Module (See Figure 1) to each URL to identify Web accessibility violations.  This yielded 3,500 Web accessibility violations. The dataset spans over 112 distinct violation types across all three categories. To our knowledge, it is the most comprehensive publicly available dataset of real-world Web accessibility violations to date.  
+We crawled each URL using Playwright and retained only those pages where `document.readyState === "complete"`.  We applied AccessGuru Detection Module (See Figure 1) to each URL to identify Web accessibility violations.  This yielded 3,524 Web accessibility violations. The dataset spans over 94 distinct violation types across all three categories. To our knowledge, it is the most comprehensive publicly available dataset of real-world Web accessibility violations to date.  
 
-To ensure our evaluation reflects real-world Web accessibility violations, we sampled a representative subset of 305 violations from our full dataset of 3,500 instances. Sampling aligns the distribution of violation types in the subset with real-world frequencies reported in the WebAIM 2025 study. This method avoids biases caused by overrepresented violation types in large-scale crawled data but does not reflect their actual prevalence across the Web. This subset size was chosen to enable controlled and consistent comparison across LLMs and baselines. 
+To ensure our evaluation reflects real-world Web accessibility violations, we sampled a representative subset of 305 violations from our full dataset of 3,524 instances. Sampling aligns the distribution of violation types in the subset with real-world frequencies reported in the WebAIM 2025 study. This method avoids biases caused by overrepresented violation types in large-scale crawled data but does not reflect their actual prevalence across the Web. This subset size was chosen to enable controlled and consistent comparison across LLMs and baselines. 
 
 ### ⚙️ Use Cases
 - Evaluating the effectiveness of LLMs in automated web accessibility repair.
