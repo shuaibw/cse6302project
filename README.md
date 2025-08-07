@@ -340,6 +340,7 @@ The AccessGuru dataset is licensed under a [Creative Commons Attribution 4.0 Int
 
  Code under this repo is licensed under a MIT License.
 
+## 📋 Read our paper at: https://arxiv.org/pdf/2507.19549?
 
 ## 📄 Citation
 
@@ -353,4 +354,5 @@ If you find this work useful, please consider citing our paper:
   year={2025},
   publisher={ACM}
 }
+
 
