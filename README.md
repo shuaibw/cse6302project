@@ -177,7 +177,7 @@ Each row in our dataset corresponds to a unique web accessibility violation inst
 
 ### 📌 Example Entry
 
-Here is a simplified example of a dataset entry:
+Here is an example of a dataset entry:
 
 | Field | Value |
 | --- | --- |
