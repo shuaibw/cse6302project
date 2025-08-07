@@ -8,7 +8,7 @@
 🔬 Contributions:
 
 -  A taxonomy categorizing Web accessibility violations into **Syntactic**, **Semantic**, and **Layout** violations
--  A benchmark dataset of **3,524 real-world violations** across **94 types**
+-  A benchmark dataset of **~3,500 real-world violations** across **94 types**
 -  A modular pipeline:
   - `AccessGuruDetect`: Detect violations (Axe-Playwright + LLM)
   - `AccessGuruCorrect`: Generate corrections using LLM prompting strategies
