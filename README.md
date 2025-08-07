@@ -42,7 +42,6 @@
 │   
 |   ├── AccessGuru/
 |   |   ├── AccessGuruDetect/
-|   |   |   ├── playwrightCode.py                        # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
 |   |   |   ├── accessguru_detect_syntax_layout_violation.py # Accessibility testing engine-based Syntax and Layout Detector for detecting syntax and layout Web accessibility violations
 |   |   |   ├── accessguru_detect_semantic_violation.md      # LLM-based Semantic Detector Prompt for detecting semantic Web accessibility violations
 |   |   ├── AccessGuruCorrect/
