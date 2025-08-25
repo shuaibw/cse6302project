@@ -140,7 +140,7 @@ Each violation includes a **Violation Name**, **Description**, the corresponding
 | Syntax      | `single-key-shortcut-no-modifier`   | A character key shortcut is active without a modifier key or a way to disable/remap it, which may interfere with assistive technologies. | 2.1.4             |  Serious    | Input  |
 | Syntax      | `sensory-instructions`| Instructions rely on sensory characteristics without alternatives.                                    | 1.3.3             |  Serious |   |
 | Syntax      | `single-navigation-method`          | Page provides only one way to locate other pages within the site, limiting user flexibility and discoverability. | 2.4.5             |  Minor    | Navigation |
-| Syntax      | `dragging-no-keyboard-alternative`  | Drag-and-drop functionality is present without a keyboard-accessible alternative, limiting access for users who cannot use a mouse or touch. | 2.5.7             |  Serious    | Input |
+
 
 
 
