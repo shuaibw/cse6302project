@@ -91,5 +91,6 @@
   "image-alt-not-descriptive":"Inaccurate or misleading alternative text that fails to describe the purpose of the image.",
   "missing-lang-tag":"Sections in different languages lack appropriate lang attributes.",
   "page-title-not-descriptive":"Page title fails to describe the content or purpose of the page, making navigation difficult.",
-  "button-label-mismatch":"Buttons labels are unclear or fail to specify their purpose."
+  "button-label-mismatch":"Buttons labels are unclear or fail to specify their purpose.",
+  "incorrect-semantic-tag": "A non-semantic tag (e.g., div or span) is used instead of a proper semantic element (e.g., header, nav, main)."
 }
