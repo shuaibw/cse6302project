@@ -10,8 +10,8 @@
 -  A taxonomy categorizing Web accessibility violations into **Syntactic**, **Semantic**, and **Layout** violations
 -  A benchmark dataset of **~3,500 real-world violations** across **94 types**
 -  A modular pipeline:
-  - `AccessGuruDetect`: Detect violations (Axe-Playwright + LLM)
-  - `AccessGuruCorrect`: Generate corrections using LLM prompting strategies
+  - `AccessGuruDetect`: Detect violations (Axe-Playwright + LLM) [[SyntaxLayout Notebook](https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/notebooks/1_AccessGuruDetect_SyntaxLayout.ipynb)]   [[Semantic Notebook](https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/notebooks/1_AccessGuruDetect_Semantic.ipynb)]
+  - `AccessGuruCorrect`: Generate corrections using LLM prompting strategies [[AccessGuruCorrect Notebook](https://github.com/NadeenAhmad/AccessGuruLLM/blob/main/notebooks/2_AccessGuruCorrect_Notebook.ipynb)]
 
 <p align="center">
   <img src="data/accessguru_dataset/accessguru_semantic_violations_sampled_dataset_supp_material/detect2.png" alt="Overview of the AccessGuru Detection Module. Given a raw HTML document and Web page screenshot (left), the detection module applies two detectors: (1) a syntax and layout detector based on the Axe-Playwright accessibility testing engine and (2) an LLM-based semantic detector. The module outputs a set of detected accessibility violations (right)." width="700"/>
