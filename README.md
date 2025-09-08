@@ -80,6 +80,11 @@
 │   └── humanCorrection_developer2.csv      # Developer 2's manual HTML corrections for semantic violations
 │   └── humanCorrection_developer3.csv      # Developer 3's manual HTML corrections for semantic violations
 │
+├── notebooks/
+│   ├── 1_AccessGuruDetect_Semantic.ipynb # Jupyter Notebook for running the AccessGuruDetect pipeline to identify semantic accessibility violations in web pages.
+│   ├── 1_AccessGuruDetect_SyntaxLayout.ipynb # Jupyter Notebook for running the AccessGuruDetect pipeline to identify syntax and layout accessibility violations in web pages.
+│   ├── 2_AccessGuruCorrect_Notebook.ipynb # Jupyter Notebook for running the AccessGuruCorrect pipeline to correct detected accessibility violations in web pages.
+│
 ├── results/                             # Contains evaluation results for both baseline and AccessGuru-generated outputs.
 │   ├── accesssguru_dataset/            # Model outputs evaluated on the AccessGuru dataset for our method (AccessGuru) and 3 baseline methods.
 │   │   ├── semantic/                   # Semantic violation results per LLM (e.g., GPT4, Qwen-VL, Pixtral).
