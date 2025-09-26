@@ -1,0 +1,94 @@
+[
+  {
+    "id": "skip_link",
+    "locator": { "strategy": "css", "value": "body" },
+    "action": {
+      "type": "append_child",
+      "value": "<a href=\"#main-content\" class=\"skip-link\" style=\"position:absolute;left:-999px;top:-999px;z-index:1000;\">Skip to main content</a>"
+    },
+    "verify": { "must_contain": ["skip-link"] }
+  },
+  {
+    "id": "hamburger_aria",
+    "locator": { "strategy": "css", "value": "button.navbar-toggle" },
+    "action": {
+      "type": "set_attribute",
+      "value": {
+        "aria-label": "Toggle navigation menu",
+        "type": "button"
+      }
+    },
+    "verify": { "must_contain": ["aria-label"] }
+  },
+  {
+    "id": "brand_logo_alt",
+    "locator": { "strategy": "css", "value": ".navbar-brand img[alt='logo']" },
+    "action": {
+      "type": "set_attribute",
+      "value": {
+        "alt": "Department of CSE, BUET logo"
+      }
+    },
+    "verify": { "must_contain": ["Department of CSE, BUET logo"] }
+  },
+  {
+    "id": "hero_head_img_alt",
+    "locator": { "strategy": "css", "value": "img.head-img" },
+    "action": {
+      "type": "set_attribute",
+      "value": {
+        "alt": "CSE BUET flag"
+      }
+    },
+    "verify": { "must_contain": ["CSE BUET flag"] }
+  },
+  {
+    "id": "carousel_active_img_alt",
+    "locator": { "strategy": "css", "value": "#myCarousel .item.active img" },
+    "action": {
+      "type": "set_attribute",
+      "value": {
+        "alt": "Campus highlight image"
+      }
+    },
+    "verify": { "must_contain": ["Campus highlight image"] }
+  },
+  {
+    "id": "marquee_replace",
+    "locator": { "strategy": "css", "value": "marquee" },
+    "action": {
+      "type": "replace_outer_html",
+      "value": "<div class=\"hot-news-live\" role=\"status\" aria-live=\"polite\">PG Admission October 2024</div>"
+    },
+    "verify": { "must_contain": ["aria-live"] }
+  },
+  {
+    "id": "login_link_text",
+    "locator": { "strategy": "css", "value": "ul.top-menu li:first-child a" },
+    "action": {
+      "type": "set_text",
+      "value": "Portal Login"
+    },
+    "verify": { "must_contain": ["Portal Login"], "must_not_contain": ["Login</a>"] }
+  },
+  {
+    "id": "footer_role",
+    "locator": { "strategy": "css", "value": "footer p" },
+    "action": {
+      "type": "set_attribute",
+      "value": {
+        "role": "contentinfo"
+      }
+    },
+    "verify": { "must_contain": ["contentinfo"] }
+  },
+  {
+    "id": "visual_debug_banner",
+    "locator": { "strategy": "css", "value": "body" },
+    "action": {
+      "type": "append_child",
+      "value": "<div id=\"a11y-visual-banner\" style=\"position:fixed;top:0;left:0;width:100%;background:#d32f2f;color:#fff;font:600 18px/1.4 system-ui,Arial,sans-serif;z-index:99999;padding:10px 16px;box-shadow:0 2px 6px rgba(0,0,0,.35);text-align:center;letter-spacing:.5px;\">Accessibility Patch Applied – Test Banner\n<span style=\"font-size:12px;font-weight:400;opacity:.85\">(Injected for visual diff)</span></div>"
+    },
+    "verify": { "must_contain": ["a11y-visual-banner"] }
+  }
+]

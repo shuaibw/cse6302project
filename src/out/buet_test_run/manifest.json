@@ -1,0 +1,154 @@
+{
+  "url": "https://cse.buet.ac.bd/web/",
+  "timestamp": 1758924822,
+  "viewports": [
+    "desktop_hd",
+    "mobile_modern"
+  ],
+  "before": {
+    "status": 200,
+    "screenshots": {
+      "desktop_hd": "out/buet_test_run/before/desktop_hd.png",
+      "mobile_modern": "out/buet_test_run/before/mobile_modern.png"
+    }
+  },
+  "after": {
+    "screenshots": {
+      "desktop_hd": "out/buet_test_run/after/desktop_hd.png",
+      "mobile_modern": "out/buet_test_run/after/mobile_modern.png"
+    }
+  },
+  "patches": [
+    {
+      "id": "skip_link",
+      "locator": {
+        "strategy": "css",
+        "value": "body"
+      },
+      "action_type": "append_child",
+      "status": "applied",
+      "resolved_hash": "dfb454d1beae311990de9f503b81d6f240f70951",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "ok"
+    },
+    {
+      "id": "hamburger_aria",
+      "locator": {
+        "strategy": "css",
+        "value": "button.navbar-toggle"
+      },
+      "action_type": "set_attribute",
+      "status": "applied",
+      "resolved_hash": "eb8203d9b566602ec59b9ca4b3d3919286ecb6aa",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "fail_contains"
+    },
+    {
+      "id": "brand_logo_alt",
+      "locator": {
+        "strategy": "css",
+        "value": ".navbar-brand img[alt='logo']"
+      },
+      "action_type": "set_attribute",
+      "status": "applied",
+      "resolved_hash": "e07567f1b3eb8de6edabfa802a0680c4e5ce01d6",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "ok"
+    },
+    {
+      "id": "hero_head_img_alt",
+      "locator": {
+        "strategy": "css",
+        "value": "img.head-img"
+      },
+      "action_type": "set_attribute",
+      "status": "applied",
+      "resolved_hash": "693d8322b862309e15d4a5766963d7162a50cef2",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "ok"
+    },
+    {
+      "id": "carousel_active_img_alt",
+      "locator": {
+        "strategy": "css",
+        "value": "#myCarousel .item.active img"
+      },
+      "action_type": "set_attribute",
+      "status": "applied",
+      "resolved_hash": "f5bfe9ee4ea5ffda82a680bd184860c9c18fe468",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "ok"
+    },
+    {
+      "id": "marquee_replace",
+      "locator": {
+        "strategy": "css",
+        "value": "marquee"
+      },
+      "action_type": "replace_outer_html",
+      "status": "applied",
+      "resolved_hash": "09825b5ab9c657ccc5e478403dbca6da4c46d393",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "fail_contains"
+    },
+    {
+      "id": "login_link_text",
+      "locator": {
+        "strategy": "css",
+        "value": "ul.top-menu li:first-child a"
+      },
+      "action_type": "set_text",
+      "status": "applied",
+      "resolved_hash": "ae0daa8e671427e21febba982f31eedbbaff20f1",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "fail_contains"
+    },
+    {
+      "id": "footer_role",
+      "locator": {
+        "strategy": "css",
+        "value": "footer p"
+      },
+      "action_type": "set_attribute",
+      "status": "applied",
+      "resolved_hash": "1067e85e1393511c405e4e7c8a0b570debba6f09",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "fail_contains"
+    },
+    {
+      "id": "visual_debug_banner",
+      "locator": {
+        "strategy": "css",
+        "value": "body"
+      },
+      "action_type": "append_child",
+      "status": "applied",
+      "resolved_hash": "dfb454d1beae311990de9f503b81d6f240f70951",
+      "apply_result": {
+        "status": "ok"
+      },
+      "verify_status": "ok"
+    }
+  ],
+  "meta": {
+    "wait_for": "networkidle",
+    "settle_ms": 2500,
+    "evaluate_accessibility": true
+  }
+}

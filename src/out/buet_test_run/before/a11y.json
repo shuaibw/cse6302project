@@ -1,0 +1,2612 @@
+{
+  "role": "WebArea",
+  "name": "Department of CSE, BUET",
+  "children": [
+    {
+      "role": "none",
+      "name": "",
+      "children": [
+        {
+          "role": "none",
+          "name": "",
+          "children": [
+            {
+              "role": "link",
+              "name": "Developer Information"
+            },
+            {
+              "role": "navigation",
+              "name": "",
+              "children": [
+                {
+                  "role": "none",
+                  "name": "",
+                  "children": [
+                    {
+                      "role": "none",
+                      "name": ""
+                    },
+                    {
+                      "role": "none",
+                      "name": "",
+                      "children": [
+                        {
+                          "role": "generic",
+                          "name": "",
+                          "children": [
+                            {
+                              "role": "link",
+                              "name": "logo Department of Computer Science and Engineering Bangladesh University of Engineering and Technology",
+                              "children": [
+                                {
+                                  "role": "image",
+                                  "name": "logo"
+                                },
+                                {
+                                  "role": "paragraph",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Department of Computer Science and Engineering",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Department of Computer Science and Engineering"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "paragraph",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Bangladesh University of Engineering and Technology",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Bangladesh University of Engineering and Technology"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "generic",
+                          "name": "",
+                          "children": [
+                            {
+                              "role": "group",
+                              "name": "",
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Login",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Login",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Login"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "text",
+                                  "name": "♦",
+                                  "children": [
+                                    {
+                                      "role": "InlineTextBox",
+                                      "name": "♦"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "link",
+                                  "name": "Feedback",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Feedback",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Feedback"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "text",
+                                  "name": "♦",
+                                  "children": [
+                                    {
+                                      "role": "InlineTextBox",
+                                      "name": "♦"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "link",
+                                  "name": "Moodle",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Moodle",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Moodle"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "text",
+                                  "name": "♦",
+                                  "children": [
+                                    {
+                                      "role": "InlineTextBox",
+                                      "name": "♦"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "link",
+                                  "name": "Library",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Library",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Library"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "text",
+                                  "name": "♦",
+                                  "children": [
+                                    {
+                                      "role": "InlineTextBox",
+                                      "name": "♦"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "link",
+                                  "name": "BIIS",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "BIIS",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "BIIS"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "role": "none",
+                      "name": "",
+                      "children": [
+                        {
+                          "role": "list",
+                          "name": "",
+                          "children": [
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": ""
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Home",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Home",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Home"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Admissions ",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Admissions ",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Admissions "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "General Information ",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "General Information ",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "General Information "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Research ",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Research ",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Research "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Activities ",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Activities ",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Activities "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Student Section",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Student Section",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Student Section"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "People ",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "People ",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "People "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    },
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    },
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Conf./Chapter ",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Conf./Chapter ",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Conf./Chapter "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    },
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    },
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Project/Training ",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Project/Training ",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Project/Training "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    },
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    },
+                                    {
+                                      "role": "none",
+                                      "name": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Others ",
+                                  "haspopup": "menu",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Others ",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Others "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "listitem",
+                              "name": "",
+                              "level": 1,
+                              "children": [
+                                {
+                                  "role": "link",
+                                  "name": "Contact",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Contact",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Contact"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "role": "none",
+              "name": "",
+              "children": [
+                {
+                  "role": "none",
+                  "name": "",
+                  "children": [
+                    {
+                      "role": "none",
+                      "name": ""
+                    }
+                  ]
+                },
+                {
+                  "role": "none",
+                  "name": "",
+                  "children": [
+                    {
+                      "role": "generic",
+                      "name": "",
+                      "children": [
+                        {
+                          "role": "generic",
+                          "name": "",
+                          "children": [
+                            {
+                              "role": "list",
+                              "name": "",
+                              "children": [
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1
+                                },
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1
+                                },
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1
+                                },
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1
+                                },
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1
+                                },
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1
+                                },
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1
+                                },
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1
+                                }
+                              ]
+                            },
+                            {
+                              "role": "generic",
+                              "name": "",
+                              "children": [
+                                {
+                                  "role": "generic",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "image",
+                                      "name": "websites_00001"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "link",
+                              "name": "« Previous",
+                              "children": [
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "«",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "«"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Previous",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Previous"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "link",
+                              "name": "» Next",
+                              "children": [
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "»",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "»"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "none",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "text",
+                                      "name": "Next",
+                                      "children": [
+                                        {
+                                          "role": "InlineTextBox",
+                                          "name": "Next"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "paragraph",
+                          "name": "",
+                          "children": [
+                            {
+                              "role": "text",
+                              "name": " ",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": " "
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "paragraph",
+                          "name": "",
+                          "children": [
+                            {
+                              "role": "image",
+                              "name": ""
+                            },
+                            {
+                              "role": "text",
+                              "name": "Welcome to the Department of Computer Science and Engineering (CSE), BUET!",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Welcome to the Department of Computer Science and Engineering (CSE), BUET!"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "Dear Students, Colleagues, Alumni, and Friends,",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Dear Students, Colleagues, Alumni, and Friends,"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "It is with immense pride that I extend a warm welcome to you all to the Department of Computer Science and Engineering (CSE) at ",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "It is with immense pride that I extend a warm welcome to you all to the Department of Computer "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Science and Engineering (CSE) at "
+                                }
+                              ]
+                            },
+                            {
+                              "role": "link",
+                              "name": "Bangladesh University of Engineering and Technology",
+                              "children": [
+                                {
+                                  "role": "text",
+                                  "name": "Bangladesh University of Engineering and Technology",
+                                  "children": [
+                                    {
+                                      "role": "InlineTextBox",
+                                      "name": "Bangladesh University of Engineering and Technology"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": " (BUET) – the pioneer of computer science education in Bangladesh.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": " (BUET) – the "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "pioneer of computer science education in Bangladesh."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "As the first department of its kind in the country, CSE BUET has consistently set the standard for excellence in education, research and innovation. Offering Bachelor's, Master's, and Ph.D. degrees in Computer Science and Engineering, as well as specialized postgraduate programs (Master's, and Ph.D.) in Artificial Intelligence and Machine Learning (AI & ML), Data Science, Cyber Security, and Software Engineering, we are dedicated to nurturing the next generation of leaders and innovators in these rapidly evolving fields. Our recent expansion in this front is supported by the Ministry of Education (Bangladesh) and funded by the Asian Development Bank (ADB).",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "As the first department of its kind in the country, CSE BUET has consistently set the standard for "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "excellence in education, research and innovation. Offering Bachelor's, Master's, and Ph.D. degrees in "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Computer Science and Engineering, as well as specialized postgraduate programs (Master's, and "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Ph.D.) in Artificial Intelligence and Machine Learning (AI & ML), Data Science, Cyber Security, and Software Engineering, we are "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "dedicated to nurturing the next generation of leaders and innovators in these rapidly evolving fields. Our recent expansion in this front is "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "supported by the Ministry of Education (Bangladesh) and funded by the Asian Development Bank (ADB)."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "Our world-class education and research activities are designed to equip students with the knowledge, skills, and mindset needed to thrive in today's dynamic tech landscape. With a highly competitive environment, state-of-the-art facilities, and a team of dedicated faculty members and colleagues, we ensure that every student reaches their full potential and emerges as a trailblazer in their chosen field.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Our world-class education and research activities are designed to equip students with the knowledge, skills, and mindset needed to thrive "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "in today's dynamic tech landscape. With a highly competitive environment, state-of-the-art facilities, and a team of dedicated faculty "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "members and colleagues, we ensure that every student reaches their full potential and emerges as a trailblazer in their chosen field."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "Currently, our department hosts about 700 undergraduate students and 400 graduate students, all of whom are driven by a shared passion for excellence and a commitment to making a difference in the world.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Currently, our department hosts about 700 undergraduate students and 400 graduate students, all of whom are driven by a shared "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "passion for excellence and a commitment to making a difference in the world."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "I am proud to share that the Department of CSE, BUET has been consistently recognized for its excellence on the global stage. In the QS World University Rankings by Subject published in 2021, we achieved an impressive ranking in the range of 301-350. This recognition underscores our unwavering dedication to academic excellence and innovation. Our students have participated and secured commendable positions in ACM Collegiate Programming contest for more than 20 years. Our faculties have secured many national and international prestigious awards. Our undergraduate and graduate students are regularly publishing in top CS, AI, and Data Engineering venues. All these achievements are testament to the remarkable progress we have made in recent years.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "I am proud to share that the Department of CSE, BUET has been consistently recognized for its excellence on the global stage. In the QS "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "World University Rankings by Subject published in 2021, we achieved an impressive ranking in the range of 301-350. This recognition "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "underscores our unwavering dedication to academic excellence and innovation. Our students have participated and secured "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "commendable positions in ACM Collegiate Programming contest for more than 20 years. Our faculties have secured many national and "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "international prestigious awards. Our undergraduate and graduate students are regularly publishing in top CS, AI, and Data Engineering "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "venues. All these achievements are testament to the remarkable progress we have made in recent years."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "To our students, I encourage you to seize every opportunity that comes your way, embrace challenges as opportunities for growth, and strive for excellence in all your endeavors.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "To our students, I encourage you to seize every opportunity that comes your way, embrace challenges as opportunities for growth, and "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "strive for excellence in all your endeavors."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "To our colleagues, I extend my deepest appreciation for your tireless dedication and commitment to advancing our department's mission. Your expertise, mentorship, and collaborative spirit are essential to our collective success.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "To our colleagues, I extend my deepest appreciation for your tireless dedication and commitment to advancing our department's mission. "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Your expertise, mentorship, and collaborative spirit are essential to our collective success."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "To our esteemed alumni, I extend my heartfelt gratitude for your continued support and contributions to our department's success. Your achievements serve as an inspiration to current and future generations of CSE students.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "To our esteemed alumni, I extend my heartfelt gratitude for your continued support and contributions to our department's success. Your "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "achievements serve as an inspiration to current and future generations of CSE students."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "And to all others who are connected to our department, whether as collaborators, industry partners & professionals, or enthusiasts, I invite you to join us on this exciting journey of discovery, innovation, and impact.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "And to all others who are connected to our department, whether as collaborators, industry partners & professionals, or enthusiasts, I invite "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "you to join us on this exciting journey of discovery, innovation, and impact."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "Together, let us continue to build upon our legacy of excellence and chart new frontiers in computer science and engineering.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Together, let us continue to build upon our legacy of excellence and chart new frontiers in computer science and engineering."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "Once again, welcome to the Department of Computer Science and Engineering at BUET. Feel free to stop by my office or send an email to me (eunus@cse.buet.ac.bd or headcse@cse.buet.ac.bd), if you want to join us on this exciting journey towards discovering, innovating, and making a meaningful impact in your business and society, thereby creating a smarter and more sustainable nation.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Once again, welcome to the Department of Computer Science and Engineering at BUET. Feel free to stop by my office or send an email "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "to me (eunus@cse.buet.ac.bd or headcse@cse.buet.ac.bd), if you want to join us on this exciting journey towards discovering, "
+                                },
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "innovating, and making a meaningful impact in your business and society, thereby creating a smarter and more sustainable nation."
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "Warm regards,",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Warm regards,"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "link",
+                              "name": "Professor Mohammed Eunus Ali",
+                              "children": [
+                                {
+                                  "role": "text",
+                                  "name": "Professor Mohammed Eunus Ali",
+                                  "children": [
+                                    {
+                                      "role": "InlineTextBox",
+                                      "name": "Professor Mohammed Eunus Ali"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "Head",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Head"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": " of Department of Computer Science and Engineering",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": " of Department of Computer Science and Engineering"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "Bangladesh University of Engineering and Technology (BUET)",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "Bangladesh University of Engineering and Technology (BUET)"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "LineBreak",
+                              "name": "\n",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "\n"
+                                }
+                              ]
+                            },
+                            {
+                              "role": "text",
+                              "name": "To know more on CSE BUET, please navigate through the links.",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "To know more on CSE BUET, please navigate through the links."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "link",
+                          "name": "» Mission and Vision",
+                          "children": [
+                            {
+                              "role": "text",
+                              "name": "» Mission and Vision",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "» Mission and Vision"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "link",
+                          "name": "» History",
+                          "children": [
+                            {
+                              "role": "text",
+                              "name": "» History",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "» History"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "link",
+                          "name": "» Location",
+                          "children": [
+                            {
+                              "role": "text",
+                              "name": "» Location",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "» Location"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "link",
+                          "name": "» Message From Head",
+                          "children": [
+                            {
+                              "role": "text",
+                              "name": "» Message From Head",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "» Message From Head"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "link",
+                          "name": "» Why CSE@BUET?",
+                          "children": [
+                            {
+                              "role": "text",
+                              "name": "» Why CSE@BUET?",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "» Why CSE@BUET?"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "link",
+                          "name": "» Facilities",
+                          "children": [
+                            {
+                              "role": "text",
+                              "name": "» Facilities",
+                              "children": [
+                                {
+                                  "role": "InlineTextBox",
+                                  "name": "» Facilities"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "LineBreak",
+                          "name": "\n",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "\n"
+                            }
+                          ]
+                        },
+                        {
+                          "role": "none",
+                          "name": ""
+                        }
+                      ]
+                    },
+                    {
+                      "role": "generic",
+                      "name": "",
+                      "children": [
+                        {
+                          "role": "generic",
+                          "name": "",
+                          "children": [
+                            {
+                              "role": "list",
+                              "name": "",
+                              "children": [
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1,
+                                  "children": [
+                                    {
+                                      "role": "link",
+                                      "name": "CSE News",
+                                      "children": [
+                                        {
+                                          "role": "strong",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "text",
+                                              "name": "CSE News",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": "CSE News"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "role": "listitem",
+                                  "name": "",
+                                  "level": 1,
+                                  "children": [
+                                    {
+                                      "role": "link",
+                                      "name": "CSE Research News",
+                                      "children": [
+                                        {
+                                          "role": "strong",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "text",
+                                              "name": "CSE Research News",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": "CSE Research News"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "role": "none",
+                              "name": "",
+                              "children": [
+                                {
+                                  "role": "generic",
+                                  "name": "",
+                                  "children": [
+                                    {
+                                      "role": "none",
+                                      "name": "",
+                                      "children": [
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " PG Admission October 2024",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " PG Admission October 2024",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " PG Admission October 2024"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2025-04-15 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2025-04-15 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " Professors Saidur Rahman and Sohel Rahman of CSE, BUET Appointed to Prestigious Roles in UGC and PSC ",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " Professors Saidur Rahman and Sohel Rahman of CSE, BUET Appointed to Prestigious Roles in UGC and PSC ",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " Professors Saidur Rahman and Sohel Rahman of CSE, "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "BUET Appointed to Prestigious Roles in UGC and PSC "
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": "(2025-01-04 11:56:03)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": "(2025-01-04 11:56:03)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " The 11th International Conference on Networking, Systems, and Security (11th NSysS 2024) held during December 19-21, 2024, in Khulna, Bangladesh",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " The 11th International Conference on Networking, Systems, and Security (11th NSysS 2024) held during December 19-21, 2024, in Khulna, Bangladesh",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " The 11th International Conference on Networking, "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "Systems, and Security (11th NSysS 2024) held during "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "December 19-21, 2024, in Khulna, Bangladesh"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2024-12-31 16:40:01)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2024-12-31 "
+                                                },
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": "16:40:01)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " CSE Festival 2024: A Celebration of Innovation and Collaboration",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " CSE Festival 2024: A Celebration of Innovation and Collaboration",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " CSE Festival 2024: A Celebration of Innovation and "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "Collaboration"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2024-12-30 11:47:33)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2024-12-30 11:47:33)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " PG Admission April 2024",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " PG Admission April 2024",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " PG Admission April 2024"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2024-07-03 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2024-07-03 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " CSE, BUET Team Becomes Asia West Champions in 47th ICPC World Finals",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " CSE, BUET Team Becomes Asia West Champions in 47th ICPC World Finals",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " CSE, BUET Team Becomes Asia West Champions in "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "47th ICPC World Finals"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2024-04-23 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2024-04-23 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " CSE UG Student Publishes in top Automatic Face & Gesture Recognition Conference",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " CSE UG Student Publishes in top Automatic Face & Gesture Recognition Conference",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " CSE UG Student Publishes in top Automatic Face & "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "Gesture Recognition Conference"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2024-03-15 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2024-03-15 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " PhD Completion of Ruhul Amin",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " PhD Completion of Ruhul Amin",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " PhD Completion of Ruhul Amin"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2024-01-13 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2024-01-13 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " Congratulations to Tanveer Awal for successfully defending his PhD dissertation",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " Congratulations to Tanveer Awal for successfully defending his PhD dissertation",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " Congratulations to Tanveer Awal for successfully "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "defending his PhD dissertation"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2024-01-02 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2024-01-02 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " Congratulations Prof. Md. Saidur Rahman for being editor of Algorithmica",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " Congratulations Prof. Md. Saidur Rahman for being editor of Algorithmica",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " Congratulations Prof. Md. Saidur Rahman for being "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "editor of Algorithmica"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2024-01-01 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2024-01-01 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " REQUEST FOR QUOTATION (Cassette type AC)",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " REQUEST FOR QUOTATION (Cassette type AC)",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " REQUEST FOR QUOTATION (Cassette type AC)"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2023-12-02 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2023-"
+                                                },
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": "12-02 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " Congratulations Synapse for 1st Place at the IEEE SPS Video and Image Processing Cup 2023",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " Congratulations Synapse for 1st Place at the IEEE SPS Video and Image Processing Cup 2023",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " Congratulations Synapse for 1st Place at the IEEE SPS "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "Video and Image Processing Cup 2023"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2023-10-11 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2023-10-11 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " REQUEST FOR QUOTATION",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " REQUEST FOR QUOTATION",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " REQUEST FOR QUOTATION"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2023-08-12 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2023-08-12 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": " Congratulations to Md. Manzurul Hasan for successfully defending his PhD dissertation.",
+                                              "children": [
+                                                {
+                                                  "role": "generic",
+                                                  "name": "",
+                                                  "children": [
+                                                    {
+                                                      "role": "none",
+                                                      "name": "",
+                                                      "children": [
+                                                        {
+                                                          "role": "text",
+                                                          "name": "",
+                                                          "children": [
+                                                            {
+                                                              "role": "InlineTextBox",
+                                                              "name": ""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "role": "text",
+                                                  "name": " Congratulations to Md. Manzurul Hasan for successfully defending his PhD dissertation.",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": " Congratulations to Md. Manzurul Hasan for successfully "
+                                                    },
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "defending his PhD dissertation."
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "role": "text",
+                                              "name": " (2023-08-02 00:00:00)",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " (2023-08-02 00:00:00)"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "text",
+                                              "name": " ",
+                                              "children": [
+                                                {
+                                                  "role": "InlineTextBox",
+                                                  "name": " "
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": "Moodle Latest Announcements",
+                                              "children": [
+                                                {
+                                                  "role": "text",
+                                                  "name": "Moodle Latest Announcements",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "Moodle Latest Announcements"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "role": "paragraph",
+                                          "name": "",
+                                          "children": [
+                                            {
+                                              "role": "link",
+                                              "name": "All News",
+                                              "children": [
+                                                {
+                                                  "role": "text",
+                                                  "name": "All News",
+                                                  "children": [
+                                                    {
+                                                      "role": "InlineTextBox",
+                                                      "name": "All News"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "role": "separator",
+                  "name": "",
+                  "orientation": "horizontal"
+                },
+                {
+                  "role": "contentinfo",
+                  "name": "",
+                  "children": [
+                    {
+                      "role": "paragraph",
+                      "name": "",
+                      "children": [
+                        {
+                          "role": "text",
+                          "name": "Copyright © Department of Computer Science and Engineering, BUET, Dhaka-1000.",
+                          "children": [
+                            {
+                              "role": "InlineTextBox",
+                              "name": "Copyright © Department of Computer Science and Engineering, BUET, Dhaka-1000."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
